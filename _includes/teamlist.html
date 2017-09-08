@@ -1,0 +1,10 @@
+<p>The current {{ include.team }} lineup is:</p>
+<ul>
+{% assign players = include.players | split: '|' %}
+{% assign countries = include.country | split: '|' %}
+{% assign length = players | size %}
+{% assign length = length | minus: 1 %}
+	{% for index in (0..length)%}
+		<li class="player-name"><img class="flag" src="/assets/flags/{{ countries[index] }}.png"/> {{ players[index] }}</li>
+	{% endfor %}
+</ul>

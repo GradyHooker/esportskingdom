@@ -1,0 +1,119 @@
+.page-main {
+	display: flex;
+	flex-direction: row;
+	max-width: 1320px;
+	margin: 0 auto;
+	
+	.post-container {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+		background: #FFF;
+		border-radius: 5px;
+		box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+		line-height: 1.6;
+		margin-right: 20px;
+		overflow: hidden;
+		position: relative;
+		
+		.post-banner {
+			height: 300px;
+			
+			.post-banner-image {
+				width: 100%;
+				height: 100%;
+				opacity: 0.5;
+				object-fit: cover;
+				background-repeat: no-repeat;
+				background-position: center center;
+				filter: grayscale(100%) brightness(70%) contrast(120%);
+			}
+			
+			&::after {
+				content: '';
+				width: 100%;
+				height: 300px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: linear-gradient(to right, #c9524b, #360940);
+				mix-blend-mode: screen;
+			}
+		}
+		
+		.post-title {
+			font-size: 2em;
+			text-transform: uppercase;
+			text-shadow: 0 0 18px rgba(black, 0.25);
+			color: white;
+			height: 200px;
+			font-family: 'Bungee';
+			width: calc(100% - 100px);
+			text-align: center;
+			padding: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			
+			.post-title-text {
+				max-width: 520px;
+			}
+		}
+		
+		.post-details {
+			display: flex;
+			justify-content: space-between;
+			padding: 50px;
+			padding-top: 10px;
+			padding-bottom: 20px;
+		}
+		
+		.post-content {
+			padding: 50px;
+			padding-top: 0px;
+		}
+	}
+	
+	.post-related {
+		width: 250px;
+		flex-shrink: 0;
+		display: flex;
+		flex-direction: column;
+		
+		.post {
+			display: flex;
+			margin-bottom: 20px;
+			padding: 10px;
+			background: #FFF;
+			border-radius: 5px;
+			box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+			line-height: 1.6;
+			transition: 0.15s;
+
+			&:hover {
+				box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+				margin-top: 2px;
+				margin-bottom: 18px;
+			}
+		}
+	}
+}
+
+.player-name {
+	height: 20px;
+}
+
+.teamheadline {
+	display: flex;
+    align-items: center;
+	font-size: 1.2em;
+	font-weight: 600;
+	margin-top: 1.5em;
+	
+	img {
+		margin-right: 8px;
+	}
+}
