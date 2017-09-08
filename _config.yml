@@ -9,7 +9,7 @@
 title: Esports Kingdom
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-paginate: 8
+permalink: /:categories/:year/:month/:title.html
 
 # Social Link #
 footer-links:
@@ -24,11 +24,36 @@ mini_magick:
     destination: assets/logos/medium
     resize: "80x80"
 
+# Pagination #
+pagination:
+  enabled: true
+  per_page: 8
+  permalink: '/:num/'
+  title: 'Page :num of :max'
+  limit: 0
+  sort_field: 'circa'
+  sort_reverse: true
+  trail: 
+    before: 2
+    after: 2
+
+# Category Pages #
+collections:
+  game:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: game
+    values:
+      layout: "category"
+
 # Build settings
 markdown: kramdown
-
-plugins_dir:
-  - jekyll-paginate
+gems:
+  - jekyll-paginate-v2
 
 # Exclude these files from your production _site
 exclude:

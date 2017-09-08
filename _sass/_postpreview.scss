@@ -17,6 +17,8 @@
 			box-shadow: 0 3px 0 rgba(0,0,0,0.1);
 			line-height: 1.6;
 			transition: 0.15s;
+			position: relative;
+			overflow: hidden;
 
 			&:hover {
 				box-shadow: 0 1px 0 rgba(0,0,0,0.1);
@@ -55,6 +57,18 @@
 							text-decoration: underline;
 						}
 					}
+				}
+			}
+			
+			.post-character {
+				position: absolute;
+				height: 120%;
+				top: 8;
+				right: 8;
+				opacity: 0.15;
+				
+				img {
+					height: 100%;
 				}
 			}
 		}

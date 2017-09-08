@@ -9,3 +9,13 @@ window.onscroll = function (e) {
 		main.style.paddingTop = "110px";
 	}
 } 
+
+window.onload = function() {
+	var num = window.location.pathname.replace(/\//g, '');
+	if(num == "") { num = "1"; }
+	var pg = document.getElementById("page-" + num);
+	console.log(pg);
+	if(pg != null) {
+		pg.classList.add("active");
+	}
+}

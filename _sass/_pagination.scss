@@ -1,9 +1,37 @@
 .pagination {
 	text-align: center;
+	justify-content: center;
+	display: flex;
+	margin: 0 auto;
 	
-	.previous, .next {
-		font-size: 1.2em;
-		color: black;
+	a {
+		margin: 2px;
+		margin-bottom: 4px;
 		text-decoration: none;
+		flex: 0 0 auto; 
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: black;
+		height: 42px;
+		width: 42px;
+		background: #FFF;
+		border-radius: 5px;
+		box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+		line-height: 1.6;
+		transition: 0.15s;
+		position: relative;
+		overflow: hidden;
+		
+		&:hover {
+			box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+			margin-top: 6px;
+			margin-bottom: 0px;
+		}
+	}
+	
+	.active {
+		font-weight: bold;
+		background-color: #f2f2f2;
 	}
 }
