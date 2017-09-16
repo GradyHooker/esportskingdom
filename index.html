@@ -41,33 +41,33 @@ pagination:
 	{% if paginator.total_pages > 1 %}
 	<div class="pagination">
 		{% if paginator.first_page %}
-		<a href="{{ paginator.first_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="First Page">
+		<a href="{{ site.url }}/{{ paginator.first_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="First Page">
 			<i class="fa fa-fast-backward" aria-hidden="true"></i>
 		</a>
 		{% endif %}
 
 		{% if paginator.previous_page %}
-		<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next Page">
+		<a href="{{ site.url }}/{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next Page">
 			<i class="fa fa-step-backward" aria-hidden="true"></i>
 		</a>
 		{% endif %}
 
 		{% if paginator.page_trail %}
 			{% for trail in paginator.page_trail %}
-			<a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}" id="page-{{ trail.num }}" title="{{ trail.title }}">
+			<a href="{{ site.url }}/{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}" id="page-{{ trail.num }}" title="{{ trail.title }}">
 				{{ trail.num }}
 			</a>
 			{% endfor %}
 		{% endif %}
 
 		{% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous Page">
+		<a href="{{ site.url }}/{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous Page">
 			<i class="fa fa-step-forward" aria-hidden="true"></i>
 		</a>
 		{% endif %}
 
 		{% if paginator.last_page %}
-		<a href="{{ paginator.last_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Last Page">
+		<a href="{{ site.url }}/{{ paginator.last_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Last Page">
 			<i class="fa fa-fast-forward" aria-hidden="true"></i>
 		</a>
 		{% endif %}
