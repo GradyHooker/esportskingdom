@@ -20,6 +20,9 @@ git clone https://${GITHUB_TOKEN}@github.com/GradyHooker/esportskingdom.git --br
 # build with Jekyll into "_site"
 bundle exec jekyll build
 
+# copy cname file
+cp CNAME _site
+
 # push
 echo "Pushing Site"
 cd _site
