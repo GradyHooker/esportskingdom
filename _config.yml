@@ -52,7 +52,7 @@ defaults:
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-paginate-v2
 
 # Exclude these files from your production _site
