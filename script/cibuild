@@ -21,8 +21,10 @@ git clone https://${GITHUB_TOKEN}@github.com/GradyHooker/esportskingdom.git --br
 bundle exec jekyll build
 
 # push
+echo "Pushing Site"
 cd _site
 git config user.name "Travis CI Bot"
 git add --all
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push --force origin gh-pages
+echo "Site Pushed"
