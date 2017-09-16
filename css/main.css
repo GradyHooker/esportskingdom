@@ -1,0 +1,254 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "Roboto";
+  background: url(../assets/background.png); }
+
+.main {
+  margin: 20px auto;
+  padding: 110px 20px 0;
+  transition: 0.3s; }
+
+.page-main {
+  display: flex;
+  flex-direction: row;
+  max-width: 1320px;
+  margin: 0 auto; }
+  .page-main .post-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative; }
+    .page-main .post-container .post-banner {
+      height: 300px; }
+      .page-main .post-container .post-banner .post-banner-image {
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        filter: grayscale(100%) brightness(70%) contrast(120%); }
+      .page-main .post-container .post-banner::after {
+        content: '';
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right, #c9524b, #360940);
+        mix-blend-mode: screen; }
+    .page-main .post-container .post-title {
+      font-size: 2em;
+      text-transform: uppercase;
+      text-shadow: 0 0 18px rgba(0, 0, 0, 0.25);
+      color: white;
+      height: 200px;
+      font-family: 'Bungee';
+      width: calc(100% - 100px);
+      text-align: center;
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .page-main .post-container .post-title .post-title-text {
+        max-width: 520px; }
+    .page-main .post-container .post-details {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px;
+      padding-top: 10px;
+      padding-bottom: 20px; }
+    .page-main .post-container .post-content {
+      padding: 50px;
+      padding-top: 0px; }
+  .page-main .post-related {
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column; }
+    .page-main .post-related .post {
+      display: flex;
+      margin-bottom: 20px;
+      padding: 10px;
+      background: #FFF;
+      border-radius: 5px;
+      box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+      line-height: 1.6;
+      transition: 0.15s; }
+      .page-main .post-related .post:hover {
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+        margin-top: 2px;
+        margin-bottom: 18px; }
+
+.player-name {
+  height: 20px; }
+
+.teamheadline {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 1.5em; }
+  .teamheadline img {
+    margin-right: 8px; }
+
+header {
+  height: 110px;
+  background: #3e3e3e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.3s;
+  z-index: 200; }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    max-width: 1060px;
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: 0.3s; }
+    header nav .main-logo {
+      height: 90px;
+      transition: 0.3s; }
+
+.header-fixed {
+  height: 65px; }
+  .header-fixed .main-logo {
+    height: 45px; }
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  max-width: 1060px;
+  margin: 0 auto; }
+  .posts .post-link {
+    text-decoration: none;
+    color: black; }
+    .posts .post-link .post {
+      display: flex;
+      margin-bottom: 20px;
+      padding: 20px;
+      background: #FFF;
+      border-radius: 5px;
+      box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+      line-height: 1.6;
+      transition: 0.15s;
+      position: relative;
+      overflow: hidden; }
+      .posts .post-link .post:hover {
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+        margin-top: 2px;
+        margin-bottom: 18px; }
+      .posts .post-link .post .post-boximage {
+        height: 100px;
+        width: 200px; }
+      .posts .post-link .post .post-summary-cont {
+        margin-left: 16px; }
+        .posts .post-link .post .post-summary-cont .post-title {
+          font-weight: 600;
+          font-size: 1.2em; }
+        .posts .post-link .post .post-summary-cont .post-details {
+          font-style: italic;
+          font-size: 0.8em;
+          display: flex;
+          justify-content: space-between; }
+          .posts .post-link .post .post-summary-cont .post-details .post-separator {
+            padding-left: 4px;
+            padding-right: 4px; }
+          .posts .post-link .post .post-summary-cont .post-details .post-detaillinks {
+            display: flex; }
+            .posts .post-link .post .post-summary-cont .post-details .post-detaillinks *:hover {
+              text-decoration: underline; }
+      .posts .post-link .post .post-character {
+        position: absolute;
+        height: 120%;
+        top: 8;
+        right: 8;
+        opacity: 0.15; }
+        .posts .post-link .post .post-character img {
+          height: 100%; }
+
+.pagination {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto; }
+  .pagination a {
+    margin: 2px;
+    margin-bottom: 4px;
+    text-decoration: none;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 42px;
+    width: 42px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    transition: 0.15s;
+    position: relative;
+    overflow: hidden; }
+    .pagination a:hover {
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+      margin-top: 6px;
+      margin-bottom: 0px; }
+  .pagination .active {
+    font-weight: bold;
+    background-color: #f2f2f2; }
