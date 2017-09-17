@@ -6,3 +6,4 @@ Gemfile.lock
 vendor
 /assets/logos/medium
 /assets/logos/tiny
+makeimages.bat
