@@ -8,13 +8,14 @@
 	<script src="{{ site.url }}/js/main.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Esports Kingdom{% unless page.short_title == null %} - {{ page.short_title }}{% endunless %}</title>
-	<!-- Google Analytics -->
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106610382-1"></script>
 	<script>
-		window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-		ga('create', 'UA-106610382-1', 'auto');
-		ga('send', 'pageview');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments)};
+		gtag('js', new Date());
+		gtag('config', 'UA-106610382-1');
 	</script>
-	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!--Background pattern from Subtle Patterns-->
   </head>
   <body>
