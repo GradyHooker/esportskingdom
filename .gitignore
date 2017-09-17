@@ -4,3 +4,5 @@ _site
 Gemfile.lock
 .bundle
 vendor
+/assets/logos/medium
+/assets/logos/tiny
