@@ -23,6 +23,14 @@ bundle exec jekyll build
 # copy cname file
 cp CNAME _site
 
+# create new images
+mkdir _site/assets/logos/medium
+mkdir _site/assets/logos/tiny
+cd _site/assets/logos/original
+mogrify -path ../medium -resize 80x80 -format png *.png
+mogrify -path ../tiny -resize 24x24 -format png *.png
+cd ../../../../
+
 # push
 echo "Pushing Site"
 cd _site
