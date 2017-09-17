@@ -17,12 +17,6 @@ footer-links:
   github: GradyHooker
   rss: "" # just type anything here for a working RSS icon
   twitter: GradyHooker
-  
-mini_magick:
-  thumbnail:
-    source: assets/logos/originals
-    destination: assets/logos/medium
-    resize: "80x80"
 
 # Pagination #
 pagination:
