@@ -1,5 +1,71 @@
-<nav class="nav">
+<script src="{{ site.url }}/js/menu.js"></script>
+<nav class="nav" id="cssmenu">
 	<a href="{{ site.url }}">
 		<img class="main-logo" src="{{ site.url }}/assets/logo_medium.png"/>
 	</a>
+	<ul>
+	<li><a href='{{ site.url }}'>Home</a></li>
+	<li class='active'><a href='{{ site.url }}/games'>Games</a>
+		<ul>
+			<li><a href='{{ site.url }}/games/fps-games'>FPS Games</a>
+				<ul>
+					<li><a href='{{ site.url }}/games/counter-strike'>Counter Strike</a></li>
+					<li><a href='{{ site.url }}/games/call-of-duty'>Call of Duty</a></li>
+					<li><a href='{{ site.url }}/games/halo'>Halo</a></li>
+					<li><a href='{{ site.url }}/games/overwatch'>Overwatch</a></li>
+					<li><a href='{{ site.url }}/games/pubg'>PUBG</a></li>
+					<li><a href='{{ site.url }}/games/rainbow-six'>Rainbow Six</a></li>
+				</ul>
+			</li>
+			<li><a href='{{ site.url }}/games/moba-rts-games'>MOBA/RTS Games</a>
+				<ul>
+					<li><a href='{{ site.url }}/games/dota-2'>Dota 2</a></li>
+					<li><a href='{{ site.url }}/games/heroes-of-the-storm'>Heroes of the Storm</a></li>
+					<li><a href='{{ site.url }}/games/league-of-legends'>League of Legends</a></li>
+					<li><a href='{{ site.url }}/games/starcraft'>StarCraft</a></li>
+				</ul>
+			</li>
+			<li><a href='{{ site.url }}/games/fighting-games'>Fighting Games</a>
+				<ul>
+					<li><a href='{{ site.url }}/games/smash-bros'>Smash Bros.</a></li>
+					<li><a href='{{ site.url }}/games/street-fighter'>Street Fighter</a></li>
+					<li><a href='{{ site.url }}/games/Tekken'>Tekken</a></li>
+				</ul>
+			</li>
+			<li><a href='{{ site.url }}/games/sports-games'>Sports Games</a>
+				<ul>
+					<li><a href='{{ site.url }}/games/fifa'>FIFA</a></li>
+					<li><a href='{{ site.url }}/games/madden'>Madden</a></li>
+					<li><a href='{{ site.url }}/games/nba'>NBA</a></li>
+					<li><a href='{{ site.url }}/games/rocket-league'>Rocket League</a></li>
+				</ul>
+			</li>
+			<li><a href='{{ site.url }}/games/other-games'>Other Games</a>
+				<ul>
+					<li><a href='{{ site.url }}/games/hearthstone'>Hearthstone</a></li>
+					<li><a href='{{ site.url }}/games/pokemon'>Pokemon</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li><a href='{{ site.url }}/articles'>Articles</a>
+		<ul>
+			<li><a href='{{ site.url }}/articles/features'>Feature Articles</a>
+			<ul>
+				<li><a href='{{ site.url }}/articles/event-previews'>Event Previews</a></li>
+				<li><a href='{{ site.url }}/articles/event-recaps'>Event Recaps</a></li>
+				<li><a href='{{ site.url }}/articles/from-the-event'>From The Event</a></li>
+				<li><a href='{{ site.url }}/articles/interviews'>Interviews</a></li>
+				<li><a href='{{ site.url }}/articles/other-articles'>Other</a></li>\
+			</ul>
+			<li><a href='{{ site.url }}/articles/weekly'>Weekly Recaps</a>
+				<ul>
+					<li><a href='{{ site.url }}/articles/lesser-tournament'>Lesser Tournament Lowdown</a></li>
+					<li><a href='{{ site.url }}/articles/roster-change'>Roster Change Roundup</a></li>
+					<li><a href='{{ site.url }}/articles/this-week-in'>This Week In...</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
 </nav>
