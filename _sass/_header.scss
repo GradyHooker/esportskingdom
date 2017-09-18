@@ -36,11 +36,33 @@ header {
 .header-fixed {
 	height: 65px;
 	
-	.main-logo {
+	nav .main-logo {
 		height: 45px;
 	}
 	
-	> ul > li > a {
+	nav > ul > li > a {
 		padding-bottom: 17px !important;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	.main {
+		padding: 65px 20px 0 !important;
+	}
+	
+	header {
+		height: 65px;
+		
+		nav .main-logo {
+			height: 45px;
+		}
+		
+		nav > ul > li > a {
+			padding-bottom: 17px !important;
+		}
+		
+		.main {
+			padding: 65px 20px 0 !important;
+		}	
 	}
 }
