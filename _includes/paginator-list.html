@@ -1,0 +1,35 @@
+<div class="posts">
+  {% for post in paginator.posts %}
+    <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
+		<div class="post">
+		  <div class="post-boximage-cont">
+			<img class="post-boximage" src="{{ site.url }}/assets/{{ post.boximage }}.jpg"/>
+		  </div>
+		  <div class="post-summary-cont">
+			<h1 class="post-title">
+			  {{ post.title }}
+			</h1>
+			
+			<div class="post-details">
+				<div class="post-detaillinks">
+					<div class="post-game">{{ post.game }}</div>
+					<div class="post-separator">|</div>
+					<div class="post-genre">{{ post.genre }}</div>
+					<div class="post-separator">|</div>
+					<div class="post-show">{{ post.show }}</div>
+				</div>
+				<div class="post-date">{{ post.circa }}</div>
+			</div>
+
+			<div class="post-entry">
+			  {{ post.excerpt }}
+			</div>
+		  </div>
+		  <div class="post-character">
+			<img src="{{ site.url }}/assets/characters/{{ post.category }}.png"/>
+		  </div>
+		</div>
+	  </a>
+  {% endfor %}
+</div>
+{% include paginator-links.html %}
