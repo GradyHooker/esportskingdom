@@ -2,21 +2,41 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Open Graph data -->
+	<meta property="og:type" content="blog"/>
+	<meta property="og:url" content="http://esportskingdom.nz/">
+	<meta property="og:title" content="{{ page.title }}"/>
+	<meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 300 }}"/>
+	<meta property="og:image" content="http://esportskingdom.nz/assets/{{ page.wideimage }}.jpg" />
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:url" content="http://esportskingdom.nz/" />
+	<meta name="twitter:title" content="{{ page.title }}" />
+	<meta name="twitter:description" content="{{ page.excerpt | strip_html | truncatewords: 200 }}"/>
+	<meta name="twitter:image" content="http://esportskingdom.nz/assets/{{ page.wideimage }}.jpg" />
+	
 	{% include favicon.html %}
+	
     <link href="http://fonts.googleapis.com/css?family=Bungee|Roboto:400,600,800" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/main.css">
 	<script src="{{ site.url }}/js/main.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Esports Kingdom{% unless page.short_title == null %} - {{ page.short_title }}{% endunless %}</title>
+	
 	<!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106610382-1"></script>
+	
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments)};
 		gtag('js', new Date());
 		gtag('config', 'UA-106610382-1');
 	</script>
+	
 	<!--Background pattern from Subtle Patterns-->
+	
   </head>
   <body>
     <header id="header" class="header">
