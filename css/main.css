@@ -159,7 +159,6 @@ body {
 
 #cssmenu:after,
 #cssmenu > ul:after {
-  content: ".";
   display: block;
   clear: both;
   visibility: hidden;
@@ -167,7 +166,12 @@ body {
   height: 0; }
 
 #cssmenu #menu-button {
-  display: none; }
+  display: none;
+  height: 100%; }
+  #cssmenu #menu-button .menu-icon {
+    width: 24px;
+    text-align: center;
+    padding-bottom: 2px; }
 
 #cssmenu > ul > li {
   float: left; }
@@ -226,10 +230,6 @@ body {
   -o-transition: all .25s ease;
   transition: all .25s ease; }
 
-#cssmenu > ul > li.has-sub:hover > a:before {
-  top: 23px;
-  height: 0; }
-
 #cssmenu ul ul {
   position: absolute;
   left: -9999px; }
@@ -245,17 +245,6 @@ body {
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease; }
-
-#cssmenu li:hover > ul {
-  left: auto; }
-
-#cssmenu.align-right li:hover > ul {
-  left: auto;
-  right: 0; }
-
-#cssmenu li:hover > ul > li {
-  min-height: 35px;
-  max-height: 70px; }
 
 #cssmenu ul ul ul {
   margin-left: 100%;
@@ -316,13 +305,28 @@ body {
   right: auto;
   left: 14px; }
 
-#cssmenu ul ul > li.has-sub:hover > a:before {
-  top: 17px;
-  height: 0; }
+@media all and (min-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  #cssmenu > ul > li.has-sub:hover > a:before {
+    top: 23px;
+    height: 0; }
 
+  #cssmenu li:hover > ul {
+    left: auto; }
+
+  #cssmenu.align-right li:hover > ul {
+    left: auto;
+    right: 0; }
+
+  #cssmenu li:hover > ul > li {
+    min-height: 35px;
+    max-height: 70px; }
+
+  #cssmenu ul ul > li.has-sub:hover > a:before {
+    top: 17px;
+    height: 0; } }
 @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
-    width: 100%; }
+    width: calc(100% - 40px); }
 
   #cssmenu ul {
     width: 100%;
@@ -337,7 +341,8 @@ body {
 
   #cssmenu ul ul li,
   #cssmenu li:hover > ul > li {
-    height: auto; }
+    height: auto;
+    max-height: 9999px; }
 
   #cssmenu ul li a,
   #cssmenu ul ul li a {
@@ -377,56 +382,21 @@ body {
     display: none; }
 
   #cssmenu #menu-button {
-    display: block;
-    padding: 17px;
+    display: flex;
+    align-items: center;
     color: #dddddd;
     cursor: pointer;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 700; }
 
-  #cssmenu #menu-button:after {
-    position: absolute;
-    top: 22px;
-    right: 17px;
-    display: block;
-    height: 4px;
-    width: 20px;
-    border-top: 2px solid #dddddd;
-    border-bottom: 2px solid #dddddd;
-    content: ''; }
+  #menu-button .menu-icon:before {
+    font-family: FontAwesome;
+    content: "\f0c9"; }
 
-  #cssmenu #menu-button:before {
-    position: absolute;
-    top: 16px;
-    right: 17px;
-    display: block;
-    height: 2px;
-    width: 20px;
-    background: #dddddd;
-    content: ''; }
-
-  #cssmenu #menu-button.menu-opened:after {
-    top: 23px;
-    border: 0;
-    height: 2px;
-    width: 15px;
-    background: #ffffff;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg); }
-
-  #cssmenu #menu-button.menu-opened:before {
-    top: 23px;
-    background: #ffffff;
-    width: 15px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg); }
+  #menu-button.menu-opened .menu-icon:before {
+    font-family: FontAwesome;
+    content: "\f00d"; }
 
   #cssmenu .submenu-button {
     position: absolute;
@@ -435,26 +405,20 @@ body {
     top: 0;
     display: block;
     border-left: 1px solid rgba(120, 120, 120, 0.2);
-    height: 46px;
-    width: 46px;
-    cursor: pointer; }
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    color: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
   #cssmenu .submenu-button.submenu-opened {
     background: #262626; }
 
   #cssmenu ul ul .submenu-button {
-    height: 34px;
-    width: 34px; }
-
-  #cssmenu .submenu-button:after {
-    position: absolute;
-    top: 22px;
-    right: 19px;
-    width: 8px;
-    height: 2px;
-    display: block;
-    background: #dddddd;
-    content: ''; }
+    height: 38px;
+    width: 38px; }
 
   #cssmenu ul ul .submenu-button:after {
     top: 15px;
@@ -464,21 +428,12 @@ body {
     background: #ffffff; }
 
   #cssmenu .submenu-button:before {
-    position: absolute;
-    top: 19px;
-    right: 22px;
-    display: block;
-    width: 2px;
-    height: 8px;
-    background: #dddddd;
-    content: ''; }
-
-  #cssmenu ul ul .submenu-button:before {
-    top: 12px;
-    right: 16px; }
+    font-family: FontAwesome;
+    content: "\f067"; }
 
   #cssmenu .submenu-button.submenu-opened:before {
-    display: none; } }
+    font-family: FontAwesome;
+    content: "\f068"; } }
 header {
   height: 110px;
   background: #3e3e3e;
@@ -497,7 +452,8 @@ header {
     height: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    transition: 0.3s; }
+    transition: 0.3s;
+    width: calc(100% - 40px); }
     header nav .main-logo {
       height: 90px;
       padding: 10px;
@@ -520,12 +476,23 @@ header {
 
   header {
     height: 65px; }
+    header nav {
+      align-items: center; }
     header nav .main-logo {
       height: 45px; }
     header nav > ul > li > a {
       padding-bottom: 17px !important; }
     header .main {
       padding: 65px 20px 0 !important; } }
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between; }
+
+  #menu-list {
+    position: fixed !important;
+    margin-left: -20px !important;
+    top: 64px;
+    background: #333333; } }
 .posts {
   display: flex;
   flex-direction: column;

@@ -3,10 +3,8 @@ var prevState = "";
 
 window.onload = function() {
 	cssmenu = document.getElementById("cssmenu");
-	var menuDiv = document.createElement("div");
-	menuDiv.id = "menu-button";
-	menuDiv.innerText = "Menu";
-	cssmenu.prepend(menuDiv);
+	var menuDiv = document.getElementById("menu-button");
+	var menuList = document.getElementById("menu-list");
 	
 	document.getElementById("menu-button").onclick = function() {
 		this.classList.toggle('menu-opened');
