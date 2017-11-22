@@ -492,7 +492,9 @@ header {
     position: fixed !important;
     margin-left: -20px !important;
     top: 64px;
-    background: #333333; } }
+    background: #333333;
+    overflow-y: auto;
+    max-height: calc(100% - 65px); } }
 .posts {
   display: flex;
   flex-direction: column;
