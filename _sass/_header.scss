@@ -82,5 +82,7 @@ header {
 		margin-left: -20px !important;
 		top: 64px;
 		background: #333333;
+		overflow-y: auto;
+		max-height: calc(100% - 65px);
 	}
 }
