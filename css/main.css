@@ -134,13 +134,13 @@ body {
 .player-name {
   height: 20px; }
 
-.teamheadline {
+.logoheadline {
   display: flex;
   align-items: center;
   font-size: 1.2em;
   font-weight: 600;
   margin-top: 1.5em; }
-  .teamheadline img {
+  .logoheadline img {
     margin-right: 8px; }
 
 #cssmenu ul,
