@@ -31,19 +31,6 @@ pagination:
     before: 2
     after: 2
 
-# Category Pages #
-collections:
-  game:
-    output: true
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: game
-    values:
-      layout: "category"
-
 # Build settings
 markdown: kramdown
 plugins:
