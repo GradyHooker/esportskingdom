@@ -74,6 +74,10 @@
 		.post-content {
 			padding: 50px;
 			padding-top: 0px;
+			
+			p {
+				padding-top: 10px;
+			}
 		}
 	}
 	
@@ -102,8 +106,13 @@
 	}
 }
 
-.player-name {
-	height: 20px;
+
+.teamlist {
+	margin-left: 35px;
+	
+	.player-name {
+		height: 20px;
+	}
 }
 
 .logoheadline {

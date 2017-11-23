@@ -1,5 +1,5 @@
 <p>The current {{ include.team }} lineup is:</p>
-<ul>
+<ul class="teamlist">
 {% assign players = include.players | split: '|' %}
 {% assign countries = include.country | split: '|' %}
 {% assign length = players | size %}
