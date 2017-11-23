@@ -78,6 +78,21 @@
 			p {
 				padding-top: 10px;
 			}
+			
+			.quote {
+				font-style: italic;
+				margin-left: 35px;
+				font-size: 0.9em;
+			}
+			
+			.teamlist {
+				margin-left: 35px;
+				font-size: 0.9em;
+				
+				.player-name {
+					height: 20px;
+				}
+			}
 		}
 	}
 	
@@ -103,15 +118,6 @@
 				margin-bottom: 18px;
 			}
 		}
-	}
-}
-
-
-.teamlist {
-	margin-left: 35px;
-	
-	.player-name {
-		height: 20px;
 	}
 }
 
