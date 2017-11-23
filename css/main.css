@@ -112,6 +112,17 @@ body {
     .page-main .post-container .post-content {
       padding: 50px;
       padding-top: 0px; }
+      .page-main .post-container .post-content p {
+        padding-top: 10px; }
+      .page-main .post-container .post-content .quote {
+        font-style: italic;
+        margin-left: 35px;
+        font-size: 0.9em; }
+      .page-main .post-container .post-content .teamlist {
+        margin-left: 35px;
+        font-size: 0.9em; }
+        .page-main .post-container .post-content .teamlist .player-name {
+          height: 20px; }
   .page-main .post-related {
     width: 250px;
     flex-shrink: 0;
@@ -130,9 +141,6 @@ body {
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
         margin-top: 2px;
         margin-bottom: 18px; }
-
-.player-name {
-  height: 20px; }
 
 .logoheadline {
   display: flex;
