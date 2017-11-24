@@ -85,12 +85,37 @@
 				font-size: 0.9em;
 			}
 			
+			.media {
+				padding-top: 10px;
+				font-style: italic;
+				font-size: 0.9em;
+				width: 100%;
+				display: flex;
+				text-align: center;
+				flex-direction: column;
+				align-items: center;
+				
+				img, .iframe-cont {
+					max-width: 100%;
+					height: auto;
+					max-height: 360px;
+					position: relative;
+				}
+				
+				iframe {
+					height: 100%;
+					width: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+			
 			.teamlist {
 				margin-left: 35px;
 				font-size: 0.9em;
 				
 				.player-name {
-					height: 20px;
 				}
 			}
 		}
