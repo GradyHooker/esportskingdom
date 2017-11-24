@@ -12,11 +12,11 @@
 			
 			<div class="post-details">
 				<div class="post-detaillinks">
-					<div class="post-game">{{ post.game }}</div>
+					<div class="post-game pretty-print">{{ post.category }}</div>
 					<div class="post-separator">|</div>
-					<div class="post-genre">{{ post.genre }}</div>
+					<div class="post-genre pretty-print">{{ post.tags[1] }}</div>
 					<div class="post-separator">|</div>
-					<div class="post-show">{{ post.show }}</div>
+					<div class="post-show pretty-print">{{ post.tags[2] }}</div>
 				</div>
 				<div class="post-date">{{ post.circa }}</div>
 			</div>

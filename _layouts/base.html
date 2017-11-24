@@ -17,13 +17,17 @@
 	<meta name="twitter:description" content="{{ page.excerpt | strip_html | truncatewords: 200 }}"/>
 	<meta name="twitter:image" content="http://esportskingdom.nz/assets/{{ page.wideimage }}.jpg" />
 	
+	<!-- Favicon -->
 	{% include favicon.html %}
 	
     <link href="http://fonts.googleapis.com/css?family=Bungee|Roboto:400,600,800" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/main.css">
-	<script src="{{ site.url }}/js/main.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Esports Kingdom{% unless page.short_title == null %} - {{ page.short_title }}{% endunless %}</title>
+	
+	<!-- JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="{{ site.url }}/js/main.js"></script>
 	
 	<!-- Global Site Tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106610382-1"></script>
