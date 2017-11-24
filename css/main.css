@@ -118,11 +118,29 @@ body {
         font-style: italic;
         margin-left: 35px;
         font-size: 0.9em; }
+      .page-main .post-container .post-content .media {
+        padding-top: 10px;
+        font-style: italic;
+        font-size: 0.9em;
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center; }
+        .page-main .post-container .post-content .media img, .page-main .post-container .post-content .media .iframe-cont {
+          max-width: 100%;
+          height: auto;
+          max-height: 360px;
+          position: relative; }
+        .page-main .post-container .post-content .media iframe {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0; }
       .page-main .post-container .post-content .teamlist {
         margin-left: 35px;
         font-size: 0.9em; }
-        .page-main .post-container .post-content .teamlist .player-name {
-          height: 20px; }
   .page-main .post-related {
     width: 250px;
     flex-shrink: 0;
