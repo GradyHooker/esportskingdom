@@ -10,12 +10,21 @@ window.onscroll = function (e) {
 	}
 } 
 
-window.onload = function() {
-	var num = window.location.pathname.replace(/\//g, '');
+$(document).ready(function() {
+	var num = window.location.pathname.replace(/\//g, '').replace('page', '');
 	if(num == "") { num = "1"; }
 	var pg = document.getElementById("page-" + num);
-	console.log(pg);
 	if(pg != null) {
 		pg.classList.add("active");
 	}
-}
+	
+	//Pretty Print all of the Names
+	$.getJSON("/json/prettyPrintMaps.json", function( data ) {
+		$(".pretty-print").each(function(index) {
+			var prettyPrint = data[$(this).text()];
+			if(prettyPrint != "" && prettyPrint != undefined) {
+				$(this).text(prettyPrint);
+			}
+		});
+	});
+});
