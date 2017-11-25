@@ -1,6 +1,6 @@
 <div class="posts">
   {% for post in paginator.posts %}
-    <a class="post-link" href="{{ site.baseurl }}{{ post.url }}">
+    <a class="post-link" href="{{ site.baseurl }}{{ post.url | replace: '.html', ''}}">
 		<div class="post">
 		  <div class="post-boximage-cont">
 			<img class="post-boximage" src="{{ site.url }}/assets/{{ post.boximage }}.jpg"/>
