@@ -136,8 +136,8 @@ body {
           height: 100%;
           width: 100%;
           position: absolute;
-          top: 0;
-          left: 0; }
+          top: 0px;
+          left: 0px; }
       .page-main .post-container .post-content .teamlist {
         margin-left: 35px;
         font-size: 0.9em; }
@@ -331,7 +331,7 @@ body {
   right: auto;
   left: 14px; }
 
-@media all and (min-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   #cssmenu > ul > li.has-sub:hover > a:before {
     top: 23px;
     height: 0; }
@@ -350,7 +350,7 @@ body {
   #cssmenu ul ul > li.has-sub:hover > a:before {
     top: 17px;
     height: 0; } }
-@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   #cssmenu {
     width: calc(100% - 40px); }
 
