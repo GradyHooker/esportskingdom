@@ -9,7 +9,7 @@
 title: Esports Kingdom
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://esportskingdom.nz" # the base hostname & protocol for your site
-permalink: /:categories/:year/:month/:title.html
+permalink: /:categories/:year-:month-:title.html
 
 # Social Link #
 footer-links:
