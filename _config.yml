@@ -22,7 +22,7 @@ footer-links:
 pagination:
   enabled: true
   per_page: 8
-  permalink: '/page/:num/'
+  permalink: '/page/:num'
   title: 'Page :num of :max'
   limit: 0
   sort_field: 'circa'
