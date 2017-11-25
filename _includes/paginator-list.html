@@ -3,7 +3,7 @@
     <a class="post-link" href="{{ site.baseurl }}{{ post.url | replace: '.html', ''}}">
 		<div class="post">
 		  <div class="post-boximage-cont">
-			<img class="post-boximage" src="{{ site.url }}/assets/{{ post.boximage }}.jpg"/>
+			<img class="post-boximage" src="{{ site.url }}/assets/{{ post.boximage }}.jpg" alt="{{ post.title }}"/>
 		  </div>
 		  <div class="post-summary-cont">
 			<h1 class="post-title">
@@ -47,7 +47,7 @@
 			</div>
 		  </div>
 		  <div class="post-character">
-			<img src="{{ site.url }}/assets/characters/{{ post.category }}.png"/>
+			<img src="{{ site.url }}/assets/characters/{{ post.category }}.png" alt="{{ post.category }} character"/>
 		  </div>
 		</div>
 	  </a>
