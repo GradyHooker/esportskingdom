@@ -11,8 +11,8 @@ window.onscroll = function (e) {
 } 
 
 $(document).ready(function() {
-	var num = window.location.pathname.replace(/\//g, '').replace('page', '');
-	if(num == "") { num = "1"; }
+	var num = window.location.pathname.split('/')[2];
+	if(num == "" || num == undefined) { num = "1"; }
 	var pg = document.getElementById("page-" + num);
 	if(pg != null) {
 		pg.classList.add("active");
