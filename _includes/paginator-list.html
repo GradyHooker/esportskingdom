@@ -46,9 +46,13 @@
 			  {{ post.excerpt }}
 			</div>
 		  </div>
+		  {% for image in site.static_files %}
+			{% if image.path contains post.category | prepend: "/characters/" %}
 		  <div class="post-character">
 			<img src="{{ site.url }}/assets/characters/{{ post.category }}.png" alt="{{ post.category }} character"/>
 		  </div>
+			{% endif %}
+		  {% endfor %}
 		</div>
 	  </a>
   {% endfor %}

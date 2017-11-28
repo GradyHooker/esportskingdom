@@ -15,7 +15,6 @@ permalink: /:categories/:year-:month-:title.html
 footer-links:
   email: grady.hooker8@gmail.com
   github: GradyHooker
-  rss: "" # just type anything here for a working RSS icon
   twitter: GradyHooker
 
 # Pagination #
