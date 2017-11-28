@@ -582,8 +582,8 @@ header {
       .posts .post-link .post .post-character {
         position: absolute;
         height: 120%;
-        top: 8;
-        right: 8;
+        top: 8px;
+        right: 8px;
         opacity: 0.15; }
         .posts .post-link .post .post-character img {
           height: 100%;
