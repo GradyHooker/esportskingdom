@@ -55,6 +55,9 @@ body {
   flex-direction: row;
   max-width: 1320px;
   margin: 0 auto; }
+  @media screen and (max-width: 950px) {
+    .page-main {
+      flex-direction: column; } }
   .page-main .post-container {
     display: flex;
     flex-direction: column;
@@ -66,6 +69,9 @@ body {
     margin-right: 20px;
     overflow: hidden;
     position: relative; }
+    @media screen and (max-width: 950px) {
+      .page-main .post-container {
+        margin-right: 0px; } }
     .page-main .post-container .post-banner {
       height: 300px; }
       .page-main .post-container .post-banner .post-banner-image {
@@ -146,6 +152,12 @@ body {
     flex-shrink: 0;
     display: flex;
     flex-direction: column; }
+    @media screen and (max-width: 950px) {
+      .page-main .post-related {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%; } }
     .page-main .post-related .post {
       display: flex;
       margin-bottom: 20px;
@@ -155,6 +167,9 @@ body {
       box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
       line-height: 1.6;
       transition: 0.15s; }
+      @media screen and (max-width: 950px) {
+        .page-main .post-related .post {
+          width: 250px; } }
       .page-main .post-related .post:hover {
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
         margin-top: 2px;
@@ -604,3 +619,49 @@ header {
   .pagination .active {
     font-weight: bold;
     background-color: #f2f2f2; }
+
+.error {
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px; }
+  .error .main-logo {
+    padding-bottom: 20px;
+    max-width: 340px;
+    width: 100%; }
+  .error h1 {
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 20px; }
+  .error p {
+    padding-bottom: 20px;
+    max-width: 500px;
+    width: 100%; }
+  .error a {
+    text-decoration: none; }
+  .error .button {
+    margin: 2px;
+    margin-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 42px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    transition: 0.15s;
+    position: relative;
+    overflow: hidden; }
+  .error .button:hover {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 6px;
+    margin-bottom: 0px; }
