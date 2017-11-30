@@ -125,6 +125,14 @@
 				padding-top: 10px;
 			}
 			
+			.interview-question {
+				font-weight: bold;
+				
+				+ p {
+					padding-top: 2px;
+				}
+			}
+			
 			.quote {
 				font-style: italic;
 				margin-left: 35px;
