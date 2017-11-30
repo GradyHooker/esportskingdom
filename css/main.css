@@ -139,14 +139,16 @@ body {
           flex-direction: column;
           padding: 20px;
           padding-top: 10px;
-          padding-bottom: 10px; } }
+          padding-bottom: 10px;
+          font-size: 0.95em; } }
     .page-main .post-container .post-content {
       padding: 50px;
       padding-top: 0px; }
       @media screen and (max-width: 600px) {
         .page-main .post-container .post-content {
           padding: 20px;
-          padding-top: 0px; } }
+          padding-top: 0px;
+          font-size: 0.95em; } }
       .page-main .post-container .post-content p {
         padding-top: 10px; }
       .page-main .post-container .post-content .quote {
