@@ -46,7 +46,7 @@ header {
 	}
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: $break-medium) {
 	.main {
 		padding: 65px 20px 0 !important;
 	}
@@ -72,7 +72,12 @@ header {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $break-small) {
+	.main {
+		padding: 40px 0px 0 !important;
+		border-radius: 0px;
+	}
+
 	nav {
 		justify-content: space-between;
 	}
@@ -84,5 +89,12 @@ header {
 		background: #333333;
 		overflow-y: auto;
 		max-height: calc(100% - 65px);
+	}
+}
+
+@media screen and (max-width: $break-tiny) {
+	.main {
+		padding: 40px 0px 0 !important;
+		border-radius: 0px;
 	}
 }
