@@ -10,14 +10,16 @@
 	
 	<!-- Open Graph data -->
 	<meta property="og:type" content="blog">
-	<meta property="og:url" content="https://esportskingdom.nz/">
+	<meta property="og:site_name" content="Esports Kingdom">
+  <meta property="og:url" content="{{ site.url }}">
 	<meta property="og:title" content="{{ page.title }}">
 	<meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 300 }}">
 	<meta property="og:image" content="http://esportskingdom.nz/assets/{{ page.wideimage }}.jpg" >
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:url" content="https://esportskingdom.nz/">
+  <meta name="twitter:site" content="@KingOfEsports" />
+	<meta name="twitter:url" content="{{ site.url }}">
 	<meta name="twitter:title" content="{{ page.title }}">
 	<meta name="twitter:description" content="{{ page.excerpt | strip_html | truncatewords: 200 }}">
 	<meta name="twitter:image" content="http://esportskingdom.nz/assets/{{ page.wideimage }}.jpg">
