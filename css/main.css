@@ -74,6 +74,9 @@ body {
         margin-right: 0px; } }
     .page-main .post-container .post-banner {
       height: 300px; }
+      @media screen and (max-width: 600px) {
+        .page-main .post-container .post-banner {
+          height: 200px; } }
       .page-main .post-container .post-banner .post-banner-image {
         width: 100%;
         height: 100%;
@@ -91,6 +94,9 @@ body {
         left: 0;
         background: linear-gradient(to right, #c9524b, #360940);
         mix-blend-mode: screen; }
+        @media screen and (max-width: 600px) {
+          .page-main .post-container .post-banner::after {
+            height: 200px; } }
     .page-main .post-container .post-title {
       font-size: 2em;
       text-transform: uppercase;
@@ -107,6 +113,19 @@ body {
       position: absolute;
       top: 0;
       left: 0; }
+      @media screen and (max-width: 600px) {
+        .page-main .post-container .post-title {
+          height: 150px;
+          width: calc(100% - 50px);
+          text-align: center;
+          padding: 25px;
+          font-size: 1.75em; } }
+      @media screen and (max-width: 400px) {
+        .page-main .post-container .post-title {
+          font-size: 1.4em; } }
+      @media screen and (max-width: 300px) {
+        .page-main .post-container .post-title {
+          font-size: 1.2em; } }
       .page-main .post-container .post-title .post-title-text {
         max-width: 520px; }
     .page-main .post-container .post-details {
@@ -115,9 +134,19 @@ body {
       padding: 50px;
       padding-top: 10px;
       padding-bottom: 20px; }
+      @media screen and (max-width: 600px) {
+        .page-main .post-container .post-details {
+          flex-direction: column;
+          padding: 20px;
+          padding-top: 10px;
+          padding-bottom: 10px; } }
     .page-main .post-container .post-content {
       padding: 50px;
       padding-top: 0px; }
+      @media screen and (max-width: 600px) {
+        .page-main .post-container .post-content {
+          padding: 20px;
+          padding-top: 0px; } }
       .page-main .post-container .post-content p {
         padding-top: 10px; }
       .page-main .post-container .post-content .quote {
@@ -158,6 +187,11 @@ body {
         justify-content: space-between;
         flex-wrap: wrap;
         width: 100%; } }
+    @media screen and (max-width: 600px) {
+      .page-main .post-related {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: calc(100% - 30px); } }
     .page-main .post-related .post {
       display: flex;
       margin-bottom: 20px;
@@ -526,6 +560,10 @@ header {
     header .main {
       padding: 65px 20px 0 !important; } }
 @media screen and (max-width: 768px) {
+  .main {
+    padding: 40px 0px 0 !important;
+    border-radius: 0px; }
+
   nav {
     justify-content: space-between; }
 
@@ -536,6 +574,10 @@ header {
     background: #333333;
     overflow-y: auto;
     max-height: calc(100% - 65px); } }
+@media screen and (max-width: 600px) {
+  .main {
+    padding: 40px 0px 0 !important;
+    border-radius: 0px; } }
 .posts {
   display: flex;
   flex-direction: column;
@@ -577,8 +619,6 @@ header {
             padding-right: 4px; }
           .posts .post-link .post .post-summary-cont .post-details .post-detaillinks {
             display: flex; }
-            .posts .post-link .post .post-summary-cont .post-details .post-detaillinks *:hover {
-              text-decoration: underline; }
       .posts .post-link .post .post-character {
         position: absolute;
         height: 120%;
