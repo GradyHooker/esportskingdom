@@ -178,6 +178,9 @@ body {
       .page-main .post-container .post-content .teamlist {
         margin-left: 35px;
         font-size: 0.9em; }
+      .page-main .post-container .post-content .post-footer {
+        padding-top: 10px;
+        font-style: italic; }
   .page-main .post-related {
     width: 250px;
     flex-shrink: 0;
