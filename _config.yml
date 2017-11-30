@@ -48,6 +48,7 @@ autopages:
 markdown: kramdown
 plugins:
   - jekyll-paginate-v2
+  - jekyll-sitemap
 
 # Exclude these files from your production _site
 exclude:
