@@ -11,11 +11,57 @@ type: post
 		<div class="post-title-text">{{ page.fulltitle }}</div>
 	</h1>
     <div class="post-details">
-		<h2 class="page-box__subheading">Written By: {{ page.author }}</h2>
-		<h2 class="page-box__subheading">{{ page.circa }}</h2>
+		{% if page.authortwitter != null %}
+        <h2 class="page-box__subheading">
+		  Written By: {{ page.author }} (<a href="https://twitter.com/{{ page.authortwitter }}">@{{ page.authortwitter }}</a>)
+		</h2>
+		{% else %}
+        <h2 class="page-box__subheading">
+		  Written By: {{ page.author }}
+		</h2>
+		{% endif %}
+		{% assign today = site.time | date: '%s' %}
+		{% assign start = page.circa | date: '%s' %}
+		{% assign secondsSince = today | minus: start %}
+		{% assign minutesSince = secondsSince | divided_by: 60 %}
+		{% assign hoursSince = minutesSince | divided_by: 60 %}
+		{% assign daysSince = hoursSince | divided_by: 24 %}
+		{% if minutesSince == 1 %}
+			{% assign displayTime = "a minute ago" %}
+		{% elsif minutesSince <= 59 %}
+			{% assign displayTime = minutesSince | append: " minutes ago" %}
+		{% elsif hoursSince == 1 %}
+			{% assign displayTime = "an hour ago" %}
+		{% elsif hoursSince <= 23 %}
+			{% assign displayTime = hoursSince | append: " hours ago" %}
+		{% elsif daysSince == 1 %}
+			{% assign displayTime = "a day ago" %}
+		{% elsif daysSince <= 6 %}
+			{% assign displayTime = daysSince | append: " days ago" %}
+		{% else %}
+			{% assign displayTime = page.circa | date: "%Y.%m.%d" %}
+		{% endif %}
+		<div class="post-date"></div>
+		<h2 class="page-box__subheading"><time datetime="{{ page.circa }}" title="{{ page.circa | date: '%d %B %Y at %r' }}">{{ displayTime }}</time></h2>
 	</div>
 	<div class="post-content">
       {{ content }}
+	  <div class="post-footer">
+	    {% if page.authortwitter != null %}
+        <div>
+		  Written By: {{ page.author }} (<a href="https://twitter.com/{{ page.authortwitter }}">@{{ page.authortwitter }}</a>)
+		</div>
+		{% else %}
+        <div>
+		  Written By: {{ page.author }}
+		</div>
+		{% endif %}
+		{% if page.headercredit != null %}
+		<div>
+		  Header image thanks to <a href="{{ page.headercreditlink }}">{{ page.headercredit }}</a>
+		</div>
+		{% endif %}
+      </div>
     </div>
   </div>
   <div class="post-related">

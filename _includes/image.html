@@ -1,6 +1,10 @@
 <div class="media">
 	<img alt="{{ include.caption }}" src="{{ include.image }}"/>
 	<div class="image-caption">
-		{{ include.caption }} (Photo by <a href="{{ include.creditlink }}">{{ include.credit }}</a>)
+		{% if include.creditlink != null %}
+		{{ include.caption }} (Video by <a href="{{ include.creditlink }}">{{ include.credit }}</a>)
+		{% else %}
+		{{ include.caption }}
+		{% endif %}
 	</div>
 </div>
