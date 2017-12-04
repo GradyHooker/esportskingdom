@@ -589,12 +589,32 @@ header {
   flex-direction: column;
   max-width: 1060px;
   margin: 0 auto; }
+  @media screen and (max-width: 820px) {
+    .posts {
+      font-size: 0.9em; } }
+  @media screen and (max-width: 768px) {
+    .posts {
+      font-size: 0.8em;
+      padding: 10px;
+      padding-top: 15px; } }
+  @media screen and (max-width: 400px) {
+    .posts {
+      font-size: 0.7em; } }
   .posts .post-link {
     text-decoration: none;
-    color: black; }
+    color: black;
+    margin-bottom: 20px;
+    transition: 0.15s; }
+    @media screen and (max-width: 600px) {
+      .posts .post-link {
+        margin-bottom: 10px; } }
+    .posts .post-link:hover {
+      margin-bottom: 18px; }
+      @media screen and (max-width: 600px) {
+        .posts .post-link:hover {
+          margin-bottom: 9px; } }
     .posts .post-link .post {
       display: flex;
-      margin-bottom: 20px;
       padding: 20px;
       background: #FFF;
       border-radius: 5px;
@@ -603,15 +623,41 @@ header {
       transition: 0.15s;
       position: relative;
       overflow: hidden; }
+      @media screen and (max-width: 768px) {
+        .posts .post-link .post {
+          padding: 15px; } }
+      @media screen and (max-width: 400px) {
+        .posts .post-link .post {
+          padding: 10px; } }
       .posts .post-link .post:hover {
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-        margin-top: 2px;
-        margin-bottom: 18px; }
+        margin-top: 2px; }
       .posts .post-link .post .post-boximage {
         height: 100px;
         width: 200px; }
+        @media screen and (max-width: 950px) {
+          .posts .post-link .post .post-boximage {
+            display: none; } }
+      .posts .post-link .post .post-boximage-square {
+        display: none;
+        height: 100px;
+        width: 100px; }
+        @media screen and (max-width: 950px) {
+          .posts .post-link .post .post-boximage-square {
+            display: block; } }
+        @media screen and (max-width: 768px) {
+          .posts .post-link .post .post-boximage-square {
+            height: 50px;
+            width: 50px; } }
       .posts .post-link .post .post-summary-cont {
-        margin-left: 16px; }
+        margin-left: 16px;
+        width: 100%; }
+        @media screen and (max-width: 600px) {
+          .posts .post-link .post .post-summary-cont {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center; } }
         .posts .post-link .post .post-summary-cont .post-title {
           font-weight: 600;
           font-size: 1.2em; }
@@ -625,6 +671,20 @@ header {
             padding-right: 4px; }
           .posts .post-link .post .post-summary-cont .post-details .post-detaillinks {
             display: flex; }
+            @media screen and (max-width: 600px) {
+              .posts .post-link .post .post-summary-cont .post-details .post-detaillinks {
+                display: none; } }
+          @media screen and (max-width: 600px) {
+            .posts .post-link .post .post-summary-cont .post-details .post-date {
+              width: 65px;
+              text-align: right; } }
+          @media screen and (max-width: 400px) {
+            .posts .post-link .post .post-summary-cont .post-details .post-date {
+              font-size: 1.1em;
+              width: 60px; } }
+        @media screen and (max-width: 768px) {
+          .posts .post-link .post .post-summary-cont .post-entry {
+            display: none; } }
       .posts .post-link .post .post-character {
         position: absolute;
         height: 120%;
