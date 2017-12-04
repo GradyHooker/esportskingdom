@@ -3,14 +3,41 @@
 	flex-direction: column;
     max-width: 1060px;
 	margin: 0 auto;
+	
+	@media screen and (max-width: $break-medium) {
+		font-size: 0.9em;
+	}
+	
+	@media screen and (max-width: $break-small) {
+		font-size: 0.8em;
+		padding: 10px;
+		padding-top: 15px;
+	}
+	
+	@media screen and (max-width: $break-supertiny) {
+		font-size: 0.7em;
+	}
 
 	.post-link {
 		text-decoration: none;
 		color: black;
+		margin-bottom: 20px;
+		transition: 0.15s;
+		
+		@media screen and (max-width: $break-tiny) {
+			margin-bottom: 10px;
+		}
+		
+		&:hover {
+			margin-bottom: 18px;
+			
+			@media screen and (max-width: $break-tiny) {
+				margin-bottom: 9px;
+			}
+		}
 		
 		.post {
 			display: flex;
-			margin-bottom: 20px;
 			padding: 20px;
 			background: #FFF;
 			border-radius: 5px;
@@ -19,20 +46,54 @@
 			transition: 0.15s;
 			position: relative;
 			overflow: hidden;
+			
+			@media screen and (max-width: $break-small) {
+				padding: 15px;
+			}
+			
+			@media screen and (max-width: $break-supertiny) {
+				padding: 10px;
+			}
 
 			&:hover {
 				box-shadow: 0 1px 0 rgba(0,0,0,0.1);
 				margin-top: 2px;
-				margin-bottom: 18px;
 			}
 
 			.post-boximage {
 				height: 100px;
 				width: 200px;
+				
+				@media screen and (max-width: $break-large) {
+					display: none;
+				}
+			}
+			
+			.post-boximage-square {
+				display: none;
+				height: 100px;
+				width: 100px;
+				
+				@media screen and (max-width: $break-large) {
+					display: block;
+				}
+				
+				@media screen and (max-width: $break-small) {
+					height: 50px;
+					width: 50px;
+				}
 			}
 			
 			.post-summary-cont {
 				margin-left: 16px;
+				width: 100%;
+				
+				@media screen and (max-width: $break-tiny) {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+				}
 				
 				.post-title {
 					font-weight: 600;
@@ -52,6 +113,28 @@
 					
 					.post-detaillinks {
 						display: flex;
+						
+						@media screen and (max-width: $break-tiny) {
+							display: none;
+						}
+					}
+					
+					.post-date {
+						@media screen and (max-width: $break-tiny) {
+							width: 65px;
+							text-align: right;
+						}
+						
+						@media screen and (max-width: $break-supertiny) {
+							font-size: 1.1em;
+							width: 60px;
+						}
+					}
+				}
+				
+				.post-entry {
+					@media screen and (max-width: $break-small) {
+						display: none;
 					}
 				}
 			}
