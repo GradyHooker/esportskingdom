@@ -45,7 +45,6 @@ autopages:
     permalink: '/:tag'
 
 # Build settings
-markdown: kramdown
 plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap
