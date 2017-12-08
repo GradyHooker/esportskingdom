@@ -25,7 +25,21 @@
 	{% else %}
 	<title>Esports Kingdom</title>
 	<meta name="description" content="{{ site.description }}">	
-	<!--TODO: Add Social META for non-articles-->
+	
+	<!-- Open Graph data -->
+	<meta property="og:type" content="blog">
+	<meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:url" content="{{ site.url }}">
+	<meta property="og:title" content="{{ site.title }}">
+	<meta property="og:description" content="{{ site.description }}">	
+	<meta property="og:image" content="{{ site.url }}/assets/logo_large.png" >
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@KingOfEsports" />
+	<meta name="twitter:title" content="{{ site.title }}">
+	<meta name="twitter:description" content="{{ site.description }}">	
+	<meta name="twitter:image" content="{{ site.url }}/assets/logo_large.png">
 	{% endif %}
 	
 	<!-- Favicon -->
