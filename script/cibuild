@@ -27,8 +27,8 @@ cp CNAME _site
 mkdir _site/assets/logos/medium
 mkdir _site/assets/logos/tiny
 cd _site/assets/logos/original
-mogrify -path ../medium -resize 80x80 -format png *.png
-mogrify -path ../tiny -resize 24x24 -format png *.png
+mogrify -path ../medium -filter Triangle -define filter:support=2 -thumbnail 80 -unsharp 0.25x0.25+8+0.065 -dither None -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB -format png -strip *.png
+mogrify -path ../tiny -filter Triangle -define filter:support=2 -thumbnail 24 -unsharp 0.25x0.25+8+0.065 -dither None -posterize 136 -quality 82 -define jpeg:fancy-upsampling=off -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB -format png -strip *.png
 cd ../../../../
 
 # push
