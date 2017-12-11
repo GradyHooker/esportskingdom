@@ -2,6 +2,8 @@
 layout: base
 type: post
 ---
+{% assign author = page.author | first %}
+{% assign headercredit = page.headercredit | first %}
 <div class="page-main">
   <div class="post-container">
 	<div class="post-banner"/>
@@ -11,13 +13,13 @@ type: post
 		<div class="post-title-text">{{ page.fulltitle }}</div>
 	</h1>
     <div class="post-details">
-		{% if page.authortwitter != null %}
+		{% if author.twitter != null %}
         <h2 class="page-box__subheading">
-		  Written By: {{ page.author }} (<a href="https://twitter.com/{{ page.authortwitter }}">@{{ page.authortwitter }}</a>)
+		  Written By: {{ author.name }} (<a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>)
 		</h2>
 		{% else %}
         <h2 class="page-box__subheading">
-		  Written By: {{ page.author }}
+		  Written By: {{ author.name }}
 		</h2>
 		{% endif %}
 		{% assign today = site.time | date: '%s' %}
@@ -47,18 +49,18 @@ type: post
 	<div class="post-content">
       {{ content }}
 	  <div class="post-footer">
-	    {% if page.authortwitter != null %}
+	    {% if author.twitter != null %}
         <div>
-		  Written By: {{ page.author }} (<a href="https://twitter.com/{{ page.authortwitter }}">@{{ page.authortwitter }}</a>)
+		  Written By: {{ author.name }} (<a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>)
 		</div>
 		{% else %}
         <div>
-		  Written By: {{ page.author }}
+		  Written By: {{ author.name }}
 		</div>
 		{% endif %}
-		{% if page.headercredit != null %}
+		{% if headercredit.name != null %}
 		<div>
-		  Header image thanks to <a href="{{ page.headercreditlink }}">{{ page.headercredit }}</a>
+		  Header image thanks to <a href="{{ headercredit.link }}">{{ headercredit.name }}</a>
 		</div>
 		{% endif %}
       </div>
