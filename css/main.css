@@ -186,11 +186,12 @@ body {
     width: 250px;
     flex-shrink: 0;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    text-align: center; }
     @media screen and (max-width: 950px) {
       .page-main .post-related {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         width: 100%; } }
     @media screen and (max-width: 600px) {
@@ -198,22 +199,49 @@ body {
         padding-left: 15px;
         padding-right: 15px;
         width: calc(100% - 30px); } }
-    .page-main .post-related .post {
-      display: flex;
-      margin-bottom: 20px;
-      padding: 10px;
-      background: #FFF;
-      border-radius: 5px;
-      box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
-      line-height: 1.6;
-      transition: 0.15s; }
+    .page-main .post-related h1 {
+      margin-bottom: 6px;
+      font-weight: bold;
+      font-size: 1.2em; }
       @media screen and (max-width: 950px) {
-        .page-main .post-related .post {
-          width: 250px; } }
-      .page-main .post-related .post:hover {
-        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-        margin-top: 2px;
-        margin-bottom: 18px; }
+        .page-main .post-related h1 {
+          display: none; } }
+    .page-main .post-related a {
+      text-decoration: none;
+      color: black; }
+      .page-main .post-related a .post {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding: 10px;
+        background: #FFF;
+        border-radius: 5px;
+        box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+        line-height: 1.6;
+        transition: 0.15s;
+        font-size: 0.95em;
+        line-height: 1.3em; }
+        .page-main .post-related a .post:hover {
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+          margin-top: 2px;
+          margin-bottom: 18px; }
+        @media screen and (max-width: 950px) {
+          .page-main .post-related a .post {
+            width: 250px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px; }
+            .page-main .post-related a .post:hover {
+              box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+              margin-top: 2px;
+              margin-bottom: 8px; } }
+        @media screen and (max-width: 400px) {
+          .page-main .post-related a .post {
+            width: calc(100% - 40px); } }
+        .page-main .post-related a .post .post-image {
+          flex-shrink: 0;
+          width: 100%;
+          margin-bottom: 8px; }
 
 .logoheadline {
   display: flex;
