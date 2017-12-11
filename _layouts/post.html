@@ -2,7 +2,7 @@
 layout: base
 type: post
 ---
-{% assign author = page.author | first %}
+{% assign author = site.data.authors[page.author] %}
 {% assign headercredit = page.headercredit | first %}
 <div class="page-main">
   <div class="post-container">
