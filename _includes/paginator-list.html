@@ -13,11 +13,14 @@
 			
 			<div class="post-details">
 				<div class="post-detaillinks">
-					<div class="post-game pretty-print">{{ post.category }}</div>
+					{% assign category-metadata = site.data.mappings | where:"id",post.category | first %}
+					<div class="post-game pretty-print">{{ category-metadata.title }}</div>
 					<div class="post-separator">|</div>
-					<div class="post-genre pretty-print">{{ post.tags[1] }}</div>
+					{% assign category-metadata = site.data.mappings | where:"id",post.tags[1] | first %}
+					<div class="post-genre pretty-print">{{ category-metadata.title }}</div>
 					<div class="post-separator">|</div>
-					<div class="post-show pretty-print">{{ post.tags[2] }}</div>
+					{% assign category-metadata = site.data.mappings | where:"id",post.tags[2] | first %}
+					<div class="post-show pretty-print">{{ category-metadata.title }}</div>
 				</div>
 				{% assign today = site.time | date: '%s' %}
 				{% assign start = post.circa | date: '%s' %}

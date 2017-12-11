@@ -1,0 +1,76 @@
+- id: counter-strike
+  title: Counter-Strike
+- id: call-of-duty
+  title: Call of Duty
+- id: halo
+  title: Halo
+- id: overwatch
+  title: Overwatch
+- id: pubg
+  title: PUBG
+- id: rainbow-six
+  title: Rainbow Six
+- id: dota-2
+  title: DOTA 2
+- id: heroes-of-the-storm
+  title: Heroes of the Storm
+- id: league-of-legends
+  title: League of Legends
+- id: starcraft
+  title: Starcraft
+- id: marvel-v-capcom
+  title: Marvel vs. Capcom
+- id: smash-bros
+  title: Super Bros.
+- id: street-fighter
+  title: Street Fighter
+- id: tekken
+  title: Tekken
+- id: gt-sport
+  title: GT Sport
+- id: fifa
+  title: FIFA
+- id: madden
+  title: Madden
+- id: nba
+  title: NBA
+- id: rocket-league
+  title: Rocket League
+- id: hearthstone
+  title: Hearthstone
+- id: pokemon
+  title: Pokemon
+- id: fps-games
+  title: FPS Games
+- id: moba-rts-games
+  title: MOBA/RTS Games
+- id: fighting-games
+  title: Fighting Games
+- id: sports-games
+  title: Sports Games
+- id: other-games
+  title: Other Games
+- id: multiple-games
+  title: Multiple Games
+- id: features
+  title: Feature Articles
+- id: weekly
+  title: Weekly Articles
+- id: game-updates
+  title: Game Updates
+- id: event-previews
+  title: Event Previews
+- id: event-recaps
+  title: Event Recaps
+- id: from-the-event
+  title: From The Event
+- id: interviews
+  title: Interviews
+- id: other-articles
+  title: Other Articles
+- id: lesser-tournament
+  title: Lesser Tournament Lowdown
+- id: roster-change
+  title: Roster Change Roundup
+- id: this-week-in
+  title: This Week In...
