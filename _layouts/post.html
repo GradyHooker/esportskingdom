@@ -66,24 +66,23 @@ type: post
       </div>
     </div>
   </div>
-  <!--<div class="post-related">
-		<div class="post">
-		efsefesfesfsef
-		</div>
-		<div class="post">
-		efsefesfesfsef
-		</div>
-		<div class="post">
-		efsefesfesfsef
-		</div>
-		<div class="post">
-		efsefesfesfsef
-		</div>
-		<div class="post">
-		efsefesfesfsef
-		</div>
-		<div class="post">
-		efsefesfesfsef
-		</div>
-  </div>-->
+  {% unless page.category == null %}
+  {% capture pageCategory %}{{ page.category }}{% endcapture %}
+  {% unless site.categories[pageCategory].size == 1 %}
+  <div class="post-related">
+    <h1>Related Posts</h1>
+    {% for post in site.categories[pageCategory] limit:6 %}
+    {% unless post.title == page.title %}
+	<a class="post-link" href="{{ site.baseurl }}{{ post.url | replace: '.html', ''}}">
+	  <div class="post">
+	    <img class="post-image" src="{{ site.url }}/assets/{{ post.image }}-small.jpg" alt="{{ post.title | escape }}"/>
+	    <p>{{ post.title }}</p>
+	  </div>
+	</a>
+	{% endunless %}
+    {% endfor %}
+  </div>
+  {% endunless %}
+  {% endunless %}
+  </div>
 </div>
