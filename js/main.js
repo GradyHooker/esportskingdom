@@ -17,16 +17,6 @@ $(document).ready(function() {
 	if(pg != null) {
 		pg.classList.add("active");
 	}
-	
-	//Pretty Print all of the Names
-	$.getJSON("/json/prettyPrintMaps.json", function( data ) {
-		$(".pretty-print").each(function(index) {
-			var prettyPrint = data[$(this).text()];
-			if(prettyPrint != "" && prettyPrint != undefined) {
-				$(this).text(prettyPrint);
-			}
-		});
-	});
-	
+
 	//Rewrite times
 });
