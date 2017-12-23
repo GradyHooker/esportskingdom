@@ -14,14 +14,14 @@
     <meta property="og:url" content="{{ site.url | append: page.url | remove: '.html'}}">
 	<meta property="og:title" content="{{ page.title | escape }}">
 	<meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 300 }}">
-	<meta property="og:image" content="{{ site.url }}/assets/{{ page.wideimage }}.jpg" >
+	<meta property="og:image" content="{{ site.url }}/assets/banner/{{ page.wideimage }}.jpg" >
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@KingOfEsports" />
 	<meta name="twitter:title" content="{{ page.title | escape }}">
 	<meta name="twitter:description" content="{{ page.excerpt | strip_html | truncatewords: 200 }}">
-	<meta name="twitter:image" content="{{ site.url }}/assets/{{ page.wideimage }}.jpg">
+	<meta name="twitter:image" content="{{ site.url }}/assets/banner/{{ page.wideimage }}.jpg">
 	{% else %}
 	<title>Esports Kingdom</title>
 	<meta name="description" content="{{ site.description }}">	
