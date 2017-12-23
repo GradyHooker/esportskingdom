@@ -22,28 +22,8 @@
 					{% assign category-metadata = site.data.mappings | where:"id",post.tags[2] | first %}
 					<div class="post-show pretty-print">{{ category-metadata.title }}</div>
 				</div>
-				{% assign today = site.time | date: '%s' %}
-				{% assign start = post.circa | date: '%s' %}
-				{% assign secondsSince = today | minus: start %}
-				{% assign minutesSince = secondsSince | divided_by: 60 %}
-				{% assign hoursSince = minutesSince | divided_by: 60 %}
-				{% assign daysSince = hoursSince | divided_by: 24 %}
-				{% if minutesSince == 1 %}
-					{% assign displayTime = "a minute ago" %}
-				{% elsif minutesSince <= 59 %}
-					{% assign displayTime = minutesSince | append: " minutes ago" %}
-				{% elsif hoursSince == 1 %}
-					{% assign displayTime = "an hour ago" %}
-				{% elsif hoursSince <= 23 %}
-					{% assign displayTime = hoursSince | append: " hours ago" %}
-				{% elsif daysSince == 1 %}
-					{% assign displayTime = "a day ago" %}
-				{% elsif daysSince <= 6 %}
-					{% assign displayTime = daysSince | append: " days ago" %}
-				{% else %}
-					{% assign displayTime = post.circa | date: "%Y.%m.%d" %}
-				{% endif %}
-				<div class="post-date"><time datetime="{{ post.circa }}" title="{{ post.circa | date: '%d %B %Y at %r' }}">{{ displayTime }}</time></div>
+				{% assign displayTime = post.circa | date: "%Y.%m.%d" %}
+				<div class="post-date"><time datetime="{{ post.circa }}" title="{{ post.circa | date: '%d %B %Y at %r' }}" data-format="timeSince">{{ displayTime }}</time></div>
 			</div>
 
 			<div class="post-entry">
@@ -51,9 +31,10 @@
 			</div>
 		  </div>
 		  {% for image in site.static_files %}
-			{% if image.path contains post.category | prepend: "/characters/" %}
+		    {% assign charPath = post.category | prepend: "/characters/" %}
+			{% if image.path contains charPath %}
 		  <div class="post-character">
-			<img src="{{ site.url }}/assets/characters/{{ post.category }}.png" alt="{{ post.category }} character"/>
+			<img src="{{ image.path }}" alt="{{ post.category }} character"/>
 		  </div>
 			{% endif %}
 		  {% endfor %}
