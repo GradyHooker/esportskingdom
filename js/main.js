@@ -22,15 +22,15 @@ $(document).ready(function() {
 	var times = $('time');
 	var now = new Date($.now());
 	var time, utc1, utc2, diffDays, diffHours, diffMins, displayTime;
-		
+	utc2 = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes());
+	console.log("Today - " + utc2);
+
 	times.each(function() {
 		displayTime = "";
 		time = new Date($(this).attr("datetime"));
-		utc1 = Date.UTC(time.getFullYear(), time.getMonth(), time.getDate(), time.getHours(), time.getMinutes(), time.getSeconds());
-		utc2 = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours(), now.getMinutes(), now.getSeconds());
+		utc1 = Date.UTC(time.getUTCFullYear(), time.getUTCMonth(), time.getUTCDate(), time.getUTCHours(), time.getUTCMinutes());
 		
 		console.log(utc1);
-		console.log(utc2);
 		
 		diffMins = Math.floor((utc2 - utc1) / 1000 / 60);
 		diffHours = Math.floor(diffMins / 60);
