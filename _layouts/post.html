@@ -22,29 +22,9 @@ type: post
 		  Written By: {{ author.name }}
 		</h2>
 		{% endif %}
-		{% assign today = site.time | date: '%s' %}
-		{% assign start = page.circa | date: '%s' %}
-		{% assign secondsSince = today | minus: start %}
-		{% assign minutesSince = secondsSince | divided_by: 60 %}
-		{% assign hoursSince = minutesSince | divided_by: 60 %}
-		{% assign daysSince = hoursSince | divided_by: 24 %}
-		{% if minutesSince == 1 %}
-			{% assign displayTime = "a minute ago" %}
-		{% elsif minutesSince <= 59 %}
-			{% assign displayTime = minutesSince | append: " minutes ago" %}
-		{% elsif hoursSince == 1 %}
-			{% assign displayTime = "an hour ago" %}
-		{% elsif hoursSince <= 23 %}
-			{% assign displayTime = hoursSince | append: " hours ago" %}
-		{% elsif daysSince == 1 %}
-			{% assign displayTime = "a day ago" %}
-		{% elsif daysSince <= 6 %}
-			{% assign displayTime = daysSince | append: " days ago" %}
-		{% else %}
-			{% assign displayTime = page.circa | date: "%Y.%m.%d" %}
-		{% endif %}
+		{% assign displayTime = post.circa | date: "%Y.%m.%d" %}
 		<div class="post-date"></div>
-		<h2 class="page-box__subheading"><time datetime="{{ page.circa }}" title="{{ page.circa | date: '%d %B %Y at %r' }}">{{ displayTime }}</time></h2>
+		<h2 class="page-box__subheading"><time datetime="{{ page.circa }}" title="{{ page.circa | date: '%d %B %Y at %r' }}" data-format="timeSince">{{ displayTime }}</time></h2>
 	</div>
 	<div class="post-content">
       {{ content }}
