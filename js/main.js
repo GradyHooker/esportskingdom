@@ -21,25 +21,31 @@ $(document).ready(function() {
 	//Rewrite times
 	var times = $('time');
 	var now = new Date($.now());
-	var time, utc1, utc2, diffDays, diffHours, diffMins, displayTime;
+	var time, utc1, utc2, diffDays, diffHours, diffMins, displayTime, format;
 	utc2 = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes());
 
 	times.each(function() {
 		displayTime = "";
 		time = new Date($(this).attr("datetime"));
 		utc1 = Date.UTC(time.getUTCFullYear(), time.getUTCMonth(), time.getUTCDate(), time.getUTCHours(), time.getUTCMinutes());
+		format = $(times).data("format");
+		
+		switch(format) {
+			case "timeSince": {
+				diffMins = Math.floor((utc2 - utc1) / 1000 / 60);
+				diffHours = Math.floor(diffMins / 60);
+				diffDays = Math.floor(diffHours / 24);
 				
-		diffMins = Math.floor((utc2 - utc1) / 1000 / 60);
-		diffHours = Math.floor(diffMins / 60);
-		diffDays = Math.floor(diffHours / 24);
-		
-		if(diffMins == 1) displayTime = "a minute ago"
-		else if(diffMins <= 59) displayTime = diffMins + " minutes ago"
-		else if(diffHours == 1) displayTime = "an hour ago"
-		else if(diffHours <= 23) displayTime = diffHours + " hours ago"
-		else if(diffDays == 1) displayTime = "a day ago"
-		else if(diffDays <= 6) displayTime = diffDays + " days ago"
-		
-		if(displayTime != "") $(this).text(displayTime);
+				if(diffMins == 1) displayTime = "a minute ago"
+				else if(diffMins <= 59) displayTime = diffMins + " minutes ago"
+				else if(diffHours == 1) displayTime = "an hour ago"
+				else if(diffHours <= 23) displayTime = diffHours + " hours ago"
+				else if(diffDays == 1) displayTime = "a day ago"
+				else if(diffDays <= 6) displayTime = diffDays + " days ago"
+				
+				if(displayTime != "") $(this).text(displayTime);
+				break;
+			}
+		}
 	});
 });
