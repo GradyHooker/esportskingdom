@@ -22,8 +22,7 @@ type: post
 		  Written By: {{ author.name }}
 		</h2>
 		{% endif %}
-		{% assign displayTime = post.circa | date: "%Y.%m.%d" %}
-		<div class="post-date"></div>
+		{% assign displayTime = page.circa | date: "%Y.%m.%d" %}
 		<h2 class="page-box__subheading"><time datetime="{{ page.circa }}" title="{{ page.circa | date: '%d %B %Y at %r' }}" data-format="timeSince">{{ displayTime }}</time></h2>
 	</div>
 	<div class="post-content">
