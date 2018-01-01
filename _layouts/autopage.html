@@ -4,5 +4,6 @@ type: autopage
 pagination: 
   permalink: /:num/
 ---
-
+{% assign category-metadata = site.data.mappings | where:"id",page.title | first %}
+<h2 class="autopage-title">{{ category-metadata.title }}</h2>
 {% include paginator-list.html %}
