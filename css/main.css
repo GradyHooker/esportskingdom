@@ -596,7 +596,7 @@ header {
       padding: 65px 20px 0 !important; } }
 @media screen and (max-width: 768px) {
   .main {
-    padding: 40px 0px 0 !important;
+    padding: 50px 0px 0 !important;
     border-radius: 0px; }
 
   nav {
@@ -611,7 +611,7 @@ header {
     max-height: calc(100% - 65px); } }
 @media screen and (max-width: 600px) {
   .main {
-    padding: 40px 0px 0 !important;
+    padding: 50px 0px 0 !important;
     border-radius: 0px; } }
 .posts {
   display: flex;
@@ -763,6 +763,10 @@ header {
   font-weight: bold;
   margin: 0 auto;
   margin-bottom: 0.5em; }
+  @media screen and (max-width: 768px) {
+    .autopage-title {
+      margin-bottom: 0;
+      margin-top: 0.5em; } }
 
 .error {
   width: calc(100% - 40px);
