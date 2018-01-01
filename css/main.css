@@ -755,6 +755,15 @@ header {
     font-weight: bold;
     background-color: #f2f2f2; }
 
+.autopage-title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  max-width: 1060px;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-bottom: 0.5em; }
+
 .error {
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
