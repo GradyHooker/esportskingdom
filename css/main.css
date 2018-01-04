@@ -768,6 +768,106 @@ header {
       margin-bottom: 0;
       margin-top: 0.5em; } }
 
+.single-page-cont {
+  display: flex;
+  flex-direction: column;
+  max-width: 1060px;
+  margin: 0 auto; }
+  .single-page-cont .switch-button-cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .single-page-cont .switch-button-cont .switch-button {
+      margin: 6px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 0.5em;
+      color: black;
+      height: 42px;
+      width: 42px;
+      background: #FFF;
+      border-radius: 5px;
+      box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+      line-height: 1em;
+      font-size: 0.9em;
+      transition: 0.15s;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer; }
+      .single-page-cont .switch-button-cont .switch-button:hover {
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+        margin-top: 6px;
+        margin-bottom: 6px; }
+  .single-page-cont .heading-cont {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: relative; }
+    .single-page-cont .heading-cont .heading {
+      display: none;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%; }
+      .single-page-cont .heading-cont .heading.skgaming {
+        display: block; }
+  .single-page-cont .graph-cont {
+    display: flex;
+    justify-content: space-around; }
+    .single-page-cont .graph-cont .graph {
+      padding: 16px;
+      margin: 6px;
+      text-decoration: none;
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 0.5em;
+      color: black;
+      background: #FFF;
+      border-radius: 5px;
+      box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+      line-height: 1em;
+      font-size: 1em;
+      transition: 0.15s;
+      position: relative;
+      overflow: hidden;
+      position: relative; }
+      .single-page-cont .graph-cont .graph .graph-actual {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: none;
+        padding: 16px;
+        height: calc(100% - 32px);
+        width: calc(100% - 32px); }
+        .single-page-cont .graph-cont .graph .graph-actual.skgaming {
+          display: block; }
+        .single-page-cont .graph-cont .graph .graph-actual table {
+          width: 100%; }
+          .single-page-cont .graph-cont .graph .graph-actual table th {
+            font-weight: bold;
+            padding-bottom: 4px; }
+          .single-page-cont .graph-cont .graph .graph-actual table td, .single-page-cont .graph-cont .graph .graph-actual table th {
+            text-align: center;
+            vertical-align: middle; }
+            .single-page-cont .graph-cont .graph .graph-actual table td .logo-small, .single-page-cont .graph-cont .graph .graph-actual table th .logo-small {
+              padding-top: 4px;
+              padding-bottom: 4px; }
+    .single-page-cont .graph-cont .graph-teams {
+      width: 300px;
+      height: 542px; }
+    .single-page-cont .graph-cont .graph-maps {
+      width: 300px;
+      height: 300px; }
+
 .error {
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
