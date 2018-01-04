@@ -354,6 +354,52 @@ teamStats:
     - name: mousesports
       played: 9
       won: 3
+  g2:
+    - name: skgaming
+      played: 10
+      won: 7
+    - name: faze
+      played: 7
+      won: 1
+    - name: astralis
+      played: 8
+      won: 4
+    - name: cloud9
+      played: 9
+      won: 4
+    - name: virtuspro
+      played: 4
+      won: 1
+    - name: liquid
+      played: 4
+      won: 3
+    - name: gambit
+      played: 5
+      won: 2
+    - name: fnatic
+      played: 3
+      won: 2
+    - name: north
+      played: 10
+      won: 7.5
+    - name: immortals
+      played: 6
+      won: 4
+    - name: optic
+      played: 3
+      won: 2
+    - name: navi
+      played: 6
+      won: 3
+    - name: nip
+      played: 5
+      won: 4
+    - name: envyus
+      played: 4
+      won: 4
+    - name: mousesports
+      played: 3
+      won: 2
 mapStats:
   skgaming:
     - name: mirage
@@ -529,4 +575,29 @@ mapStats:
       won: 6
     - name: dust2-2017
       played: 1
+      won: 0
+  g2:
+    - name: mirage
+      played: 7
+      won: 5.5
+    - name: inferno-2017
+      played: 22
+      won: 13
+    - name: nuke
+      played: 11
+      won: 8
+    - name: train
+      played: 6
+      won: 1
+    - name: overpass
+      played: 17
+      won: 8
+    - name: cobblestone
+      played: 19
+      won: 14
+    - name: cache
+      played: 16
+      won: 10
+    - name: dust2-2017
+      played: 0
       won: 0
