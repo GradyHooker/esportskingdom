@@ -38,7 +38,14 @@ layout: base
 						{% else %}
 						<td>{{ enemy.played }}</td>
 						<td>{{ enemy.won }}</td>
-						<td>{{ enemy.won | times: 100.0 | divided_by: enemy.played | round: 2 }}%</td>
+						{% assign percent = enemy.won | times: 100.0 | divided_by: enemy.played | round: 2 %}
+						{% if percent < 40 %}
+						<td style="background-color: #F7977A">{{ percent }}%</td>
+						{% elsif percent <= 60 %}
+						<td style="background-color: #FFF79A">{{ percent }}%</td>
+						{% else %}
+						<td style="background-color: #82CA9D">{{ percent }}%</td>
+						{% endif %}
 						{% endif %}
 					</tr>
 					{% endfor %}
@@ -64,7 +71,14 @@ layout: base
 						{% else %}
 						<td>{{ map.played }}</td>
 						<td>{{ map.won }}</td>
-						<td>{{ map.won | times: 100.0 | divided_by: map.played | round: 2 }}%</td>
+						{% assign percent = map.won | times: 100.0 | divided_by: map.played | round: 2 %}
+						{% if percent < 40 %}
+						<td style="background-color: #F7977A">{{ percent }}%</td>
+						{% elsif percent <= 60 %}
+						<td style="background-color: #FFF79A">{{ percent }}%</td>
+						{% else %}
+						<td style="background-color: #82CA9D">{{ percent }}%</td>
+						{% endif %}
 						{% endif %}
 					</tr>
 					{% endfor %}
