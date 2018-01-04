@@ -821,6 +821,11 @@ header {
   .single-page-cont .graph-cont {
     display: flex;
     justify-content: space-around; }
+    @media screen and (max-width: 768px) {
+      .single-page-cont .graph-cont {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
     .single-page-cont .graph-cont .graph {
       padding: 16px;
       margin: 6px;
@@ -840,6 +845,10 @@ header {
       position: relative;
       overflow: hidden;
       position: relative; }
+      @media screen and (max-width: 400px) {
+        .single-page-cont .graph-cont .graph {
+          width: calc(100% - 64px) !important;
+          font-size: 0.9em; } }
       .single-page-cont .graph-cont .graph .graph-actual {
         position: absolute;
         top: 0px;
