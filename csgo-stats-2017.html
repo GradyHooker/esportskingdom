@@ -33,9 +33,13 @@ layout: base
 					{% for enemy in site.data.csgostats2017.teamStats[team.shortname] %}
 					<tr>
 						<td><img class="logo-small" src="{{ site.url }}/assets/logos/tiny/{{ enemy.name }}.png" alt="Logo for {{ enemy.name }}"/></td>
+						{% if enemy.played == 0 %}
+						<td colspan="3">Never Played</td>
+						{% else %}
 						<td>{{ enemy.played }}</td>
 						<td>{{ enemy.won }}</td>
 						<td>{{ enemy.won | times: 100.0 | divided_by: enemy.played | round: 2 }}%</td>
+						{% endif %}
 					</tr>
 					{% endfor %}
 				</table>

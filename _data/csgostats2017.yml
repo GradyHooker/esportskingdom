@@ -400,6 +400,374 @@ teamStats:
     - name: mousesports
       played: 3
       won: 2
+  fnatic:
+    - name: skgaming
+      played: 6
+      won: 1
+    - name: faze
+      played: 7
+      won: 1
+    - name: astralis
+      played: 8
+      won: 1
+    - name: cloud9
+      played: 3
+      won: 2
+    - name: virtuspro
+      played: 4
+      won: 1
+    - name: liquid
+      played: 4
+      won: 2
+    - name: gambit
+      played: 9
+      won: 5
+    - name: g2
+      played: 3
+      won: 1
+    - name: north
+      played: 2
+      won: 1
+    - name: immortals
+      played: 10
+      won: 5
+    - name: optic
+      played: 5
+      won: 4
+    - name: navi
+      played: 5
+      won: 2
+    - name: nip
+      played: 2
+      won: 2
+    - name: envyus
+      played: 4
+      won: 3
+    - name: mousesports
+      played: 5
+      won: 3
+  north:
+    - name: skgaming
+      played: 10
+      won: 2
+    - name: faze
+      played: 6
+      won: 2
+    - name: astralis
+      played: 4
+      won: 1.5
+    - name: cloud9
+      played: 5
+      won: 4
+    - name: virtuspro
+      played: 7
+      won: 3
+    - name: liquid
+      played: 6
+      won: 4
+    - name: gambit
+      played: 5
+      won: 4
+    - name: g2
+      played: 10
+      won: 2.5
+    - name: fnatic
+      played: 2
+      won: 1
+    - name: immortals
+      played: 8
+      won: 6
+    - name: optic
+      played: 7
+      won: 5
+    - name: navi
+      played: 3
+      won: 2
+    - name: nip
+      played: 2
+      won: 0
+    - name: envyus
+      played: 0
+      won: 0
+    - name: mousesports
+      played: 2
+      won: 2
+  immortals:
+    - name: skgaming
+      played: 5
+      won: 2
+    - name: faze
+      played: 5
+      won: 0
+    - name: astralis
+      played: 3
+      won: 1
+    - name: cloud9
+      played: 9
+      won: 6
+    - name: virtuspro
+      played: 3
+      won: 3
+    - name: liquid
+      played: 2
+      won: 1
+    - name: gambit
+      played: 5
+      won: 1
+    - name: g2
+      played: 6
+      won: 2
+    - name: fnatic
+      played: 10
+      won: 5
+    - name: north
+      played: 8
+      won: 2
+    - name: optic
+      played: 1
+      won: 1
+    - name: navi
+      played: 1
+      won: 1
+    - name: nip
+      played: 1
+      won: 1
+    - name: envyus
+      played: 1
+      won: 0
+    - name: mousesports
+      played: 2
+      won: 2
+  optic:
+    - name: skgaming
+      played: 8
+      won: 2
+    - name: faze
+      played: 5
+      won: 1
+    - name: astralis
+      played: 3
+      won: 0
+    - name: cloud9
+      played: 5
+      won: 2
+    - name: virtuspro
+      played: 1
+      won: 0
+    - name: liquid
+      played: 7
+      won: 3
+    - name: gambit
+      played: 4
+      won: 2
+    - name: g2
+      played: 3
+      won: 1
+    - name: fnatic
+      played: 5
+      won: 1
+    - name: north
+      played: 7
+      won: 2
+    - name: immortals
+      played: 1
+      won: 0
+    - name: navi
+      played: 1
+      won: 1
+    - name: nip
+      played: 2
+      won: 0
+    - name: envyus
+      played: 5
+      won: 2
+    - name: mousesports
+      played: 4
+      won: 1
+  navi:
+    - name: skgaming
+      played: 4
+      won: 2
+    - name: faze
+      played: 4
+      won: 2
+    - name: astralis
+      played: 9
+      won: 1
+    - name: cloud9
+      played: 7
+      won: 2
+    - name: virtuspro
+      played: 5
+      won: 3
+    - name: liquid
+      played: 2
+      won: 1
+    - name: gambit
+      played: 1
+      won: 0
+    - name: g2
+      played: 6
+      won: 3
+    - name: fnatic
+      played: 5
+      won: 3
+    - name: north
+      played: 3
+      won: 1
+    - name: immortals
+      played: 1
+      won: 0
+    - name: optic
+      played: 1
+      won: 0
+    - name: nip
+      played: 3
+      won: 1
+    - name: envyus
+      played: 5
+      won: 5
+    - name: mousesports
+      played: 7
+      won: 4
+  nip:
+    - name: skgaming
+      played: 6
+      won: 2
+    - name: faze
+      played: 8
+      won: 4.5
+    - name: astralis
+      played: 5
+      won: 1
+    - name: cloud9
+      played: 12
+      won: 5
+    - name: virtuspro
+      played: 3
+      won: 3
+    - name: liquid
+      played: 3
+      won: 1
+    - name: gambit
+      played: 3
+      won: 2
+    - name: g2
+      played: 5
+      won: 1
+    - name: fnatic
+      played: 2
+      won: 0
+    - name: north
+      played: 2
+      won: 2
+    - name: immortals
+      played: 1
+      won: 0
+    - name: optic
+      played: 2
+      won: 2
+    - name: navi
+      played: 3
+      won: 2
+    - name: envyus
+      played: 7
+      won: 4
+    - name: mousesports
+      played: 1
+      won: 1
+  envyus:
+    - name: skgaming
+      played: 6
+      won: 2
+    - name: faze
+      played: 3
+      won: 0
+    - name: astralis
+      played: 1
+      won: 0
+    - name: cloud9
+      played: 3
+      won: 2
+    - name: virtuspro
+      played: 5
+      won: 2.5
+    - name: liquid
+      played: 4
+      won: 2
+    - name: gambit
+      played: 0
+      won: 0
+    - name: g2
+      played: 4
+      won: 0
+    - name: fnatic
+      played: 4
+      won: 1
+    - name: north
+      played: 0
+      won: 0
+    - name: immortals
+      played: 1
+      won: 1
+    - name: optic
+      played: 5
+      won: 3
+    - name: navi
+      played: 5
+      won: 0
+    - name: nip
+      played: 7
+      won: 3
+    - name: mousesports
+      played: 1
+      won: 1
+  mousesports:
+    - name: skgaming
+      played: 5
+      won: 0
+    - name: faze
+      played: 7
+      won: 4
+    - name: astralis
+      played: 3
+      won: 2
+    - name: cloud9
+      played: 5
+      won: 1
+    - name: virtuspro
+      played: 5
+      won: 2
+    - name: liquid
+      played: 7
+      won: 4
+    - name: gambit
+      played: 9
+      won: 6
+    - name: g2
+      played: 3
+      won: 1
+    - name: fnatic
+      played: 5
+      won: 2
+    - name: north
+      played: 2
+      won: 0
+    - name: immortals
+      played: 2
+      won: 0
+    - name: optic
+      played: 4
+      won: 3
+    - name: navi
+      played: 7
+      won: 3
+    - name: nip
+      played: 1
+      won: 0
+    - name: envyus
+      played: 1
+      won: 0
 mapStats:
   skgaming:
     - name: mirage
@@ -600,4 +968,204 @@ mapStats:
       won: 10
     - name: dust2-2017
       played: 0
+      won: 0
+  fnatic:
+    - name: mirage
+      played: 24
+      won: 12
+    - name: inferno-2017
+      played: 19
+      won: 10
+    - name: nuke
+      played: 3
+      won: 1
+    - name: train
+      played: 20
+      won: 9
+    - name: overpass
+      played: 12
+      won: 3
+    - name: cobblestone
+      played: 10
+      won: 8
+    - name: cache
+      played: 8
+      won: 2
+    - name: dust2-2017
+      played: 2
+      won: 2
+  north:
+    - name: mirage
+      played: 19
+      won: 11.5
+    - name: inferno-2017
+      played: 16
+      won: 8
+    - name: nuke
+      played: 9
+      won: 5
+    - name: train
+      played: 6
+      won: 4
+    - name: overpass
+      played: 10
+      won: 6.5
+    - name: cobblestone
+      played: 27
+      won: 14
+    - name: cache
+      played: 8
+      won: 2
+    - name: dust2-2017
+      played: 0
+      won: 0
+  immortals:
+    - name: mirage
+      played: 13
+      won: 6
+    - name: inferno-2017
+      played: 21
+      won: 14
+    - name: nuke
+      played: 0
+      won: 0
+    - name: train
+      played: 15
+      won: 8
+    - name: overpass
+      played: 13
+      won: 6
+    - name: cobblestone
+      played: 19
+      won: 12
+    - name: cache
+      played: 11
+      won: 8
+    - name: dust2-2017
+      played: 0
+      won: 0
+  optic:
+    - name: mirage
+      played: 17
+      won: 10
+    - name: inferno-2017
+      played: 9
+      won: 2
+    - name: nuke
+      played: 7
+      won: 3
+    - name: train
+      played: 22
+      won: 9
+    - name: overpass
+      played: 11
+      won: 4
+    - name: cobblestone
+      played: 13
+      won: 4
+    - name: cache
+      played: 6
+      won: 1
+    - name: dust2-2017
+      played: 0
+      won: 0
+  navi:
+    - name: mirage
+      played: 17
+      won: 6
+    - name: inferno-2017
+      played: 13
+      won: 7
+    - name: nuke
+      played: 8
+      won: 3
+    - name: train
+      played: 15
+      won: 12
+    - name: overpass
+      played: 14
+      won: 6
+    - name: cobblestone
+      played: 12
+      won: 7
+    - name: cache
+      played: 0
+      won: 0
+    - name: dust2-2017
+      played: 2
+      won: 1
+  nip:
+    - name: mirage
+      played: 4
+      won: 2
+    - name: inferno-2017
+      played: 11
+      won: 5
+    - name: nuke
+      played: 6
+      won: 4
+    - name: train
+      played: 13
+      won: 8.5
+    - name: overpass
+      played: 14
+      won: 5
+    - name: cobblestone
+      played: 11
+      won: 5
+    - name: cache
+      played: 16
+      won: 10
+    - name: dust2-2017
+      played: 0
+      won: 0
+  envyus:
+    - name: mirage
+      played: 6
+      won: 2
+    - name: inferno-2017
+      played: 18
+      won: 10
+    - name: nuke
+      played: 10
+      won: 1
+    - name: train
+      played: 17
+      won: 9.5
+    - name: overpass
+      played: 9
+      won: 4
+    - name: cobblestone
+      played: 29
+      won: 16
+    - name: cache
+      played: 21
+      won: 12
+    - name: dust2-2017
+      played: 4
+      won: 4
+  mousesports:
+    - name: mirage
+      played: 16
+      won: 7
+    - name: inferno-2017
+      played: 11
+      won: 3
+    - name: nuke
+      played: 15
+      won: 12
+    - name: train
+      played: 18
+      won: 12
+    - name: overpass
+      played: 5
+      won: 3
+    - name: cobblestone
+      played: 19
+      won: 11
+    - name: cache
+      played: 5
+      won: 2
+    - name: dust2-2017
+      played: 1
       won: 0
