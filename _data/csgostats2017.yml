@@ -216,6 +216,98 @@ teamStats:
     - name: mousesports
       played: 5
       won: 4
+  virtuspro:
+    - name: skgaming
+      played: 18
+      won: 8
+    - name: faze
+      played: 4
+      won: 2
+    - name: astralis
+      played: 9
+      won: 4
+    - name: cloud9
+      played: 2
+      won: 2
+    - name: liquid
+      played: 4
+      won: 2
+    - name: gambit
+      played: 6
+      won: 3
+    - name: g2
+      played: 4
+      won: 3
+    - name: fnatic
+      played: 4
+      won: 3
+    - name: north
+      played: 7
+      won: 4
+    - name: immortals
+      played: 3
+      won: 0
+    - name: optic
+      played: 1
+      won: 1
+    - name: navi
+      played: 5
+      won: 2
+    - name: nip
+      played: 3
+      won: 0
+    - name: envyus
+      played: 5
+      won: 2.5
+    - name: mousesports
+      played: 5
+      won: 3
+  liquid:
+    - name: skgaming
+      played: 8
+      won: 5
+    - name: faze
+      played: 9
+      won: 0
+    - name: astralis
+      played: 13
+      won: 4
+    - name: cloud9
+      played: 5
+      won: 1
+    - name: virtuspro
+      played: 4
+      won: 2
+    - name: gambit
+      played: 3
+      won: 1
+    - name: g2
+      played: 4
+      won: 1
+    - name: fnatic
+      played: 4
+      won: 2
+    - name: north
+      played: 6
+      won: 2
+    - name: immortals
+      played: 2
+      won: 1
+    - name: optic
+      played: 7
+      won: 4
+    - name: navi
+      played: 2
+      won: 1
+    - name: nip
+      played: 3
+      won: 2
+    - name: envyus
+      played: 6
+      won: 3
+    - name: mousesports
+      played: 7
+      won: 3
 mapStats:
   skgaming:
     - name: mirage
@@ -314,6 +406,56 @@ mapStats:
     - name: cache
       played: 16
       won: 8
+    - name: dust2-2017
+      played: 0
+      won: 0
+  virtuspro:
+    - name: mirage
+      played: 24
+      won: 14
+    - name: inferno-2017
+      played: 13
+      won: 6
+    - name: nuke
+      played: 15
+      won: 12
+    - name: train
+      played: 20
+      won: 8.5
+    - name: overpass
+      played: 7
+      won: 2
+    - name: cobblestone
+      played: 23
+      won: 15
+    - name: cache
+      played: 14
+      won: 7
+    - name: dust2-2017
+      played: 1
+      won: 0
+  liquid:
+    - name: mirage
+      played: 29
+      won: 13
+    - name: inferno-2017
+      played: 25
+      won: 15
+    - name: nuke
+      played: 12
+      won: 5
+    - name: train
+      played: 16
+      won: 8
+    - name: overpass
+      played: 9
+      won: 3
+    - name: cobblestone
+      played: 16
+      won: 9
+    - name: cache
+      played: 10
+      won: 4
     - name: dust2-2017
       played: 0
       won: 0
