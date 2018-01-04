@@ -1,0 +1,94 @@
+details:
+  - shortname: skgaming
+    name: SK Gaming
+  - shortname: faze
+    name: FaZe Clan
+  - shortname: astralis
+    name: Astralis
+teamStats:
+  skgaming:
+    - name: astralis
+      played: 16
+      won: 7
+    - name: faze
+      played: 19
+      won: 9
+  astralis:
+    - name: skgaming
+      played: 16
+      won: 7
+    - name: faze
+      played: 19
+      won: 9
+    - name: cloud9
+      played: 6
+      won: 3
+    - name: virtuspro
+      played: 9
+      won: 5
+    - name: liquid
+      played: 13
+      won: 9
+    - name: gambit
+      played: 5
+      won: 1
+    - name: g2
+      played: 8
+      won: 4
+    - name: fnatic
+      played: 8
+      won: 7
+    - name: north
+      played: 4
+      won: 2.5
+    - name: immortals
+      played: 3
+      won: 2
+    - name: optic
+      played: 3
+      won: 3
+    - name: navi
+      played: 9
+      won: 8
+    - name: nip
+      played: 5
+      won: 4
+    - name: envyus
+      played: 1
+      won: 1
+    - name: mousesports
+      played: 3
+      won: 1
+  faze:
+    - name: skgaming
+      played: 16
+      won: 7
+    - name: astralis
+      played: 19
+      won: 9
+mapStats:
+  astralis:
+    - name: mirage
+      played: 20
+      won: 10
+    - name: inferno-2017
+      played: 27
+      won: 16
+    - name: nuke
+      played: 16
+      won: 11
+    - name: train
+      played: 25
+      won: 17
+    - name: overpass
+      played: 24
+      won: 18.5
+    - name: cobblestone
+      played: 2
+      won: 1
+    - name: cache
+      played: 10
+      won: 4
+    - name: dust2-2017
+      played: 2
+      won: 1

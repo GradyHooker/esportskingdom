@@ -1,0 +1,132 @@
+.single-page-cont {
+    display: flex;
+    flex-direction: column;
+    max-width: 1060px;
+    margin: 0 auto;
+	
+	.switch-button-cont {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+		
+		.switch-button {
+			margin: 6px;
+			margin-bottom: 10px;
+			text-decoration: none;
+			flex: 0 0 auto; 
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			line-height: 0.5em;
+			color: black;
+			height: 42px;
+			width: 42px;
+			background: #FFF;
+			border-radius: 5px;
+			box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+			line-height: 1em;
+			font-size: 0.9em;
+			transition: 0.15s;
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
+			
+			&:hover {
+				box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+				margin-top: 6px;
+				margin-bottom: 6px;
+			}
+		}
+	}
+	
+	.heading-cont {
+		font-weight: bold;
+		font-size: 1.2em;
+		text-align: center;
+		margin-top: 8px;
+		margin-bottom: 8px;
+		position: relative;
+		
+		.heading {
+			display: none;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			
+			&.skgaming {
+				display: block;
+			}
+		}
+	}
+	
+	.graph-cont {
+		display: flex;
+		justify-content: space-around;
+		
+		.graph {
+			padding: 16px;
+			margin: 6px;
+			text-decoration: none;
+			flex: 0 0 auto; 
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			line-height: 0.5em;
+			color: black;
+			background: #FFF;
+			border-radius: 5px;
+			box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+			line-height: 1em;
+			font-size: 1em;
+			transition: 0.15s;
+			position: relative;
+			overflow: hidden;
+			position: relative;
+				
+			.graph-actual {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				display: none;
+				padding: 16px;
+				height: calc(100% - 32px);
+				width: calc(100% - 32px);
+				
+				&.skgaming {
+					display: block;
+				}
+				
+				table {
+					width: 100%;
+
+					th {
+						font-weight: bold;
+						padding-bottom: 4px;
+					}
+					
+					td, th {
+						text-align: center;
+						vertical-align: middle;
+						
+						.logo-small {
+							padding-top: 4px;
+							padding-bottom: 4px;
+						}
+					}
+				}
+			}
+		}
+		
+		.graph-teams {
+			width: 300px;
+			height: 542px;
+		}
+		
+		.graph-maps {
+			width: 300px;
+			height: 300px;
+		}
+	}
+}

@@ -1,0 +1,81 @@
+---
+layout: base
+---
+<div class="single-page-cont">
+	<div class="switch-button-cont">
+		{% for team in site.data.csgostats2017.details %}
+		<div class="switch-button" onclick="switchTeam('{{ team.shortname }}')">
+			<img class="logo-small" src="{{ site.url }}/assets/logos/tiny/{{ team.shortname }}.png" alt="Logo for {{ team.name }}"/>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="heading-cont">
+		<div class="heading-placeholder">
+			&nbsp;
+		</div>
+		{% for team in site.data.csgostats2017.details %}
+		<div class="heading {{ team.shortname }}">
+			{{ team.name }}
+		</div>
+		{% endfor %}
+	</div>
+	<div class="graph-cont">
+		<div class="graph graph-teams">
+			{% for team in site.data.csgostats2017.details %}
+			<div class="graph-actual {{ team.shortname }}">
+				<table>
+					<tr>
+						<th>&nbsp;</th>
+						<th>Played</th>
+						<th>Won</th>
+						<th>Win %</th>
+					</tr>
+					{% for enemy in site.data.csgostats2017.teamStats[team.shortname] %}
+					<tr>
+						<td><img class="logo-small" src="{{ site.url }}/assets/logos/tiny/{{ enemy.name }}.png" alt="Logo for {{ enemy.name }}"/></td>
+						<td>{{ enemy.played }}</td>
+						<td>{{ enemy.won }}</td>
+						<td>{{ enemy.won | times: 100.0 | divided_by: enemy.played | round: 2 }}%</td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="graph graph-maps">
+			{% for team in site.data.csgostats2017.details %}
+			<div class="graph-actual {{ team.shortname }}">
+				<table>
+					<tr>
+						<th>&nbsp;</th>
+						<th>Played</th>
+						<th>Won</th>
+						<th>Win %</th>
+					</tr>
+					{% for map in site.data.csgostats2017.mapStats[team.shortname] %}
+					<tr>
+						<td><img class="logo-small" src="{{ site.url }}/assets/logos/tiny/{{ map.name }}.png" alt="Logo for {{ map.name }}"/></td>
+						<td>{{ map.played }}</td>
+						<td>{{ map.won }}</td>
+						<td>{{ map.won | times: 100.0 | divided_by: map.played | round: 2 }}%</td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+function switchTeam(teamName) {
+	console.log(teamName);
+	//Switch headings
+	$('.heading').fadeOut(400);
+	$('.heading.' + teamName).fadeIn(400);
+	
+	//Switch graph stats
+	$('.graph-actual').fadeOut(400);
+	$('.graph-actual.' + teamName).fadeIn(400);
+}
+</script>
