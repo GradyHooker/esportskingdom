@@ -5,14 +5,125 @@ details:
     name: FaZe Clan
   - shortname: astralis
     name: Astralis
+  - shortname: cloud9
+    name: Cloud9
+  - shortname: virtuspro
+    name: Virtus.Pro
+  - shortname: liquid
+    name: Team Liquid
+  - shortname: gambit
+    name: Gambit Esports
+  - shortname: g2
+    name: G2 Esports
+  - shortname: fnatic
+    name: Fnatic
+  - shortname: north
+    name: North
+  - shortname: immortals
+    name: Immortals
+  - shortname: optic
+    name: OpTic Gaming
+  - shortname: navi
+    name: Natus Vincere
+  - shortname: nip
+    name: Ninjas In Pajamas
+  - shortname: envyus
+    name: Team EnVyUs
+  - shortname: mousesports
+    name: mousesports
 teamStats:
   skgaming:
+    - name: faze
+      played: 23
+      won: 16
     - name: astralis
       played: 16
-      won: 7
-    - name: faze
-      played: 19
       won: 9
+    - name: cloud9
+      played: 13
+      won: 10
+    - name: virtuspro
+      played: 18
+      won: 10
+    - name: liquid
+      played: 8
+      won: 3
+    - name: gambit
+      played: 6
+      won: 5
+    - name: g2
+      played: 10
+      won: 3
+    - name: fnatic
+      played: 6
+      won: 5
+    - name: north
+      played: 10
+      won: 8
+    - name: immortals
+      played: 5
+      won: 3
+    - name: optic
+      played: 8
+      won: 6
+    - name: navi
+      played: 4
+      won: 2
+    - name: nip
+      played: 6
+      won: 4
+    - name: envyus
+      played: 6
+      won: 4
+    - name: mousesports
+      played: 5
+      won: 5
+  faze:
+    - name: skgaming
+      played: 23
+      won: 7
+    - name: astralis
+      played: 19
+      won: 10
+    - name: cloud9
+      played: 8
+      won: 8
+    - name: virtuspro
+      played: 4
+      won: 2
+    - name: liquid
+      played: 9
+      won: 9
+    - name: gambit
+      played: 9
+      won: 4
+    - name: g2
+      played: 7
+      won: 6
+    - name: fnatic
+      played: 7
+      won: 6
+    - name: north
+      played: 6
+      won: 4
+    - name: immortals
+      played: 5
+      won: 5
+    - name: optic
+      played: 5
+      won: 4
+    - name: navi
+      played: 4
+      won: 2
+    - name: nip
+      played: 8
+      won: 3.5
+    - name: envyus
+      played: 3
+      won: 3
+    - name: mousesports
+      played: 7
+      won: 3
   astralis:
     - name: skgaming
       played: 16
@@ -59,14 +170,103 @@ teamStats:
     - name: mousesports
       played: 3
       won: 1
-  faze:
+  cloud9:
     - name: skgaming
-      played: 16
-      won: 7
+      played: 13
+      won: 3
+    - name: faze
+      played: 8
+      won: 0
     - name: astralis
-      played: 19
-      won: 9
+      played: 6
+      won: 3
+    - name: virtuspro
+      played: 2
+      won: 0
+    - name: liquid
+      played: 5
+      won: 4
+    - name: gambit
+      played: 5
+      won: 2
+    - name: g2
+      played: 9
+      won: 5
+    - name: fnatic
+      played: 3
+      won: 1
+    - name: north
+      played: 5
+      won: 1
+    - name: immortals
+      played: 9
+      won: 3
+    - name: optic
+      played: 5
+      won: 3
+    - name: navi
+      played: 7
+      won: 5
+    - name: nip
+      played: 12
+      won: 7
+    - name: envyus
+      played: 3
+      won: 1
+    - name: mousesports
+      played: 5
+      won: 4
 mapStats:
+  skgaming:
+    - name: mirage
+      played: 35
+      won: 24
+    - name: inferno-2017
+      played: 31
+      won: 15
+    - name: nuke
+      played: 1
+      won: 0
+    - name: train
+      played: 27
+      won: 18
+    - name: overpass
+      played: 26
+      won: 17
+    - name: cobblestone
+      played: 26
+      won: 21
+    - name: cache
+      played: 21
+      won: 16
+    - name: dust2-2017
+      played: 2
+      won: 1
+  faze:
+    - name: mirage
+      played: 31
+      won: 23
+    - name: inferno-2017
+      played: 23
+      won: 17
+    - name: nuke
+      played: 13
+      won: 6
+    - name: train
+      played: 29
+      won: 15.5
+    - name: overpass
+      played: 26
+      won: 18
+    - name: cobblestone
+      played: 4
+      won: 1
+    - name: cache
+      played: 13
+      won: 8
+    - name: dust2-2017
+      played: 0
+      won: 0
   astralis:
     - name: mirage
       played: 20
@@ -92,3 +292,28 @@ mapStats:
     - name: dust2-2017
       played: 2
       won: 1
+  cloud9:
+    - name: mirage
+      played: 29
+      won: 18
+    - name: inferno-2017
+      played: 17
+      won: 9
+    - name: nuke
+      played: 2
+      won: 1
+    - name: train
+      played: 27
+      won: 16
+    - name: overpass
+      played: 12
+      won: 4
+    - name: cobblestone
+      played: 20
+      won: 10
+    - name: cache
+      played: 16
+      won: 8
+    - name: dust2-2017
+      played: 0
+      won: 0

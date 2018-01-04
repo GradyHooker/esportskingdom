@@ -65,6 +65,12 @@
 		display: flex;
 		justify-content: space-around;
 		
+		@media screen and (max-width: $break-small) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		
 		.graph {
 			padding: 16px;
 			margin: 6px;
@@ -84,6 +90,11 @@
 			position: relative;
 			overflow: hidden;
 			position: relative;
+			
+			@media screen and (max-width: $break-supertiny) {
+				width: calc(100% - 64px) !important;
+				font-size: 0.9em;
+			}
 				
 			.graph-actual {
 				position: absolute;

@@ -55,9 +55,13 @@ layout: base
 					{% for map in site.data.csgostats2017.mapStats[team.shortname] %}
 					<tr>
 						<td><img class="logo-small" src="{{ site.url }}/assets/logos/tiny/{{ map.name }}.png" alt="Logo for {{ map.name }}"/></td>
+						{% if map.played == 0 %}
+						<td colspan="3">Never Played</td>
+						{% else %}
 						<td>{{ map.played }}</td>
 						<td>{{ map.won }}</td>
 						<td>{{ map.won | times: 100.0 | divided_by: map.played | round: 2 }}%</td>
+						{% endif %}
 					</tr>
 					{% endfor %}
 				</table>
@@ -69,7 +73,6 @@ layout: base
 
 <script type="text/javascript">
 function switchTeam(teamName) {
-	console.log(teamName);
 	//Switch headings
 	$('.heading').fadeOut(400);
 	$('.heading.' + teamName).fadeIn(400);
