@@ -5,6 +5,7 @@ function showCards(cardNum) {
 	
 	$('.carousel').slick("slickGoTo", parseInt(newNum));
 	$('.cardDisplay').fadeIn(400).css("display", "flex");
+	resizeSlick();
 }
 
 $('.cardDisplay').click(function(e) {
@@ -15,29 +16,32 @@ $('.cardDisplay').click(function(e) {
 
 $(document).ready(function(){
 	$('.carousel').slick({
-		lazyLoad: 'ondemand',
+		lazyLoad: 'progressive',
+		lazyLoadBuffer: 5,
 		infinite: true,
 		slidesToShow: 5,
-		swipeToSlide: true,
-		responsive: [
-		{
-		  breakpoint: 1600,
-		  settings: {
-			slidesToShow: 3
-		  }
-		},
-		{
-		  breakpoint: 1000,
-		  settings: {
-			slidesToShow: 2
-		  }
-		},
-		{
-		  breakpoint: 700,
-		  settings: {
-			slidesToShow: 1,
-		  }
-		}
-	  ]
+		swipeToSlide: true
 	});
+	resizeSlick();
 });
+
+$(window).resize(function() {
+	resizeSlick();
+});
+
+function resizeSlick() {
+	var fitWidth = Math.max(Math.floor($('.carousel').width()/350), 1);
+	if($('.cardDisplay').height() < 460) fitWidth++
+	if($('.cardDisplay').height() < 410) fitWidth++;
+	if($('.cardDisplay').height() < 340) fitWidth++;
+	if($('.cardDisplay').height() < 300) fitWidth++;
+	if($('.cardDisplay').height() < 280) fitWidth++;
+	if($('.cardDisplay').height() < 240) fitWidth++;
+	if($('.cardDisplay').height() < 210) fitWidth++;
+	
+	var currentShowing = $('.carousel').slick("slickGetOption", "slidesToShow");
+
+	if(currentShowing != fitWidth) {
+		$('.carousel').slick("slickSetOption", "slidesToShow", fitWidth, true);
+	}
+}
