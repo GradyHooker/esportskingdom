@@ -16,6 +16,8 @@ $('.cardDisplay').click(function(e) {
 
 $(document).ready(function(){
 	$('.carousel').slick({
+		lazyLoad: 'progressive',
+		lazyLoadBuffer: 5,
 		infinite: true,
 		slidesToShow: 5,
 		swipeToSlide: true
