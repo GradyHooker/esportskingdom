@@ -1,0 +1,26 @@
+---
+layout: base
+type: tcg
+max: 87
+name: cologne16
+---
+<link rel="stylesheet" type="text/css" href="/lib/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="/lib/slick/slick-theme.css"/>
+<style type="text/css">
+.main {
+    position: relative;
+}
+</style>
+
+<div class="single-page-cont" style="flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;">
+	{% for i in (1..87) %}
+		<img src="/assets/tcg/cologne16/thumbs/{{ i }}.png" alt="image" style="max-width: 20vw; margin: 2px; cursor: pointer;" onclick="showCards({{ i }});"/>
+	{% endfor %}
+</div>
+<div class="cardDisplay" style="position: fixed; width: 100vw; height: calc(100vh - 65px); top: 65px; left: 0px; background: rgba(0, 0, 0, 0.6); color: white; display: none; align-items: center; justify-content: center;">
+	<div class="carousel" style="width: calc(100% - 100px);">
+		{% for i in (1..87) %}
+			<img src="/assets/tcg/cologne16/{{ i }}.png" alt="image" style="max-height: 80vh; max-width: 90vw; padding: 8px;"/>
+		{% endfor %}
+	</div>
+</div>
