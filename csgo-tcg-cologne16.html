@@ -20,7 +20,7 @@ name: cologne16
 <div class="cardDisplay" style="position: fixed; width: 100vw; height: calc(100vh - 65px); top: 65px; left: 0px; background: rgba(0, 0, 0, 0.6); color: white; display: none; align-items: center; justify-content: center;">
 	<div class="carousel" style="width: calc(100% - 100px);">
 		{% for i in (1..87) %}
-			<img src="/assets/tcg/cologne16/{{ i }}.png" alt="image" style="max-height: 80vh; max-width: 90vw; padding: 8px;"/>
+			<img data-lazy="/assets/tcg/cologne16/{{ i }}.png" alt="image" style="max-height: 90vh; max-width: 80vw; padding: 8px;"/>
 		{% endfor %}
 	</div>
 </div>
