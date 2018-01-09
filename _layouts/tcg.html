@@ -1,8 +1,6 @@
 ---
 layout: base
 type: tcg
-max: 87
-name: cologne16
 ---
 <link rel="stylesheet" type="text/css" href="/lib/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="/lib/slick/slick-theme.css"/>
@@ -13,14 +11,14 @@ name: cologne16
 </style>
 
 <div class="single-page-cont" style="flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;">
-	{% for i in (1..87) %}
-		<img src="/assets/tcg/cologne16/thumbs/{{ i }}.png" alt="image" style="max-width: 20vw; cursor: pointer;" onclick="showCards({{ i }});"/>
+	{% for i in (1..page.max) %}
+		<img src="/assets/tcg/{{ page.tournament }}/thumbs/{{ i }}.png" alt="image" style="max-width: 20vw; cursor: pointer;" onclick="showCards({{ i }});"/>
 	{% endfor %}
 </div>
 <div class="cardDisplay" style="position: fixed; width: 100vw; height: calc(100vh - 65px); top: 65px; left: 0px; background: rgba(0, 0, 0, 0.6); color: white; display: none; align-items: center; justify-content: center;">
 	<div class="carousel" style="width: calc(100% - 100px);">
-		{% for i in (1..87) %}
-			<div><img data-lazy="/assets/tcg/cologne16/{{ i }}.png" alt="Card Loading..." style="max-height: 100%; max-width: 100%; padding: 8px;"/></div>
+		{% for i in (1..page.max) %}
+			<div><img data-lazy="/assets/tcg/{{ page.tournament }}/{{ i }}.png" alt="Card Loading..." style="max-height: 100%; max-width: 100%; padding: 8px;"/></div>
 		{% endfor %}
 	</div>
 </div>
