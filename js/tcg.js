@@ -16,6 +16,7 @@ $('.cardDisplay').click(function(e) {
 
 $(document).ready(function(){
 	$('.carousel').slick({
+		lazyLoad: 'progressive',
 		infinite: true,
 		slidesToShow: 5,
 		swipeToSlide: true
@@ -28,6 +29,16 @@ $(window).resize(function() {
 });
 
 function resizeSlick() {
+	var fitWidth = getMaxCards();
+	
+	var currentShowing = $('.carousel').slick("slickGetOption", "slidesToShow");
+
+	if(currentShowing != fitWidth) {
+		$('.carousel').slick("slickSetOption", "slidesToShow", fitWidth, true);
+	}
+}
+
+function getMaxCards() {
 	var fitWidth = Math.max(Math.floor($('.carousel').width()/350), 1);
 	if($('.cardDisplay').height() < 460) fitWidth++
 	if($('.cardDisplay').height() < 410) fitWidth++;
@@ -36,10 +47,5 @@ function resizeSlick() {
 	if($('.cardDisplay').height() < 280) fitWidth++;
 	if($('.cardDisplay').height() < 240) fitWidth++;
 	if($('.cardDisplay').height() < 210) fitWidth++;
-	
-	var currentShowing = $('.carousel').slick("slickGetOption", "slidesToShow");
-
-	if(currentShowing != fitWidth) {
-		$('.carousel').slick("slickSetOption", "slidesToShow", fitWidth, true);
-	}
+	return fitWidth;
 }
