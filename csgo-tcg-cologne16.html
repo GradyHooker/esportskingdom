@@ -14,7 +14,7 @@ name: cologne16
 
 <div class="single-page-cont" style="flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;">
 	{% for i in (1..87) %}
-		<img src="/assets/tcg/cologne16/thumbs/{{ i }}.png" alt="image" style="max-width: 20vw; margin: 2px; cursor: pointer;" onclick="showCards({{ i }});"/>
+		<img src="/assets/tcg/cologne16/thumbs/{{ i }}.png" alt="image" style="max-width: 20vw; cursor: pointer;" onclick="showCards({{ i }});"/>
 	{% endfor %}
 </div>
 <div class="cardDisplay" style="position: fixed; width: 100vw; height: calc(100vh - 65px); top: 65px; left: 0px; background: rgba(0, 0, 0, 0.6); color: white; display: none; align-items: center; justify-content: center;">
