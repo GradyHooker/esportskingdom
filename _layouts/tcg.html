@@ -8,17 +8,29 @@ type: tcg
 .main {
     position: relative;
 }
+.masked {
+	-webkit-clip-path: url(#myClip);
+	clip-path: url(#myClip);
+}
 </style>
 
 <div class="single-page-cont" style="flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;">
 	{% for i in (1..page.max) %}
-		<img src="/assets/tcg/{{ page.tournament }}/thumbs/{{ i }}.png" alt="image" style="max-width: 20vw; cursor: pointer;" onclick="showCards({{ i }});"/>
+		<img class="masked" src="/assets/tcg/{{ page.tournament }}/thumbs/{{ i }}.jpg" alt="image" style="max-width: 20vw; cursor: pointer;" onclick="showCards({{ i }});"/>
 	{% endfor %}
 </div>
 <div class="cardDisplay" style="position: fixed; width: 100vw; height: calc(100vh - 65px); top: 65px; left: 0px; background: rgba(0, 0, 0, 0.6); color: white; display: none; align-items: center; justify-content: center;">
 	<div class="carousel" style="width: calc(100% - 100px);">
 		{% for i in (1..page.max) %}
-			<div><img data-lazy="/assets/tcg/{{ page.tournament }}/{{ i }}.png" alt="Card Loading..." style="max-height: 100%; max-width: 100%; padding: 8px;"/></div>
+			<div><img class="masked" data-lazy="/assets/tcg/{{ page.tournament }}/{{ i }}.jpg" alt="Card Loading..." style="max-height: 100%; max-width: 100%; padding: 8px;"/></div>
 		{% endfor %}
 	</div>
 </div>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1" height="0" width="0">
+<defs>
+    <clipPath id="myClip" clipPathUnits="objectBoundingBox">
+		<path d="M0.06,0.92 L 0.06 0.08 A 0.06 0.04 0 0 1 0.12 0.04 L 0.88,0.04 A 0.06 0.04 0 0 1 0.94,0.08 L 0.94,0.92 A 0.06 0.04 0 0 1 0.88,0.96 L 0.12 0.96 A 0.06 0.04 0 0 1 0.06,0.92z" />
+	</clipPath>
+  </defs>
+</svg>
