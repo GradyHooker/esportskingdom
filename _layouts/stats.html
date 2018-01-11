@@ -1,0 +1,107 @@
+---
+layout: base
+type: stats
+---
+<div class="single-page-cont">
+	<div class="switch-button-cont">
+		{% for team in site.data[page.file].teamStats %}
+		{% assign t = team | first %}
+		<div class="switch-button" onclick="switchTeam('{{ team | first }}')">
+			<img class="logo-small" src="{{ site.url }}/assets/logos/tiny/{{ team | first }}.png" alt="Logo for {{ site.data.teams[t] }}"/>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="heading-cont">
+		<div class="heading-placeholder">
+			&nbsp;
+		</div>
+		{% for team in site.data[page.file].teamStats %}
+		{% assign t = team | first %}
+		<div class="heading {{ team | first }}">
+			{{ site.data.teams[t] }}
+		</div>
+		{% endfor %}
+	</div>
+	<div class="graph-cont">
+		<div class="graph graph-teams">
+			{% for team in site.data[page.file].teamStats %}
+			<div class="graph-actual {{ team | first }}">
+				<table>
+					<tr>
+						<th>&nbsp;</th>
+						<th>Played</th>
+						<th>Won</th>
+						<th>Win %</th>
+					</tr>
+					{% assign t = team | first %}
+					{% for enemy in site.data[page.file].teamStats[t] %}
+					<tr>
+						<td><img class="logo-small" src="{{ site.url }}/assets/logos/tiny/{{ enemy.name }}.png" alt="Logo for {{ site.data.teams[enemy.name] }}"/></td>
+						{% if enemy.played == 0 %}
+						<td colspan="3">Never Played</td>
+						{% else %}
+						<td>{{ enemy.played }}</td>
+						<td>{{ enemy.won }}</td>
+						{% assign percent = enemy.won | times: 100.0 | divided_by: enemy.played | round: 2 %}
+						{% if percent < 40 %}
+						<td style="background-color: #F7977A">{{ percent }}%</td>
+						{% elsif percent <= 60 %}
+						<td style="background-color: #FFF79A">{{ percent }}%</td>
+						{% else %}
+						<td style="background-color: #82CA9D">{{ percent }}%</td>
+						{% endif %}
+						{% endif %}
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="graph graph-maps">
+			{% for team in site.data[page.file].teamStats %}
+			<div class="graph-actual {{ team | first }}">
+				<table>
+					<tr>
+						<th>&nbsp;</th>
+						<th>Played</th>
+						<th>Won</th>
+						<th>Win %</th>
+					</tr>
+					{% assign t = team | first %}
+					{% for map in site.data[page.file].mapStats[t] %}
+					<tr>
+						<td><img class="logo-small" src="{{ site.url }}/assets/logos/tiny/{{ map.name }}.png" alt="Logo for {{ site.data.teams[map.name] }}"/></td>
+						{% if map.played == 0 %}
+						<td colspan="3">Never Played</td>
+						{% else %}
+						<td>{{ map.played }}</td>
+						<td>{{ map.won }}</td>
+						{% assign percent = map.won | times: 100.0 | divided_by: map.played | round: 2 %}
+						{% if percent < 40 %}
+						<td style="background-color: #F7977A">{{ percent }}%</td>
+						{% elsif percent <= 60 %}
+						<td style="background-color: #FFF79A">{{ percent }}%</td>
+						{% else %}
+						<td style="background-color: #82CA9D">{{ percent }}%</td>
+						{% endif %}
+						{% endif %}
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+function switchTeam(teamName) {
+	//Switch headings
+	$('.heading').fadeOut(400);
+	$('.heading.' + teamName).fadeIn(400);
+	
+	//Switch graph stats
+	$('.graph-actual').fadeOut(400);
+	$('.graph-actual.' + teamName).fadeIn(400);
+}
+</script>
