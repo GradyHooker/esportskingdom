@@ -877,6 +877,39 @@ header {
       width: 300px;
       height: 300px; }
 
+.main {
+  position: relative; }
+  .main .masked {
+    -webkit-clip-path: url(#myClip);
+    clip-path: url(#myClip); }
+  .main .single-page-cont.single-page-cont-tcg {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .main .single-page-cont.single-page-cont-tcg .tcg-preview {
+      max-width: 20vw;
+      cursor: pointer; }
+  .main .cardDisplay {
+    position: fixed;
+    width: 100vw;
+    height: calc(100vh - 65px);
+    top: 65px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: none;
+    align-items: center;
+    justify-content: center; }
+    .main .cardDisplay .carousel {
+      width: calc(100% - 100px); }
+      .main .cardDisplay .carousel .slick-slide {
+        outline: none; }
+        .main .cardDisplay .carousel .slick-slide .tcg-large {
+          max-height: 100%;
+          max-width: 100%;
+          padding: 8px; }
+
 .error {
   width: calc(100% - 40px);
   height: calc(100vh - 40px);

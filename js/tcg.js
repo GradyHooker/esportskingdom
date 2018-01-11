@@ -5,6 +5,7 @@ function showCards(cardNum) {
 	
 	$('.carousel').slick("slickGoTo", parseInt(newNum));
 	$('.cardDisplay').fadeIn(400).css("display", "flex");
+	$('.slick-current').focus();
 	resizeSlick();
 }
 
