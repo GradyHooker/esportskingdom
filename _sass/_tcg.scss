@@ -1,0 +1,47 @@
+.main {
+    position: relative;
+	
+	.masked {
+		-webkit-clip-path: url(#myClip);
+		clip-path: url(#myClip);
+	}
+	
+	.single-page-cont.single-page-cont-tcg {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		
+		.tcg-preview {
+			max-width: 20vw;
+			cursor: pointer;
+		}
+	}
+	
+	.cardDisplay {
+		position: fixed;
+		width: 100vw;
+		height: calc(100vh - 65px);
+		top: 65px;
+		left: 0px;
+		background: rgba(0, 0, 0, 0.6);
+		color: white;
+		display: none;
+		align-items: center;
+		justify-content: center;
+		
+		.carousel {
+			width: calc(100% - 100px);
+			
+			.slick-slide {
+				outline: none;
+				
+				.tcg-large {
+					max-height: 100%;
+					max-width: 100%;
+					padding: 8px;
+				}
+			}
+		}
+	}
+}

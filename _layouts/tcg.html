@@ -1,31 +1,17 @@
 ---
 layout: base
 type: tcg
+hasSlick: true
 ---
-<link rel="stylesheet" type="text/css" href="/lib/slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="/lib/slick/slick-theme.css"/>
-<style type="text/css">
-.main {
-    position: relative;
-}
-.masked {
-	-webkit-clip-path: url(#myClip);
-	clip-path: url(#myClip);
-}
-.slick-slide {
-	outline: none;
-}
-</style>
-
-<div class="single-page-cont" style="flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;">
+<div class="single-page-cont single-page-cont-tcg">
 	{% for i in (1..page.max) %}
-		<img class="masked" src="/assets/tcg/{{ page.tournament }}/thumbs/{{ i }}.jpg" alt="image" style="max-width: 20vw; cursor: pointer;" onclick="showCards({{ i }});"/>
+		<img class="masked tcg-preview" src="/assets/tcg/{{ page.tournament }}/thumbs/{{ i }}.jpg" alt="image" onclick="showCards({{ i }});"/>
 	{% endfor %}
 </div>
-<div class="cardDisplay" style="position: fixed; width: 100vw; height: calc(100vh - 65px); top: 65px; left: 0px; background: rgba(0, 0, 0, 0.6); color: white; display: none; align-items: center; justify-content: center;">
-	<div class="carousel" style="width: calc(100% - 100px);">
+<div class="cardDisplay">
+	<div class="carousel">
 		{% for i in (1..page.max) %}
-			<div><img class="masked" data-lazy="/assets/tcg/{{ page.tournament }}/{{ i }}.jpg" alt="Card Loading..." style="max-height: 100%; max-width: 100%; padding: 8px;"/></div>
+			<div><img class="masked tcg-large" data-lazy="/assets/tcg/{{ page.tournament }}/{{ i }}.jpg" alt="Card Loading..." /></div>
 		{% endfor %}
 	</div>
 </div>
