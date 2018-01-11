@@ -17,7 +17,7 @@ $('.cardDisplay').click(function(e) {
 
 $(document).ready(function(){
 	$('.carousel').slick({
-		lazyLoad: 'ondemand',
+		lazyLoad: 'anticipated',
 		infinite: true,
 		slidesToShow: 5,
 		swipeToSlide: true
@@ -32,8 +32,9 @@ $(window).resize(function() {
 function resizeSlick() {
 	var fitWidth = getMaxCards();
 	
+	$('.tcg-large').css("line-height", $('.cardDisplay').height()/2 + "px");
+	
 	var currentShowing = $('.carousel').slick("slickGetOption", "slidesToShow");
-
 	if(currentShowing != fitWidth) {
 		$('.carousel').slick("slickSetOption", "slidesToShow", fitWidth, true);
 	}

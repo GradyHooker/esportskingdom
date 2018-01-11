@@ -908,7 +908,8 @@ header {
         .main .cardDisplay .carousel .slick-slide .tcg-large {
           max-height: 100%;
           max-width: 100%;
-          padding: 8px; }
+          padding: 8px;
+          text-align: center; }
 
 .error {
   width: calc(100% - 40px);
