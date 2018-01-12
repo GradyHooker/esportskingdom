@@ -890,6 +890,29 @@ header {
     .main .single-page-cont.single-page-cont-tcg .tcg-preview {
       max-width: 20vw;
       cursor: pointer; }
+    .main .single-page-cont.single-page-cont-tcg a {
+      width: 120px;
+      padding: 8px; }
+      .main .single-page-cont.single-page-cont-tcg a .tcg-button {
+        display: flex;
+        padding: 20px;
+        background: #FFF;
+        border-radius: 5px;
+        box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+        line-height: 1.6;
+        transition: 0.15s;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        margin-bottom: 3px; }
+        .main .single-page-cont.single-page-cont-tcg a .tcg-button:hover {
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+          margin-top: 2px;
+          margin-bottom: 1px; }
+        .main .single-page-cont.single-page-cont-tcg a .tcg-button.disable {
+          filter: grayscale(100%); }
+          .main .single-page-cont.single-page-cont-tcg a .tcg-button.disable img {
+            opacity: 0.3; }
   .main .cardDisplay {
     position: fixed;
     width: 100vw;
