@@ -30,8 +30,9 @@
 			  {{ post.excerpt }}
 			</div>
 		  </div>
-		  {% for image in site.static_files %}
-		    {% assign charPath = post.category | prepend: "/characters/" %}
+		  {% assign charPath = post.category | prepend: "/characters/" %}
+		  {% assign imageFiles = site.static_files | where_exp "path","path contains charPath" %}
+		  {% for image in imageFiles %}
 			{% if image.path contains charPath %}
 		  <div class="post-character">
 			<img src="{{ image.path }}" alt="{{ post.category }} character"/>
