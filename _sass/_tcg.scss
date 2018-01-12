@@ -16,6 +16,39 @@
 			max-width: 20vw;
 			cursor: pointer;
 		}
+
+		a {
+			width: 120px;
+			padding: 8px;
+			
+			.tcg-button {
+				display: flex;
+				padding: 20px;
+				background: #FFF;
+				border-radius: 5px;
+				box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+				line-height: 1.6;
+				transition: 0.15s;
+				position: relative;
+				overflow: hidden;
+				cursor: pointer;
+				margin-bottom: 3px;
+				
+				&:hover {
+					box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+					margin-top: 2px;
+					margin-bottom: 1px;
+				}
+				
+				&.disable {
+					filter: grayscale(100%);
+					
+					img {
+						opacity: 0.3;
+					}
+				}
+			}
+		}
 	}
 	
 	.cardDisplay {

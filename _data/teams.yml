@@ -88,8 +88,6 @@ ecs:
   Esports Championship Series
 ehome:
   EHOME
-eleague-boston18:
-  ELEAGUE Boston 2018
 eleague:
   ELEAGUE
 elevate:
@@ -296,8 +294,6 @@ pandaglobal:
   Panda Global
 penta:
   penta
-pgl-krakow17:
-  PGL Krakow 2017
 pgl:
   PGL
 planetkey:
@@ -416,3 +412,27 @@ zenleague:
   ZEN League
 zonic:
   Zonic eSports
+dreamhack-winter13:
+  DreamHack Winter 2013
+esl-katowice14:
+  ESL Katowice 2014
+esl-cologne14:
+  ESL Cologne 2014
+dreamhack-winter14:
+  DreamHack Winter 2014
+esl-katowice15:
+  ESL Katowice 2015
+esl-cologne15:
+  ESL Cologne 2015
+dreamhack-clujnapoca15:
+  DreamHack ClujNapoca 2015
+mlg-columbus16:
+  MLG Columbus 2016
+esl-cologne16:
+  ESL Cologne 2016
+eleague-atlanta17:
+  ELEAGUE Atlanta 2017
+pgl-krakow17:
+  PGL Krakow 2017
+eleague-boston18:
+  ELEAGUE Boston 2018
