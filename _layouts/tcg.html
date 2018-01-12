@@ -4,14 +4,26 @@ type: tcg
 hasSlick: true
 ---
 <div class="single-page-cont single-page-cont-tcg">
-	{% for i in (1..page.max) %}
-		<img class="masked tcg-preview" src="/assets/tcg/{{ page.tournament }}/thumbs/{{ i }}.jpg" alt="image" onclick="showCards({{ i }});"/>
+	{% assign path = page.tournament | prepend: "/tcg/" | append: "/thumbs/" %}
+	{% assign imageFiles = site.static_files | where_exp: "image","image.path contains path" %}
+	{% for image in imageFiles %}
+		{% assign splits = image.basename | split: "-" %}
+		{% assign team = splits[1] %}
+		{% if splits[2] != null %}
+			<img class="masked tcg-preview" src="{{ image.path }}" alt="{{ splits[2] }} from {{ site.data.teams[team] }}" onclick="showCards({{ splits[0] }});"/>
+		{% else %}
+			<img class="masked tcg-preview" src="{{ image.path }}" alt="{{ team }}" onclick="showCards({{ splits[0] }});"/>
+		{% endif %}
 	{% endfor %}
 </div>
 <div class="cardDisplay">
 	<div class="carousel">
-		{% for i in (1..page.max) %}
-			<div><img class="masked tcg-large" data-lazy="/assets/tcg/{{ page.tournament }}/{{ i }}.jpg" alt="Card Loading..." /></div>
+		{% assign path = page.tournament | prepend: "/tcg/" %}
+		{% assign imageFiles = site.static_files | where_exp: "image","image.path contains path" %}
+		{% for image in imageFiles %}
+			{% unless image.path contains 'thumbs' %}
+				<div><img class="masked tcg-large" data-lazy="{{ image.path }}" alt="Card Loading..." /></div>
+			{% endunless %}
 		{% endfor %}
 	</div>
 </div>
