@@ -1,12 +1,21 @@
+var initCarousel = false;
+
 function showCards(cardNum) {
-	var newNum = cardNum - 1;
-	if($(window).width() > 1600) newNum -= 2;
-	else if($(window).width() > 1000) newNum -= 1;
 	
-	$('.carousel').slick("slickGoTo", parseInt(newNum));
+	if(!initCarousel) {
+		$('.carousel').slick({
+			infinite: true,
+			slidesToShow: 1,
+			swipeToSlide: true
+		});
+		initCarousel = true;
+	}
+	
+	$('.carousel').slick("slickSetOption", "lazyLoad", "anticipated")
 	$('.cardDisplay').fadeIn(400).css("display", "flex");
 	$('.slick-current').focus();
 	resizeSlick();
+	$('.carousel').slick("slickGoTo", parseInt(cardNum - 1 - Math.floor($('.carousel').slick("slickGetOption", "slidesToShow")/2)));
 }
 
 $('.cardDisplay').click(function(e) {
@@ -15,22 +24,15 @@ $('.cardDisplay').click(function(e) {
 	}
 });
 
-$(document).ready(function(){
-	$('.carousel').slick({
-		lazyLoad: 'anticipated',
-		infinite: true,
-		slidesToShow: 5,
-		swipeToSlide: true
-	});
-	resizeSlick();
-});
-
 $(window).resize(function() {
-	resizeSlick();
+	if(initCarousel) {
+		resizeSlick();
+	}
 });
 
 function resizeSlick() {
 	var fitWidth = getMaxCards();
+	console.log("resize: " + fitWidth);
 	
 	$('.tcg-large').css("line-height", $('.cardDisplay').height()/2 + "px");
 	
