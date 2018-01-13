@@ -1,0 +1,45 @@
+<table class="rankings">
+	<tr class="headers">
+		<th>Rank</th>
+		<th>Team</th>
+		<th>Points</th>
+		<th class="unimportant-2">Matches</th>
+		<th colspan="3" class="unimportant">Match W/L</th>
+		<th colspan="3" class="unimportant">Round W/L</th>
+		<th class="unimportant-2">Round Diff</th>
+	</tr>
+{% assign rows = include.data | split: "," %}
+{% assign num_rows = rows | size | minus: 1 %}
+{% for i in (0..num_rows)%}
+	<tr>
+		{% assign cols = rows[i] | split: "|" %}
+		{% if cols[1] < cols[0] %}
+		<td class="middle">{{ cols[0] }} (<i class="fa fa-arrow-down" aria-hidden="true"></i> {{ cols[1] }})</td>
+		{% elsif cols[1] > cols[0] %}
+		<td class="middle">{{ cols[0] }} (<i class="fa fa-arrow-up" aria-hidden="true"></i> {{ cols[1] }})</td>
+		{% else %}
+		<td class="middle">{{ cols[0] }} (NC)</td>
+		{% endif %}
+		
+		{% assign team_name = cols[2] %}
+		<td class="left flex">{% include logo.html size="tiny" logo=team_name %} <img class="flag" src="{{ site.url }}/assets/flags/{{ cols[3] }}.png" alt="{{ cols[3] }} flag"/> {{ site.data.teams[team_name] }}</td>
+		
+		<td class="middle">{{ cols[4] }} ({{ cols[5] }})</td>
+		
+		<td class="middle unimportant-2">{{ cols[6] }}</td>
+		
+		{% assign losses = cols[6] | minus: cols[7] %}
+		<td class="right unimportant">{{ cols[7] }}</td>
+		<td class="middle unimportant tiny">-</td>
+		<td class="left unimportant">{{ losses }}</td>
+		
+		{% assign losses = cols[8] | minus: cols[9] %}
+		<td class="right unimportant">{{ cols[8] }}</td>
+		<td class="middle unimportant tiny">:</td>
+		<td class="left unimportant">{{ losses }}</td>
+		
+		{% assign losses = cols[8] | minus: losses %}
+		<td class="middle unimportant-2">{{ losses }}</td>
+	</tr>
+{% endfor %}
+</table>

@@ -1,0 +1,72 @@
+.rankings {
+	width: 100%;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	
+	.headers {
+		font-weight: bold;
+		background: #d9d9d9 !important;
+	}
+	
+	tr {
+	
+		&:nth-child(even) {
+			background: #EEE;
+		}
+		
+		td {
+			vertical-align: middle;
+			height: 100%;
+			padding-top: 3px;
+			padding-bottom: 3px;
+		}
+		
+		.right {
+			text-align: right;
+		}
+		
+		.left {
+			text-align: left;
+		}
+		
+		.middle {
+			text-align: center;
+		}
+
+		.tiny {
+			width: 25px;
+		}
+		
+		.flex {
+			display: flex;
+			align-items: center;
+			
+			* {
+				padding-left: 4px;
+				padding-right: 4px;
+			}
+		}
+		
+		.fa {
+			&.fa-arrow-down {
+				color: #F7977A;
+			}
+			
+			&.fa-arrow-up {
+				color: #82CA9D;
+			}
+		}
+		
+		@media screen and (max-width: $break-small) {
+			.unimportant {
+				display: none;
+			}
+		}
+		
+		@media screen and (max-width: $break-supertiny) {
+			.unimportant-2 {
+				display: none;
+			}
+		}
+	}
+}
