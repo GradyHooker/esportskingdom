@@ -253,6 +253,45 @@ body {
   .logoheadline img {
     margin-right: 8px; }
 
+.rankings {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px; }
+  .rankings .headers {
+    font-weight: bold;
+    background: #d9d9d9 !important; }
+  .rankings tr:nth-child(even) {
+    background: #EEE; }
+  .rankings tr td {
+    vertical-align: middle;
+    height: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px; }
+  .rankings tr .right {
+    text-align: right; }
+  .rankings tr .left {
+    text-align: left; }
+  .rankings tr .middle {
+    text-align: center; }
+  .rankings tr .tiny {
+    width: 25px; }
+  .rankings tr .flex {
+    display: flex;
+    align-items: center; }
+    .rankings tr .flex * {
+      padding-left: 4px;
+      padding-right: 4px; }
+  .rankings tr .fa.fa-arrow-down {
+    color: #F7977A; }
+  .rankings tr .fa.fa-arrow-up {
+    color: #82CA9D; }
+  @media screen and (max-width: 768px) {
+    .rankings tr .unimportant {
+      display: none; } }
+  @media screen and (max-width: 400px) {
+    .rankings tr .unimportant-2 {
+      display: none; } }
+
 #cssmenu ul,
 #cssmenu ul li,
 #cssmenu ul li a,
