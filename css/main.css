@@ -669,10 +669,13 @@ header {
     .posts {
       font-size: 0.7em; } }
   .posts .post-link-special .post {
-    height: 50px; }
-    @media screen and (max-width: 768px) {
-      .posts .post-link-special .post {
-        height: 30px; } }
+    padding: 0px !important; }
+    .posts .post-link-special .post ins {
+      height: 90px;
+      width: 100%; }
+      @media screen and (max-width: 768px) {
+        .posts .post-link-special .post ins {
+          height: 60px; } }
   .posts .post-link {
     text-decoration: none;
     color: black;
