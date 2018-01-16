@@ -668,6 +668,11 @@ header {
   @media screen and (max-width: 400px) {
     .posts {
       font-size: 0.7em; } }
+  .posts .post-link-special .post {
+    height: 50px; }
+    @media screen and (max-width: 768px) {
+      .posts .post-link-special .post {
+        height: 30px; } }
   .posts .post-link {
     text-decoration: none;
     color: black;
