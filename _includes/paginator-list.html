@@ -1,5 +1,7 @@
 <div class="posts">
+  {% assign counter = 0 %}
   {% for post in paginator.posts %}
+    {% assign counter = counter | plus: 1 %}
     <a class="post-link" href="{{ site.baseurl }}{{ post.url | replace: '.html', ''}}">
 		<div class="post">
 		  <div class="post-boximage-cont">
@@ -39,6 +41,14 @@
 		  {% endfor %}
 		</div>
 	  </a>
+	  {% assign c = counter | modulo: 5 %}
+	  {% if c == 0 %}
+	  <div class="post-link post-link-special">
+	  <div class="post">
+		<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4571308299898548" data-ad-slot="3552935112" data-ad-format="auto"></ins>
+	  </div>
+	  </div>
+	  {% endif %}
   {% endfor %}
 </div>
 {% include paginator-links.html %}

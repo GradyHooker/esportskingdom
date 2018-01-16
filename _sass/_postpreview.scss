@@ -17,6 +17,16 @@
 	@media screen and (max-width: $break-supertiny) {
 		font-size: 0.7em;
 	}
+	
+	.post-link-special {
+		.post {
+			height: 50px;
+			
+			@media screen and (max-width: $break-small) {
+				height: 30px;
+			}
+		}
+	}
 
 	.post-link {
 		text-decoration: none;
@@ -35,7 +45,7 @@
 				margin-bottom: 9px;
 			}
 		}
-		
+				
 		.post {
 			display: flex;
 			padding: 20px;
