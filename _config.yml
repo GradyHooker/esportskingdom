@@ -43,7 +43,6 @@ autopages:
 plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap
-  - jekyll-feed
 
 # Exclude these files from your production _site
 exclude:
