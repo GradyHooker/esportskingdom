@@ -635,7 +635,7 @@ header {
       padding: 65px 20px 0 !important; } }
 @media screen and (max-width: 768px) {
   .main {
-    padding: 50px 0px 0 !important;
+    padding: 45px 0px 0 !important;
     border-radius: 0px; }
 
   nav {
