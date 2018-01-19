@@ -2,7 +2,7 @@
 	<img alt="{{ include.caption }}" src="/assets/article/{{ include.image }}.jpg"/>
 	<div class="image-caption">
 		{% if include.creditlink != null %}
-		{{ include.caption }} (Video by <a href="{{ include.creditlink }}">{{ include.credit }}</a>)
+		{{ include.caption }} (Image by <a href="{{ include.creditlink }}">{{ include.credit }}</a>)
 		{% else %}
 		{{ include.caption }}
 		{% endif %}
