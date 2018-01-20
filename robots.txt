@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.esportskingdom.nz/sitemap.xml
+Sitemap: https://esportskingdom.nz/sitemap.xml
