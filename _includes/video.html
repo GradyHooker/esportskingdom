@@ -1,6 +1,10 @@
 <div class="media">
 	<div class="iframe-cont">
+		{% if include.thumbnail != null %}
+		<img alt="{{ include.caption }}" src="/assets/article/{{ include.thumbnail }}.jpg"/>
+		{% else %}
 		<img alt="{{ include.caption }}" src="https://img.youtube.com/vi/{{ include.video }}/maxresdefault.jpg"/>
+		{% endif %}
 		<iframe src="https://www.youtube.com/embed/{{ include.video }}?rel=0" frameborder="0" allowfullscreen></iframe>
 	</div>
 	<div class="image-caption">
