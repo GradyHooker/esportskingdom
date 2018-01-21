@@ -1,11 +1,11 @@
 <table class="rankings">
 	<tr class="headers">
-		<th>Rank</th>
+		<th style="min-width: 70px">Rank</th>
 		<th>Team</th>
 		<th class="unimportant-2">Division</th>
 		<th class="unimportant-2">Matches</th>
 		<th colspan="3">Match W/L</th>
-		<th class="unimportant">Points Diff</th>
+		<th class="unimportant">Map Diff</th>
 	</tr>
 {% assign rows = include.data | split: "," %}
 {% assign num_rows = rows | size | minus: 1 %}
@@ -13,12 +13,16 @@
 	<tr>
 		{% assign cols = rows[i] | split: "|" %}
 		{% assign rank = cols[0] | escape | strip_newlines %}
-		{% if cols[1] == rank %}
+		{% assign newrank = cols[1] | plus: 0 %}
+		{% assign oldrank = rank | plus: 0 %}
+		{% assign rankdiff = newrank | minus: oldrank %}
+		{% if newrank == oldrank %}
 		<td class="middle">{{ cols[0] }} (NC)</td>
-		{% elsif cols[1] < rank %}
-		<td class="middle">{{ cols[0] }} (<i class="fa fa-arrow-down" aria-hidden="true"></i> {{ cols[1] }})</td>
-		{% elsif cols[1] > rank %}
-		<td class="middle">{{ cols[0] }} (<i class="fa fa-arrow-up" aria-hidden="true"></i> {{ cols[1] }})</td>
+		{% elsif newrank < oldrank %}
+		{% assign rankdiff = rankdiff | times: -1 %}
+		<td class="middle">{{ cols[0] }} (<i class="fa fa-arrow-down" aria-hidden="true"></i> {{ rankdiff }})</td>
+		{% elsif newrank > oldrank %}
+		<td class="middle">{{ cols[0] }} (<i class="fa fa-arrow-up" aria-hidden="true"></i> {{ rankdiff }})</td>
 		{% endif %}
 		
 		{% assign team_name = cols[2] %}
@@ -34,7 +38,7 @@
 		<td class="left">{{ losses }}</td>
 		
 		{% assign losses = cols[7] | minus: cols[8] %}
-		<td class="middle unimportant">{{ losses }}</td>
+		<td class="middle unimportant">{{ losses }} ({{ cols[7] }} : {{ cols[8] }})</td>
 	</tr>
 {% endfor %}
 </table>
