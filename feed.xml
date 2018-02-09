@@ -8,6 +8,27 @@
     <atom:link href="https://esportskingdom.nz/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Nuke gets a major overhaul in new CSGO update</title>
+        <description>While everyone was busy watching the cs_summit2 tournament, Valve was being sneaky beaky and dropping a new update. This update included a major overhaul for the active duty map Nuke, update for the map Canals and small improvements all around.
+
+</description>
+        <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.nz/counter-strike/2018-02-nuke-feb-update</link>
+		
+		<author>Grady Hooker</author>
+		
+		<category>Counter-Strike</category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.nz/assets/banner/nuke-feb-update-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.nz/counter-strike/2018-02-nuke-feb-update</guid>
+      </item>
+    
+      <item>
         <title>Overwatch League Week 2 results and rankings</title>
         <description>The second week of Blizzard's esports league for Overwatch has come to an end with three teams still undefeated and two yet to even pick up a win. We take a look at the winners and losers this week and how that had changed the standings.
 
