@@ -16,6 +16,7 @@
 		border-radius: 5px;
 		box-shadow: 0 3px 0 rgba(0,0,0,0.1);
 		line-height: 1.6;
+		line-height: 1.6;
 		margin-right: 20px;
 		overflow: hidden;
 		position: relative;
@@ -181,7 +182,7 @@
 						
 						.captions {
 							flex: 1;
-							width: 100px;
+							max-width: calc(100% - 100px);
 							padding: 10px;
 							margin-top: 2px;
 							
