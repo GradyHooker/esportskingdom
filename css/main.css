@@ -738,6 +738,25 @@ header {
       @media screen and (max-width: 600px) {
         .posts .post-link:hover {
           margin-bottom: 9px; } }
+    .posts .post-link .post-fake {
+      margin-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: 1em !important; }
+      .posts .post-link .post-fake .makepage-cont {
+        width: 400px;
+        display: flex;
+        justify-content: space-between; }
+        .posts .post-link .post-fake .makepage-cont input {
+          width: 60%; }
+        .posts .post-link .post-fake .makepage-cont select {
+          padding: 1px;
+          width: calc(60% + 4px); }
+      .posts .post-link .post-fake:hover {
+        margin-top: 0px !important;
+        box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1) !important; }
     .posts .post-link .post {
       display: flex;
       padding: 20px;
