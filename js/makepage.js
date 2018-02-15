@@ -3,10 +3,6 @@ $(function() {
 		allowDragNDrop: false
 	});
 	
-	$('#shortName').keypress(function() {
-		$('.shortName').text($('#shortName').val());
-	});
-	
 	var currentdate = new Date(); 
 	var datetime = currentdate.getFullYear() + "-"
 			+ pad(currentdate.getMonth()+1)  + "-" 
@@ -71,8 +67,71 @@ $(function() {
 		finalVal += 'circa: ' + $("#circa").val() + '\n';
 		finalVal += "---" + "\n";
 		
+		var contentLines = $("#postContent").val().split("\n");
+		var specialBlock = false;
+		var specialLine = 0;
+		contentLines.forEach(function(line) {
+			if(line.replace(/ /g,'') != "") {
+				if(line.substr(0, 2) == "<<") {
+					specialBlock = true;
+					specialLine = 0;
+					line = line.substr(2, line.length).trim();
+				}
+				if(specialBlock) {
+					specialLine++;
+					if(line.substr(0, 2) == ">>") {
+						specialBlock = false;
+						specialLine = -1;
+					}
+					switch(specialLine) {
+						case 1: {
+							//Which includes to use 
+							finalVal += "{% include " + line.toLowerCase() + ".html";
+							break;
+						}
+						case -1: {
+							//Final one
+							finalVal += " %}\n\n";
+							break;
+						}
+						default: {
+							//Everything else
+							break;
+						}
+					}
+				} else {
+					switch(line.substr(0, 1)) {
+						case "#": {
+							finalVal += '<p class="subheading">' + line.substr(1, line.length).trim() + "</p>";
+							break;
+						}
+						case ">": {
+							finalVal += '{% include quote.html text="' + line.substr(1, line.length).trim() + '"%}';
+							break;
+						}
+						case "+": {
+							finalVal += '<p class="interview-question">' + line.substr(1, line.length).trim() + "</p>";
+							break;
+						}
+						case "-": {
+							finalVal += "<li>" + line.substr(1, line.length).trim() + "</li>";
+							break;
+						}
+						default: {
+							finalVal += "<p>" + line + "</p>";
+							break;
+						}
+					}
+					finalVal += "\n\n";
+				}
+			}
+		});
+		
 		$("#postPreview").val(finalVal);
 		$("#postPreview").attr("rows", Math.ceil(document.getElementById("postPreview").scrollHeight / 16));
+		
+		$('.shortName').text($('#shortName').val());
+		$('.shortDate').text($('#circa').val().split("-")[0] + "-" + $('#circa').val().split("-")[1] + "-");
 	}
 	
 	//var imageData = $('.image-editor').cropit('export');
