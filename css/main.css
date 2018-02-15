@@ -738,25 +738,6 @@ header {
       @media screen and (max-width: 600px) {
         .posts .post-link:hover {
           margin-bottom: 9px; } }
-    .posts .post-link .post-fake {
-      margin-bottom: 8px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      line-height: 1em !important; }
-      .posts .post-link .post-fake .makepage-cont {
-        width: 400px;
-        display: flex;
-        justify-content: space-between; }
-        .posts .post-link .post-fake .makepage-cont input {
-          width: 60%; }
-        .posts .post-link .post-fake .makepage-cont select {
-          padding: 1px;
-          width: calc(60% + 4px); }
-      .posts .post-link .post-fake:hover {
-        margin-top: 0px !important;
-        box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1) !important; }
     .posts .post-link .post {
       display: flex;
       padding: 20px;
@@ -1048,6 +1029,60 @@ header {
           max-width: 100%;
           padding: 8px;
           text-align: center; }
+
+.posts .post-link .post-fake {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1em !important; }
+  .posts .post-link .post-fake .makepage-cont {
+    width: 400px;
+    display: flex;
+    justify-content: space-between; }
+    .posts .post-link .post-fake .makepage-cont input {
+      width: 60%; }
+    .posts .post-link .post-fake .makepage-cont select {
+      padding: 1px;
+      width: calc(60% + 4px); }
+  .posts .post-link .post-fake textarea {
+    width: 100%; }
+  .posts .post-link .post-fake:hover {
+    margin-top: 0px !important;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1) !important; }
+
+.image-editor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .image-editor .cropit-preview {
+    background-color: #f8f8f8;
+    background-size: cover;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 7px; }
+    .image-editor .cropit-preview.cropit-preview-1 {
+      width: 950px;
+      height: 633px; }
+    .image-editor .cropit-preview.cropit-preview-2 {
+      width: 200px;
+      height: 100px; }
+    .image-editor .cropit-preview.cropit-preview-3 {
+      width: 100px;
+      height: 100px; }
+  .image-editor .cropit-preview-image-container {
+    cursor: move; }
+  .image-editor .image-size-label {
+    margin-top: 10px; }
+  .image-editor input, .image-editor .export {
+    display: block; }
+  .image-editor button {
+    margin-top: 10px; }
+  .image-editor .cropit-image-zoom-input {
+    width: 50%; }
 
 .error {
   width: calc(100% - 40px);
