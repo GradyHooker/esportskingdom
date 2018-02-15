@@ -28,14 +28,14 @@ $(function() {
 		return num;
 	}
 	
-	$('.makepage-fakeposts input').keypress(function() {
+	$('.makepage-fakeposts input, .makepage-fakeposts textarea').keypress(function() {
 		updatePreview();
 	});
 	
 	$('.makepage-fakeposts select').change(function() {
 		updatePreview();
 	});
-	
+		
 	//JavaScript by Yair Even Or (https://codepen.io/vsync/pen/frudD)
 	$(document)
     .one('focus.autoExpand', 'textarea.autoExpand', function(){
@@ -53,8 +53,27 @@ $(function() {
 	//End Credit
 	
 	function updatePreview() {
-		console.log("HI");
+		var finalVal = "";
+		
+		finalVal += "---" + "\n";
+		finalVal += "layout: post" + "\n";
+		finalVal += 'title: "' + $("#displayName").val() + '"\n';
+		finalVal += 'fulltitle: "' + $("#displayName").val() + '"\n';
+		finalVal += 'category: ' + $("#category").val() + '\n';
+		finalVal += 'tags: ' + $("#articleParentType").val() + " " + $("#articleType").val() + " " + $("#genre").val() + '\n';
+		finalVal += 'image: ' + $("#shortName").val() + '\n';
+		finalVal += 'author: ' + $("#author").val() + '\n';
+		if($("#headerCredit").val() != "" || $("#headerCreditLink").val() != "") {
+			finalVal += 'headercredit: ' + '\n';
+			finalVal += '  - name: ' + $("#headerCredit").val() + '\n';
+			finalVal += '    link: ' + $("#headerCreditLink").val() + '\n';
+		}
+		finalVal += 'circa: ' + $("#circa").val() + '\n';
+		finalVal += "---" + "\n";
+		
+		$("#postPreview").val(finalVal);
+		$("#postPreview").attr("rows", Math.ceil(document.getElementById("postPreview").scrollHeight / 16));
 	}
-
+	
 	//var imageData = $('.image-editor').cropit('export');
 });

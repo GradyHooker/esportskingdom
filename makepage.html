@@ -1,6 +1,6 @@
 ---
 layout: base
-hasCropit: true
+type: makepage
 sitemap: false
 ---
 <div class="posts makepage-fakeposts">
@@ -53,9 +53,17 @@ sitemap: false
 			<div class="makepage-cont">
 				<label for="articleParentType">Article Parent Type: </label>
 				<select id="articleParentType">
-					<option value="feature">Feature</option>
+					<option value="features">Feature</option>
 					<option value="weekly">Weekly</option>
 				</select>
+			</div>
+			<div class="makepage-cont">
+				<label for="headerCredit">Header Credit: </label>
+				<input id="headerCredit" type="text" value=""/>
+			</div>
+			<div class="makepage-cont">
+				<label for="headerCreditLink">Header Credit Link: </label>
+				<input id="headerCreditLink" type="text" value=""/>
 			</div>
 			<div class="makepage-cont">
 				<label for="author">Author: </label>
@@ -99,11 +107,12 @@ sitemap: false
 			</div>
 		</div>
 		<div class="post post-fake">
-			Article Content
+			<div>Post Content:</div>
+			<textarea id="postContent" class="autoExpand" rows="16" data-min-rows="16"></textarea>
 		</div>
 		<div class="post post-fake">
-			Preview Text?
+			<div>Preview:</div>
+			<textarea id="postPreview" class="autoExpand" rows="1" data-min-rows="1"></textarea>
 		</div>
 	</div>
 </div>
-<
