@@ -20,9 +20,9 @@
 		<td class="middle">{{ cols[0] }} (NC)</td>
 		{% elsif newrank < oldrank %}
 		{% assign rankdiff = rankdiff | times: -1 %}
-		<td class="middle">{{ cols[0] }} (<i class="fa fa-arrow-down" aria-hidden="true"></i> {{ rankdiff }})</td>
+		<td class="middle">{{ cols[0] }} (<i class="fas fa-arrow-down"></i> {{ rankdiff }})</td>
 		{% elsif newrank > oldrank %}
-		<td class="middle">{{ cols[0] }} (<i class="fa fa-arrow-up" aria-hidden="true"></i> {{ rankdiff }})</td>
+		<td class="middle">{{ cols[0] }} (<i class="fas fa-arrow-up"></i> {{ rankdiff }})</td>
 		{% endif %}
 		
 		{% assign team_name = cols[2] %}

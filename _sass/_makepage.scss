@@ -23,6 +23,20 @@
 				}
 			}
 			
+			.makepage-buttons {
+				display: flex;
+				
+				button {
+					padding: 4px;
+					margin: 8px;
+					width: 100px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					cursor: pointer;
+				}
+			}
+			
 			textarea {
 				width: 100%;
 			}
