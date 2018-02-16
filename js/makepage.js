@@ -203,4 +203,65 @@ $(function() {
 	}
 	
 	//var imageData = $('.image-editor').cropit('export');
+	
+	if(window.File && window.FileList && window.FileReader)
+    {
+        $('#files').change(function(event) {
+            var files = event.target.files;
+            var output = document.getElementById("result");
+			var count = 0;
+            for(var i = 0; i < files.length; i++)
+            {
+				(function () {
+					var j = i + 1;
+					var file = files[i];
+					if(file.type.match('image.*'))
+					{
+						if(document.getElementById("files").files[0].size < 2097152)
+						{    
+							var picReader = new FileReader();
+							picReader.addEventListener("load",function(event)
+							{
+								var picFile = event.target;
+								var div = document.createElement("div");
+								div.style.order = j;
+								div.innerHTML = "<img class='thumbnail' src='" + picFile.result + "'" + "title='preview image'/><div><span class='shortName'></span>-" + j + ".jpg</div>";
+								output.insertBefore(div,null);            
+							});
+							$('#clear, #result').show();
+							picReader.readAsDataURL(file);
+						}
+						else
+						{
+							alert("Image Size is too big. Minimum size is 2MB.");
+							$('#files').val("");
+						}
+					}
+					else
+					{
+						alert("You can only upload image file.");
+						$('#files').val("");
+					}
+					count++;
+				}());	
+			}		
+        });
+    }
+    else
+    {
+        console.log("Your browser does not support File API");
+    }
+});
+
+$('#files').click(function() {
+	$('.thumbnail').parent().remove();
+	$('result').hide();
+	$(this).val("");
+});
+
+$('#clear').click(function() {
+	$('.thumbnail').parent().remove();
+	$('#result').hide();
+	$('#files').val("");
+	$(this).hide();
 });
