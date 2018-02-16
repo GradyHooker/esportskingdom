@@ -65,13 +65,23 @@ $(function() {
 			finalVal += '    link: ' + $("#headerCreditLink").val() + '\n';
 		}
 		finalVal += 'circa: ' + $("#circa").val() + '\n';
+		
+		if($("#postContent").val().split("CAROUSEL").length > 1) {
+			finalVal += 'hasSlick: true\n';
+		}
+		
 		finalVal += "---" + "\n";
 		
 		var contentLines = $("#postContent").val().split("\n");
 		var specialBlock = false;
+		var inList = false;
 		var specialLine = 0;
 		contentLines.forEach(function(line) {
 			if(line.replace(/ /g,'') != "") {
+				//Replace URLs
+				line = line.replace(/__|\*|\#|(?:\[([^\]]*)\]\(([^)]*)\))/gm, "<a href='$2'>$1</a>");
+				
+				//handle includes
 				if(line.substr(0, 2) == "<<") {
 					specialBlock = true;
 					specialLine = 0;
@@ -83,6 +93,7 @@ $(function() {
 						specialBlock = false;
 						specialLine = -1;
 					}
+					line = line.replace(/"/g, "'");
 					switch(specialLine) {
 						case 1: {
 							//Which includes to use 
@@ -91,11 +102,36 @@ $(function() {
 						}
 						case -1: {
 							//Final one
+							if(inList) {
+								finalVal = finalVal.substr(0, finalVal.length-1) + '"';
+								inList = false;
+							}
 							finalVal += " %}\n\n";
 							break;
 						}
 						default: {
 							//Everything else
+							var splits = line.split(/:(.+)/);
+							
+							if(line.substr(0, 1) == "-") {
+								finalVal += line.substr(1, line.length).trim() + '|';
+							} else {
+								if(inList) {
+									finalVal = finalVal.substr(0, finalVal.length-1) + '"';
+									inList = false;
+								}
+								if(splits.length > 1 && splits[1].trim() != "") {
+									//KeyValue
+									finalVal += " " + splits[0].trim() + '="' + splits[1].trim() + '"';
+								} else {
+									//List
+									inList = true;
+									finalVal += " " + splits[0].trim().substr(0, line.length-1) + '="';
+								}
+							}
+							
+							
+							
 							break;
 						}
 					}
