@@ -1,0 +1,56 @@
+---
+layout: post
+title: "Nuke gets a major overhaul in new CSGO update"
+fulltitle: "Nuke gets a major overhaul in new CSGO update"
+category: call-of-duty
+tags: features other-articles fps-games 
+image: nuke-feb-update
+author: gradyhooker
+hasSlick: true
+headercredit:
+  - name: Reddit user KPC51
+    link: https://www.reddit.com/user/KPC51
+circa: 2018-02-17 12:04:43 +1300
+---
+<p>While everyone was busy watching the cs_summit2 tournament, Valve was being sneaky beaky and dropping a new update. This update included a major overhaul for the active duty map Nuke, update for the map Canals and small improvements all around.</p>
+
+<p>Thanks to Reddit user KPC51, we have some useful images of the changes to the Nuke map.</p>
+
+{% include carousel.html folder="article" images="nuke-feb-1|nuke-feb-2|nuke-feb-3|nuke-feb-4|nuke-feb-5|nuke-feb-6|nuke-feb-7|nuke-feb-8|nuke-feb-9|nuke-feb-10" captions="Removed outer catwalk completely|Removed helper catwalk onto silo|New type of skylight windows in A site|Added some cover in corner at back of B site|Removed railings when entering B site from ramp|Removed window in hut|Blocked off 'old secret' area outside of garage|Added solid white walls near CT spawn|Rotated container outside of garage, and removed some smaller crates|Removed access to crane inside of A site, made more of rafters accessible, Reverted box-path onto hut inside A site to the old configuration, Removed ladder up to rafters from inside A site" %}
+
+<p>Not pictured updates of Nuke:</p>
+
+<li>Moved entrance to hut slightly further in</li>
+<li>Moved up spawns for both teams</li>
+<li>Flipped static doors at T entrance to ramp</li>
+<li>Added collision for physics objects (except grenades) near water in B site</li>
+
+<p>Nuke wasn't the only map to get updates though, the love-it-or-hate-it map Canals also saw a lot of air-time in the patch notes.</p>
+
+<li>Closed off windows overlooking courtyard and A</li>
+<li>Cleaned up sightline from corner balcony toward A and Arch</li>
+<li>Made CT route to B more direct</li>
+<li>Joined two rooms on CT side of B into one space</li>
+<li>Simplified cover on back side of B</li>
+<li>Removed Ivy "laddice", now a skill jump / boost spot</li>
+<li>Grenade-clipped CT bridge railings for more predictable smokes</li>
+<li>Moved courtyard statues forward for cleaner sightline</li>
+<li>Added ashtray for smokers</li>
+
+<p>Other than just map updates we also got the highly anticipated shotgun spread update moving from the beta branch into the main game. The full details can be seen in this Valve blog post from December - <a href="http://blog.counter-strike.net/index.php/holiday-spread/">http://blog.counter-strike.net/index.php/holiday-spread/</a>.</p>
+ 
+<p>Finally, we got some extra minor fixes and updates to gamemodes, mapping tools, DoS protection and "Co-Op Strike":</p>
+
+<li>Co-op Strike, Wingman, and Flying Scoutsman tags have been added to the workshop, so map authors can now tag their maps as playable in those modes.</li>
+<li>Co-op Strike, Wingman, and Flying Scoutsman tagged maps can now be launched into those modes from the Workshop tabs in game.</li>
+<li>Added a map place-able entity (vgui_world_text_panel) that allows mappers to put floating, localizable text in their map without needing custom res files.</li>
+<li>Added vscript function named ScriptPrintMessageCenterAllWithParams which requires 3 params that get inserted into the localization token at the %s1’s.</li>
+<li>CGamePlayerEquip now handles picking up healthshots and now respects max carry for grenades.</li>
+<li>Disabled sv_allowupload by default. If enabled, the filter restricting potentially malicious file types has been expanded.</li>
+<li>No longer exposing the server IP to clients in a circumstance where it wasn’t necessary. This should help prevent some DoS attacks.</li>
+<li>When players complete a custom co-op mission, it now restarts the map at the end of intermission instead of sitting at a black screen.</li>
+<li>Fixed barrel exploding particle effect relying on a specific map’s effects and now has it’s own unique effects.</li>
+<li>Slightly increased barrel explode radius.</li>
+<li>Added mp_heavybot_damage_reduction_scale convar which allows maps/missions to adjust how much damage heavy bots can take.</li>
+<li>Various fixes to the Heavy Assault Suit in Co-op Strike mode to allow it to work like it used to in that mode.</li>
+<li>Exposed some convars to allow Co-op Strike (and other modes) to adjust the Heavy Assault Suit (mp_weapons_allow_heavyassaultsuit, mp_heavyassaultsuit_speed, mp_heavyassaultsuit_deploy_timescale, mp_heavyassaultsuit_aimpunch).</li>
