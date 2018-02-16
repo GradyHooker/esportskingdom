@@ -199,17 +199,14 @@ $(function() {
 		$("#postPreview").attr("rows", Math.ceil(document.getElementById("postPreview").scrollHeight / 16));
 		
 		$('.shortName').text($('#shortName').val());
-		$('.shortDate').text($('#circa').val().split("-")[0] + "-" + $('#circa').val().split("-")[1] + "-");
+		$('.shortDate').text($('#circa').val().split("-")[0] + "-" + $('#circa').val().split("-")[1] + "-" + $('#circa').val().split("-")[2].split(" ")[0] + "-");
 	}
-	
-	//var imageData = $('.image-editor').cropit('export');
 	
 	if(window.File && window.FileList && window.FileReader)
     {
         $('#files').change(function(event) {
             var files = event.target.files;
             var output = document.getElementById("result");
-			var count = 0;
             for(var i = 0; i < files.length; i++)
             {
 				(function () {
@@ -242,7 +239,6 @@ $(function() {
 						alert("You can only upload image file.");
 						$('#files').val("");
 					}
-					count++;
 				}());	
 			}		
         });
@@ -265,3 +261,63 @@ $('#clear').click(function() {
 	$('#files').val("");
 	$(this).hide();
 });
+
+//GITHUB CONNECTION STUFF
+var filesToCommit = [];
+var extraFilesLength;
+var extraFilesCount = 0;
+var commitMsg;
+$("#submit").click( function() {
+	commitMsg = "New Article: " + $("#displayName").val();
+	filesToCommit = [];
+	
+	//Deal with extra files first
+	var extraFilesInput = document.getElementById("files").files;
+	extraFilesLength = extraFilesInput.length;
+	if(extraFilesLength == 0) {
+		continueCommit();
+	}
+	for(var i = 0; i < extraFilesInput.length; i++) {
+		(function () {
+			var j = i;
+			var file = extraFilesInput[i];
+			var picReader = new FileReader();
+			picReader.addEventListener("load", function(e)
+			{
+				addExtraFile(e.target.result.replace(/^(.+,)/, ''), j);
+			});
+			picReader.readAsDataURL(file);
+		}());
+	}
+});
+
+function addExtraFile(fileContent, index) {
+	extraFilesCount++;
+	filesToCommit[index] = {content: {content: fileContent, encoding: 'base64'}, path: 'assets/article/' + $("#shortName").val() + '-' + (index+1) + '.jpg'};
+	if(extraFilesCount == extraFilesLength) {
+		continueCommit();
+	}
+}
+
+function continueCommit() {
+	//Add Big
+	filesToCommit[filesToCommit.length] = {content: {content: $('.image-editor-1').cropit('export').replace(/^(.+,)/, ''), encoding: 'base64'}, path: 'assets/banner/' + $("#shortName").val() + '.jpg'};
+	//Add Small
+	filesToCommit[filesToCommit.length] = {content: {content: $('.image-editor-2').cropit('export').replace(/^(.+,)/, ''), encoding: 'base64'}, path: 'assets/banner/' + $("#shortName").val() + '-small.jpg'};
+	//Add Square
+	filesToCommit[filesToCommit.length] = {content: {content: $('.image-editor-3').cropit('export').replace(/^(.+,)/, ''), encoding: 'base64'}, path: 'assets/banner/' + $("#shortName").val() + '-square.jpg'};
+	//Add Post
+	filesToCommit[filesToCommit.length] = {content: $("#postPreview").val(), path: '_posts/' + $('#circa').val().split("-")[0] + "-" + $('#circa').val().split("-")[1] + "-" + $('#circa').val().split("-")[2].split(" ")[0] + "-" + $("#shortName").val() + '.html'};
+	
+	console.log(commitMsg);
+	console.log(filesToCommit);
+	
+	let api = new GithubAPI({token: key});
+	api.setRepo('gradyhooker', 'esportskingdom');
+	api.setBranch('master')
+	.then( () => api.pushFiles(commitMsg, filesToCommit)
+	)
+	.then(function() {
+		console.log('Files committed!');
+	});
+}

@@ -3,16 +3,21 @@ layout: base
 type: makepage
 sitemap: false
 ---
+<script src="../lib/github/GitHub.bundle.js"></script>
+<script src="../lib/githubapipush/GithubApiPush.js"></script>
+<script type="text/javascript">
+	var key = prompt("Please enter your GitHub API key to access this page", "");
+</script>
 <div class="posts makepage-fakeposts">
     <div class="post-link">
 		<div class="post post-fake">
 			<div class="makepage-cont">
 				<label for="shortName">Short Name: </label>
-				<input id="shortName" type="text"/>
+				<input id="shortName" type="text" value="test-api"/>
 			</div>
 			<div class="makepage-cont">
 				<label for="displayName">Display Title: </label>
-				<input id="displayName" type="text"/>
+				<input id="displayName" type="text" value="TEST API"/>
 			</div>
 			<div class="makepage-cont">
 				<label for="category">Game: </label>
@@ -58,7 +63,7 @@ sitemap: false
 			<div>
 				<span class="shortName"></span>.jpg
 			</div>
-			<div class="image-editor">
+			<div class="image-editor image-editor-1">
 				<input type="file" class="cropit-image-input">
 				<div class="cropit-preview cropit-preview-1"></div>
 				<input type="range" class="cropit-image-zoom-input">
@@ -68,7 +73,7 @@ sitemap: false
 			<div>
 				<span class="shortName"></span>-small.jpg
 			</div>
-			<div class="image-editor">
+			<div class="image-editor image-editor-2">
 				<input type="file" class="cropit-image-input">
 				<div class="cropit-preview cropit-preview-2"></div>
 				<input type="range" class="cropit-image-zoom-input">
@@ -78,7 +83,7 @@ sitemap: false
 			<div>
 				<span class="shortName"></span>-square.jpg
 			</div>
-			<div class="image-editor">
+			<div class="image-editor image-editor-3">
 				<input type="file" class="cropit-image-input">
 				<div class="cropit-preview cropit-preview-3"></div>
 				<input type="range" class="cropit-image-zoom-input">
@@ -131,6 +136,9 @@ sitemap: false
 		<div class="post post-fake">
 			<div><span class="shortDate"></span><span class="shortName"></span>.html</div>
 			<textarea id="postPreview" rows="1" disabled ></textarea>
+		</div>
+		<div class="post post-fake">
+			<button id="submit">SUBMIT</button>
 		</div>
 	</div>
 </div>
