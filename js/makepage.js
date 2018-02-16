@@ -31,22 +31,54 @@ $(function() {
 	$('.makepage-fakeposts select').change(function() {
 		updatePreview();
 	});
-		
-	//JavaScript by Yair Even Or (https://codepen.io/vsync/pen/frudD)
-	$(document)
-    .one('focus.autoExpand', 'textarea.autoExpand', function(){
-        var savedValue = this.value;
-        this.value = '';
-        this.baseScrollHeight = this.scrollHeight;
-        this.value = savedValue;
-    })
-    .on('input.autoExpand', 'textarea.autoExpand', function(){
-        var minRows = this.getAttribute('data-min-rows')|0, rows;
-        this.rows = minRows;
-        rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 16);
-        this.rows = minRows + rows;
-    });
-	//End Credit
+	
+	function insertInclude(name) {
+		var toAdd = "";
+		var cursorPos = $('#postContent').prop('selectionStart');
+		var v = $('#postContent').val();
+		switch(name){ 
+			case "video": {
+				toAdd = "<<VIDEO\nvideo: \ncaption: \ncredit: \ncreditlink: \n>>";
+				break;
+			}
+			case "image": {
+				toAdd = "<<IMAGE\nimage: \ncaption: \ncredit: \ncreditlink: \n>>";
+				break;
+			}
+			case "carousel": {
+				toAdd = "<<CAROUSEL\nfolder: \nimages:\n- \n- \n- \ncaptions:\n- \n- \n- \n>>";
+				break;
+			}
+			case "logo": {
+				toAdd = "<<LOGO\nlogo: \nsize: \n>>";
+				break;
+			}
+			case "logoheadline": {
+				toAdd = "<<LOGOHEADLINE\nlogo: \nheadline: \n>>";
+				break;
+			}
+			case "logolist": {
+				toAdd = "<<LOGOLIST\nlogos:\n- \n- \n- \n>>";
+				break;
+			}
+			case "teamlist": {
+				toAdd = "<<TEAMLIST\nlogo: \nplayers:\n- \n- \n- \n- \n- \ncountry:\n- \n- \n- \n- \n- \n>>";
+				break;
+			}
+		}
+		var textBefore = v.substring(0,  cursorPos );
+		var textAfter  = v.substring( cursorPos, v.length );
+		$('#postContent').val( textBefore + toAdd + textAfter );
+		updatePreview();
+	}
+	
+	$(".makepage-buttons button").click(function() {
+		insertInclude($(this).data("include"));
+	});
+
+	$("#postContent").keypress(function() {
+		$("#postContent").attr("rows", Math.ceil(document.getElementById("postContent").scrollHeight / 16));
+	});
 	
 	function updatePreview() {
 		var finalVal = "";
