@@ -1076,6 +1076,23 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .image-editor .thumbnail {
+    max-height: 240px;
+    max-width: 427px;
+    margin: 10px;
+    float: left; }
+  .image-editor #clear {
+    display: none; }
+  .image-editor #result {
+    border: 4px dotted #cccccc;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; }
   .image-editor .cropit-preview {
     background-color: #f8f8f8;
     background-size: cover;

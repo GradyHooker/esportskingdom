@@ -169,46 +169,85 @@
 				<input id="displayName" type="text"/>
 			</div>
 			<div class="makepage-cont">
-				<label for="category">Category: </label>
+				<label for="category">Game: </label>
 				<select id="category">
-					<option value="counter-strike">Counter-Strike</option>
-					<option value="overwatch">Overwatch</option>
 					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-				</select>
-			</div>
-			<div class="makepage-cont">
-				<label for="genre">Genre: </label>
-				<select id="genre">
-					<option value="fps-games">FPS Games</option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
+					
+					<option value="counter-strike" data-parent=fps-games>Counter-Strike</option>
+					
+					<option value="call-of-duty" data-parent=fps-games>Call of Duty</option>
+					
+					<option value="halo" data-parent=fps-games>Halo</option>
+					
+					<option value="overwatch" data-parent=fps-games>Overwatch</option>
+					
+					<option value="pubg" data-parent=fps-games>PUBG</option>
+					
+					<option value="rainbow-six" data-parent=fps-games>Rainbow Six</option>
+					
+					<option value="dota-2" data-parent=moba-rts-games>DOTA 2</option>
+					
+					<option value="heroes-of-the-storm" data-parent=moba-rts-games>Heroes of the Storm</option>
+					
+					<option value="league-of-legends" data-parent=moba-rts-games>League of Legends</option>
+					
+					<option value="starcraft" data-parent=moba-rts-games>Starcraft</option>
+					
+					<option value="marvel-v-capcom" data-parent=fighting-games>Marvel vs. Capcom</option>
+					
+					<option value="smash-bros" data-parent=fighting-games>Super Bros.</option>
+					
+					<option value="street-fighter" data-parent=fighting-games>Street Fighter</option>
+					
+					<option value="tekken" data-parent=fighting-games>Tekken</option>
+					
+					<option value="gt-sport" data-parent=sports-games>GT Sport</option>
+					
+					<option value="fifa" data-parent=sports-games>FIFA</option>
+					
+					<option value="madden" data-parent=sports-games>Madden</option>
+					
+					<option value="nba" data-parent=sports-games>NBA</option>
+					
+					<option value="rocket-league" data-parent=sports-games>Rocket League</option>
+					
+					<option value="hearthstone" data-parent=other-games>Hearthstone</option>
+					
+					<option value="pokemon" data-parent=other-games>Pokemon</option>
+					
+					<option value="arms" data-parent=fighting-games>ARMS</option>
+					
+					<option value="pokken" data-parent=fighting-games>Pokkén Tournament</option>
+					
+					<option value="fortnite" data-parent=fps-games>Fortnite</option>
+					
+					<option value="multiple-games" data-parent=other-games>Multiple Games</option>
+					
 				</select>
 			</div>
 			<div class="makepage-cont">
 				<label for="articleType">Article Type: </label>
 				<select id="articleType">
-					<option value="other-articles">Other Articles</option>
 					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-				</select>
-			</div>
-			<div class="makepage-cont">
-				<label for="articleParentType">Article Parent Type: </label>
-				<select id="articleParentType">
-					<option value="features">Feature</option>
-					<option value="weekly">Weekly</option>
+					
+					<option value="game-updates" data-parent=features>Game Updates</option>
+					
+					<option value="event-previews" data-parent=features>Event Previews</option>
+					
+					<option value="event-recaps" data-parent=features>Event Recaps</option>
+					
+					<option value="from-the-event" data-parent=features>From The Event</option>
+					
+					<option value="interviews" data-parent=features>Interviews</option>
+					
+					<option value="other-articles" data-parent=features>Other Articles</option>
+					
+					<option value="lesser-tournament" data-parent=weekly>Lesser Tournament Lowdown</option>
+					
+					<option value="roster-change" data-parent=weekly>Roster Change Roundup</option>
+					
+					<option value="this-week-in" data-parent=weekly>This Week In...</option>
+					
 				</select>
 			</div>
 			<div class="makepage-cont">
@@ -258,6 +297,16 @@
 				<input type="file" class="cropit-image-input">
 				<div class="cropit-preview cropit-preview-3"></div>
 				<input type="range" class="cropit-image-zoom-input">
+			</div>
+		</div>
+		<div class="post post-fake">
+			<div>
+				Additional Images
+			</div>
+			<div class="image-editor">
+				<input id="files" type="file" multiple/>
+				<button type="button" id="clear">Clear</button>
+				<output id="result" />
 			</div>
 		</div>
 		<div class="post post-fake">
