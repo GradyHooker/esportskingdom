@@ -43,6 +43,9 @@ sitemap: false
 			<div class="makepage-cont">
 				<label for="author">Author: </label>
 				<select id="author">
+					{% for entry in site.data.authors %}
+					<option value="{{ entry.id }}" >{{ entry.title }}</option>
+					{% endfor %}
 					<option value="gradyhooker">Grady Hooker</option>
 				</select>
 			</div>
