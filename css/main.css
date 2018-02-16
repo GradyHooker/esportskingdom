@@ -338,9 +338,9 @@ body {
     .rankings tr .flex * {
       padding-left: 4px;
       padding-right: 4px; }
-  .rankings tr .fa.fa-arrow-down {
+  .rankings tr .fas.fa-arrow-down {
     color: #F7977A; }
-  .rankings tr .fa.fa-arrow-up {
+  .rankings tr .fas.fa-arrow-up {
     color: #82CA9D; }
   @media screen and (max-width: 768px) {
     .rankings tr .unimportant {
@@ -1054,6 +1054,16 @@ header {
     .posts .post-link .post-fake .makepage-cont select {
       padding: 1px;
       width: calc(60% + 4px); }
+  .posts .post-link .post-fake .makepage-buttons {
+    display: flex; }
+    .posts .post-link .post-fake .makepage-buttons button {
+      padding: 4px;
+      margin: 8px;
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer; }
   .posts .post-link .post-fake textarea {
     width: 100%; }
   .posts .post-link .post-fake:hover {
