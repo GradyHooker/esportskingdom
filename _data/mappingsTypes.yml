@@ -1,0 +1,27 @@
+- id: game-updates
+  title: Game Updates
+  parent: features
+- id: event-previews
+  title: Event Previews
+  parent: features
+- id: event-recaps
+  title: Event Recaps
+  parent: features
+- id: from-the-event
+  title: From The Event
+  parent: features
+- id: interviews
+  title: Interviews
+  parent: features
+- id: other-articles
+  title: Other Articles
+  parent: features
+- id: lesser-tournament
+  title: Lesser Tournament Lowdown
+  parent: weekly
+- id: roster-change
+  title: Roster Change Roundup
+  parent: weekly
+- id: this-week-in
+  title: This Week In...
+  parent: weekly

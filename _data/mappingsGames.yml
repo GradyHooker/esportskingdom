@@ -1,82 +1,75 @@
 - id: counter-strike
   title: Counter-Strike
+  parent: fps-games
 - id: call-of-duty
   title: Call of Duty
+  parent: fps-games
 - id: halo
   title: Halo
+  parent: fps-games
 - id: overwatch
   title: Overwatch
+  parent: fps-games
 - id: pubg
   title: PUBG
+  parent: fps-games
 - id: rainbow-six
   title: Rainbow Six
+  parent: fps-games
 - id: dota-2
   title: DOTA 2
+  parent: moba-rts-games
 - id: heroes-of-the-storm
   title: Heroes of the Storm
+  parent: moba-rts-games
 - id: league-of-legends
   title: League of Legends
+  parent: moba-rts-games
 - id: starcraft
   title: Starcraft
+  parent: moba-rts-games
 - id: marvel-v-capcom
   title: Marvel vs. Capcom
+  parent: fighting-games
 - id: smash-bros
   title: Super Bros.
+  parent: fighting-games
 - id: street-fighter
   title: Street Fighter
+  parent: fighting-games
 - id: tekken
   title: Tekken
+  parent: fighting-games
 - id: gt-sport
   title: GT Sport
+  parent: sports-games
 - id: fifa
   title: FIFA
+  parent: sports-games
 - id: madden
   title: Madden
+  parent: sports-games
 - id: nba
   title: NBA
+  parent: sports-games
 - id: rocket-league
   title: Rocket League
+  parent: sports-games
 - id: hearthstone
   title: Hearthstone
+  parent: other-games
 - id: pokemon
   title: Pokemon
-- id: fps-games
-  title: FPS Games
-- id: moba-rts-games
-  title: MOBA/RTS Games
-- id: fighting-games
-  title: Fighting Games
-- id: sports-games
-  title: Sports Games
-- id: other-games
-  title: Other Games
-- id: multiple-games
-  title: Multiple Games
-- id: features
-  title: Feature Articles
-- id: weekly
-  title: Weekly Articles
-- id: game-updates
-  title: Game Updates
-- id: event-previews
-  title: Event Previews
-- id: event-recaps
-  title: Event Recaps
-- id: from-the-event
-  title: From The Event
-- id: interviews
-  title: Interviews
-- id: other-articles
-  title: Other Articles
-- id: lesser-tournament
-  title: Lesser Tournament Lowdown
-- id: roster-change
-  title: Roster Change Roundup
-- id: this-week-in
-  title: This Week In...
+  parent: other-games
 - id: arms
   title: ARMS
+  parent: fighting-games
 - id: pokken
   title: Pokkén Tournament
+  parent: fighting-games
 - id: fortnite
   title: Fortnite
+  parent: fps-games
+- id: multiple-games
+  title: Multiple Games
+  parent: other-games

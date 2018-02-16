@@ -88,7 +88,7 @@ $(function() {
 		finalVal += 'title: "' + $("#displayName").val() + '"\n';
 		finalVal += 'fulltitle: "' + $("#displayName").val() + '"\n';
 		finalVal += 'category: ' + $("#category").val() + '\n';
-		finalVal += 'tags: ' + $("#articleParentType").val() + " " + $("#articleType").val() + " " + $("#genre").val() + '\n';
+		finalVal += 'tags: ' + $("#articleType").find(":selected").data("parent") + " " + $("#articleType").val() + " " + $("#category").find(":selected").data("parent") + '\n';
 		finalVal += 'image: ' + $("#shortName").val() + '\n';
 		finalVal += 'author: ' + $("#author").val() + '\n';
 		if($("#headerCredit").val() != "" || $("#headerCreditLink").val() != "") {

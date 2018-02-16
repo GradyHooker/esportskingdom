@@ -24,7 +24,13 @@
 	<meta name="twitter:image" content="{{ site.url }}/assets/banner/{{ page.image }}.jpg">
 	{% else %}
 	{% if layout.type == "autopage" %}
-	{% assign category-metadata = site.data.mappings | where:"id",page.title | first %}
+	{% assign category-metadata = site.data.mappingsGames | where:"id",page.title | first %}
+	{% if category-metadata == null %}
+	{% assign category-metadata = site.data.mappingsGenres | where:"id",page.title | first %}
+	{% if category-metadata == null %}
+	{% assign category-metadata = site.data.mappingsTypes | where:"id",page.title | first %}
+	{% endif %}
+	{% endif %}
 	<title>{{ category-metadata.title }} | Esports Kingdom</title>
 	{% else %}
 	<title>Esports Kingdom</title>

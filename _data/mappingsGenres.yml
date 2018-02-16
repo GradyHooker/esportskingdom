@@ -1,0 +1,10 @@
+- id: fps-games
+  title: FPS Games
+- id: moba-rts-games
+  title: MOBA/RTS Games
+- id: fighting-games
+  title: Fighting Games
+- id: sports-games
+  title: Sports Games
+- id: other-games
+  title: Other Games

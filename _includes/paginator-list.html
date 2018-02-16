@@ -15,13 +15,13 @@
 			
 			<div class="post-details">
 				<div class="post-detaillinks">
-					{% assign category-metadata = site.data.mappings | where:"id",post.category | first %}
+					{% assign category-metadata = site.data.mappingsGames | where:"id",post.category | first %}
 					<div class="post-game pretty-print">{{ category-metadata.title }}</div>
 					<div class="post-separator">|</div>
-					{% assign category-metadata = site.data.mappings | where:"id",post.tags[1] | first %}
-					<div class="post-genre pretty-print">{{ category-metadata.title }}</div>
+					{% assign article-metadata = site.data.mappingsTypes | where:"id",post.tags[1] | first %}
+					<div class="post-genre pretty-print">{{ article-metadata.title }}</div>
 					<div class="post-separator">|</div>
-					{% assign category-metadata = site.data.mappings | where:"id",post.tags[2] | first %}
+					{% assign category-metadata = site.data.mappingsGenres | where:"id",category-metadata.parent | first %}
 					<div class="post-show pretty-print">{{ category-metadata.title }}</div>
 				</div>
 				{% assign displayTime = post.circa | date: "%Y.%m.%d" %}

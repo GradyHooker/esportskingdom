@@ -15,46 +15,21 @@ sitemap: false
 				<input id="displayName" type="text"/>
 			</div>
 			<div class="makepage-cont">
-				<label for="category">Category: </label>
+				<label for="category">Game: </label>
 				<select id="category">
-					<option value="counter-strike">Counter-Strike</option>
-					<option value="overwatch">Overwatch</option>
 					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-				</select>
-			</div>
-			<div class="makepage-cont">
-				<label for="genre">Genre: </label>
-				<select id="genre">
-					<option value="fps-games">FPS Games</option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
+					{% for entry in site.data.mappingsGames %}
+					<option value="{{ entry.id }}" data-parent={{ entry.parent }}>{{ entry.title }}</option>
+					{% endfor %}
 				</select>
 			</div>
 			<div class="makepage-cont">
 				<label for="articleType">Article Type: </label>
 				<select id="articleType">
-					<option value="other-articles">Other Articles</option>
 					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-					<option value=""></option>
-				</select>
-			</div>
-			<div class="makepage-cont">
-				<label for="articleParentType">Article Parent Type: </label>
-				<select id="articleParentType">
-					<option value="features">Feature</option>
-					<option value="weekly">Weekly</option>
+					{% for entry in site.data.mappingsTypes %}
+					<option value="{{ entry.id }}" data-parent={{ entry.parent }}>{{ entry.title }}</option>
+					{% endfor %}
 				</select>
 			</div>
 			<div class="makepage-cont">
