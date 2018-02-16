@@ -186,6 +186,41 @@ body {
             align-items: center;
             outline: 0 !important;
             font-size: 40px; }
+          .page-main .post-container .post-content .media .carousel .slides .slick-prev:before, .page-main .post-container .post-content .media .carousel .slides .slick-next:before {
+            color: red !important; }
+          .page-main .post-container .post-content .media .carousel .slides[data-builtin=true] {
+            display: flex;
+            align-items: center; }
+          .page-main .post-container .post-content .media .carousel .pagination__button {
+            cursor: pointer;
+            font-style: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            margin: 4px;
+            display: flex;
+            background: #EEE;
+            border-radius: 5px;
+            box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
+            transition: 0.15s;
+            position: relative;
+            overflow: hidden;
+            font-weight: bold;
+            font-size: 1.2em; }
+            .page-main .post-container .post-content .media .carousel .pagination__button:hover {
+              box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+              margin-top: 6px;
+              margin-bottom: 2px; }
+            .page-main .post-container .post-content .media .carousel .pagination__button.pagination__button_nocap {
+              flex-shrink: 0;
+              width: 20px; }
+            .page-main .post-container .post-content .media .carousel .pagination__button.slick-disabled {
+              cursor: not-allowed;
+              background: #ccc;
+              color: #fff; }
           .page-main .post-container .post-content .media .carousel .controls {
             display: flex;
             width: 100%; }
@@ -199,33 +234,6 @@ body {
             .page-main .post-container .post-content .media .carousel .controls .pagination {
               display: flex;
               margin-top: 2px; }
-              .page-main .post-container .post-content .media .carousel .controls .pagination .pagination__button {
-                cursor: pointer;
-                font-style: normal;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 40px;
-                height: 40px;
-                margin: 4px;
-                display: flex;
-                background: #EEE;
-                border-radius: 5px;
-                box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
-                line-height: 1.6;
-                transition: 0.15s;
-                position: relative;
-                overflow: hidden;
-                font-weight: bold;
-                font-size: 1.2em; }
-                .page-main .post-container .post-content .media .carousel .controls .pagination .pagination__button:hover {
-                  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-                  margin-top: 6px;
-                  margin-bottom: 2px; }
-                .page-main .post-container .post-content .media .carousel .controls .pagination .pagination__button.slick-disabled {
-                  cursor: not-allowed;
-                  background: #ccc;
-                  color: #fff; }
       .page-main .post-container .post-content .teamlist {
         margin-left: 35px;
         font-size: 0.9em; }
