@@ -8,6 +8,163 @@
     <atom:link href="https://esportskingdom.nz/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Test Api</title>
+        <description>&quot;---
+layout: post
+title: &quot;TEST API&quot;
+fulltitle: &quot;TEST API&quot;
+category: call-of-duty
+tags: features event-previews fps-games
+image: test-api
+author: gradyhooker
+circa: 2018-02-17 11:56:44 +1300
+---
+test content
+
+</description>
+        <pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.nz/2018-02-test-api</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.nz/assets/banner/-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.nz/2018-02-test-api</guid>
+      </item>
+    
+      <item>
+        <title>TEST API 2</title>
+        <description>test content
+
+</description>
+        <pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.nz/counter-strike/2018-02-test-api-8</link>
+		
+		<author>Grady Hooker</author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.nz/assets/banner/test-api-22-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.nz/counter-strike/2018-02-test-api-8</guid>
+      </item>
+    
+      <item>
+        <title>TEST API 2</title>
+        <description>test content
+
+</description>
+        <pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.nz/call-of-duty/2018-02-test-api-3</link>
+		
+		<author>Grady Hooker</author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.nz/assets/banner/test-api-22-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.nz/call-of-duty/2018-02-test-api-3</guid>
+      </item>
+    
+      <item>
+        <title>TEST API 2</title>
+        <description>test content
+
+</description>
+        <pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.nz/call-of-duty/2018-02-test-api-22</link>
+		
+		<author>Grady Hooker</author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.nz/assets/banner/test-api-22-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.nz/call-of-duty/2018-02-test-api-22</guid>
+      </item>
+    
+      <item>
+        <title>Nuke gets a major overhaul in new CSGO update</title>
+        <description>While everyone was busy watching the cs_summit2 tournament, Valve was being sneaky beaky and dropping a new update. This update included a major overhaul for the active duty map Nuke, update for the map Canals and small improvements all around.
+
+</description>
+        <pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.nz/call-of-duty/2018-02-test-7</link>
+		
+		<author>Grady Hooker</author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.nz/assets/banner/nuke-feb-update-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.nz/call-of-duty/2018-02-test-7</guid>
+      </item>
+    
+      <item>
+        <title>100 Thieves out of ELEAGUE Boston 2018 Counter-Strike major</title>
+        <description>100 Thieves just announced on their Twitter that due to visa issues their team cannot compete in Boston for the ELEAGUE Counter-Strike major in the following weeks. ELEAGUE have released a statement about the empty slot left in the tournament.
+
+</description>
+        <pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.nz/counter-strike/2018-02-newone</link>
+		
+		<author>Grady Hooker</author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.nz/assets/banner/100thieves-out-of-eleague-major-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.nz/counter-strike/2018-02-newone</guid>
+      </item>
+    
+      <item>
+        <title>100 Thieves out of ELEAGUE Boston 2018 Counter-Strike major</title>
+        <description>100 Thieves just announced on their Twitter that due to visa issues their team cannot compete in Boston for the ELEAGUE Counter-Strike major in the following weeks. ELEAGUE have released a statement about the empty slot left in the tournament.
+
+</description>
+        <pubDate>Fri, 16 Feb 2018 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.nz/counter-strike/2018-02-lastone</link>
+		
+		<author>Grady Hooker</author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.nz/assets/banner/100thieves-out-of-eleague-major-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.nz/counter-strike/2018-02-lastone</guid>
+      </item>
+    
+      <item>
         <title>Nuke gets a major overhaul in new CSGO update</title>
         <description>While everyone was busy watching the cs_summit2 tournament, Valve was being sneaky beaky and dropping a new update. This update included a major overhaul for the active duty map Nuke, update for the map Canals and small improvements all around.
 
