@@ -1,3 +1,14 @@
+function pad(num) {
+	if(num < 10) return "0" + num;
+	return num;
+}
+
+function createOffset(date) {
+	var sign = (date.getTimezoneOffset() > 0) ? "-" : "+";
+	var offset = Math.abs(date.getTimezoneOffset());
+	return sign + pad(Math.floor(offset / 60)) + pad(offset % 60);
+}
+
 $(function() {
 	$('.image-editor').cropit({
 		allowDragNDrop: false
@@ -12,17 +23,6 @@ $(function() {
 			+ pad(currentdate.getSeconds()) + " "
 			+ createOffset(currentdate);
 	$("#circa").val(datetime);
-	
-	function createOffset(date) {
-		var sign = (date.getTimezoneOffset() > 0) ? "-" : "+";
-		var offset = Math.abs(date.getTimezoneOffset());
-		return sign + pad(Math.floor(offset / 60)) + pad(offset % 60);
-	}
-	
-	function pad(num) {
-		if(num < 10) return "0" + num;
-		return num;
-	}
 	
 	$("#postContent").keyup(function() {
 		$("#postContent").attr("rows", Math.ceil(document.getElementById("postContent").scrollHeight / 16));
@@ -257,13 +257,17 @@ $('#clear').click(function() {
 //GITHUB CONNECTION STUFF
 var filesToCommit = [];
 var extraFilesLength;
-var extraFilesCount = 0;
+var extraFilesCount;
+var mainFilesCount;
 var commitMsg;
 $("#submit").click( function() {
 	commitMsg = "New Article: " + $("#displayName").val();
 	filesToCommit = [];
+	extraFilesCount = 0;
+	mainFilesCount = 0;
 	
 	//Deal with extra files first
+	console.log("Stage #1 - Extra Files"); 
 	var extraFilesInput = document.getElementById("files").files;
 	extraFilesLength = extraFilesInput.length;
 	if(extraFilesLength == 0) {
@@ -276,7 +280,26 @@ $("#submit").click( function() {
 			var picReader = new FileReader();
 			picReader.addEventListener("load", function(e)
 			{
-				addExtraFile(e.target.result.replace(/^(.+,)/, ''), j);
+				var image = new Image();
+				image.onload = function (imageEvent) {
+					var canvas = document.createElement('canvas');
+					var width = image.width;
+					var height = image.height;
+					if (width > 1280) {
+						height *= 1280 / width;
+						width = 1280;
+					}
+					if (height > 720) {
+						width *= 720 / height;
+						height = 720;
+					}
+					canvas.width = width;
+					canvas.height = height;
+					canvas.getContext('2d').drawImage(image, 0, 0, width, height);
+					console.log("   Compressed #" + j);
+					addExtraFile(canvas.toDataURL('image/jpeg', 0.8).replace(/^(.+,)/, ''), j);
+				}
+				image.src = e.target.result;
 			});
 			picReader.readAsDataURL(file);
 		}());
@@ -292,12 +315,36 @@ function addExtraFile(fileContent, index) {
 }
 
 function continueCommit() {
+	console.log("Stage #2 - Main Images");
 	//Add Big
-	filesToCommit[filesToCommit.length] = {content: {content: $('.image-editor-1').cropit('export').replace(/^(.+,)/, ''), encoding: 'base64'}, path: 'assets/banner/' + $("#shortName").val() + '.jpg'};
+	compressImg($('.image-editor-1').cropit('export'), 'assets/banner/' + $("#shortName").val() + '.jpg');
 	//Add Small
-	filesToCommit[filesToCommit.length] = {content: {content: $('.image-editor-2').cropit('export').replace(/^(.+,)/, ''), encoding: 'base64'}, path: 'assets/banner/' + $("#shortName").val() + '-small.jpg'};
+	compressImg($('.image-editor-2').cropit('export'), 'assets/banner/' + $("#shortName").val() + '-small.jpg');
 	//Add Square
-	filesToCommit[filesToCommit.length] = {content: {content: $('.image-editor-3').cropit('export').replace(/^(.+,)/, ''), encoding: 'base64'}, path: 'assets/banner/' + $("#shortName").val() + '-square.jpg'};
+	compressImg($('.image-editor-3').cropit('export'), 'assets/banner/' + $("#shortName").val() + '-square.jpg');
+}
+
+function compressImg(dataURL, fileName) {
+	var image = new Image();
+	image.onload = function (imageEvent) {
+		var canvas = document.createElement('canvas');
+		canvas.getContext('2d').drawImage(image, 0, 0, image.width, image.height);
+		console.log("   Compressed - " + fileName);
+		addMainFile(canvas.toDataURL('image/jpeg', 0.9).replace(/^(.+,)/, ''), fileName);
+	}
+	image.src = dataURL;
+}
+
+function addMainFile(fileContent, fileName) {
+	mainFilesCount++;
+	filesToCommit[filesToCommit.length] = {content: {content: fileContent, encoding: 'base64'}, path: fileName};
+	if(mainFilesCount == 3) {
+		finalizeCommit();
+	}
+}
+
+function finalizeCommit() {
+	console.log("Stage #2 - Post Text");
 	//Add Post
 	var currentdate = new Date(); 
 	var datetime = currentdate.getFullYear() + "-"
@@ -311,15 +358,16 @@ function continueCommit() {
 	var fileName = '_posts/' + $('#circa').val().split("-")[0] + "-" + $('#circa').val().split("-")[1] + "-" + $('#circa').val().split("-")[2].split(" ")[0] + "-" + $("#shortName").val() + '.html';
 	filesToCommit[filesToCommit.length] = {content: $("#postPreview").val(), path: fileName};
 	
+	console.log("");
 	console.log(commitMsg);
 	console.log(filesToCommit);
 	
-	let api = new GithubAPI({token: key});
+	/*let api = new GithubAPI({token: key});
 	api.setRepo('gradyhooker', 'esportskingdom');
 	api.setBranch('master')
 	.then( () => api.pushFiles(commitMsg, filesToCommit)
 	)
 	.then(function() {
 		console.log('Files committed!');
-	});
+	});*/
 }
