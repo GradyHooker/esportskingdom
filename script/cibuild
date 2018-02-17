@@ -31,6 +31,9 @@ mogrify -path ../medium -resize 80x80 -format png *.png
 mogrify -path ../tiny -resize 24x24 -format png *.png
 cd ../../../../
 
+# Show the the DateTime for testing
+date
+
 # push
 echo "Pushing Site"
 cd _site
