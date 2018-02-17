@@ -24,7 +24,11 @@ $(function() {
 		return num;
 	}
 	
-	$('.makepage-fakeposts input, .makepage-fakeposts textarea').keypress(function() {
+	$("#postContent").keyup(function() {
+		$("#postContent").attr("rows", Math.ceil(document.getElementById("postContent").scrollHeight / 16));
+	});
+	
+	$('.makepage-fakeposts input, .makepage-fakeposts textarea').keyup(function() {
 		updatePreview();
 	});
 	
@@ -74,10 +78,6 @@ $(function() {
 	
 	$(".makepage-buttons button").click(function() {
 		insertInclude($(this).data("include"));
-	});
-
-	$("#postContent").keypress(function() {
-		$("#postContent").attr("rows", Math.ceil(document.getElementById("postContent").scrollHeight / 16));
 	});
 	
 	function updatePreview() {
@@ -214,25 +214,17 @@ $(function() {
 					var file = files[i];
 					if(file.type.match('image.*'))
 					{
-						if(document.getElementById("files").files[0].size < 2097152)
-						{    
-							var picReader = new FileReader();
-							picReader.addEventListener("load",function(event)
-							{
-								var picFile = event.target;
-								var div = document.createElement("div");
-								div.style.order = j;
-								div.innerHTML = "<img class='thumbnail' src='" + picFile.result + "'" + "title='preview image'/><div><span class='shortName'></span>-" + j + ".jpg</div>";
-								output.insertBefore(div,null);            
-							});
-							$('#clear, #result').show();
-							picReader.readAsDataURL(file);
-						}
-						else
+						var picReader = new FileReader();
+						picReader.addEventListener("load",function(event)
 						{
-							alert("Image Size is too big. Minimum size is 2MB.");
-							$('#files').val("");
-						}
+							var picFile = event.target;
+							var div = document.createElement("div");
+							div.style.order = j;
+							div.innerHTML = "<img class='thumbnail' src='" + picFile.result + "'" + "title='preview image'/><div><span class='shortName'></span>-" + j + ".jpg</div>";
+							output.insertBefore(div,null);            
+						});
+						$('#clear, #result').show();
+						picReader.readAsDataURL(file);
 					}
 					else
 					{
@@ -307,7 +299,17 @@ function continueCommit() {
 	//Add Square
 	filesToCommit[filesToCommit.length] = {content: {content: $('.image-editor-3').cropit('export').replace(/^(.+,)/, ''), encoding: 'base64'}, path: 'assets/banner/' + $("#shortName").val() + '-square.jpg'};
 	//Add Post
-	filesToCommit[filesToCommit.length] = {content: $("#postPreview").val(), path: '_posts/' + $('#circa').val().split("-")[0] + "-" + $('#circa').val().split("-")[1] + "-" + $('#circa').val().split("-")[2].split(" ")[0] + "-" + $("#shortName").val() + '.html'};
+	var currentdate = new Date(); 
+	var datetime = currentdate.getFullYear() + "-"
+			+ pad(currentdate.getMonth()+1)  + "-" 
+			+ currentdate.getDate() + " "  
+			+ pad(currentdate.getHours()) + ":"  
+			+ pad(currentdate.getMinutes()) + ":" 
+			+ pad(currentdate.getSeconds()) + " "
+			+ createOffset(currentdate);
+	$("#circa").val(datetime);
+	var fileName = '_posts/' + $('#circa').val().split("-")[0] + "-" + $('#circa').val().split("-")[1] + "-" + $('#circa').val().split("-")[2].split(" ")[0] + "-" + $("#shortName").val() + '.html';
+	filesToCommit[filesToCommit.length] = {content: $("#postPreview").val(), path: fileName};
 	
 	console.log(commitMsg);
 	console.log(filesToCommit);
