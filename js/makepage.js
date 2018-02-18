@@ -362,12 +362,12 @@ function finalizeCommit() {
 	console.log(commitMsg);
 	console.log(filesToCommit);
 	
-	/*let api = new GithubAPI({token: key});
+	let api = new GithubAPI({token: key});
 	api.setRepo('gradyhooker', 'esportskingdom');
 	api.setBranch('master')
 	.then( () => api.pushFiles(commitMsg, filesToCommit)
 	)
 	.then(function() {
 		console.log('Files committed!');
-	});*/
+	});
 }
