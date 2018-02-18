@@ -70,6 +70,9 @@
 - id: fortnite
   title: Fortnite
   parent: fps-games
+- id: dbfighterz
+  title: Dragon Ball FighterZ
+  parent: fighting-games
 - id: multiple-games
   title: Multiple Games
   parent: other-games
