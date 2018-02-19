@@ -328,6 +328,8 @@ function compressImg(dataURL, fileName) {
 	var image = new Image();
 	image.onload = function (imageEvent) {
 		var canvas = document.createElement('canvas');
+		canvas.width  = image.width;
+		canvas.height = image.height;
 		canvas.getContext('2d').drawImage(image, 0, 0, image.width, image.height);
 		console.log("   Compressed - " + fileName);
 		addMainFile(canvas.toDataURL('image/jpeg', 0.9).replace(/^(.+,)/, ''), fileName);
@@ -362,12 +364,12 @@ function finalizeCommit() {
 	console.log(commitMsg);
 	console.log(filesToCommit);
 	
-	let api = new GithubAPI({token: key});
+	/*let api = new GithubAPI({token: key});
 	api.setRepo('gradyhooker', 'esportskingdom');
 	api.setBranch('master')
 	.then( () => api.pushFiles(commitMsg, filesToCommit)
 	)
 	.then(function() {
 		console.log('Files committed!');
-	});
+	});*/
 }
