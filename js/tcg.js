@@ -1,7 +1,7 @@
 var initCarousel = false;
 
 function showCards(cardNum) {
-	
+	console.log("Showing #" + cardNum);
 	if(!initCarousel) {
 		$('.carousel').slick({
 			infinite: true,
