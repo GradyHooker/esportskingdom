@@ -9,8 +9,9 @@ hasSlick: true
 	{% for image in imageFiles %}
 		{% assign splits = image.basename | split: "-" %}
 		{% assign team = splits[1] %}
+		{% assign cardNum = splits[0] | plus: 0 %}
 		{% if splits[2] != null %}
-			<img class="masked tcg-preview" src="{{ image.path }}" alt="{{ splits[2] }} from {{ site.data.teams[team] }}" onclick="showCards({{ splits[0] }});"/>
+			<img class="masked tcg-preview" src="{{ image.path }}" alt="{{ splits[2] }} from {{ site.data.teams[team] }}" onclick="showCards({{ cardNum }});"/>
 		{% else %}
 			<img class="masked tcg-preview" src="{{ image.path }}" alt="{{ team }}" onclick="showCards({{ splits[0] }});"/>
 		{% endif %}
