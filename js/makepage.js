@@ -50,7 +50,7 @@ $(function() {
 				break;
 			}
 			case "carousel": {
-				toAdd = "<<CAROUSEL\nfolder: \nimages:\n- \n- \n- \ncaptions:\n- \n- \n- \n>>";
+				toAdd = "<<CAROUSEL\nfolder: article\nimages:\n- \n- \n- \ncaptions:\n- \n- \n- \n>>";
 				break;
 			}
 			case "logo": {
