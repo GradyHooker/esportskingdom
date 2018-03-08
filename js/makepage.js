@@ -17,7 +17,7 @@ $(function() {
 	var currentdate = new Date(); 
 	var datetime = currentdate.getFullYear() + "-"
 			+ pad(currentdate.getMonth()+1)  + "-" 
-			+ currentdate.getDate() + " "  
+			+ pad(currentdate.getDate()) + " "  
 			+ pad(currentdate.getHours()) + ":"  
 			+ pad(currentdate.getMinutes()) + ":" 
 			+ pad(currentdate.getSeconds()) + " "
