@@ -254,14 +254,14 @@
 	
 	#menu-button {
 		.menu-icon:before {
-			font-family: FontAwesome;
+			font-family: 'Font Awesome\ 5 Free';
 			content: "\f0c9";
 		}
 	}
 	
 	#menu-button.menu-opened {
 		.menu-icon:before {
-			font-family: FontAwesome;
+			font-family: 'Font Awesome\ 5 Free';
 			content: "\f00d";
 		}
 	}
@@ -281,26 +281,33 @@
 		align-items: center;
 		justify-content: center;
 	}
+	
 	#cssmenu .submenu-button.submenu-opened {
 		background: #262626;
 	}
+	
 	#cssmenu ul ul .submenu-button {
 		height: 38px;
 		width: 38px;
 	}
+	
 	#cssmenu ul ul .submenu-button:after {
 		top: 15px;
 		right: 13px;
 	}
+	
 	#cssmenu .submenu-button.submenu-opened:after {
 		background: #ffffff;
 	}
+	
 	#cssmenu .submenu-button:before {
-		font-family: FontAwesome;
+		font-family: 'Font Awesome\ 5 Free';
+		font-weight: 900;
 		content: "\f067";
 	}
+
 	#cssmenu .submenu-button.submenu-opened:before {
-		font-family: FontAwesome;
+		font-family: 'Font Awesome\ 5 Free';
 		content: "\f068";
 	}
 }
