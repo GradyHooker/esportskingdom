@@ -54,10 +54,10 @@
 			top: 0px;
 			left: 0px;
 			width: 100%;
-			
-			&.skgaming {
-				display: block;
-			}
+		}
+		
+		.heading-placeholder {
+			display: block;
 		}
 	}
 	
@@ -104,10 +104,6 @@
 				padding: 16px;
 				height: calc(100% - 32px);
 				width: calc(100% - 32px);
-				
-				&.skgaming {
-					display: block;
-				}
 				
 				table {
 					width: 100%;

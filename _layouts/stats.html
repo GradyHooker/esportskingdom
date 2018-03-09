@@ -12,8 +12,8 @@ type: stats
 		{% endfor %}
 	</div>
 	<div class="heading-cont">
-		<div class="heading-placeholder">
-			&nbsp;
+		<div class="heading heading-placeholder">
+			Pick A Team
 		</div>
 		{% for team in site.data[page.file].teamStats %}
 		{% assign t = team | first %}
@@ -96,9 +96,11 @@ type: stats
 
 <script type="text/javascript">
 function switchTeam(teamName) {
+	console.log(teamName);
 	//Switch headings
 	$('.heading').fadeOut(400);
 	$('.heading.' + teamName).fadeIn(400);
+	$('.heading-placeholder').fadeOut(400);
 	
 	//Switch graph stats
 	$('.graph-actual').fadeOut(400);

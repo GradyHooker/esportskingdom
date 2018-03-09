@@ -6,6 +6,8 @@ adaptation:
   Adaptation
 ago:
   AGO
+ago-2018:
+  AGO
 alienware:
   Alienware
 allegiance:
@@ -74,9 +76,11 @@ digitalchaos:
   Digital Chaos
 dignitas:
   Team Dignitas
-dreamhack-masters:
+dignitas-2016:
+  Team Dignitas
+dreamhackmasters:
   DreamHack Masters
-dreamhack-open:
+dreamhackopen:
   DreamHack Open
 dreamhack:
   DreamHack
@@ -110,13 +114,13 @@ era:
   eRa Eternity
 esea:
   ESEA
-esg-mykonos17:
+esgmykonos17:
   ESG Tour Mykonos 2017
-esl-one:
+eslone:
   ESL One
-esl-poland:
+eslpoland:
   ESL Poland
-esl-proleague:
+eslproleague:
   ESL Pro League
 esl:
   ESL
@@ -176,7 +180,7 @@ hellraisers:
   HellRaisers
 heroic:
   Heroic
-ibuypower-masters:
+ibuypowermasters:
   iBUYPOWER Masters
 ibuypower:
   iBUYPOWER
@@ -192,7 +196,7 @@ imperial:
   Imperial Esports
 infamous:
   Infamous Gaming
-inferno-2017:
+inferno:
   Inferno
 infused:
   Team Infused
@@ -223,6 +227,8 @@ lethal:
 lgd:
   LGD Gaming
 liquid:
+  Team Liquid
+liquid-2016:
   Team Liquid
 lucky7:
   Lucky7 eSports
@@ -269,6 +275,8 @@ newbee:
 nexus:
   Nexus Gaming
 nip:
+  Ninjas in Pyjamas
+nip-2016:
   Ninjas in Pyjamas
 north:
   North
@@ -354,7 +362,7 @@ spacesoldiers:
   Space Soldiers
 spartak:
   Spartak Esports
-spirit-academy:
+spiritacademy:
   Team Spirit Academy
 spirit:
   Team Spirit
@@ -412,55 +420,55 @@ zenleague:
   ZEN League
 zonic:
   Zonic eSports
-dreamhack-winter13:
+dreamhackwinter13:
   DreamHack Winter 2013
-esl-katowice14:
+eslkatowice14:
   ESL Katowice 2014
-esl-cologne14:
+eslcologne14:
   ESL Cologne 2014
-dreamhack-winter14:
+dreamhackwinter14:
   DreamHack Winter 2014
-esl-katowice15:
+eslkatowice15:
   ESL Katowice 2015
-esl-cologne15:
+eslcologne15:
   ESL Cologne 2015
-dreamhack-clujnapoca15:
+dreamhackclujnapoca15:
   DreamHack ClujNapoca 2015
-mlg-columbus16:
+mlgcolumbus16:
   MLG Columbus 2016
-esl-cologne16:
+eslcologne16:
   ESL Cologne 2016
-eleague-atlanta17:
+eleagueatlanta17:
   ELEAGUE Atlanta 2017
-pgl-krakow17:
+pglkrakow17:
   PGL Krakow 2017
-eleague-boston18:
+eleagueboston18:
   ELEAGUE Boston 2018
-boston-uprising:
+bostonuprising:
   Boston Uprising
-dallas-fuel:
+dallasfuel:
   Dallas Fuel
-florida-mayhem:
+floridamayhem:
   Florida Mayhem
-houston-outlaws:
+houstonoutlaws:
   Houston Outlaws
-london-spitfire:
+londonspitfire:
   London Spitfire
-losangeles-gladiators:
+losangelesgladiators:
   Los Angeles Gladiators
-losangeles-valiant:
+losangelesvaliant:
   Los Angeles Valiant
-newyork-excelsior:
+newyorkexcelsior:
   New York Excelsior
-philadelphia-fusion:
+philadelphiafusion:
   Philadelphia Fusion
-sanfrancisco-shock:
+sanfranciscoshock:
   San Francisco Shock
-seoul-dynasty:
+seouldynasty:
   Seoul Dynasty
-shanghai-dragons:
+shanghaidragons:
   Shanghai Dragons
-airstation-mike:
+airstationmike:
   Airstation Mike
 cornshuckers:
   Corn Shuckers
