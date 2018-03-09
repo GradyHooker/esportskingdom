@@ -924,8 +924,8 @@ header {
       top: 0px;
       left: 0px;
       width: 100%; }
-      .single-page-cont .heading-cont .heading.skgaming {
-        display: block; }
+    .single-page-cont .heading-cont .heading-placeholder {
+      display: block; }
   .single-page-cont .graph-cont {
     display: flex;
     justify-content: space-around; }
@@ -965,8 +965,6 @@ header {
         padding: 16px;
         height: calc(100% - 32px);
         width: calc(100% - 32px); }
-        .single-page-cont .graph-cont .graph .graph-actual.skgaming {
-          display: block; }
         .single-page-cont .graph-cont .graph .graph-actual table {
           width: 100%; }
           .single-page-cont .graph-cont .graph .graph-actual table th {
@@ -1000,7 +998,9 @@ header {
       cursor: pointer; }
     .main .single-page-cont.single-page-cont-tcg a {
       width: 120px;
-      padding: 8px; }
+      padding: 8px;
+      text-decoration: none;
+      color: black; }
       .main .single-page-cont.single-page-cont-tcg a .tcg-button {
         display: flex;
         padding: 20px;
@@ -1012,7 +1012,10 @@ header {
         position: relative;
         overflow: hidden;
         cursor: pointer;
-        margin-bottom: 3px; }
+        margin-bottom: 3px;
+        text-align: center;
+        align-items: center;
+        justify-content: center; }
         .main .single-page-cont.single-page-cont-tcg a .tcg-button:hover {
           box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
           margin-top: 2px;
