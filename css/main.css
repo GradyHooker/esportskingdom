@@ -600,11 +600,11 @@ body {
     font-weight: 700; }
 
   #menu-button .menu-icon:before {
-    font-family: FontAwesome;
+    font-family: 'Font Awesome\ 5 Free';
     content: "\f0c9"; }
 
   #menu-button.menu-opened .menu-icon:before {
-    font-family: FontAwesome;
+    font-family: 'Font Awesome\ 5 Free';
     content: "\f00d"; }
 
   #cssmenu .submenu-button {
@@ -637,11 +637,12 @@ body {
     background: #ffffff; }
 
   #cssmenu .submenu-button:before {
-    font-family: FontAwesome;
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
     content: "\f067"; }
 
   #cssmenu .submenu-button.submenu-opened:before {
-    font-family: FontAwesome;
+    font-family: 'Font Awesome\ 5 Free';
     content: "\f068"; } }
 header {
   height: 110px;
