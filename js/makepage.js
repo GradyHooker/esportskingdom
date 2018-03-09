@@ -111,7 +111,7 @@ $(function() {
 		contentLines.forEach(function(line) {
 			if(line.replace(/ /g,'') != "") {
 				//Replace URLs
-				line = line.replace(/__|\*|\#|(?:\[([^\]]*)\]\(([^)]*)\))/gm, "<a href='$2'>$1</a>");
+				line = line.replace(/__|(?:\[([^\]]*)\]\(([^)]*)\))/gm, "<a href='$2'>$1</a>");
 				
 				//handle includes
 				if(line.substr(0, 2) == "<<") {
