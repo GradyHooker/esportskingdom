@@ -769,6 +769,12 @@ header {
       .posts .post-link .post:hover {
         box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
         margin-top: 2px; }
+      .posts .post-link .post.idiotslantern {
+        background: #eaffea; }
+      .posts .post-link .post.wrestlingroundup {
+        background: #ffffea; }
+      .posts .post-link .post.raidosgaming {
+        background: #ffeaea; }
       .posts .post-link .post .post-boximage {
         height: 100px;
         width: 200px; }
@@ -828,6 +834,8 @@ header {
         top: 8px;
         right: 8px;
         opacity: 0.2; }
+        .posts .post-link .post .post-character.guest {
+          height: calc(100% - 16px); }
         .posts .post-link .post .post-character img {
           height: 100%;
           max-height: 200px; }
