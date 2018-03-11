@@ -14,6 +14,10 @@ type: post
 		<div class="post-title-text">{{ page.fulltitle }}</div>
 	</h1>
     <div class="post-details">
+		{% if page.guest != null %}
+		{% assign showName = site.data.mappingsShows | where:"id",page.guest | first %}
+		<div class="post-show pretty-print">Interview supplied by <a href="{{ showName.youtube }}" target="_blank">{{ showName.title }}</a></div>
+		{% else %}
 		{% if author.twitter != null %}
         <h2 class="page-box__subheading">
 		  Written By: {{ author.name }} (<a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>)
@@ -23,12 +27,17 @@ type: post
 		  Written By: {{ author.name }}
 		</h2>
 		{% endif %}
+		{% endif %}
 		{% assign displayTime = page.circa | date: "%Y.%m.%d" %}
 		<h2 class="page-box__subheading"><time datetime="{{ page.circa }}" title="{{ page.circa | date: '%d %B %Y at %r' }}" data-format="timeSince">{{ displayTime }}</time></h2>
 	</div>
 	<div class="post-content">
       {{ content }}
 	  <div class="post-footer">
+	    {% if page.guest != null %}
+		{% assign showName = site.data.mappingsShows | where:"id",page.guest | first %}
+		<div>Interview supplied by <a href="{{ showName.youtube }}" target="_blank">{{ showName.title }}</a></div>
+		{% else %}
 	    {% if author.twitter != null %}
         <div>
 		  Written By: {{ author.name }} (<a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>)
@@ -37,6 +46,7 @@ type: post
         <div>
 		  Written By: {{ author.name }}
 		</div>
+		{% endif %}
 		{% endif %}
 		{% if headercredit.name != null %}
 		<div>

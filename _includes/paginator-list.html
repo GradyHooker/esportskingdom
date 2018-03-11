@@ -3,7 +3,7 @@
   {% for post in paginator.posts %}
     {% assign counter = counter | plus: 1 %}
     <a class="post-link" href="{{ site.baseurl }}{{ post.url | replace: '.html', ''}}">
-		<div class="post">
+		<div class="post {{ post.guest }}">
 		  <div class="post-boximage-cont">
 			<img class="post-boximage" src="{{ site.url }}/assets/banner/{{ post.image }}-small.jpg" alt="{{ post.title | escape }}"/>
 			<img class="post-boximage-square" src="{{ site.url }}/assets/banner/{{ post.image }}-square.jpg" alt="{{ post.title | escape }}"/>
@@ -15,6 +15,10 @@
 			
 			<div class="post-details">
 				<div class="post-detaillinks">
+					{% if post.guest != null %}
+					{% assign category-metadata = site.data.mappingsShows | where:"id",post.guest | first %}
+					<div class="post-show pretty-print">Interview supplied by {{ category-metadata.title }}</div>
+					{% else %}
 					{% assign category-metadata = site.data.mappingsGames | where:"id",post.category | first %}
 					<div class="post-game pretty-print">{{ category-metadata.title }}</div>
 					<div class="post-separator">|</div>
@@ -23,6 +27,7 @@
 					<div class="post-separator">|</div>
 					{% assign category-metadata = site.data.mappingsGenres | where:"id",category-metadata.parent | first %}
 					<div class="post-show pretty-print">{{ category-metadata.title }}</div>
+					{% endif %}
 				</div>
 				{% assign displayTime = post.circa | date: "%Y.%m.%d" %}
 				<div class="post-date"><time datetime="{{ post.circa }}" title="{{ post.circa | date: '%d %B %Y at %r' }}" data-format="timeSince">{{ displayTime }}</time></div>
@@ -32,6 +37,12 @@
 			  {{ post.excerpt }}
 			</div>
 		  </div>
+		  {% if post.guest != null %}
+		  <div class="post-character guest">
+			{% assign showName = site.data.mappingsShows | where:"id",post.guest | first %}
+			<img src="/assets/characters/guest/{{ post.guest }}.png" alt="{{ showName.title }} logo"/>
+		  </div>
+		  {% else %}
 		  {% assign charPath = post.category | prepend: "/characters/" %}
 		  {% assign imageFiles = site.static_files | where_exp: "image","image.path contains charPath" %}
 		  {% for image in imageFiles %}
@@ -39,6 +50,7 @@
 			<img src="{{ image.path }}" alt="{{ post.category }} character"/>
 		  </div>
 		  {% endfor %}
+		  {% endif %}
 		</div>
 	  </a>
 	  {% assign c = counter | modulo: 5 %}
