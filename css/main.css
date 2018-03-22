@@ -711,7 +711,7 @@ header {
     max-height: calc(100% - 65px); } }
 @media screen and (max-width: 600px) {
   .main {
-    padding: 50px 0px 0 !important;
+    padding: 45px 0px 0 !important;
     border-radius: 0px; } }
 .posts {
   display: flex;
