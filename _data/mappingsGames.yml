@@ -76,3 +76,6 @@
 - id: multiple-games
   title: Multiple Games
   parent: other-games
+- id: project-cars2
+  title: Project CARS 2
+  parent: sports-games
