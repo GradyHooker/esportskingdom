@@ -1,2 +1,6 @@
-<p style="display: flex; align-items: center;">{% include logo.html logo=include.logo size="tiny" %}&nbsp;&nbsp;{{ site.data.teams[include.logo] }}&nbsp;&nbsp;{% include logo.html logo=include.logo size="tiny" %}</p>
+{% if include.logo2 != null %}
+<p style="display: flex; align-items: center;">{% if include.pretext != null %}{{ include.pretext }}&nbsp;&nbsp;--&nbsp;&nbsp;{% endif %}{% include logo.html logo=include.logo size="tiny" %}&nbsp;&nbsp;{{ site.data.teams[include.logo] }}&nbsp;&nbsp;vs.&nbsp;&nbsp;{{ site.data.teams[include.logo2] }}&nbsp;&nbsp;{% include logo.html logo=include.logo2 size="tiny" %}{% if include.extratext != null %}&nbsp;&nbsp;[{{ include.extratext }}]{% endif %}</p>
+{% else %}
+<p style="display: flex; align-items: center;">{% if include.pretext != null %}{{ include.pretext }}&nbsp;&nbsp;--&nbsp;&nbsp;{% endif %}{% include logo.html logo=include.logo size="tiny" %}&nbsp;&nbsp;{{ site.data.teams[include.logo] }}&nbsp;&nbsp;{% include logo.html logo=include.logo size="tiny" %}{% if include.extratext != null %}&nbsp;&nbsp;[{{ include.extratext }}]{% endif %}</p>
+{% endif %}
 <p style="padding-top: 0px;">{{ include.text }}</p>
