@@ -9,7 +9,7 @@
     
       <item>
         <title>DreamHack Masters Marseille Day 2 Summary and Day 3 Predictions</title>
-        <description>
+        <description>Day 2 has wrapped up at Le Dôme de Marseille, and none of the results were extremely surprising.
 
 Group A
 {% include team-info.html logo=&quot;faze&quot; logo2=&quot;cloud9&quot; text=&quot;Game 1 on Overpass was Cloud9's map pick. FaZe took CT side to start, but that did not provide them with the early lead they may have expected. It was all Cloud9 from the start, taking a 9-2 lead. FaZe regrouped and managed to take the last four rounds of the first half to bring it back to 9-6. Unfortunately for FaZe, Cloud9 again took the pistol round. This translated into 5 quick rounds in the second half. Cloud9 only truly looked vulnerable on match point, where they sat for 6 rounds until they closed the match at 16-13. Surprisingly, FaZe took the first kill in 18 of the 29 rounds, but Cloud9 never let that really rattle them. Game MVP goes to autimatic for his 27/4/17 stat line with 100.3 ADR.&quot; extratext=&quot;Game #1 - Overpass&quot; %}
@@ -51,7 +51,8 @@ Group D
 
 {% include team-info.html logo=&quot;liquid&quot; logo2=&quot;astralis&quot; text=&quot;After the first game, Astralis easily handled Liquid. Liquid did not win a single pistol round and that was a big part of their loss, as they just could not get anything going. This was a less a case of Liquid playing bad, and Astralis playing really well.&quot; extratext=&quot;Final Thoughts&quot; %}
 
-{% include team-info.html logo=&quot;gambit&quot; logo2=&quot;liquid&quot; pretext=&quot;Going Forward (Day 3)&quot; extratext=&quot;Decider Match&quot; text=&quot;Liquid handled Gambit easily in their first game, and I don't expect that to go differently this time. Gambit is in bad form, Liquid is not, despite the lopsided losses to Astralis. 2-0 sweep goes in Liquid's favor.&quot; %}</description>
+{% include team-info.html logo=&quot;gambit&quot; logo2=&quot;liquid&quot; pretext=&quot;Going Forward (Day 3)&quot; extratext=&quot;Decider Match&quot; text=&quot;Liquid handled Gambit easily in their first game, and I don't expect that to go differently this time. Gambit is in bad form, Liquid is not, despite the lopsided losses to Astralis. 2-0 sweep goes in Liquid's favor.&quot; %}
+</description>
         <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
         <link>https://esportskingdom.nz/counter-strike/2018-04-dreamhack-marseille-day2</link>
 		
