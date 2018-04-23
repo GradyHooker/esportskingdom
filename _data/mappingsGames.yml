@@ -79,3 +79,6 @@
 - id: project-cars2
   title: Project CARS 2
   parent: sports-games
+- id: splatoon2
+  title: Splatoon 2
+  parent: other-games
