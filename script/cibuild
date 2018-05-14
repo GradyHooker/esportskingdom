@@ -18,7 +18,7 @@ mkdir _site
 git clone https://${GITHUB_TOKEN}@github.com/GradyHooker/esportskingdom.git --branch gh-pages _site
 
 # build with Jekyll into "_site"
-JEKYLL_ENV=development bundle exec jekyll build
+bundle exec jekyll build
 
 # copy cname file
 cp CNAME _site
