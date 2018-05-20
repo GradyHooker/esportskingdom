@@ -180,11 +180,11 @@
 		<div class="post post-fake">
 			<div class="makepage-cont">
 				<label for="shortName">Short Name: </label>
-				<input id="shortName" type="text"/>
+				<input id="shortName" type="text" placeholder="epl-finals-day-1"/>
 			</div>
 			<div class="makepage-cont">
 				<label for="displayName">Display Title: </label>
-				<input id="displayName" type="text"/>
+				<input id="displayName" type="text" maxlength="80" placeholder="Shorter than 80 characters"/>
 			</div>
 			<div class="makepage-cont">
 				<label for="category">Game: </label>
@@ -276,21 +276,21 @@
 			</div>
 			<div class="makepage-cont">
 				<label for="headerCredit">Header Credit: </label>
-				<input id="headerCredit" type="text" value=""/>
+				<input id="headerCredit" type="text" value="" placeholder="HLTV.org"/>
 			</div>
 			<div class="makepage-cont">
 				<label for="headerCreditLink">Header Credit Link: </label>
-				<input id="headerCreditLink" type="text" value=""/>
+				<input id="headerCreditLink" type="text" value="" placeholder="https://www.hltv.org/"/>
 			</div>
 			<div class="makepage-cont">
 				<label for="author">Author: </label>
 				<select id="author">
+					<option value=""></option>
 					
-					<option value="" ></option>
+					<option value="gradyhooker" >Grady Hooker</option>
 					
-					<option value="" ></option>
+					<option value="palmtoppitbull" >James "PalmtopPitbull" Wert</option>
 					
-					<option value="gradyhooker">Grady Hooker</option>
 				</select>
 			</div>
 			<div class="makepage-cont">
@@ -368,6 +368,10 @@
 				<button data-include='teamlist'>
 					<i class="fas fa-bars"></i>
 					<span>TEAM LIST</span>
+				</button>
+				<button data-include='teaminfo'>
+					<i class="fab fa-vuejs"></i>
+					<span>TEAM VS</span>
 				</button>
 			</div>
 			<textarea id="postContent" class="autoExpand" rows="16" data-min-rows="16"></textarea>
