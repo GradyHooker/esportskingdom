@@ -1,0 +1,25 @@
+---
+layout: base
+type: makepage
+sitemap: false
+---
+<div class="posts makepage-fakeposts">
+    <div class="post-link">
+		<div class="post post-fake">
+			<table style="max-width: 550px; width: 100%;">
+				<tr style="font-weight: bold;">
+					<th style="padding-bottom: 8px;">Team/Event Name</th>
+					<th>Logo</th>
+					<th>Short Code</th>
+				</tr>
+				{% for team in site.data.teams %}
+				<tr>
+					<td>{{ team[1] }}</td>
+					<td style="text-align: center;"><img src="/assets/logos/tiny/{{ team[0] }}.png"/></td>
+					<td style="text-align: center;">{{ team[0] }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	</div>
+</div>

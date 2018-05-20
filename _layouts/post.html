@@ -3,7 +3,7 @@ layout: base
 type: post
 ---
 {% assign tags = page.category %}
-{% assign author = site.data.authors[page.author] %}
+{% assign author = site.data.authors | where:"id",page.author | first %}
 {% assign headercredit = page.headercredit | first %}
 <div class="page-main">
   <div class="post-container">

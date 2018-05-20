@@ -6,18 +6,18 @@ sitemap: false
 <script src="../lib/github/GitHub.bundle.js"></script>
 <script src="../lib/githubapipush/GithubApiPush.js"></script>
 <script type="text/javascript">
-	var key = prompt("Please enter your GitHub API key to access this page", "");
+	//var key = prompt("Please enter your GitHub API key to access this page", "");
 </script>
 <div class="posts makepage-fakeposts">
     <div class="post-link">
 		<div class="post post-fake">
 			<div class="makepage-cont">
 				<label for="shortName">Short Name: </label>
-				<input id="shortName" type="text"/>
+				<input id="shortName" type="text" placeholder="epl-finals-day-1"/>
 			</div>
 			<div class="makepage-cont">
 				<label for="displayName">Display Title: </label>
-				<input id="displayName" type="text"/>
+				<input id="displayName" type="text" maxlength="80" placeholder="Shorter than 80 characters"/>
 			</div>
 			<div class="makepage-cont">
 				<label for="category">Game: </label>
@@ -39,19 +39,19 @@ sitemap: false
 			</div>
 			<div class="makepage-cont">
 				<label for="headerCredit">Header Credit: </label>
-				<input id="headerCredit" type="text" value=""/>
+				<input id="headerCredit" type="text" value="" placeholder="HLTV.org"/>
 			</div>
 			<div class="makepage-cont">
 				<label for="headerCreditLink">Header Credit Link: </label>
-				<input id="headerCreditLink" type="text" value=""/>
+				<input id="headerCreditLink" type="text" value="" placeholder="https://www.hltv.org/"/>
 			</div>
 			<div class="makepage-cont">
 				<label for="author">Author: </label>
 				<select id="author">
+					<option value=""></option>
 					{% for entry in site.data.authors %}
-					<option value="{{ entry.id }}" >{{ entry.title }}</option>
+					<option value="{{ entry.id }}" >{{ entry.name }}</option>
 					{% endfor %}
-					<option value="gradyhooker">Grady Hooker</option>
 				</select>
 			</div>
 			<div class="makepage-cont">
@@ -129,6 +129,10 @@ sitemap: false
 				<button data-include='teamlist'>
 					<i class="fas fa-bars"></i>
 					<span>TEAM LIST</span>
+				</button>
+				<button data-include='teaminfo'>
+					<i class="fab fa-vuejs"></i>
+					<span>TEAM VS</span>
 				</button>
 			</div>
 			<textarea id="postContent" class="autoExpand" rows="16" data-min-rows="16"></textarea>

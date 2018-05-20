@@ -42,11 +42,11 @@ $(function() {
 		var v = $('#postContent').val();
 		switch(name){ 
 			case "video": {
-				toAdd = "<<VIDEO\nvideo: \ncaption: \ncredit: \ncreditlink: \n>>";
+				toAdd = "<<VIDEO\nvideo: \ncaption: \ncredit: _optional_\ncreditlink: _optional_\n>>";
 				break;
 			}
 			case "image": {
-				toAdd = "<<IMAGE\nimage: \ncaption: \ncredit: \ncreditlink: \n>>";
+				toAdd = "<<IMAGE\nimage: \ncaption: \ncredit: _optional_\ncreditlink: _optional_\n>>";
 				break;
 			}
 			case "carousel": {
@@ -54,7 +54,7 @@ $(function() {
 				break;
 			}
 			case "logo": {
-				toAdd = "<<LOGO\nlogo: \nsize: \n>>";
+				toAdd = "<<LOGO\nlogo: \nsize: [original|medium|tiny]\n>>";
 				break;
 			}
 			case "logoheadline": {
@@ -67,6 +67,10 @@ $(function() {
 			}
 			case "teamlist": {
 				toAdd = "<<TEAMLIST\nlogo: \nplayers:\n- \n- \n- \n- \n- \ncountry:\n- \n- \n- \n- \n- \n>>";
+				break;
+			}
+			case "teaminfo": {
+				toAdd = "<<TEAM-INFO\nlogo: \nlogo2: _optional_\ntext: _no normal quote marks_\nextratext: _optional_\n>>";
 				break;
 			}
 		}
@@ -371,5 +375,6 @@ function finalizeCommit() {
 	)
 	.then(function() {
 		console.log('Files committed!');
+		alert("Article Published");
 	});
 }
