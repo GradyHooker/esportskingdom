@@ -27,7 +27,7 @@
 		
 		.post-banner {
 			height: 300px;
-      overflow: hidden;
+			overflow: hidden;
 			
 			@media screen and (max-width: $break-tiny) {
 				height: 200px;
@@ -36,8 +36,8 @@
 			.post-banner-image {
 				width: calc(100% + 4px);
 				height: calc(100% + 4px);
-        margin-top: -2px;
-        margin-left: -2px;
+				margin-top: -2px;
+				margin-left: -2px;
 				opacity: 0.5;
 				object-fit: cover;
 				background-repeat: no-repeat;
@@ -337,6 +337,51 @@
 					flex-shrink: 0;
 					width: 100%;
 					margin-bottom: 8px;
+				}
+				
+				&.kinguin-post {
+					padding: 0;
+					overflow: hidden;
+					margin-left: 0;
+					margin-right: 0;
+					
+					.post-image {
+						margin: 0;
+					}
+					
+					.kinguin-image {
+						display: block;
+						
+						@media screen and (max-width: $break-large) {
+							display: none;
+						}
+					}
+					
+					.kinguin-image-wide {
+						display: none;
+						
+						@media screen and (max-width: $break-large) {
+							display: block;
+						}
+					}
+					
+					@media screen and (max-width: $break-large) {
+						width: 100%;
+						max-width: 500px;
+						margin: 0 auto;
+						margin-bottom: 10px;
+					
+						&:hover {
+							margin-top: 2px;
+							margin-bottom: 8px;
+						}
+					}
+				}
+			}
+			
+			&.kinguin-link {
+				@media screen and (max-width: $break-large) {
+					width: 100%;
 				}
 			}
 		}

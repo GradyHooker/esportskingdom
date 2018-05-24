@@ -60,6 +60,12 @@ type: post
   {% capture pageCategory %}{{ page.category }}{% endcapture %}
   {% unless site.categories[pageCategory].size == 1 %}
   <div class="post-related">
+	<a class="post-link kinguin-link" href="" target="_blank">
+	  <div class="post kinguin-post">
+	    <img class="post-image kinguin-image" src="" alt=""/>
+		<img class="post-image kinguin-image-wide" src="" alt=""/>
+	  </div>
+	</a>
     <h1>Related Posts</h1>
     {% for post in site.categories[pageCategory] limit:6 %}
     {% unless post.title == page.title %}
