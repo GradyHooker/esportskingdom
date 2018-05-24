@@ -385,6 +385,9 @@ body {
 #cssmenu > ul > li {
   float: left; }
 
+#cssmenu > ul > li > ul > li > ul > li {
+  overflow: hidden; }
+
 #cssmenu.align-center > ul {
   font-size: 0;
   text-align: center; }
@@ -407,6 +410,14 @@ body {
   color: #dddddd;
   font-weight: 700;
   text-transform: uppercase; }
+
+#cssmenu > ul > li > ul > li > ul > li > a > img {
+  height: 60px;
+  position: absolute;
+  right: 4px;
+  top: 0px;
+  padding-top: 4px;
+  opacity: 0.8; }
 
 #cssmenu > ul > li:hover > a {
   color: #ffffff; }
