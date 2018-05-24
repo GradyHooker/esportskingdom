@@ -19,7 +19,7 @@ window.onload = function() {
 		}
 		
 		$('.post-related .kinguin-link')[0].href = "https://www.kinguin.net/" + selectedBanner.link + "?r=29383&bannerid=" + selectedBanner.id;
-		$('.post-related .kinguin-image')[0].src = "/assets/kinguin/" + selectedBanner.name + ".png";
-		$('.post-related .kinguin-image-wide')[0].src = "/assets/kinguin/" + selectedBanner.name + "-wide.png";
+		$('.post-related .kinguin-image')[0].src = "/assets/kinguin/" + selectedBanner.name + ".jpg";
+		$('.post-related .kinguin-image-wide')[0].src = "/assets/kinguin/" + selectedBanner.name + "-wide.jpg";
 	});
 };
