@@ -243,6 +243,57 @@ body {
       .page-main .post-container .post-content .post-footer {
         padding-top: 10px;
         font-style: italic; }
+      .page-main .post-container .post-content .tier-title-cont {
+        background: url("/assets/tier/tier-line.png");
+        width: calc(100% - 40px);
+        padding-left: 20px;
+        adding-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: 100% 100%;
+        margin-bottom: 10px;
+        margin-top: 10px; }
+        .page-main .post-container .post-content .tier-title-cont .tier-title {
+          color: #222222;
+          background: white;
+          padding-left: 20px;
+          padding-right: 20px;
+          font-family: 'Bowlby One SC', cursive;
+          font-size: 26px;
+          height: 20px;
+          display: flex;
+          align-items: center; }
+      .page-main .post-container .post-content .tier-cont {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap; }
+        .page-main .post-container .post-content .tier-cont .tier-team-wrapper {
+          height: 120px;
+          width: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 2px solid #222;
+          border-radius: 10px;
+          flex-direction: column;
+          margin: 10px;
+          position: relative;
+          overflow: hidden; }
+          .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-team-bg {
+            opacity: 0.25;
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 100%;
+            height: calc(100% + 20px);
+            background-size: cover;
+            background-position: center; }
+          .page-main .post-container .post-content .tier-cont .tier-team-wrapper .logo {
+            z-index: 1; }
+          .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-team-name {
+            z-index: 1; }
   .page-main .post-related {
     width: 250px;
     flex-shrink: 0;
