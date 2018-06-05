@@ -25,3 +25,6 @@
 - id: this-week-in
   title: This Week In...
   parent: weekly
+- id: tier-rankings
+  title: Tier Rankings
+  parent: features

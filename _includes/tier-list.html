@@ -1,0 +1,22 @@
+<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+
+<div class="tier-title-cont">
+	<div class="tier-title">
+		{{ include.tier }}-Tier
+	</div>
+</div>
+<div class="tier-cont">
+{% assign teams = include.teams | split: '|' %}
+{% assign countries = include.country | split: '|' %}
+{% assign shortnames = include.shortnames | split: '|' %}
+{% assign length = teams | size %}
+{% assign length = length | minus: 1 %}
+{% for index in (0..length)%}
+	{% assign t = teams[index] %}
+	<div class="tier-team-wrapper">
+		<div class="tier-team-bg" style="background-image: url('/assets/flags-big/{{ countries[index] }}.png');">&nbsp;</div>
+		<img class="logo logo-medium" src="/assets/logos/medium/{{ t }}.png" alt="Logo for {{ site.data.teams[t] }}"/>
+		<div class="tier-team-name">{{ shortnames[index] }}</div>
+	</div>
+{% endfor %}
+</div>
