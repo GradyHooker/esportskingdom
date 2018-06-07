@@ -49,6 +49,10 @@ $(function() {
 				toAdd = "<<IMAGE\nimage: \ncaption: \ncredit: _optional_\ncreditlink: _optional_\n>>";
 				break;
 			}
+			case "twitter": {
+				toAdd = "<<TWEET\ntweet: \n>>";
+				break;
+			}
 			case "carousel": {
 				toAdd = "<<CAROUSEL\nfolder: article\nimages:\n- \n- \n- \ncaptions:\n- \n- \n- \n>>";
 				break;
@@ -104,6 +108,9 @@ $(function() {
 		
 		if($("#postContent").val().split("CAROUSEL").length > 1) {
 			finalVal += 'hasSlick: true\n';
+		}
+		if($("#postContent").val().split("TWEET").length > 1) {
+			finalVal += 'hasTweets: true\n';
 		}
 		
 		finalVal += "---" + "\n";
