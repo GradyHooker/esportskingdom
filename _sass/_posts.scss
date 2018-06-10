@@ -327,6 +327,32 @@
 					.tier-team-name {
 						z-index: 1;
 					}
+					
+					.tier-change {
+						position: absolute;
+						top: 2px;
+						right: 2px;
+						height: 20px;
+						width: 20px;
+						color: white;
+						border-radius: 10px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						z-index: 2;
+						
+						.fas {
+							margin-left: 1px;
+						}
+					}
+					
+					.tier-change-up {
+						background: #19c459;
+					}
+					
+					.tier-change-down {
+						background: #ff492d;
+					}
 				}
 			}
 		}
