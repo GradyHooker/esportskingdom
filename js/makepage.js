@@ -1,3 +1,5 @@
+var key;
+
 function pad(num) {
 	if(num < 10) return "0" + num;
 	return num;
@@ -10,6 +12,11 @@ function createOffset(date) {
 }
 
 $(function() {
+	key = prompt("Please enter your GitHub API key to access this page", "");
+	while(key == "" || key == null) {
+		key = prompt("Please enter your GitHub API key to access this page", "");
+	}
+	
 	$('.image-editor').cropit({
 		allowDragNDrop: false
 	});
