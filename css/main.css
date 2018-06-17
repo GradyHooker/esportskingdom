@@ -314,6 +314,9 @@ body {
             background: #19c459; }
           .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-change-down {
             background: #ff492d; }
+          .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-change-debut {
+            background: #d8d833;
+            font-size: 0.7em; }
   .page-main .post-related {
     width: 250px;
     flex-shrink: 0;
