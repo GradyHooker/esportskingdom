@@ -7,7 +7,7 @@ type: stats
 		{% for team in site.data[page.file].teamStats %}
 		{% assign t = team | first %}
 		<div class="switch-button" onclick="switchTeam('{{ team | first }}')">
-			<img class="logo-small" src="{{ site.url }}/assets/logos/tiny/{{ team | first }}.png" alt="Logo for {{ site.data.teams[t] }}"/>
+			<img class="logo-small" src="/assets/logos/tiny/{{ team | first }}.png" alt="Logo for {{ site.data.teams[t] }}"/>
 		</div>
 		{% endfor %}
 	</div>
@@ -36,7 +36,7 @@ type: stats
 					{% assign t = team | first %}
 					{% for enemy in site.data[page.file].teamStats[t] %}
 					<tr>
-						<td><img class="logo-small" src="{{ site.url }}/assets/logos/tiny/{{ enemy.name }}.png" alt="Logo for {{ site.data.teams[enemy.name] }}"/></td>
+						<td><img class="logo-small" src="/assets/logos/tiny/{{ enemy.name }}.png" alt="Logo for {{ site.data.teams[enemy.name] }}"/></td>
 						{% if enemy.played == 0 %}
 						<td colspan="3">Never Played</td>
 						{% else %}
@@ -70,7 +70,7 @@ type: stats
 					{% assign t = team | first %}
 					{% for map in site.data[page.file].mapStats[t] %}
 					<tr>
-						<td><img class="logo-small" src="{{ site.url }}/assets/logos/tiny/{{ map.name }}.png" alt="Logo for {{ site.data.teams[map.name] }}"/></td>
+						<td><img class="logo-small" src="/assets/logos/tiny/{{ map.name }}.png" alt="Logo for {{ site.data.teams[map.name] }}"/></td>
 						{% if map.played == 0 %}
 						<td colspan="3">Never Played</td>
 						{% else %}

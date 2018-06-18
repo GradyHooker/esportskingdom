@@ -14,14 +14,14 @@
     <meta property="og:url" content="{{ site.url | append: page.url | remove: '.html'}}">
 	<meta property="og:title" content="{{ page.title | escape }}">
 	<meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 300 | strip }}">
-	<meta property="og:image" content="{{ site.url }}/assets/banner/{{ page.image }}.jpg" >
+	<meta property="og:image" content="/assets/banner/{{ page.image }}.jpg" >
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@KingOfEsports" />
 	<meta name="twitter:title" content="{{ page.title | escape }}">
 	<meta name="twitter:description" content="{{ page.excerpt | strip_html | truncatewords: 200 | strip }}">
-	<meta name="twitter:image" content="{{ site.url }}/assets/banner/{{ page.image }}.jpg">
+	<meta name="twitter:image" content="/assets/banner/{{ page.image }}.jpg">
 	{% else %}
 	{% if layout.type == "autopage" %}
 	{% assign category-metadata = site.data.mappingsGames | where:"id",page.title | first %}
@@ -40,17 +40,17 @@
 	<!-- Open Graph data -->
 	<meta property="og:type" content="blog">
 	<meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:url" content="">
 	<meta property="og:title" content="{{ site.title }}">
 	<meta property="og:description" content="{{ site.description }}">	
-	<meta property="og:image" content="{{ site.url }}/assets/logo_large.png" >
+	<meta property="og:image" content="/assets/logo_large.png" >
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@KingOfEsports" />
 	<meta name="twitter:title" content="{{ site.title }}">
 	<meta name="twitter:description" content="{{ site.description }}">	
-	<meta name="twitter:image" content="{{ site.url }}/assets/logo_large.png">
+	<meta name="twitter:image" content="/assets/logo_large.png">
 	{% endif %}
 	
 	<!-- Favicon -->
@@ -60,7 +60,7 @@
 	
 	<!-- StyleSheets -->
 	<link href="//fonts.googleapis.com/css?family=Bungee|Roboto:400,600,800" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 	{% if layout.hasSlick == true or page.hasSlick == true %}
 	<link rel="stylesheet" type="text/css" href="/lib/slick/slick.css"/>
@@ -121,15 +121,15 @@
 	{% endif %}
 	
 	{% if layout.type == "tcg" %}
-	<script src="{{ site.url }}/js/tcg.js" type="text/javascript"></script>
+	<script src="/js/tcg.js" type="text/javascript"></script>
 	{% elsif layout.type == "post" and page.hasSlick == true %}
-	<script src="{{ site.url }}/js/carousel.js" type="text/javascript"></script>
+	<script src="/js/carousel.js" type="text/javascript"></script>
 	{% endif %}
 	
 	{% if layout.type == "post" %}
 	<script src="/js/kinguinlinks.js" type="text/javascript"></script>
 	{% endif %}
 	
-	<script src="{{ site.url }}/js/main.js" type="text/javascript"></script>
+	<script src="/js/main.js" type="text/javascript"></script>
   </body>
 </html>

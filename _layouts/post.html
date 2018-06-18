@@ -71,7 +71,7 @@ type: post
     {% unless post.title == page.title %}
 	<a class="post-link" href="{{ site.baseurl }}{{ post.url | replace: '.html', ''}}">
 	  <div class="post">
-	    <img class="post-image" src="{{ site.url }}/assets/banner/{{ post.image }}-small.jpg" alt="{{ post.title | escape }}"/>
+	    <img class="post-image" src="/assets/banner/{{ post.image }}-small.jpg" alt="{{ post.title | escape }}"/>
 	    <p>{{ post.title }}</p>
 	  </div>
 	</a>

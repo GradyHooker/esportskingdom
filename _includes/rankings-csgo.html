@@ -22,7 +22,7 @@
 		{% endif %}
 		
 		{% assign team_name = cols[2] %}
-		<td class="left flex">{% include logo.html size="tiny" logo=team_name %} <img class="flag" src="{{ site.url }}/assets/flags/{{ cols[3] }}.png" alt="{{ cols[3] }} flag"/> {{ site.data.teams[team_name] }}</td>
+		<td class="left flex">{% include logo.html size="tiny" logo=team_name %} <img class="flag" src="/assets/flags/{{ cols[3] }}.png" alt="{{ cols[3] }} flag"/> {{ site.data.teams[team_name] }}</td>
 		
 		<td class="middle">{{ cols[4] }} ({{ cols[5] }})</td>
 		

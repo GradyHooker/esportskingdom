@@ -4,6 +4,6 @@
 {% assign length = length | minus: 1 %}
 	{% for index in (0..length)%}
 		{% assign team = logos[index] %}
-		<li style="display: flex;"><img style="padding-right: 8px;" class="logo-small" src="{{ site.url }}/assets/logos/tiny/{{ team }}.png" alt="Logo for {{ site.data.teams[team] }}"/> {{ site.data.teams[team] }}</li>
+		<li style="display: flex;"><img style="padding-right: 8px;" class="logo-small" src="/assets/logos/tiny/{{ team }}.png" alt="Logo for {{ site.data.teams[team] }}"/> {{ site.data.teams[team] }}</li>
 	{% endfor %}
 </ul>
