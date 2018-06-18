@@ -39,11 +39,3 @@ git add --all
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push --force origin gh-pages
 echo "Site Pushed"
-
-# purge Cloudflare cache
-echo "Purging Cloudflare cache"
-curl -X DELETE "https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ID}/purge_cache" \
-     -H "X-Auth-Email: ${CLOUDFLARE_EMAIL}" \
-     -H "X-Auth-Key: ${CLOUDFLARE_TOKEN}" \
-     -H "Content-Type: application/json" \
-     --data '{"purge_everything":true}'
