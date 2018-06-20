@@ -21,15 +21,7 @@ $(function() {
 		allowDragNDrop: false
 	});
 	
-	var currentdate = new Date(); 
-	var datetime = currentdate.getFullYear() + "-"
-			+ pad(currentdate.getMonth()+1)  + "-" 
-			+ pad(currentdate.getDate()) + " "  
-			+ pad(currentdate.getHours()) + ":"  
-			+ pad(currentdate.getMinutes()) + ":" 
-			+ pad(currentdate.getSeconds()) + " "
-			+ createOffset(currentdate);
-	$("#circa").val(datetime);
+	updateCirca();
 	
 	$("#postContent").keyup(function() {
 		$("#postContent").attr("rows", Math.ceil(document.getElementById("postContent").scrollHeight / 16));
@@ -41,6 +33,28 @@ $(function() {
 	
 	$('.makepage-fakeposts select').change(function() {
 		updatePreview();
+	});
+	
+	//Make sure Short Name only has lowercase letters and dashes
+	$('#shortName').keyup(function() {
+		var val = $('#shortName').val();
+		val = val.toLowerCase();
+		val = val.replace(/[^A-Za-z-]/g, "");
+		if(val != $('#shortName').val()) {
+			$('#shortName').val(val);
+			updatePreview();
+		}
+	});
+	
+	//Make sure copy/pasted fancy quote marks turn into regular quote marks
+	$('#postContent').keyup(function() {
+		var val = $('#postContent').val();
+		val = val.replace(/[\u2018\u2019]/g, "'");
+		val = val.replace(/[\u201C\u201D]/g, '"');
+		if(val != $('#postContent').val()) {
+			$('#postContent').val(val);
+			updatePreview();
+		}
 	});
 	
 	function insertInclude(name) {
@@ -192,7 +206,7 @@ $(function() {
 							break;
 						}
 						case ">": {
-							finalVal += '{% include quote.html text="' + line.substr(1, line.length).trim() + '"%}';
+							finalVal += '{% include quote.html text="' + line.substr(1, line.length).trim().replace(/"/g, "'") + '"%}';
 							break;
 						}
 						case "+": {
@@ -213,11 +227,24 @@ $(function() {
 			}
 		});
 		
+		updateCirca();
 		$("#postPreview").val(finalVal);
 		$("#postPreview").attr("rows", Math.ceil(document.getElementById("postPreview").scrollHeight / 16));
 		
 		$('.shortName').text($('#shortName').val());
 		$('.shortDate').text($('#circa').val().split("-")[0] + "-" + $('#circa').val().split("-")[1] + "-" + $('#circa').val().split("-")[2].split(" ")[0] + "-");
+	}
+	
+	function updateCirca() {
+		var currentdate = new Date(); 
+		var datetime = currentdate.getFullYear() + "-"
+				+ pad(currentdate.getMonth()+1)  + "-" 
+				+ currentdate.getDate() + " "  
+				+ pad(currentdate.getHours()) + ":"  
+				+ pad(currentdate.getMinutes()) + ":" 
+				+ pad(currentdate.getSeconds()) + " "
+				+ createOffset(currentdate);
+		$("#circa").val(datetime);
 	}
 	
 	if(window.File && window.FileList && window.FileReader)
@@ -366,15 +393,7 @@ function addMainFile(fileContent, fileName) {
 function finalizeCommit() {
 	console.log("Stage #2 - Post Text");
 	//Add Post
-	var currentdate = new Date(); 
-	var datetime = currentdate.getFullYear() + "-"
-			+ pad(currentdate.getMonth()+1)  + "-" 
-			+ currentdate.getDate() + " "  
-			+ pad(currentdate.getHours()) + ":"  
-			+ pad(currentdate.getMinutes()) + ":" 
-			+ pad(currentdate.getSeconds()) + " "
-			+ createOffset(currentdate);
-	$("#circa").val(datetime);
+	updateCirca();
 	var fileName = '_posts/' + $('#circa').val().split("-")[0] + "-" + $('#circa').val().split("-")[1] + "-" + $('#circa').val().split("-")[2].split(" ")[0] + "-" + $("#shortName").val() + '.html';
 	filesToCommit[filesToCommit.length] = {content: $("#postPreview").val(), path: fileName};
 	
