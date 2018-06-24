@@ -1,4 +1,4 @@
-window.onload = function() {
+$(function() {
 	$.getJSON("/json/kinguinLinks.json", function(data)
 	{
 		var selectedBanner;
@@ -22,4 +22,4 @@ window.onload = function() {
 		$('.post-related .kinguin-image')[0].src = "/assets/kinguin/" + selectedBanner.name + ".jpg";
 		$('.post-related .kinguin-image-wide')[0].src = "/assets/kinguin/" + selectedBanner.name + "-wide.jpg";
 	});
-};
+});

@@ -344,6 +344,9 @@ body {
     .page-main .post-related a {
       text-decoration: none;
       color: black; }
+      @media screen and (max-width: 400px) {
+        .page-main .post-related a {
+          width: 100%; } }
       .page-main .post-related a .post {
         display: flex;
         flex-direction: column;
