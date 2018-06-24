@@ -396,6 +396,10 @@
 		a {
 			text-decoration: none;
 			color: black;
+			
+			@media screen and (max-width: $break-supertiny) {
+				width: 100%;
+			}
 		
 			.post {
 				display: flex;
