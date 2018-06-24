@@ -1,0 +1,1138 @@
+teamStats:
+  envyus:
+    - name: fnatic
+      played: 21
+      won: 9
+    - name: navi
+      played: 21
+      won: 12
+    - name: virtuspro
+      played: 9
+      won: 4
+    - name: nip-2016
+      played: 22
+      won: 14
+    - name: titan
+      played: 8
+      won: 6
+    - name: tsm
+      played: 9
+      won: 8
+    - name: dignitas-2016
+      played: 7
+      won: 6
+    - name: mousesports
+      played: 7
+      won: 5
+    - name: clg
+      played: 2
+      won: 2
+    - name: cloud9
+      played: 13
+      won: 7
+    - name: liquid
+      played: 2
+      won: 2
+    - name: luminosity
+      played: 5
+      won: 3
+    - name: flipsid3
+      played: 2
+      won: 1
+    - name: hellraisers
+      played: 1
+      won: 1
+    - name: g2
+      played: 4
+      won: 3
+  fnatic:
+    - name: envyus
+      played: 21
+      won: 12
+    - name: navi
+      played: 13
+      won: 11
+    - name: virtuspro
+      played: 23
+      won: 13.5
+    - name: nip-2016
+      played: 29
+      won: 20
+    - name: titan
+      played: 14
+      won: 10
+    - name: tsm
+      played: 24
+      won: 9
+    - name: dignitas-2016
+      played: 3
+      won: 1
+    - name: mousesports
+      played: 2
+      won: 2
+    - name: clg
+      played: 4
+      won: 3
+    - name: cloud9
+      played: 8
+      won: 5
+    - name: liquid
+      played: 11
+      won: 9
+    - name: luminosity
+      played: 7
+      won: 5
+    - name: flipsid3
+      played: 0
+      won: 0
+    - name: hellraisers
+      played: 3
+      won: 2
+    - name: g2
+      played: 0
+      won: 0
+  navi:
+    - name: envyus
+      played: 21
+      won: 9
+    - name: fnatic
+      played: 13
+      won: 2
+    - name: virtuspro
+      played: 13
+      won: 5
+    - name: nip-2016
+      played: 5
+      won: 5
+    - name: titan
+      played: 15
+      won: 8
+    - name: tsm
+      played: 17
+      won: 7
+    - name: dignitas-2016
+      played: 5
+      won: 3
+    - name: mousesports
+      played: 5
+      won: 3
+    - name: clg
+      played: 5
+      won: 4
+    - name: cloud9
+      played: 4
+      won: 2
+    - name: liquid
+      played: 4
+      won: 3
+    - name: luminosity
+      played: 12
+      won: 11
+    - name: flipsid3
+      played: 6
+      won: 6
+    - name: hellraisers
+      played: 3
+      won: 3
+    - name: g2
+      played: 1
+      won: 0
+  virtuspro:
+    - name: envyus
+      played: 9
+      won: 5
+    - name: fnatic
+      played: 23
+      won: 9.5
+    - name: navi
+      played: 13
+      won: 8
+    - name: nip-2016
+      played: 12
+      won: 5.5
+    - name: titan
+      played: 12
+      won: 7
+    - name: tsm
+      played: 24
+      won: 11
+    - name: dignitas-2016
+      played: 3
+      won: 2
+    - name: mousesports
+      played: 10
+      won: 6
+    - name: clg
+      played: 0
+      won: 0
+    - name: cloud9
+      played: 15
+      won: 13
+    - name: liquid
+      played: 7
+      won: 5
+    - name: luminosity
+      played: 1
+      won: 1
+    - name: flipsid3
+      played: 0
+      won: 0
+    - name: hellraisers
+      played: 1
+      won: 0
+    - name: g2
+      played: 4
+      won: 2
+  nip-2016:
+    - name: envyus
+      played: 22
+      won: 8
+    - name: fnatic
+      played: 29
+      won: 9
+    - name: navi
+      played: 5
+      won: 0
+    - name: virtuspro
+      played: 12
+      won: 6.5
+    - name: titan
+      played: 8
+      won: 6
+    - name: tsm
+      played: 17
+      won: 8
+    - name: dignitas-2016
+      played: 6
+      won: 5
+    - name: mousesports
+      played: 3
+      won: 3
+    - name: clg
+      played: 2
+      won: 2
+    - name: cloud9
+      played: 2
+      won: 1
+    - name: liquid
+      played: 6
+      won: 6
+    - name: luminosity
+      played: 3
+      won: 1
+    - name: flipsid3
+      played: 3
+      won: 1
+    - name: hellraisers
+      played: 2
+      won: 2
+    - name: g2
+      played: 2
+      won: 2
+  titan:
+    - name: envyus
+      played: 8
+      won: 2
+    - name: fnatic
+      played: 14
+      won: 4
+    - name: navi
+      played: 15
+      won: 7
+    - name: virtuspro
+      played: 12
+      won: 5
+    - name: nip-2016
+      played: 8
+      won: 2
+    - name: tsm
+      played: 6
+      won: 3
+    - name: dignitas-2016
+      played: 5
+      won: 1
+    - name: mousesports
+      played: 3
+      won: 3
+    - name: clg
+      played: 1
+      won: 0
+    - name: cloud9
+      played: 2
+      won: 2
+    - name: liquid
+      played: 0
+      won: 0
+    - name: luminosity
+      played: 8
+      won: 5
+    - name: flipsid3
+      played: 2
+      won: 2
+    - name: hellraisers
+      played: 5
+      won: 3
+    - name: g2
+      played: 1
+      won: 1
+  tsm:
+    - name: envyus
+      played: 9
+      won: 1
+    - name: fnatic
+      played: 24
+      won: 15
+    - name: navi
+      played: 17
+      won: 10
+    - name: virtuspro
+      played: 24
+      won: 13
+    - name: nip-2016
+      played: 17
+      won: 9
+    - name: titan
+      played: 6
+      won: 3
+    - name: dignitas-2016
+      played: 8
+      won: 7
+    - name: mousesports
+      played: 1
+      won: 1
+    - name: clg
+      played: 2
+      won: 2
+    - name: cloud9
+      played: 7
+      won: 5
+    - name: liquid
+      played: 1
+      won: 1
+    - name: luminosity
+      played: 3
+      won: 1
+    - name: flipsid3
+      played: 1
+      won: 1
+    - name: hellraisers
+      played: 4
+      won: 2
+    - name: g2
+      played: 5
+      won: 4
+  dignitas-2016:
+    - name: envyus
+      played: 7
+      won: 1
+    - name: fnatic
+      played: 3
+      won: 2
+    - name: navi
+      played: 5
+      won: 2
+    - name: virtuspro
+      played: 3
+      won: 1
+    - name: nip-2016
+      played: 6
+      won: 1
+    - name: titan
+      played: 5
+      won: 4
+    - name: tsm
+      played: 8
+      won: 1
+    - name: mousesports
+      played: 0
+      won: 0
+    - name: clg
+      played: 1
+      won: 0
+    - name: cloud9
+      played: 3
+      won: 1
+    - name: liquid
+      played: 2
+      won: 2
+    - name: luminosity
+      played: 0
+      won: 0
+    - name: flipsid3
+      played: 6
+      won: 5
+    - name: hellraisers
+      played: 5
+      won: 3
+    - name: g2
+      played: 1
+      won: 1
+  mousesports:
+    - name: envyus
+      played: 7
+      won: 2
+    - name: fnatic
+      played: 2
+      won: 0
+    - name: navi
+      played: 5
+      won: 2
+    - name: virtuspro
+      played: 10
+      won: 4
+    - name: nip-2016
+      played: 3
+      won: 0
+    - name: titan
+      played: 3
+      won: 0
+    - name: tsm
+      played: 1
+      won: 0
+    - name: dignitas-2016
+      played: 0
+      won: 0
+    - name: clg
+      played: 2
+      won: 2
+    - name: cloud9
+      played: 6
+      won: 4
+    - name: liquid
+      played: 4
+      won: 4
+    - name: luminosity
+      played: 2
+      won: 2
+    - name: flipsid3
+      played: 2
+      won: 1
+    - name: hellraisers
+      played: 6
+      won: 2
+    - name: g2
+      played: 4
+      won: 1
+  clg:
+    - name: envyus
+      played: 2
+      won: 0
+    - name: fnatic
+      played: 4
+      won: 1
+    - name: navi
+      played: 5
+      won: 1
+    - name: virtuspro
+      played: 0
+      won: 0
+    - name: nip-2016
+      played: 2
+      won: 0
+    - name: titan
+      played: 1
+      won: 1
+    - name: tsm
+      played: 2
+      won: 0
+    - name: dignitas-2016
+      played: 1
+      won: 1
+    - name: mousesports
+      played: 2
+      won: 0
+    - name: cloud9
+      played: 6
+      won: 0
+    - name: liquid
+      played: 8
+      won: 4
+    - name: luminosity
+      played: 10
+      won: 6
+    - name: flipsid3
+      played: 2
+      won: 2
+    - name: hellraisers
+      played: 1
+      won: 1
+    - name: g2
+      played: 3
+      won: 1
+  cloud9:
+    - name: envyus
+      played: 13
+      won: 6
+    - name: fnatic
+      played: 8
+      won: 3
+    - name: navi
+      played: 4
+      won: 2
+    - name: virtuspro
+      played: 15
+      won: 2
+    - name: nip-2016
+      played: 2
+      won: 1
+    - name: titan
+      played: 2
+      won: 0
+    - name: tsm
+      played: 7
+      won: 2
+    - name: dignitas-2016
+      played: 3
+      won: 2
+    - name: mousesports
+      played: 6
+      won: 2
+    - name: clg
+      played: 6
+      won: 6
+    - name: liquid
+      played: 10
+      won: 7
+    - name: luminosity
+      played: 3
+      won: 2
+    - name: flipsid3
+      played: 1
+      won: 1
+    - name: hellraisers
+      played: 0
+      won: 0
+    - name: g2
+      played: 0
+      won: 0
+  liquid:
+    - name: envyus
+      played: 2
+      won: 0
+    - name: fnatic
+      played: 11
+      won: 2
+    - name: navi
+      played: 4
+      won: 1
+    - name: virtuspro
+      played: 4
+      won: 1
+    - name: nip-2016
+      played: 6
+      won: 0
+    - name: titan
+      played: 0
+      won: 0
+    - name: tsm
+      played: 1
+      won: 0
+    - name: dignitas-2016
+      played: 2
+      won: 0
+    - name: mousesports
+      played: 4
+      won: 0
+    - name: clg
+      played: 8
+      won: 4
+    - name: cloud9
+      played: 10
+      won: 3
+    - name: luminosity
+      played: 3
+      won: 2
+    - name: flipsid3
+      played: 1
+      won: 0
+    - name: hellraisers
+      played: 0
+      won: 0
+    - name: g2
+      played: 0
+      won: 0
+  luminosity:
+    - name: envyus
+      played: 4
+      won: 2
+    - name: fnatic
+      played: 7
+      won: 2
+    - name: navi
+      played: 9
+      won: 1
+    - name: virtuspro
+      played: 0
+      won: 0
+    - name: nip-2016
+      played: 3
+      won: 2
+    - name: titan
+      played: 5
+      won: 3
+    - name: tsm
+      played: 3
+      won: 2
+    - name: dignitas-2016
+      played: 0
+      won: 0
+    - name: mousesports
+      played: 2
+      won: 0
+    - name: clg
+      played: 8
+      won: 4
+    - name: cloud9
+      played: 3
+      won: 1
+    - name: liquid
+      played: 3
+      won: 1
+    - name: flipsid3
+      played: 1
+      won: 1
+    - name: hellraisers
+      played: 0
+      won: 0
+    - name: g2
+      played: 0
+      won: 0
+  flipsid3:
+    - name: envyus
+      played: 2
+      won: 1
+    - name: fnatic
+      played: 0
+      won: 0
+    - name: navi
+      played: 6
+      won: 0
+    - name: virtuspro
+      played: 0
+      won: 0
+    - name: nip-2016
+      played: 3
+      won: 2
+    - name: titan
+      played: 2
+      won: 0
+    - name: tsm
+      played: 1
+      won: 0
+    - name: dignitas-2016
+      played: 6
+      won: 1
+    - name: mousesports
+      played: 2
+      won: 1
+    - name: clg
+      played: 2
+      won: 0
+    - name: cloud9
+      played: 1
+      won: 0
+    - name: liquid
+      played: 1
+      won: 1
+    - name: luminosity
+      played: 1
+      won: 0
+    - name: hellraisers
+      played: 5
+      won: 5
+    - name: g2
+      played: 5
+      won: 5
+  hellraisers:
+    - name: envyus
+      played: 1
+      won: 0
+    - name: fnatic
+      played: 3
+      won: 1
+    - name: navi
+      played: 3
+      won: 0
+    - name: virtuspro
+      played: 1
+      won: 1
+    - name: nip-2016
+      played: 2
+      won: 0
+    - name: titan
+      played: 5
+      won: 2
+    - name: tsm
+      played: 4
+      won: 2
+    - name: dignitas-2016
+      played: 5
+      won: 2
+    - name: mousesports
+      played: 6
+      won: 4
+    - name: clg
+      played: 1
+      won: 0
+    - name: cloud9
+      played: 0
+      won: 0
+    - name: liquid
+      played: 0
+      won: 0
+    - name: luminosity
+      played: 0
+      won: 0
+    - name: flipsid3
+      played: 5
+      won: 0
+    - name: g2
+      played: 2
+      won: 1
+  g2:
+    - name: envyus
+      played: 4
+      won: 1
+    - name: fnatic
+      played: 0
+      won: 0
+    - name: navi
+      played: 1
+      won: 1
+    - name: virtuspro
+      played: 4
+      won: 2
+    - name: nip-2016
+      played: 2
+      won: 0
+    - name: titan
+      played: 1
+      won: 0
+    - name: tsm
+      played: 5
+      won: 1
+    - name: dignitas-2016
+      played: 1
+      won: 0
+    - name: mousesports
+      played: 4
+      won: 3
+    - name: clg
+      played: 3
+      won: 2
+    - name: cloud9
+      played: 0
+      won: 0
+    - name: liquid
+      played: 0
+      won: 0
+    - name: luminosity
+      played: 0
+      won: 0
+    - name: flipsid3
+      played: 5
+      won: 0
+    - name: hellraisers
+      played: 2
+      won: 1
+mapStats:
+  envyus:
+    - name: mirage
+      played: 14
+      won: 7
+    - name: inferno-2017
+      played: 32
+      won: 23
+    - name: nuke
+      played: 3
+      won: 1
+    - name: train
+      played: 8
+      won: 2
+    - name: overpass
+      played: 5
+      won: 3
+    - name: cobblestone
+      played: 23
+      won: 18
+    - name: cache
+      played: 39
+      won: 31
+    - name: dust2-2017
+      played: 28
+      won: 16
+  fnatic:
+    - name: mirage
+      played: 39
+      won: 27.5
+    - name: inferno-2017
+      played: 36
+      won: 25
+    - name: nuke
+      played: 3
+      won: 2
+    - name: train
+      played: 15
+      won: 9
+    - name: overpass
+      played: 11
+      won: 7
+    - name: cobblestone
+      played: 24
+      won: 17
+    - name: cache
+      played: 30
+      won: 18
+    - name: dust2-2017
+      played: 27
+      won: 18
+  navi:
+    - name: mirage
+      played: 27
+      won: 18
+    - name: inferno-2017
+      played: 26
+      won: 14
+    - name: nuke
+      played: 1
+      won: 0
+    - name: train
+      played: 13
+      won: 5
+    - name: overpass
+      played: 26
+      won: 18
+    - name: cobblestone
+      played: 29
+      won: 17
+    - name: cache
+      played: 8
+      won: 1
+    - name: dust2-2017
+      played: 23
+      won: 15
+  virtuspro:
+    - name: mirage
+      played: 31
+      won: 19.5
+    - name: inferno-2017
+      played: 28
+      won: 16
+    - name: nuke
+      played: 9
+      won: 6.5
+    - name: train
+      played: 21
+      won: 15
+    - name: overpass
+      played: 20
+      won: 12
+    - name: cobblestone
+      played: 19
+      won: 10
+    - name: cache
+      played: 32
+      won: 21
+    - name: dust2-2017
+      played: 8
+      won: 4
+  nip-2016:
+    - name: mirage
+      played: 25
+      won: 12
+    - name: inferno-2017
+      played: 32
+      won: 18
+    - name: nuke
+      played: 7
+      won: 5.5
+    - name: train
+      played: 11
+      won: 4
+    - name: overpass
+      played: 3
+      won: 1
+    - name: cobblestone
+      played: 10
+      won: 3
+    - name: cache
+      played: 24
+      won: 16
+    - name: dust2-2017
+      played: 37
+      won: 24
+  titan:
+    - name: mirage
+      played: 13
+      won: 3
+    - name: inferno-2017
+      played: 21
+      won: 14
+    - name: nuke
+      played: 3
+      won: 3
+    - name: train
+      played: 9
+      won: 3
+    - name: overpass
+      played: 8
+      won: 2
+    - name: cobblestone
+      played: 19
+      won: 11
+    - name: cache
+      played: 27
+      won: 14
+    - name: dust2-2017
+      played: 17
+      won: 9
+  tsm:
+    - name: mirage
+      played: 26
+      won: 19
+    - name: inferno-2017
+      played: 30
+      won: 19
+    - name: nuke
+      played: 7
+      won: 3
+    - name: train
+      played: 8
+      won: 6
+    - name: overpass
+      played: 24
+      won: 17
+    - name: cobblestone
+      played: 9
+      won: 3
+    - name: cache
+      played: 18
+      won: 8
+    - name: dust2-2017
+      played: 28
+      won: 18
+  dignitas-2016:
+    - name: mirage
+      played: 26
+      won: 16
+    - name: inferno-2017
+      played: 16
+      won: 9
+    - name: nuke
+      played: 2
+      won: 1
+    - name: train
+      played: 4
+      won: 4
+    - name: overpass
+      played: 4
+      won: 2
+    - name: cobblestone
+      played: 12
+      won: 7
+    - name: cache
+      played: 16
+      won: 6
+    - name: dust2-2017
+      played: 13
+      won: 7
+  mousesports:
+    - name: mirage
+      played: 11
+      won: 5
+    - name: inferno-2017
+      played: 8
+      won: 5
+    - name: nuke
+      played: 0
+      won: 0
+    - name: train
+      played: 5
+      won: 3
+    - name: overpass
+      played: 11
+      won: 7
+    - name: cobblestone
+      played: 10
+      won: 4
+    - name: cache
+      played: 17
+      won: 9
+    - name: dust2-2017
+      played: 21
+      won: 12
+  clg:
+    - name: mirage
+      played: 21
+      won: 12
+    - name: inferno-2017
+      played: 5
+      won: 1
+    - name: nuke
+      played: 2
+      won: 2
+    - name: train
+      played: 10
+      won: 6
+    - name: overpass
+      played: 6
+      won: 3
+    - name: cobblestone
+      played: 10
+      won: 5
+    - name: cache
+      played: 18
+      won: 8
+    - name: dust2-2017
+      played: 18
+      won: 11
+  cloud9:
+    - name: mirage
+      played: 3
+      won: 1
+    - name: inferno-2017
+      played: 19
+      won: 9
+    - name: nuke
+      played: 5
+      won: 3
+    - name: train
+      played: 6
+      won: 4
+    - name: overpass
+      played: 11
+      won: 3
+    - name: cobblestone
+      played: 18
+      won: 15
+    - name: cache
+      played: 30
+      won: 17
+    - name: dust2-2017
+      played: 21
+      won: 10
+  liquid:
+    - name: mirage
+      played: 12
+      won: 2
+    - name: inferno-2017
+      played: 10
+      won: 4
+    - name: nuke
+      played: 0
+      won: 0
+    - name: train
+      played: 4
+      won: 1
+    - name: overpass
+      played: 15
+      won: 8
+    - name: cobblestone
+      played: 15
+      won: 4
+    - name: cache
+      played: 21
+      won: 12
+    - name: dust2-2017
+      played: 13
+      won: 2
+  luminosity:
+    - name: mirage
+      played: 13
+      won: 8
+    - name: inferno-2017
+      played: 9
+      won: 5
+    - name: nuke
+      played: 0
+      won: 0
+    - name: train
+      played: 8
+      won: 5
+    - name: overpass
+      played: 9
+      won: 6
+    - name: cobblestone
+      played: 13
+      won: 6
+    - name: cache
+      played: 7
+      won: 4
+    - name: dust2-2017
+      played: 11
+      won: 3
+  flipsid3:
+    - name: mirage
+      played: 21
+      won: 13
+    - name: inferno-2017
+      played: 12
+      won: 5
+    - name: nuke
+      played: 5
+      won: 5
+    - name: train
+      played: 3
+      won: 1
+    - name: overpass
+      played: 6
+      won: 4
+    - name: cobblestone
+      played: 14
+      won: 9
+    - name: cache
+      played: 13
+      won: 7
+    - name: dust2-2017
+      played: 0
+      won: 0
+  hellraisers:
+    - name: mirage
+      played: 7
+      won: 4
+    - name: inferno-2017
+      played: 10
+      won: 3
+    - name: nuke
+      played: 1
+      won: 0
+    - name: train
+      played: 3
+      won: 2
+    - name: overpass
+      played: 11
+      won: 3
+    - name: cobblestone
+      played: 9
+      won: 4
+    - name: cache
+      played: 13
+      won: 6
+    - name: dust2-2017
+      played: 12
+      won: 9
+  g2:
+    - name: mirage
+      played: 13
+      won: 4
+    - name: inferno-2017
+      played: 4
+      won: 2
+    - name: nuke
+      played: 2
+      won: 1
+    - name: train
+      played: 1
+      won: 1
+    - name: overpass
+      played: 6
+      won: 4
+    - name: cobblestone
+      played: 8
+      won: 2
+    - name: cache
+      played: 15
+      won: 7
+    - name: dust2-2017
+      played: 5
+      won: 2
