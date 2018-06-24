@@ -39,7 +39,7 @@ $(function() {
 	$('#shortName').keyup(function() {
 		var val = $('#shortName').val();
 		val = val.toLowerCase();
-		val = val.replace(/[^A-Za-z-]/g, "");
+		val = val.replace(/[^A-Za-z0-9-]/g, "");
 		if(val != $('#shortName').val()) {
 			$('#shortName').val(val);
 			updateFinalFile();
@@ -308,10 +308,12 @@ function updatePreview() {
 	$('.post-preview .post-game').text($("#category option:selected").text());
 	$('.post-preview .post-genre').text($("#articleType option:selected").data("parent"));
 	$('.post-preview .post-show').text($("#articleType option:selected").text());
-	$('.post-preview .post-boximage').attr("src", $('.image-editor-2 .cropit-preview-image').attr('src'));
-	$('.post-preview .post-boximage-square').attr("src", $('.image-editor-3 .cropit-preview-image').attr('src'));
+	$('.post-preview .post-boximage').attr("src", $('.image-editor-2').cropit('export'));
+	$('.post-preview .post-boximage-square').attr("src", $('.image-editor-3').cropit('export'));
 	$('.post-preview .post-entry').text($("#postContentFirst").val());
-	$('.post-preview .post-character img').attr("src", "/assets/characters/" + $("#category").val() + ".png");
+	if($("#category").val() != null && $("#category").val() != "") {
+		$('.post-preview .post-character img').attr("src", "/assets/characters/" + $("#category").val() + ".png");
+	}
 }
 
 $('#files').click(function() {
