@@ -34,6 +34,17 @@
 	float: left;
 }
 
+#cssmenu > ul > li.socials {
+	display: flex;
+	height: 30px;
+}
+
+#cssmenu > ul > li.socials a {
+	padding: 11px 4px;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+
 #cssmenu > ul > li > ul > li > ul > li {
 	overflow: hidden;
 }
@@ -212,6 +223,15 @@
 	#cssmenu ul li {
 		width: 100%;
 		border-top: 1px solid rgba(120, 120, 120, 0.2);
+	}
+	#cssmenu > ul > li.socials {
+		align-items: center;
+		justify-content: center;
+		height: auto;
+	}
+	
+	#cssmenu > ul > li.socials a {
+		text-align: center;
 	}
 	#cssmenu ul ul li,
 	#cssmenu li:hover > ul > li {
