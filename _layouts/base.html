@@ -14,14 +14,14 @@
     <meta property="og:url" content="{{ site.url | append: page.url | remove: '.html'}}">
 	<meta property="og:title" content="{{ page.title | escape }}">
 	<meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 300 | strip }}">
-	<meta property="og:image" content="/assets/banner/{{ page.image }}.jpg" >
+	<meta property="og:image" content="{{ site.url }}/assets/banner/{{ page.image }}.jpg" >
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@KingOfEsports" />
 	<meta name="twitter:title" content="{{ page.title | escape }}">
 	<meta name="twitter:description" content="{{ page.excerpt | strip_html | truncatewords: 200 | strip }}">
-	<meta name="twitter:image" content="/assets/banner/{{ page.image }}.jpg">
+	<meta name="twitter:image" content="{{ site.url }}/assets/banner/{{ page.image }}.jpg">
 	{% else %}
 	{% if layout.type == "autopage" %}
 	{% assign category-metadata = site.data.mappingsGames | where:"id",page.title | first %}
@@ -40,17 +40,17 @@
 	<!-- Open Graph data -->
 	<meta property="og:type" content="blog">
 	<meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="{{ site.url }}">
 	<meta property="og:title" content="{{ site.title }}">
 	<meta property="og:description" content="{{ site.description }}">	
-	<meta property="og:image" content="/assets/logo_large.png" >
+	<meta property="og:image" content="{{ site.url }}/assets/logo_large.png" >
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@KingOfEsports" />
 	<meta name="twitter:title" content="{{ site.title }}">
 	<meta name="twitter:description" content="{{ site.description }}">	
-	<meta name="twitter:image" content="/assets/logo_large.png">
+	<meta name="twitter:image" content="{{ site.url }}/assets/logo_large.png">
 	{% endif %}
 	
 	<!-- Favicon -->
