@@ -443,7 +443,7 @@
 					margin-bottom: 8px;
 				}
 				
-				&.kinguin-post {
+				&.plug-post {
 					padding: 0;
 					overflow: hidden;
 					margin-left: 0;
@@ -453,7 +453,7 @@
 						margin: 0;
 					}
 					
-					.kinguin-image {
+					.plug-image {
 						display: block;
 						
 						@media screen and (max-width: $break-large) {
@@ -461,7 +461,7 @@
 						}
 					}
 					
-					.kinguin-image-wide {
+					.plug-image-wide {
 						display: none;
 						
 						@media screen and (max-width: $break-large) {
@@ -483,7 +483,7 @@
 				}
 			}
 			
-			&.kinguin-link {
+			&.plug-link {
 				@media screen and (max-width: $break-large) {
 					width: 100%;
 				}
