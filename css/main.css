@@ -380,34 +380,34 @@ body {
           flex-shrink: 0;
           width: 100%;
           margin-bottom: 8px; }
-        .page-main .post-related a .post.kinguin-post {
+        .page-main .post-related a .post.plug-post {
           padding: 0;
           overflow: hidden;
           margin-left: 0;
           margin-right: 0; }
-          .page-main .post-related a .post.kinguin-post .post-image {
+          .page-main .post-related a .post.plug-post .post-image {
             margin: 0; }
-          .page-main .post-related a .post.kinguin-post .kinguin-image {
+          .page-main .post-related a .post.plug-post .plug-image {
             display: block; }
             @media screen and (max-width: 950px) {
-              .page-main .post-related a .post.kinguin-post .kinguin-image {
+              .page-main .post-related a .post.plug-post .plug-image {
                 display: none; } }
-          .page-main .post-related a .post.kinguin-post .kinguin-image-wide {
+          .page-main .post-related a .post.plug-post .plug-image-wide {
             display: none; }
             @media screen and (max-width: 950px) {
-              .page-main .post-related a .post.kinguin-post .kinguin-image-wide {
+              .page-main .post-related a .post.plug-post .plug-image-wide {
                 display: block; } }
           @media screen and (max-width: 950px) {
-            .page-main .post-related a .post.kinguin-post {
+            .page-main .post-related a .post.plug-post {
               width: 100%;
               max-width: 500px;
               margin: 0 auto;
               margin-bottom: 10px; }
-              .page-main .post-related a .post.kinguin-post:hover {
+              .page-main .post-related a .post.plug-post:hover {
                 margin-top: 2px;
                 margin-bottom: 8px; } }
       @media screen and (max-width: 950px) {
-        .page-main .post-related a.kinguin-link {
+        .page-main .post-related a.plug-link {
           width: 100%; } }
 
 .logoheadline {
