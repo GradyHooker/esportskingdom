@@ -1,9 +1,29 @@
 - id: idiotslantern
   title: The Idiots Lantern
-  youtube: https://www.youtube.com/channel/UC1ZyzxURz0uozVNT7CdjbKg
+  description: An entertainment, gaming and pop culture radio show turned YouTube channel featuring interviews with; game developers, youtube personalities and many more!
+  mainlink: https://www.youtube.com/channel/UC1ZyzxURz0uozVNT7CdjbKg
+  youtube: channel/UC1ZyzxURz0uozVNT7CdjbKg
+  facebook: LexiconOfLore
+  twitter: LexiconOfLore
+  country: nz
 - id: raidosgaming
   title: Raidos Gaming
-  youtube: https://www.youtube.com/RaidosGaming
+  mainlink: https://www.youtube.com/RaidosGaming
+  youtube: RaidosGaming
+  twitch: RaidosGaming
+  facebook: RaidosGamingGG
+  twitter: RaidosGaming
+  country: nz
 - id: wrestlingroundup
   title: Wrestling Roundup
-  youtube: https://www.youtube.com/channel/UCKCEdCqut7PEqyBAhuqCSAw
+  mainlink: https://www.youtube.com/channel/UCKCEdCqut7PEqyBAhuqCSAw
+  youtube: channel/UCKCEdCqut7PEqyBAhuqCSAw
+  facebook: WrestlingRRadio
+  twitter: WrestlingRRadio
+  country: nz
+- id: esportsunearthed
+  title: Esports Unearthed
+  description: Esports Unearthed is an International Esports Podcast showcasing players, coaches, casters, analysts, teams and many more.
+  mainlink: https://www.twitter.com/ES_Unearthed
+  twitter: ES_Unearthed
+  country: au

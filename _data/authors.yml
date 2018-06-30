@@ -1,9 +1,23 @@
 - id: gradyhooker
-  name: Grady Hooker
+  firstname: Grady
+  lastname: Hooker
+  nickname: jimsta28
+  role: King of the Kingdom
+  description: A Computer Scientist with a passion for esports, wrestling and metal music. Grady started Esports Kingdom in 2017 between his other projects; a 5 year running professional wrestling radio show, a gaming youtube channel and random web development pieces.
+  country: nz
   twitter: GradyHooker
 - id: palmtoppitbull
-  name: James "PalmtopPitbull" Wert
+  firstname: James
+  lastname: Wert
+  nickname: PalmtopPitbull
+  role: Duke of Counter-Strike
+  description: Ohio-based Twitch Affiliate who is a 24 year old veteran of the US Navy and an avid gamer
+  country: us
   twitter: PalmtopPitbull
+  twitch: PalmtopPitbull
 - id: esportskingdom
-  name: The Esports Kingdom team
+  firstname: The Esports
+  lastname: Kingdom team
+  description: The entire team got together for this article. Esports Kingdom contains articles, news, and views across multiple different esports games, including weekly recaps and tournament previews/reviews.
   twitter: KingOfEsports
+  facebook: KingOfEsports

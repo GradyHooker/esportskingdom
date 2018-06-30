@@ -16,17 +16,11 @@ type: post
     <div class="post-details">
 		{% if page.guest != null %}
 		{% assign showName = site.data.mappingsShows | where:"id",page.guest | first %}
-		<div class="post-show pretty-print">Interview supplied by <a href="{{ showName.youtube }}" target="_blank">{{ showName.title }}</a></div>
-		{% else %}
-		{% if author.twitter != null %}
-        <h2 class="page-box__subheading">
-		  Written By: {{ author.name }} (<a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>)
-		</h2>
+		<div class="post-show pretty-print">Supplied by <a href="{{ showName.mainlink }}" target="_blank">{{ showName.title }}</a></div>
 		{% else %}
         <h2 class="page-box__subheading">
-		  Written By: {{ author.name }}
+		  {{ author.firstname }} {% if author.nickname != null %}"{{ author.nickname }}" {% endif %}{{ author.lastname }}{% if author.twitter != null %} (<a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>){% endif %}
 		</h2>
-		{% endif %}
 		{% endif %}
 		{% assign displayTime = page.circa | date: "%Y.%m.%d" %}
 		<h2 class="page-box__subheading"><time datetime="{{ page.circa }}" title="{{ page.circa | date: '%d %B %Y at %r' }}" data-format="timeSince">{{ displayTime }}</time></h2>
@@ -34,26 +28,40 @@ type: post
 	<div class="post-content">
       {{ content }}
 	  <div class="post-footer">
-	    {% if page.guest != null %}
-		{% assign showName = site.data.mappingsShows | where:"id",page.guest | first %}
-		<div>Interview supplied by <a href="{{ showName.youtube }}" target="_blank">{{ showName.title }}</a></div>
-		{% else %}
-	    {% if author.twitter != null %}
-        <div>
-		  Written By: {{ author.name }} (<a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>)
-		</div>
-		{% else %}
-        <div>
-		  Written By: {{ author.name }}
-		</div>
-		{% endif %}
-		{% endif %}
 		{% if headercredit.name != null %}
 		<div>
 		  Header image thanks to <a href="{{ headercredit.link }}">{{ headercredit.name }}</a>
 		</div>
 		{% endif %}
       </div>
+    </div>
+	<div class="post-author">
+	    {% if page.guest != null %}
+		{% assign author = site.data.mappingsShows | where:"id",page.guest | first %}
+		<img class="author-image" src="/assets/characters/guest/{{ page.guest }}.png"/>
+		<div>
+			<p class="author-name">{{ showName.title }}</p>
+			<p class="author-description">{{ showName.description }}</p>
+			{% if showName.country != null %}<img class="flag" src="/assets/flags/{{ showName.country }}.png"/> {% endif %}
+			{% if showName.twitter != null %}<a href="https://twitter.com/{{ showName.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>{% endif %}
+			{% if showName.twitch != null %}<a href="https://twitch.tv/{{ showName.twitch }}" target="_blank"><i class="fab fa-twitch"></i></a>{% endif %}
+			{% if showName.facebook != null %}<a href="https://facebook.com/{{ showName.facebook }}" target="_blank"><i class="fab fa-facebook"></i></a>{% endif %}
+			{% if showName.youtube != null %}<a href="https://www.youtube.com/{{ showName.youtube }}" target="_blank"><i class="fab fa-youtube"></i></a>{% endif %}
+		</div>
+		{% else %}
+		<img class="author-image author-image-human" src="/assets/authors/{{ page.author }}.jpg"/>
+        <div>
+			<p class="author-name">{{ author.firstname }} {% if author.nickname != null %}"{{ author.nickname }}" {% endif %}{{ author.lastname }}</p>
+			{% if author.role != null %}<p class="author-role">{{ author.role }}</p>{% endif %}
+			<p class="author-description">{{ author.description }}</p>
+			{% if author.country != null %}<img class="flag" src="/assets/flags/{{ author.country }}.png"/> {% endif %}
+			{% if author.twitter != null %}<a href="https://twitter.com/{{ author.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>{% endif %}
+			{% if author.twitch != null %}<a href="https://twitch.tv/{{ author.twitch }}" target="_blank"><i class="fab fa-twitch"></i></a>{% endif %}
+			{% if author.facebook != null %}<a href="https://facebook.com/{{ author.facebook }}" target="_blank"><i class="fab fa-facebook"></i></a>{% endif %}
+			{% if author.youtube != null %}<a href="https://www.youtube.com/{{ author.youtube }}" target="_blank"><i class="fab fa-youtube"></i></a>{% endif %}
+			<!--<a href="#">More from this author</a>-->
+		</div>
+		{% endif %}
     </div>
   </div>
   {% unless page.category == null %}

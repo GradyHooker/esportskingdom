@@ -17,7 +17,7 @@
 				<div class="post-detaillinks">
 					{% if post.guest != null %}
 					{% assign category-metadata = site.data.mappingsShows | where:"id",post.guest | first %}
-					<div class="post-show pretty-print">Interview supplied by {{ category-metadata.title }}</div>
+					<div class="post-show pretty-print">Supplied by {{ category-metadata.title }}</div>
 					{% else %}
 					{% assign category-metadata = site.data.mappingsGames | where:"id",post.category | first %}
 					<div class="post-game pretty-print">{{ category-metadata.title }}</div>
