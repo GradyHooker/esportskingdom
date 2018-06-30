@@ -2,8 +2,11 @@
   {% assign counter = 0 %}
   {% for post in paginator.posts %}
     {% assign counter = counter | plus: 1 %}
+	{% if post.guest != null %}
+	{% assign guest = site.data.mappingsShows | where:"id",post.guest | first %}
+	{% endif %}
     <a class="post-link" href="{{ site.baseurl }}{{ post.url | replace: '.html', ''}}">
-		<div class="post {{ post.guest }}">
+		<div class="post"{% if post.guest != null %} style="background: #{{ guest.color }}"{% endif %}>
 		  <div class="post-boximage-cont">
 			<img class="post-boximage" src="/assets/banner/{{ post.image }}-small.jpg" alt="{{ post.title | escape }}"/>
 			<img class="post-boximage-square" src="/assets/banner/{{ post.image }}-square.jpg" alt="{{ post.title | escape }}"/>
@@ -16,8 +19,7 @@
 			<div class="post-details">
 				<div class="post-detaillinks">
 					{% if post.guest != null %}
-					{% assign category-metadata = site.data.mappingsShows | where:"id",post.guest | first %}
-					<div class="post-show pretty-print">Supplied by {{ category-metadata.title }}</div>
+					<div class="post-show pretty-print">Supplied by {{ guest.title }}</div>
 					{% else %}
 					{% assign category-metadata = site.data.mappingsGames | where:"id",post.category | first %}
 					<div class="post-game pretty-print">{{ category-metadata.title }}</div>

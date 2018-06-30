@@ -6,6 +6,7 @@
   facebook: LexiconOfLore
   twitter: LexiconOfLore
   country: nz
+  color: eaffea
 - id: raidosgaming
   title: Raidos Gaming
   mainlink: https://www.youtube.com/RaidosGaming
@@ -14,6 +15,7 @@
   facebook: RaidosGamingGG
   twitter: RaidosGaming
   country: nz
+  color: ffeaea
 - id: wrestlingroundup
   title: Wrestling Roundup
   mainlink: https://www.youtube.com/channel/UCKCEdCqut7PEqyBAhuqCSAw
@@ -21,9 +23,11 @@
   facebook: WrestlingRRadio
   twitter: WrestlingRRadio
   country: nz
+  color: ffffea
 - id: esportsunearthed
   title: Esports Unearthed
   description: Esports Unearthed is an International Esports Podcast showcasing players, coaches, casters, analysts, teams and many more.
   mainlink: https://www.twitter.com/ES_Unearthed
   twitter: ES_Unearthed
   country: au
+  color: eaeaff
