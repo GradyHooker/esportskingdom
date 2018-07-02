@@ -68,6 +68,13 @@ $(function() {
 		}
 	});
 	
+	//Update the Tweet Length
+	$('#tweetText').keyup(function() {
+		$(this).val($(this).val().replace('"', "'"));
+		$("#tweetText-left").text($(this).attr("maxlength") - $(this).val().length);
+	});
+	tweetText-left
+	
 	function insertInclude(name) {
 		var toAdd = "";
 		var cursorPos = $('#postContent').prop('selectionStart');
@@ -127,6 +134,7 @@ $(function() {
 		finalVal += "layout: post" + "\n";
 		finalVal += 'title: "' + $("#displayName").val() + '"\n';
 		finalVal += 'fulltitle: "' + $("#displayName").val() + '"\n';
+		if($("#tweetText").val() != "" && $("#tweetText").val() != null) finalVal += 'tweettext: "' + $("#tweetText").val() + '"\n';
 		finalVal += 'category: ' + $("#category").val() + '\n';
 		finalVal += 'tags: ' + $("#articleType").find(":selected").data("parent") + " " + $("#articleType").val() + " " + $("#category").find(":selected").data("parent") + '\n';
 		finalVal += 'image: ' + $("#shortName").val() + '\n';

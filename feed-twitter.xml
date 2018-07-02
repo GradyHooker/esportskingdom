@@ -1,0 +1,33 @@
+---
+layout: none
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}</link>
+	<image>{{ site.url }}/assets/logo_large.png</image>
+    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+    {% for post in site.posts %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{% if post.tweettext != null %}{{ post.tweettext | strip_html | xml_escape }}{% else %}{{ post.excerpt | strip_html | xml_escape }}{% endif %}</description>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <link>{{ site.url }}{{ post.url | replace: '.html', '' }}</link>
+		{% assign author = site.data.authors[post.author] %}
+		<author>{{ author.name }}</author>
+		{% assign category-metadata = site.data.mappings | where:"id",post.category | first %}
+		<category>{{ category-metadata.title }}</category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="{{ site.url }}/assets/banner/{{ post.image }}-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">{{ site.url }}{{ post.url | replace: '.html', '' }}</guid>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>
