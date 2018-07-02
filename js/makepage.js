@@ -136,9 +136,12 @@ $(function() {
 		finalVal += 'fulltitle: "' + $("#displayName").val() + '"\n';
 		if($("#tweetText").val() != "" && $("#tweetText").val() != null) finalVal += 'tweettext: "' + $("#tweetText").val() + '"\n';
 		finalVal += 'category: ' + $("#category").val() + '\n';
-		finalVal += 'tags: ' + $("#articleType").find(":selected").data("parent") + " " + $("#articleType").val() + " " + $("#category").find(":selected").data("parent") + '\n';
+		finalVal += 'tags: ' + $("#articleType").find(":selected").data("parent") + " "
+							+ $("#articleType").val() + " "
+							+ $("#category").find(":selected").data("parent")+ " "
+							+ $("#author").val() + '\n';
 		finalVal += 'image: ' + $("#shortName").val() + '\n';
-		finalVal += 'author: ' + $("#author").val() + '\n';
+		finalVal += $("#author").find(":selected").data("type") + ': ' + $("#author").val() + '\n';
 		if($("#headerCredit").val() != "" || $("#headerCreditLink").val() != "") {
 			finalVal += 'headercredit: ' + '\n';
 			finalVal += '  - name: ' + $("#headerCredit").val() + '\n';
@@ -303,7 +306,7 @@ function updateCirca() {
 	var currentdate = new Date(); 
 	var datetime = currentdate.getFullYear() + "-"
 			+ pad(currentdate.getMonth()+1)  + "-" 
-			+ currentdate.getDate() + " "  
+			+ pad(currentdate.getDate()) + " "  
 			+ pad(currentdate.getHours()) + ":"  
 			+ pad(currentdate.getMinutes()) + ":" 
 			+ pad(currentdate.getSeconds()) + " "

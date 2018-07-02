@@ -4,13 +4,18 @@ type: autopage
 pagination: 
   permalink: /:num/
 ---
-{% assign category-metadata = site.data.mappingsGames | where:"id",page.title | first %}
-{% if category-metadata == null %}
-{% assign category-metadata = site.data.mappingsGenres | where:"id",page.title | first %}
-{% if category-metadata == null %}
-{% assign category-metadata = site.data.mappingsTypes | where:"id",page.title | first %}
+{% assign author = site.data.authors | where:"id",page.title | first %}
+{% if author != null %}
+  <h2 class="autopage-title">{{ author.firstname }} {% if author.nickname != null %}"{{ author.nickname }}" {% endif %}{{ author.lastname }}</h2>
+{% else %}
+  {% assign category = site.data.mappingsGames | where:"id",page.title | first %}
+  {% if category == null %}
+    {% assign category = site.data.mappingsGenres | where:"id",page.title | first %}
+    {% if category == null %}
+      {% assign category = site.data.mappingsTypes | where:"id",page.title | first %}
+    {% endif %}
+  {% endif %}
+  <h2 class="autopage-title">{{ category.title }}</h2>
 {% endif %}
-{% endif %}
-<h2 class="autopage-title">{{ category-metadata.title }}</h2>
 
 {% include paginator-list.html %}

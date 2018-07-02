@@ -46,9 +46,16 @@ sitemap: false
 				<label for="author">Author: </label>
 				<select id="author">
 					<option value=""></option>
-					{% for entry in site.data.authors %}
-					<option value="{{ entry.id }}" >{{ entry.name }}</option>
-					{% endfor %}
+					<optgroup label="Authors">
+						{% for entry in site.data.authors %}
+						<option value="{{ entry.id }}" data-type="author">{{ entry.firstname }} {% if entry.nickname != null %}"{{ entry.nickname }}" {% endif %}{{ entry.lastname }}</option>
+						{% endfor %}
+					</optgroup>
+					<optgroup label="Guests">
+						{% for entry in site.data.mappingsShows %}
+						<option value="{{ entry.id }}" data-type="guest">{{ entry.title }}</option>
+						{% endfor %}
+					</optgroup>
 				</select>
 			</div>
 			<div class="makepage-cont">
