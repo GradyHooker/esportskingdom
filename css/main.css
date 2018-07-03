@@ -1261,8 +1261,9 @@ header {
     display: flex; }
     .posts .post-link .post-fake .makepage-buttons button {
       padding: 4px;
-      margin: 8px;
-      width: 100px;
+      margin: 4px;
+      width: 80px;
+      font-size: 0.8em;
       display: flex;
       flex-direction: column;
       align-items: center;
