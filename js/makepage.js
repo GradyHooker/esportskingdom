@@ -73,7 +73,6 @@ $(function() {
 		$(this).val($(this).val().replace('"', "'"));
 		$("#tweetText-left").text($(this).attr("maxlength") - $(this).val().length);
 	});
-	tweetText-left
 	
 	function insertInclude(name) {
 		var toAdd = "";
@@ -114,6 +113,10 @@ $(function() {
 			}
 			case "teaminfo": {
 				toAdd = "<<TEAM-INFO\nlogo: \nlogo2: _optional_\ntext: _no normal quote marks_\nextratext: _optional_\n>>";
+				break;
+			}
+			case "time": {
+				toAdd = "<<TIME\ndatetime: \nformat: \n>>";
 				break;
 			}
 		}
