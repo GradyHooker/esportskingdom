@@ -91,6 +91,10 @@ $(function() {
 				toAdd = "<<TWEET\ntweet: \n>>";
 				break;
 			}
+			case "omnyfm": {
+				toAdd = "<<OMNYFM\nlink: e.g. shows/esports-unearthed/houngoungagne-cs-go-youtuber\n>>";
+				break;
+			}
 			case "carousel": {
 				toAdd = "<<CAROUSEL\nfolder: article\nimages:\n- \n- \n- \ncaptions:\n- \n- \n- \n>>";
 				break;
