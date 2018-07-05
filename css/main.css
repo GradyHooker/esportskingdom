@@ -166,6 +166,8 @@ body {
         font-style: italic;
         margin-left: 35px;
         font-size: 0.9em; }
+      .page-main .post-container .post-content iframe.omnyfm {
+        padding-top: 10px; }
       .page-main .post-container .post-content .media {
         padding-top: 10px;
         font-style: italic;
