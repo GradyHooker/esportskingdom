@@ -1,0 +1,449 @@
+teamStats:
+  virtuspro:
+    - name: fnatic
+      played: 13
+      won: 2
+    - name: nip-2016
+      played: 14
+      won: 7
+    - name: ldlc
+      played: 13
+      won: 6
+    - name: titan
+      played: 6
+      won: 3.5
+    - name: navi
+      played: 12
+      won: 6
+    - name: ibuypower
+      played: 7
+      won: 4
+    - name: hellraisers
+      played: 4
+      won: 2
+    - name: dignitas-2016
+      played: 7
+      won: 4
+  fnatic:
+    - name: virtuspro
+      played: 13
+      won: 11
+    - name: nip-2016
+      played: 7
+      won: 4
+    - name: ldlc
+      played: 8
+      won: 6
+    - name: titan
+      played: 9
+      won: 3
+    - name: navi
+      played: 10
+      won: 6
+    - name: ibuypower
+      played: 11
+      won: 9.5
+    - name: hellraisers
+      played: 3
+      won: 2
+    - name: dignitas-2016
+      played: 10
+      won: 8
+  nip-2016:
+    - name: virtuspro
+      played: 14
+      won: 7
+    - name: fnatic
+      played: 7
+      won: 3
+    - name: ldlc
+      played: 9
+      won: 4
+    - name: titan
+      played: 10
+      won: 4
+    - name: navi
+      played: 6
+      won: 2
+    - name: ibuypower
+      played: 1
+      won: 0
+    - name: hellraisers
+      played: 7
+      won: 5
+    - name: dignitas-2016
+      played: 7
+      won: 5
+  ldlc:
+    - name: virtuspro
+      played: 13
+      won: 7
+    - name: fnatic
+      played: 8
+      won: 2
+    - name: nip-2016
+      played: 9
+      won: 5
+    - name: titan
+      played: 13
+      won: 8
+    - name: navi
+      played: 11
+      won: 9
+    - name: ibuypower
+      played: 2
+      won: 0
+    - name: hellraisers
+      played: 0
+      won: 0
+  titan:
+    - name: virtuspro
+      played: 6
+      won: 2.5
+    - name: fnatic
+      played: 9
+      won: 6
+    - name: nip-2016
+      played: 10
+      won: 6
+    - name: ldlc
+      played: 13
+      won: 5
+    - name: navi
+      played: 4
+      won: 0
+    - name: ibuypower
+      played: 13
+      won: 6
+    - name: hellraisers
+      played: 3
+      won: 0
+    - name: dignitas-2016
+      played: 2
+      won: 0
+  navi:
+    - name: virtuspro
+      played: 12
+      won: 6
+    - name: fnatic
+      played: 10
+      won: 4
+    - name: nip-2016
+      played: 6
+      won: 4
+    - name: ldlc
+      played: 11
+      won: 2
+    - name: titan
+      played: 4
+      won: 4
+    - name: ibuypower
+      played: 2
+      won: 2
+    - name: hellraisers
+      played: 11
+      won: 8
+    - name: dignitas-2016
+      played: 2
+      won: 2
+  ibuypower:
+    - name: virtuspro
+      played: 7
+      won: 3
+    - name: fnatic
+      played: 11
+      won: 1.5
+    - name: nip-2016
+      played: 1
+      won: 1
+    - name: ldlc
+      played: 2
+      won: 2
+    - name: titan
+      played: 13
+      won: 7
+    - name: navi
+      played: 2
+      won: 0
+    - name: hellraisers
+      played: 0
+      won: 0
+    - name: dignitas-2016
+      played: 5
+      won: 1
+  hellraisers:
+    - name: virtuspro
+      played: 4
+      won: 2
+    - name: fnatic
+      played: 3
+      won: 1
+    - name: nip-2016
+      played: 7
+      won: 2
+    - name: ldlc
+      played: 0
+      won: 0
+    - name: titan
+      played: 3
+      won: 3
+    - name: navi
+      played: 11
+      won: 3
+    - name: ibuypower
+      played: 0
+      won: 0
+    - name: dignitas-2016
+      played: 2
+      won: 0
+  dignitas-2016:
+    - name: virtuspro
+      played: 7
+      won: 3
+    - name: fnatic
+      played: 10
+      won: 2
+    - name: nip-2016
+      played: 7
+      won: 2
+    - name: ldlc
+      played: 0
+      won: 0
+    - name: titan
+      played: 2
+      won: 2
+    - name: navi
+      played: 2
+      won: 0
+    - name: ibuypower
+      played: 5
+      won: 4
+    - name: hellraisers
+      played: 2
+      won: 2
+mapStats:
+  virtuspro:
+    - name: mirage
+      played: 29
+      won: 20.5
+    - name: inferno-2017
+      played: 26
+      won: 14
+    - name: nuke
+      played: 10
+      won: 7
+    - name: train
+      played: 12
+      won: 10
+    - name: overpass
+      played: 9
+      won: 5
+    - name: cobblestone
+      played: 3
+      won: 3
+    - name: cache
+      played: 23
+      won: 15
+    - name: dust2-2017
+      played: 11
+      won: 2
+  fnatic:
+    - name: mirage
+      played: 24
+      won: 17
+    - name: inferno-2017
+      played: 30
+      won: 23
+    - name: nuke
+      played: 5
+      won: 5
+    - name: train
+      played: 5
+      won: 3
+    - name: overpass
+      played: 6
+      won: 6
+    - name: cobblestone
+      played: 2
+      won: 1
+    - name: cache
+      played: 12
+      won: 10
+    - name: dust2-2017
+      played: 20
+      won: 11.5
+  nip-2016:
+    - name: mirage
+      played: 1
+      won: 0
+    - name: inferno-2017
+      played: 26
+      won: 15
+    - name: nuke
+      played: 13
+      won: 10
+    - name: train
+      played: 11
+      won: 7
+    - name: overpass
+      played: 5
+      won: 2
+    - name: cobblestone
+      played: 5
+      won: 3
+    - name: cache
+      played: 9
+      won: 5
+    - name: dust2-2017
+      played: 25
+      won: 14
+  ldlc:
+    - name: mirage
+      played: 10
+      won: 4
+    - name: inferno-2017
+      played: 30
+      won: 24
+    - name: nuke
+      played: 5
+      won: 3
+    - name: train
+      played: 2
+      won: 2
+    - name: overpass
+      played: 9
+      won: 5
+    - name: cobblestone
+      played: 3
+      won: 1
+    - name: cache
+      played: 6
+      won: 3
+    - name: dust2-2017
+      played: 19
+      won: 14
+  titan:
+    - name: mirage
+      played: 19
+      won: 10.5
+    - name: inferno-2017
+      played: 16
+      won: 6
+    - name: nuke
+      played: 12
+      won: 5
+    - name: train
+      played: 1
+      won: 0
+    - name: overpass
+      played: 0
+      won: 0
+    - name: cobblestone
+      played: 1
+      won: 1
+    - name: cache
+      played: 7
+      won: 6
+    - name: dust2-2017
+      played: 22
+      won: 17
+  navi:
+    - name: mirage
+      played: 17
+      won: 13
+    - name: inferno-2017
+      played: 23
+      won: 11
+    - name: nuke
+      played: 5
+      won: 3
+    - name: train
+      played: 4
+      won: 2
+    - name: overpass
+      played: 7
+      won: 5
+    - name: cobblestone
+      played: 1
+      won: 1
+    - name: cache
+      played: 1
+      won: 0
+    - name: dust2-2017
+      played: 19
+      won: 12
+  ibuypower:
+    - name: mirage
+      played: 1
+      won: 0
+    - name: inferno-2017
+      played: 21
+      won: 10.5
+    - name: nuke
+      played: 13
+      won: 7
+    - name: train
+      played: 2
+      won: 0
+    - name: overpass
+      played: 1
+      won: 0
+    - name: cobblestone
+      played: 2
+      won: 1
+    - name: cache
+      played: 13
+      won: 9
+    - name: dust2-2017
+      played: 13
+      won: 9.5
+  hellraisers:
+    - name: mirage
+      played: 14
+      won: 8
+    - name: inferno-2017
+      played: 18
+      won: 10
+    - name: nuke
+      played: 5
+      won: 3
+    - name: train
+      played: 0
+      won: 0
+    - name: overpass
+      played: 5
+      won: 2
+    - name: cobblestone
+      played: 0
+      won: 0
+    - name: cache
+      played: 1
+      won: 1
+    - name: dust2-2017
+      played: 13
+      won: 6
+  dignitas-2016:
+    - name: mirage
+      played: 9
+      won: 4
+    - name: inferno-2017
+      played: 14
+      won: 10
+    - name: nuke
+      played: 11
+      won: 8
+    - name: train
+      played: 0
+      won: 0
+    - name: overpass
+      played: 3
+      won: 0
+    - name: cobblestone
+      played: 1
+      won: 0
+    - name: cache
+      played: 3
+      won: 1
+    - name: dust2-2017
+      played: 18
+      won: 8
