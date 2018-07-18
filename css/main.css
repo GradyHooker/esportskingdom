@@ -145,6 +145,19 @@ body {
           padding-top: 10px;
           padding-bottom: 10px;
           font-size: 0.95em; } }
+    .page-main .post-container .post-sponsor {
+      width: 100%;
+      font-size: 0.8em;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0px 50px;
+      background: #FFF; }
+      .page-main .post-container .post-sponsor span {
+        margin-right: 10px; }
+      @media screen and (max-width: 600px) {
+        .page-main .post-container .post-sponsor {
+          padding: 0px 20px; } }
     .page-main .post-container .post-content {
       padding: 50px;
       padding-top: 0px;
@@ -387,34 +400,42 @@ body {
           flex-shrink: 0;
           width: 100%;
           margin-bottom: 8px; }
-        .page-main .post-related a .post.plug-post {
+        .page-main .post-related a .post.plug-post, .page-main .post-related a .post.sponsor-post {
           padding: 0;
           overflow: hidden;
           margin-left: 0;
           margin-right: 0; }
-          .page-main .post-related a .post.plug-post .post-image {
+          .page-main .post-related a .post.plug-post .post-image, .page-main .post-related a .post.sponsor-post .post-image {
             margin: 0; }
-          .page-main .post-related a .post.plug-post .plug-image {
+          .page-main .post-related a .post.plug-post .plug-image,
+          .page-main .post-related a .post.plug-post .sponsor-image, .page-main .post-related a .post.sponsor-post .plug-image,
+          .page-main .post-related a .post.sponsor-post .sponsor-image {
             display: block; }
             @media screen and (max-width: 950px) {
-              .page-main .post-related a .post.plug-post .plug-image {
+              .page-main .post-related a .post.plug-post .plug-image,
+              .page-main .post-related a .post.plug-post .sponsor-image, .page-main .post-related a .post.sponsor-post .plug-image,
+              .page-main .post-related a .post.sponsor-post .sponsor-image {
                 display: none; } }
-          .page-main .post-related a .post.plug-post .plug-image-wide {
+          .page-main .post-related a .post.plug-post .plug-image-wide,
+          .page-main .post-related a .post.plug-post .sponsor-image-wide, .page-main .post-related a .post.sponsor-post .plug-image-wide,
+          .page-main .post-related a .post.sponsor-post .sponsor-image-wide {
             display: none; }
             @media screen and (max-width: 950px) {
-              .page-main .post-related a .post.plug-post .plug-image-wide {
+              .page-main .post-related a .post.plug-post .plug-image-wide,
+              .page-main .post-related a .post.plug-post .sponsor-image-wide, .page-main .post-related a .post.sponsor-post .plug-image-wide,
+              .page-main .post-related a .post.sponsor-post .sponsor-image-wide {
                 display: block; } }
           @media screen and (max-width: 950px) {
-            .page-main .post-related a .post.plug-post {
+            .page-main .post-related a .post.plug-post, .page-main .post-related a .post.sponsor-post {
               width: 100%;
               max-width: 500px;
               margin: 0 auto;
               margin-bottom: 10px; }
-              .page-main .post-related a .post.plug-post:hover {
+              .page-main .post-related a .post.plug-post:hover, .page-main .post-related a .post.sponsor-post:hover {
                 margin-top: 2px;
                 margin-bottom: 8px; } }
       @media screen and (max-width: 950px) {
-        .page-main .post-related a.plug-link {
+        .page-main .post-related a.plug-link, .page-main .post-related a.sponsor-link {
           width: 100%; } }
 
 .logoheadline {
@@ -929,7 +950,8 @@ header {
             width: 50px; } }
       .posts .post-link .post .post-summary-cont {
         margin-left: 16px;
-        width: 100%; }
+        width: 100%;
+        z-index: 2; }
         @media screen and (max-width: 600px) {
           .posts .post-link .post .post-summary-cont {
             display: flex;
@@ -960,9 +982,44 @@ header {
             .posts .post-link .post .post-summary-cont .post-details .post-date {
               font-size: 1.1em;
               width: 60px; } }
-        @media screen and (max-width: 768px) {
-          .posts .post-link .post .post-summary-cont .post-entry {
-            display: none; } }
+        .posts .post-link .post .post-summary-cont .post-entry-cont {
+          display: flex; }
+          @media screen and (max-width: 768px) {
+            .posts .post-link .post .post-summary-cont .post-entry-cont .post-entry {
+              display: none; } }
+          @media screen and (max-width: 768px) {
+            .posts .post-link .post .post-summary-cont .post-entry-cont.empty {
+              display: none; } }
+          .posts .post-link .post .post-summary-cont .post-entry-cont .post-sponsor {
+            width: 80px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            font-size: 0.8em;
+            margin-left: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column; }
+            @media screen and (max-width: 768px) {
+              .posts .post-link .post .post-summary-cont .post-entry-cont .post-sponsor {
+                flex-direction: row;
+                justify-content: flex-end;
+                width: 100%;
+                margin-left: 0px; }
+                .posts .post-link .post .post-summary-cont .post-entry-cont .post-sponsor span {
+                  margin-right: 10px; } }
+            @media screen and (max-width: 600px) {
+              .posts .post-link .post .post-summary-cont .post-entry-cont .post-sponsor {
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 60px;
+                font-size: 0.7em;
+                margin-left: 15px; }
+                .posts .post-link .post .post-summary-cont .post-entry-cont .post-sponsor img {
+                  height: 30px;
+                  width: 60px; }
+                .posts .post-link .post .post-summary-cont .post-entry-cont .post-sponsor span {
+                  margin-right: 0px; } }
       .posts .post-link .post .post-character {
         position: absolute;
         height: 120%;
