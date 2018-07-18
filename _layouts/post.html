@@ -25,6 +25,12 @@ type: post
 		{% assign displayTime = page.circa | date: "%Y.%m.%d" %}
 		<h2 class="page-box__subheading"><time datetime="{{ page.circa }}" title="{{ page.circa | date: '%d %B %Y at %r' }}" data-format="timeSince">{{ displayTime }}</time></h2>
 	</div>
+	{% if page.sponsor != null %}
+	<div class="post-sponsor">
+		<span>Presented by</span>
+		<img src="/assets/sponsors/{{ page.sponsor }}-tiny.png" alt="Sponsor logo"/>
+	</div>
+	{% endif %}
 	<div class="post-content">
       {{ content }}
 	  <div class="post-footer">
@@ -68,12 +74,21 @@ type: post
   {% capture pageCategory %}{{ page.category }}{% endcapture %}
   {% unless site.categories[pageCategory].size == 1 %}
   <div class="post-related">
+    {% if page.sponsor != null %}
+	<a class="post-link sponsor-link" href="" target="_blank">
+	  <div class="post sponsor-post">
+	    <img class="post-image sponsor-image" src="/assets/sponsors/{{ page.sponsor }}-big.jpg" alt="Sponsor logo"/>
+		<img class="post-image sponsor-image-wide" src="/assets/sponsors/{{ page.sponsor }}-wide.jpg" alt="Sponsor logo"/>
+	  </div>
+	</a>
+	{% else %}
 	<a class="post-link plug-link" href="" target="_blank">
 	  <div class="post plug-post">
 	    <img class="post-image plug-image" src="" alt=""/>
 		<img class="post-image plug-image-wide" src="" alt=""/>
 	  </div>
 	</a>
+	{% endif %}
     <h1>Related Posts</h1>
     {% for post in site.categories[pageCategory] limit:6 %}
     {% unless post.title == page.title %}

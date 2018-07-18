@@ -35,8 +35,20 @@
 				<div class="post-date"><time datetime="{{ post.circa }}" title="{{ post.circa | date: '%d %B %Y at %r' }}" data-format="timeSince">{{ displayTime }}</time></div>
 			</div>
 
-			<div class="post-entry">
-			  {{ post.excerpt | strip_html }}
+			{% if post.sponsor != null %}
+			<div class="post-entry-cont">
+			{% else %}
+			<div class="post-entry-cont empty">
+			{% endif %}
+				<div class="post-entry">
+				  {{ post.excerpt | strip_html }}
+				</div>
+				{% if post.sponsor != null %}
+				<div class="post-sponsor">
+				  <span>Presented by</span>
+				  <img src="/assets/sponsors/{{ post.sponsor }}-tiny.png" alt="Sponsor logo"/>
+				</div>
+				{% endif %}
 			</div>
 		  </div>
 		  {% if post.guest != null %}
