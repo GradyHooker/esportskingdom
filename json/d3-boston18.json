@@ -1,0 +1,238 @@
+{
+	"name": "New Champions Stage",
+	"size": [1, 1],
+	"color": "#222222",
+	"teams": [
+		{ "name": "g2", "color": "#cccccc" },
+		{ "name": "faze", "color": "#cccccc" },
+		{ "name": "navi", "color": "#cccccc" },
+		{ "name": "skgaming", "color": "#cccccc" },
+		{ "name": "qbf", "color": "#cccccc" },
+		{ "name": "mousesports", "color": "#cccccc" },
+		{ "name": "cloud9", "color": "#cccccc" },
+		{ "name": "fnatic", "color": "#cccccc" }
+	],
+	"children": [
+		{
+			"name": "New Legends Stage",
+			"size": [2, 1],
+			"color": "#999999",
+			"width": 200,
+			"teams": [
+				{ "name": "gambit", "color": "transparent" },
+				{ "name": "astralis", "color": "transparent" },
+				{ "name": "virtuspro", "color": "transparent" },
+				{ "name": "fnatic", "color": "transparent" },
+				{ "name": "skgaming", "color": "transparent" },
+				{ "name": "big", "color": "transparent" },
+				{ "name": "north", "color": "transparent" },
+				
+				{ "name": "cloud9", "color": "#ffe790" },
+				{ "name": "g2", "color": "#ffe790" },
+				{ "name": "faze", "color": "#ffe790" },
+				{ "name": "vega", "color": "#ffe790" },
+				{ "name": "spacesoldiers", "color": "#ffe790" },
+				{ "name": "mousesports", "color": "#ffe790" },
+				{ "name": "navi", "color": "#ffe790" },
+				{ "name": "qbf", "color": "#ffe790" },
+				{ "name": "liquid", "color": "#ffe790" }
+			],
+			"children": [
+				{
+					"name": "New Challengers Stage",
+					"size": [2, 1],
+					"color": "#ffd021",
+					"width": 200,
+					"teams": [
+						{ "name": "cloud9", "color": "transparent" },
+						{ "name": "flipsid3", "color": "transparent" },
+						{ "name": "g2", "color": "transparent" },
+						{ "name": "navi", "color": "transparent" },
+						{ "name": "mousesports", "color": "transparent" },
+						{ "name": "sprout", "color": "transparent" },
+						{ "name": "faze", "color": "transparent" },
+						{ "name": "vega", "color": "transparent" },
+						
+						{ "name": "spacesoldiers", "color": "#d08082" },
+						{ "name": "envyus", "color": "#d08082" },
+						{ "name": "liquid", "color": "#8ca3c1" },
+						{ "name": "misfits", "color": "#8ca3c1" },
+						{ "name": "avangar", "color": "#8da887" },
+						{ "name": "qbf", "color": "#8da887" },
+						{ "name": "renegades", "color": "#e1b18d" },
+						{ "name": "flash", "color": "#e1b18d" }
+					],
+					"children": [
+						{
+							"name": "Europe Minor",
+							"size": [1, 1],
+							"color": "#a10106",
+							"teams": [
+								{ "name": "optic", "color": "#f3a2a5" },
+								{ "name": "spacesoldiers", "color": "#f3a2a5" },
+								{ "name": "envyus", "color": "#f3a2a5" },
+								{ "name": "ago", "color": "#f3a2a5" },
+								{ "name": "windigo", "color": "#f3a2a5" },
+								{ "name": "extatus", "color": "#f3a2a5" },
+								{ "name": "godsent", "color": "#f3a2a5" },
+								{ "name": "pride", "color": "#f3a2a5" }
+							],
+							"children": [
+								{
+									"name": "Europe Closed Qualifier",
+									"size": [1, 2],
+									"color": "#e7454b",
+									"teams": [
+										{ "name": "envyus", "color": "transparent" },
+										{ "name": "godsent", "color": "transparent" },
+										{ "name": "hellraisers", "color": "transparent" },
+										{ "name": "heroic", "color": "transparent" },
+										{ "name": "ldlc", "color": "transparent" },
+										{ "name": "nip", "color": "transparent" },
+										{ "name": "optic", "color": "transparent" },
+										{ "name": "spacesoldiers", "color": "transparent" },
+										
+										{ "name": "ago", "color": "#f3a2a5" },
+										{ "name": "binarydragons", "color": "#f3a2a5" },
+										{ "name": "extatus", "color": "#f3a2a5" },
+										{ "name": "japaleno", "color": "#f3a2a5" },
+										{ "name": "kinguin", "color": "#f3a2a5" },
+										{ "name": "exoutlaws", "color": "#f3a2a5" },
+										{ "name": "pride", "color": "#f3a2a5" },
+										{ "name": "team5", "color": "#f3a2a5" }
+									],
+									"children": [
+										{
+											"name": "Europe Open Qualifier #1",
+											"size": [1, 1],
+											"color": "#e7454b",
+											"teamtext": "512 Teams"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Americas Minor",
+							"color": "#194784",
+							"size": [1, 1],
+							"teams": [
+								{ "name": "clg", "color": "transparent" },
+								{ "name": "liquid", "color": "transparent" },
+								
+								{ "name": "complexity", "color": "#aee3fa" },
+								{ "name": "nrg", "color": "#aee3fa" },
+								{ "name": "risenation", "color": "#aee3fa" },
+								{ "name": "luminosity", "color": "#aee3fa" },
+								
+								{ "name": "teamone", "color": "#cfbbd0" },
+								
+								{ "name": "misfits", "color": "#a3d4ff" }
+							],
+							"children": [
+								{
+									"name": "North America Closed Qualifier",
+									"size": [1, 2],
+									"color": "#5ec8f6",
+									"teams": [
+										{ "name": "complexity", "color": "transparent" },
+										{ "name": "ghost", "color": "transparent" },
+										{ "name": "immortals", "color": "transparent" },
+										{ "name": "luminosity", "color": "transparent" },
+										{ "name": "misfits", "color": "transparent" },
+										{ "name": "nrg", "color": "transparent" },
+										{ "name": "rogue", "color": "transparent" },
+										{ "name": "splyce", "color": "transparent" },
+										
+										{ "name": "beacon", "color": "#aee3fa" },
+										{ "name": "clg", "color": "#aee3fa" },
+										{ "name": "frenchcanadians", "color": "#aee3fa" },
+										{ "name": "galeforce", "color": "#aee3fa" },
+										{ "name": "naventic", "color": "#aee3fa" },
+										{ "name": "risenation", "color": "#aee3fa" },
+										{ "name": "soar", "color": "#aee3fa" },
+										{ "name": "tempostorm", "color": "#aee3fa" }
+									],
+									"children": [
+										{
+											"name": "North America Open Qualifier",
+											"size": [1, 1],
+											"color": "#5ec8f6",
+											"teamtext": "287 Teams"
+										}
+									]
+								},
+								{
+									"name": "South America Open Qualifier",
+									"size": [1, 1],
+									"color": "#9f78a2",
+									"teamtext": "107 Teams"
+								},
+								{
+									"name": "North America Last Chance Qualifier",
+									"size": [1, 1],
+									"color": "#47a9ff",
+									"teams": [
+										{ "name": "immortals", "color": "transparent" },
+										{ "name": "misfits", "color": "transparent" },
+										{ "name": "soar", "color": "transparent" }
+									]
+								}
+							]
+						},
+						{
+							"name": "CIS Minor",
+							"size": [1, 1],
+							"color": "#1b5210",
+							"teams": [
+								{ "name": "spirit", "color": "transparent" },
+								{ "name": "tengri", "color": "transparent" },
+								
+								{ "name": "avangar", "color": "#b9e38c" },
+								{ "name": "pro100", "color": "#b9e38c" },
+								{ "name": "qbf", "color": "#b9e38c" },
+								{ "name": "notbad", "color": "#b9e38c" },
+								{ "name": "nemiga", "color": "#b9e38c" },
+								
+								{ "name": "forze", "color": "#afe3c0" }
+							],
+							"children": [
+								{
+									"name": "CIS Open Qualifier",
+									"size": [1, 1],
+									"color": "#73c719",
+									"teamtext": "283 Teams"
+								},
+								{
+									"name": "CIS Last Chance Qualifier",
+									"size": [1, 1],
+									"color": "#60c881",
+									"teams": [
+										{ "name": "forze", "color": "transparent" },
+										{ "name": "hatemania", "color": "transparent" },
+										{ "name": "spacejam", "color": "transparent" }
+									]
+								}
+							]
+						},
+						{
+							"name": "Asia Minor",
+							"size": [1, 1],
+							"color": "#c4631c",
+							"teams": [
+								{ "name": "boot", "color": "transparent" },
+								{ "name": "flash", "color": "transparent" },
+								{ "name": "kings", "color": "transparent" },
+								{ "name": "mongolz", "color": "transparent" },
+								{ "name": "mvp", "color": "transparent" },
+								{ "name": "renegades", "color": "transparent" },
+								{ "name": "taintedminds", "color": "transparent" },
+								{ "name": "tyloo", "color": "transparent" }
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
