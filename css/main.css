@@ -1344,6 +1344,17 @@ header {
           height: 100%; }
         .page-main-d3 .single-page-cont-d3 #d3-cont svg text {
           font-size: 1.2em; }
+        .page-main-d3 .single-page-cont-d3 #d3-cont svg img.highlighted {
+          border: 5px solid red !important;
+          margin: 0px; }
+        .page-main-d3 .single-page-cont-d3 #d3-cont svg span.highlighted {
+          border: 5px solid red !important;
+          border-radius: 20px;
+          padding: 10px; }
+        .page-main-d3 .single-page-cont-d3 #d3-cont svg rect.highlighted {
+          stroke: red !important; }
+        .page-main-d3 .single-page-cont-d3 #d3-cont svg path.highlighted {
+          stroke: red !important; }
       .page-main-d3 .single-page-cont-d3 #d3-cont .teamlogo-cont {
         margin-top: 50px;
         height: calc(100% - 60px) !important;
@@ -1356,7 +1367,7 @@ header {
           font: 50px Roboto; }
         .page-main-d3 .single-page-cont-d3 #d3-cont .teamlogo-cont img {
           flex-shrink: 0;
-          fle-grow: 0;
+          flex-grow: 0;
           height: 60px;
           width: 60px;
           padding: 10px;
@@ -1364,7 +1375,8 @@ header {
           margin: 5px;
           z-index: 30;
           pointer-events: all;
-          cursor: default; }
+          cursor: default;
+          position: relative; }
 
 .d3-title {
   width: 100%;
