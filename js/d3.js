@@ -84,6 +84,7 @@ function update(source) {
     // Enter any new nodes at the parent's previous position.
     var nodeEnter = node.enter().append("g")
         .attr("class", "node")
+		.style("opacity", 0)
         .attr("transform", function (d) { return "translate(" + source.x0 + "," + source.y0 + ")"; })
 		.on("click", click);
 
@@ -96,35 +97,6 @@ function update(source) {
         .attr("stroke", function (d) { return d.color; })
         .attr("stroke-width", 5)
         .style("fill", function (d) { return d._children ? "#eee" : "#fff"; });
-	
-	//Is something displayed, that shouldn't be
-	$('foreignObject').each(function (index) {
-		if(jQuery.inArray(parseInt($(this)[0].id), nodeIDs) == -1) {
-			$(this)[0].remove();
-		}
-	});
-		
-	//Is something not displayed, but should be
-	nodes.forEach(function (d) {
-		if($('foreignObject#' + d.id).length == 0) {
-			var foreignObject = svg.append('foreignObject')
-				.attr('x', d.x)
-				.attr('y', d.y)
-				.attr("width", rectW * d.size[0])
-				.attr("height", rectH * d.size[1])
-				.attr("id", d.id)
-			$('foreignObject#' + d.id).hide().fadeIn(duration);
-			var div = foreignObject.append('xhtml:div')
-				.html(generateTeamTable(d))
-		} else {
-			var obj = $('foreignObject#' + d.id)[0];
-			if($(obj).attr('x') != d.x || $(obj).attr('y') != d.y) {
-				$(obj).attr('x', d.x);
-				$(obj).attr('y', d.y);
-				$('foreignObject#' + d.id).hide().fadeIn(duration);
-			}
-		}
-	});
 
     nodeEnter.append("text")
         .attr("x", function (d) { return (rectW * d.size[0])/2; })
@@ -136,6 +108,7 @@ function update(source) {
     // Transition nodes to their new position.
     var nodeUpdate = node.transition()
         .duration(duration)
+		.style("opacity", 1)
         .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")"; });
 
     nodeUpdate.select("rect")
@@ -153,6 +126,7 @@ function update(source) {
     // Transition exiting nodes to the parent's new position.
     var nodeExit = node.exit().transition()
         .duration(duration)
+		.style("opacity", 0)
         .attr("transform", function (d) { return "translate(" + source.x + "," + source.y + ")"; })
         .remove();
 
@@ -235,6 +209,52 @@ function update(source) {
 			d.target.lx = null;
 		}
     });
+	
+	//Is something displayed, that shouldn't be
+	$('foreignObject').each(function (index) {
+		if(jQuery.inArray(parseInt($(this)[0].id), nodeIDs) == -1) {
+			var toRemove = $(this)[0];
+			var dx = source.x - $(toRemove).attr('x');
+			var dy = source.y - $(toRemove).attr('y');
+			d3.select(toRemove).transition()
+				.duration(duration)
+				.style("opacity", 0)
+				.attr("transform", "translate(" + dx + "," + dy + ")")
+				.remove();
+		}
+	});
+		
+	//Is something not displayed, but should be
+	nodes.forEach(function (d) {
+		if($('foreignObject#' + d.id).length == 0) {
+			//Making from scratch
+			var foreignObject = svg.append('foreignObject')
+				.style("opacity", 0)
+				.attr('x', source.x)
+				.attr('y', source.y)
+				.attr("width", rectW * d.size[0])
+				.attr("height", rectH * d.size[1])
+				.attr("id", d.id);
+			var dx = d.x - source.x;
+			var dy = d.y - source.y;			
+			foreignObject.transition()
+				.duration(duration)
+				.style("opacity", 1)
+				.attr("transform", "translate(" + dx + "," + dy + ")");
+			var div = foreignObject.append('xhtml:div')
+				.html(generateTeamTable(d))
+		} else {
+			var obj = $('foreignObject#' + d.id)[0];
+			//Moving to new location
+			if($(obj).attr('x') != d.x || $(obj).attr('y') != d.y) {
+				var dx = d.x - $(obj).attr('x');
+				var dy = d.y - $(obj).attr('y');
+				d3.select(obj).transition()
+					.duration(duration)
+					.attr("transform", "translate(" + dx + "," + dy + ")");
+			}
+		}
+	});
 
     // Stash the old positions for transition.
     nodes.forEach(function (d) {
