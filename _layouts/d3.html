@@ -1,0 +1,16 @@
+---
+layout: base
+type: d3
+hasD3: true
+---
+<h2 class="d3-title">{{ page.title }}</h2>
+<div class="page-main page-main-d3">
+	<div class="single-page-cont-d3">
+		<div id="d3-cont"></div>
+	</div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+	makeD3('{{ page.jsonFile }}', {{ page.defaultWidth }}, {{ page.defaultHeight }});
+}, false);
+</script>

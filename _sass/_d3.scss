@@ -1,0 +1,107 @@
+.page-main-d3 {
+	flex-direction: row !important;
+
+	.single-page-cont-d3 {
+		padding: 0;
+		margin: 0 auto;
+		background-image: url('/assets/d3-bg.png');
+		border-radius: 5px 5px;
+		box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+		width: 100%;
+		min-height: calc(100vh - 200px);
+		
+		@media screen and (max-width: $break-medium) {
+			min-height: calc(100vh - 145px);
+		}
+		
+		#d3-cont {
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			padding: 0;
+			margin: 0;
+		
+			.node {
+				cursor: pointer;
+				
+				circle {
+					fill: #fff;
+					stroke: steelblue;
+					stroke-width: 1.5px;
+				}
+				
+				text {
+					font: 26px 'Roboto Condensed';
+				}
+			}
+
+			.link {
+				fill: none;
+				stroke-width: 8px;
+			}
+
+			svg {
+				width: 100%;
+				height: 100%;
+				display: block;
+				margin: 0 auto;
+				cursor: grab;
+				
+				foreignObject {
+					pointer-events: none;
+				}
+				
+				div,
+				table {
+					width: 100%;
+					height: 100%;
+				}
+				
+				text {
+					font-size: 1.2em;
+				}
+			}
+			
+			.teamlogo-cont {
+				margin-top: 50px;
+				height: calc(100% - 60px) !important;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				z-index: 20;
+				
+				span {
+					font: 50px Roboto;
+				}
+				
+				img {
+					flex-shrink: 0;
+					fle-grow: 0;
+					height: 60px;
+					width: 60px;
+					padding: 10px;
+					border-radius: 20px;
+					margin: 5px;
+					z-index: 30;
+					pointer-events: all;
+					cursor: default;
+				}
+			}
+		}
+	}
+}
+
+.d3-title {
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	max-width: 1060px;
+	font-weight: bold;
+    margin: 0 auto;
+	margin-bottom: 0.5em;
+	
+	@media screen and (max-width: $break-small) {
+		margin-top: 0.5em;
+	}
+}

@@ -65,7 +65,7 @@
     <title>Esports Kingdom{% unless page.short_title == null %} - {{ page.short_title }}{% endunless %}</title>
 	
 	<!-- StyleSheets -->
-	<link href="//fonts.googleapis.com/css?family=Bungee|Roboto:400,600,800" rel="stylesheet" type="text/css">
+	<link href="//fonts.googleapis.com/css?family=Bungee|Roboto:400,600,800|Roboto+Condensed" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
 	<link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
 	{% if layout.hasSlick == true or page.hasSlick == true %}
@@ -117,6 +117,10 @@
 	<script type="text/javascript" src="/lib/slick/slick.js"></script>
 	{% endif %}
 	
+	{% if layout.hasD3 == true or page.hasD3 == true %}
+	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	{% endif %}
+	
 	{% if layout.hasTweets == true or page.hasTweets == true %}
 	<script sync src="https://platform.twitter.com/widgets.js"></script>
 	<script src="/js/tweetPopulate.js" type="text/javascript"></script>
@@ -131,6 +135,10 @@
 	<script src="/js/tcg.js" type="text/javascript"></script>
 	{% elsif layout.type == "post" and page.hasSlick == true %}
 	<script src="/js/carousel.js" type="text/javascript"></script>
+	{% endif %}
+	
+	{% if layout.type == "d3" %}
+	<script src="/js/d3.js" type="text/javascript"></script>
 	{% endif %}
 	
 	{% if layout.type == "post" %}
