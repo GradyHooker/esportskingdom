@@ -103,10 +103,11 @@
 									],
 									"children": [
 										{
-											"name": "Europe Open Qualifier #1",
+											"name": "Europe Open Qualifier",
 											"size": [1, 1],
 											"color": "#e7454b",
-											"teamtext": "512 Teams"
+											"teamtext": "512 Teams",
+											"teamsAttended": "ago,binarydragons,extatus,japaleno,kinguin,exoutlaws,pride,team5"
 										}
 									]
 								}
@@ -158,7 +159,8 @@
 											"name": "North America Open Qualifier",
 											"size": [1, 1],
 											"color": "#5ec8f6",
-											"teamtext": "287 Teams"
+											"teamtext": "287 Teams",
+											"teamsAttended": "beacon,clg,frenchcanadians,galeforce,naventic,risenation,soar,tempostorm"
 										}
 									]
 								},
@@ -166,7 +168,8 @@
 									"name": "South America Open Qualifier",
 									"size": [1, 1],
 									"color": "#9f78a2",
-									"teamtext": "107 Teams"
+									"teamtext": "107 Teams",
+									"teamsAttended": "teamone"
 								},
 								{
 									"name": "North America Last Chance Qualifier",
@@ -201,7 +204,8 @@
 									"name": "CIS Open Qualifier",
 									"size": [1, 1],
 									"color": "#73c719",
-									"teamtext": "283 Teams"
+									"teamtext": "283 Teams",
+									"teamsAttended": "avangar,pro100,qbf,notbad,nemiga"
 								},
 								{
 									"name": "CIS Last Chance Qualifier",

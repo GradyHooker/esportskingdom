@@ -60,6 +60,25 @@
 				text {
 					font-size: 1.2em;
 				}
+				
+				img.highlighted { 
+					border: 5px solid red !important; 
+					margin: 0px;
+				}
+				
+				span.highlighted { 
+					border: 5px solid red !important; 
+					border-radius: 20px;
+					padding: 10px;
+				}
+				
+				rect.highlighted {
+					stroke: red !important;
+				}
+				
+				path.highlighted {
+					stroke: red !important;
+				}
 			}
 			
 			.teamlogo-cont {
@@ -77,7 +96,7 @@
 				
 				img {
 					flex-shrink: 0;
-					fle-grow: 0;
+					flex-grow: 0;
 					height: 60px;
 					width: 60px;
 					padding: 10px;
@@ -86,6 +105,7 @@
 					z-index: 30;
 					pointer-events: all;
 					cursor: default;
+					position: relative;
 				}
 			}
 		}

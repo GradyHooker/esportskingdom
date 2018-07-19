@@ -242,7 +242,7 @@ function update(source) {
 				.style("opacity", 1)
 				.attr("transform", "translate(" + dx + "," + dy + ")");
 			var div = foreignObject.append('xhtml:div')
-				.html(generateTeamTable(d))
+				.html(generateTeamTable(d));
 		} else {
 			var obj = $('foreignObject#' + d.id)[0];
 			//Moving to new location
@@ -261,6 +261,43 @@ function update(source) {
         d.x0 = d.x;
         d.y0 = d.y;
     });
+	
+	//Reset all hover handlers
+	$('.teamlogo-cont img').off( "mouseenter mouseleave" );
+	$('.teamlogo-cont img').hover(function() {
+		//MouseEnter
+		var img = $(this)[0];
+		var team = $(img).attr("data-team");
+		//Highlight Images
+		$("img[data-team=" + team + "], span[data-team*=" + team + "]").addClass('highlighted');
+		//Highlight Boxes
+		var boxes = [];
+		var fo;
+		$("img[data-team=" + team + "], span[data-team*=" + team + "]").each(function(index) {
+			fo = findUpTag($("img[data-team=" + team + "], span[data-team*=" + team + "]")[index], "foreignObject");
+			boxes.push(parseInt(fo.id));
+		});
+		d3.selectAll("g.node")
+			.filter(function(d) { return (jQuery.inArray(d.id, boxes) != -1); })
+			.select("rect")
+			.classed('highlighted', true);
+		//Highlight Lines
+		d3.selectAll(".link")
+			.filter(function(d) { return (jQuery.inArray(d.source.id, boxes) != -1 && jQuery.inArray(d.target.id, boxes) != -1); })
+			.classed('highlighted', true);
+	}, function() {
+		//MouseLeave
+		$('.highlighted').removeClass('highlighted');
+	});
+}
+
+function findUpTag(el, tag) {
+    while (el.parentNode) {
+        el = el.parentNode;
+        if (el.tagName === tag)
+            return el;
+    }
+    return null;
 }
 
 // Toggle children on click.
@@ -280,10 +317,15 @@ function generateTeamTable(ele) {
 	
 	if(ele.teams != null) {
 		ele.teams.forEach(function (team) {
-			html += "<img src='/assets/logos/medium/" + team.name + ".png' style='background: " + team.color + "' title='" + teams[team.name] + "' alt='Team Logo for " + teams[team.name] + "'/>";
+			html += "<img src='/assets/logos/medium/" + team.name + ".png' data-team='" + team.name + "' style='background: " + team.color + "' title='" + teams[team.name] + "' alt='Team Logo for " + teams[team.name] + "'/>";
 		});
 	} else if(ele.teamtext != null) {
-		html += "<span class='teamtext'>" + ele.teamtext + "</span>";
+		if(ele.teamsAttended != null) {
+			//Add then in
+			html += "<span class='teamtext' data-team='" + ele.teamsAttended + "'>" + ele.teamtext + "</span>";
+		} else {
+			html += "<span class='teamtext'>" + ele.teamtext + "</span>";
+		}
 	}
 	
 	html += "</div>";
