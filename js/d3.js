@@ -20,7 +20,28 @@ function makeD3(jsonFile, defaultWidth, defaultHeight) {
 			teams = jsonTeam;
 		})
 	).then(function() {
-		tree = d3.layout.tree().nodeSize([420, 270]);
+		tree = d3.layout.cluster()
+			.separation(function(a, b) {
+					var asize = 1;
+					var bsize = 1;
+					
+					if(a.parent.children.length == 1) {
+						asize = a.parent.size[0];
+					} else {
+						asize = a.size[0];
+					}
+					
+					if(b.parent.children.length == 1) {
+						bsize = b.parent.size[0];
+					} else {
+						bsize = b.size[0];
+					}
+					
+					//return Math.min(asize, bsize);
+					return Math.max(asize, bsize);
+				})
+			.nodeSize([420, 270]);
+
 		diagonal = d3.svg.diagonal()
 			.projection(function (d) {
 				var x = d.x + rectW / 2;
@@ -71,6 +92,7 @@ function update(source) {
     // Normalize for fixed-depth.
 	var nodeIDs = [];
     nodes.forEach(function (d) {
+		if(d.extradepth != null) d.depth += d.extradepth;
 		if(d.depth < 5) d.y = d.depth * 600;
 		else d.y = d.depth * 600 + 250;
 		d.x = d.x - rectW/2 * (d.size[0]-1);
@@ -322,9 +344,9 @@ function generateTeamTable(ele) {
 	} else if(ele.teamtext != null) {
 		if(ele.teamsAttended != null) {
 			//Add then in
-			html += "<span class='teamtext' data-team='" + ele.teamsAttended + "'>" + ele.teamtext + "</span>";
+			html += "<span class='teamtext' data-team='" + ele.teamsAttended + "'>" + ele.teamtext.replace(" ", "<br/>") + "</span>";
 		} else {
-			html += "<span class='teamtext'>" + ele.teamtext + "</span>";
+			html += "<span class='teamtext'>" + ele.teamtext.replace(" ", "<br/>") + "</span>";
 		}
 	}
 	

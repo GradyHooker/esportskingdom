@@ -1364,7 +1364,8 @@ header {
         align-items: center;
         z-index: 20; }
         .page-main-d3 .single-page-cont-d3 #d3-cont .teamlogo-cont span {
-          font: 50px Roboto; }
+          font: 50px Roboto;
+          text-align: center; }
         .page-main-d3 .single-page-cont-d3 #d3-cont .teamlogo-cont img {
           flex-shrink: 0;
           flex-grow: 0;
