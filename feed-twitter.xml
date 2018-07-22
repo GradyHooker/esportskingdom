@@ -8,6 +8,25 @@
     <atom:link href="https://esportskingdom.gg/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>CSGO Tier Rankings: FACEIT London Minors &amp; DreamHack Valencia</title>
+        <description>The latest installment of our #CSGO Tier Rankings takes into account the #FACEITMinor as well as #DreamHackValencia - it sees another legendary team fall off the bottom and two new upstarts pull themselves onto the first rung of the ladder</description>
+        <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.gg/counter-strike/2018-07-csgo-tiers-minors-valencia</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.gg/assets/banner/csgo-tiers-minors-valencia-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.gg/counter-strike/2018-07-csgo-tiers-minors-valencia</guid>
+      </item>
+    
+      <item>
         <title>CSGO Tier Rankings: ESL One Cologne</title>
         <description>One of the biggest tournaments of the year, ESL One Cologne has just ended and that means an update to our tier rankings with some massive shake-ups from the unexpected results in the Cathedral of Counter-Strike. There is also a bunch of smaller qualifiers and tournaments to take into account.
 
