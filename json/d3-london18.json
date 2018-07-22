@@ -36,8 +36,8 @@
 						{ "name": "north", "color": "transparent" },
 						{ "name": "virtuspro", "color": "transparent" },
 						
-						{ "name": "", "color": "#d08082" },
-						{ "name": "", "color": "#d08082" },
+						{ "name": "nip", "color": "#d08082" },
+						{ "name": "optic", "color": "#d08082" },
 						{ "name": "complexity", "color": "#8ca3c1" },
 						{ "name": "rogue", "color": "#8ca3c1" },
 						{ "name": "hellraisers-2018", "color": "#8da887" },
