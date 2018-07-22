@@ -1,0 +1,316 @@
+{
+	"name": "Major Playoffs",
+	"size": [1, 1],
+	"color": "#222222",
+	"teams": [
+		{ "name": "virtuspro", "color": "#cccccc" },
+		{ "name": "nip-2017", "color": "#cccccc" },
+		{ "name": "dignitas-2016", "color": "#cccccc" },
+		{ "name": "lgb", "color": "#cccccc" },
+		{ "name": "hellraisers", "color": "#cccccc" },
+		{ "name": "ldlc-2016", "color": "#cccccc" },
+		{ "name": "fnatic-2015", "color": "#cccccc" },
+		{ "name": "complexity-2016", "color": "#cccccc" }
+	],
+	"children": [
+		{
+			"name": "Major Group Stage",
+			"size": [2, 1],
+			"color": "#999999",
+			"width": 200,
+			"teams": [
+				{ "name": "fnatic-2015", "color": "transparent" },
+				{ "name": "nip-2017", "color": "transparent" },
+				{ "name": "complexity-2016", "color": "transparent" },
+				{ "name": "titan", "color": "transparent" },
+				{ "name": "lgb", "color": "transparent" },
+				{ "name": "dignitas-2016", "color": "transparent" },
+				{ "name": "ldlc-2016", "color": "transparent" },
+				{ "name": "hellraisers", "color": "transparent" },
+				
+				{ "name": "ibuypower", "color": "transparent" },
+				{ "name": "voxeminor", "color": "transparent" },
+				
+				{ "name": "navi", "color": "#ffe790" },
+				{ "name": "virtuspro", "color": "#ffe790" },
+				{ "name": "reason", "color": "#ffe790" },
+				{ "name": "clanmystik", "color": "#ffe790" },
+				{ "name": "3dmax", "color": "#ffe790" },
+				{ "name": "mousesports", "color": "#ffe790" }
+			],
+			"children": [
+				{
+					"name": "Online Qualifier Finals",
+					"size": [2, 1],
+					"color": "#ffd021",
+					"width": 200,
+					"teams": [
+						{ "name": "3dmax", "color": "#e1b18d" },
+						
+						{ "name": "clanmystik", "color": "#b38ab6" },
+						
+						{ "name": "hudzg", "color": "#8ab6b0" },
+						
+						{ "name": "mousesports", "color": "#b6b38a" },
+						
+						{ "name": "navi", "color": "#8da887" },
+						{ "name": "ussr", "color": "#8da887" },
+						
+						{ "name": "virtuspro", "color": "#8ca3c1" },
+						{ "name": "meetyourmakers", "color": "#8ca3c1" },
+						
+						{ "name": "tobeannounced", "color": "#d08082" },
+						{ "name": "alternate", "color": "#d08082" },
+						{ "name": "reason", "color": "#d08082" },
+						{ "name": "offbalance", "color": "#d08082" },
+						
+						{ "name": "wizards", "color": "#d08082" },
+						{ "name": "h2k", "color": "#d08082" },
+						{ "name": "partyastronauts", "color": "#d08082" },
+						{ "name": "greyfacenospace", "color": "#d08082" }
+					],
+					"children": [
+						{
+							"name": "Nordic Regional Finals",
+							"size": [1, 1],
+							"color": "#c4631c",
+							"teams": [
+								{ "name": "esc", "color": "#eed0b9" },
+								{ "name": "highgrade", "color": "#eed0b9" },
+								{ "name": "nfaculty", "color": "#eed0b9" },
+								{ "name": "partyastronauts", "color": "#eed0b9" },
+								
+								{ "name": "h2k", "color": "#eed0b9" },
+								{ "name": "ence", "color": "#eed0b9" },
+								{ "name": "tobeannounced", "color": "#eed0b9" },
+								{ "name": "minttu", "color": "#eed0b9" }
+							],
+							"children": [
+								{
+									"name": "Nordic Cup #1",
+									"size": [0.7, 1],
+									"color": "#dfa375",
+									"teamtext": "50 Teams",
+									"teamsAttended": "esc,highgrade,nfaculty,partyastronauts"
+								},
+								{
+									"name": "Nordic Cup #2",
+									"size": [0.7, 1],
+									"color": "#dfa375",
+									"teamtext": "41 Teams",
+									"teamsAttended": "h2k,ence,tobeannounced,minttu"
+								}
+							]
+						},
+						{
+							"name": "French National Finals",
+							"size": [1, 1],
+							"color": "#68166f",
+							"teams": [
+								{ "name": "clanmystik", "color": "#cfbbd0" },
+								{ "name": "infernal", "color": "#cfbbd0" },
+								{ "name": "leetgamerz", "color": "#cfbbd0" },
+								{ "name": "webone", "color": "#cfbbd0" },
+								
+								{ "name": "evokate", "color": "#cfbbd0" },
+								{ "name": "mistral", "color": "#cfbbd0" },
+								{ "name": "webspell", "color": "#cfbbd0" },
+								{ "name": "worthit", "color": "#cfbbd0" }
+							],
+							"children": [
+								{
+									"name": "France Cup #1",
+									"size": [0.7, 1],
+									"color": "#9f78a2",
+									"teamtext": "37 Teams",
+									"teamsAttended": "clanmystik,infernal,leetgamerz,webone"
+								},
+								{
+									"name": "France Cup #2",
+									"size": [0.7, 1],
+									"color": "#9f78a2",
+									"teamtext": "??? Teams",
+									"teamsAttended": "evokate,ence,mistral,worthit"
+								}
+							]
+						},
+						{
+							"name": "United Kingdom National Finals",
+							"size": [1, 1],
+							"color": "#166f63",
+							"teams": [
+								{ "name": "fmtoxic", "color": "#a4d9d2" },
+								{ "name": "myxmg", "color": "#a4d9d2" },
+								{ "name": "tlm", "color": "#a4d9d2" },
+								{ "name": "crguk", "color": "#a4d9d2" },
+								
+								{ "name": "hudzg", "color": "#a4d9d2" },
+								{ "name": "ministry", "color": "#a4d9d2" },
+								{ "name": "pulsecore", "color": "#a4d9d2" },
+								{ "name": "rastaxd", "color": "#a4d9d2" }
+							],
+							"children": [
+								{
+									"name": "UK Cup #1",
+									"size": [0.7, 1],
+									"color": "#4bb5a7",
+									"teamtext": "25 Teams",
+									"teamsAttended": "fmtoxic,myxmg,tlm,crguk"
+								},
+								{
+									"name": "UK Cup #2",
+									"size": [0.7, 1],
+									"color": "#4bb5a7",
+									"teamtext": "14 Teams",
+									"teamsAttended": "hudzg,ministry,pulsecore,rastaxd"
+								}
+							]
+						},
+						{
+							"name": "German National Finals",
+							"size": [1, 1],
+							"color": "#6f6916",
+							"teams": [
+								{ "name": "10", "color": "#d1cc8f" },
+								{ "name": "deathenergy", "color": "#d1cc8f" },
+								{ "name": "mousesports", "color": "#d1cc8f" },
+								{ "name": "mtf", "color": "#d1cc8f" },
+								
+								{ "name": "ssf", "color": "#d1cc8f" },
+								{ "name": "alternate", "color": "#d1cc8f" },
+								{ "name": "unknown", "color": "#d1cc8f" },
+								{ "name": "wildfire", "color": "#d1cc8f" }
+							],
+							"children": [
+								{
+									"name": "German Cup #1",
+									"size": [0.7, 1],
+									"color": "#a49b21",
+									"teamtext": "58 Teams",
+									"teamsAttended": "10,deathenergy,mousesports,mtf"
+								},
+								{
+									"name": "German Cup #2",
+									"size": [0.7, 1],
+									"color": "#a49b21",
+									"teamtext": "59 Teams",
+									"teamsAttended": "ssf,alternate,unknown,wildfire"
+								}
+							]
+						},
+						{
+							"name": "CIS Regional Finals",
+							"size": [1, 1],
+							"color": "#1b5210",
+							"teams": [
+								{ "name": "navi", "color": "#b9e38c" },
+								{ "name": "divine", "color": "#b9e38c" },
+								
+								{ "name": "ussr", "color": "#b9e38c" },
+								{ "name": "faith", "color": "#b9e38c" },
+								
+								{ "name": "teamswagyolo", "color": "#b9e38c" },
+								{ "name": "97club", "color": "#b9e38c" },
+								
+								{ "name": "aces", "color": "#b9e38c" },
+								{ "name": "42n", "color": "#b9e38c" }
+							],
+							"children": [
+								{
+									"name": "CIS Cup #1",
+									"size": [0.7, 1],
+									"color": "#73c719",
+									"teamtext": "52 Teams",
+									"teamsAttended": "navi,divine"
+								},
+								{
+									"name": "CIS Cup #2",
+									"size": [0.7, 1],
+									"color": "#73c719",
+									"teamtext": "60 Teams",
+									"teamsAttended": "ussr,faith"
+								},
+								{
+									"name": "CIS Cup #3",
+									"size": [0.7, 1],
+									"color": "#73c719",
+									"teamtext": "59 Teams",
+									"teamsAttended": "teamswagyolo,97club"
+								},
+								{
+									"name": "CIS Cup #4",
+									"size": [0.7, 1],
+									"color": "#73c719",
+									"teamtext": "64 Teams",
+									"teamsAttended": "aces,42n"
+								}
+							]
+						},
+						{
+							"name": "Poland National Finals",
+							"color": "#194784",
+							"size": [1, 1],
+							"teams": [
+								{ "name": "virtuspro", "color": "#aee3fa" },
+								{ "name": "slavicflavor", "color": "#aee3fa" },
+								
+								{ "name": "meetyourmakers", "color": "#aee3fa" },
+								{ "name": "gethigh", "color": "#aee3fa" },
+								
+								{ "name": "hypershots", "color": "#aee3fa" },
+								{ "name": "sponsoredbynobody", "color": "#aee3fa" },
+								
+								{ "name": "authentic", "color": "#aee3fa" },
+								{ "name": "nomercy", "color": "#aee3fa" }
+							],
+							"children": [
+								{
+									"name": "Poland Cup #1",
+									"size": [0.7, 1],
+									"color": "#5ec8f6",
+									"teamtext": "??? Teams",
+									"teamsAttended": "virtuspro,slavicflavor"
+								},
+								{
+									"name": "Poland Cup #2",
+									"size": [0.7, 1],
+									"color": "#5ec8f6",
+									"teamtext": "??? Teams",
+									"teamsAttended": "meetyourmakers,gethigh"
+								},
+								{
+									"name": "Poland Cup #3",
+									"size": [0.7, 1],
+									"color": "#5ec8f6",
+									"teamtext": "??? Teams",
+									"teamsAttended": "hypershots,sponsoredbynobody"
+								},
+								{
+									"name": "Poland Cup #4",
+									"size": [0.7, 1],
+									"color": "#5ec8f6",
+									"teamtext": "??? Teams",
+									"teamsAttended": "authentic,nomercy"
+								}
+							]
+						},
+						{
+							"name": "Europe #1",
+							"size": [0.7, 1],
+							"color": "#a10106",
+							"teamtext": "??? Teams",
+							"teamsAttended": "tobeannounced,alternate,reason,offbalance"
+						},
+						{
+							"name": "Europe #2",
+							"size": [0.7, 1],
+							"color": "#a10106",
+							"teamtext": "??? Teams",
+							"teamsAttended": "wizards,h2k,partyastronauts,greyfacenospace"
+						}
+					]
+				}
+			]
+		}
+	]
+}

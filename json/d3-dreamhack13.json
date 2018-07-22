@@ -1,0 +1,163 @@
+{
+	"name": "Major Playoffs",
+	"size": [1, 1],
+	"color": "#222222",
+	"teams": [
+		{ "name": "fnatic-2015", "color": "#cccccc" },
+		{ "name": "nip-2017", "color": "#cccccc" },
+		{ "name": "complexity-2016", "color": "#cccccc" },
+		{ "name": "copenhagenwolves", "color": "#cccccc" },
+		{ "name": "lgb", "color": "#cccccc" },
+		{ "name": "recursive-2014", "color": "#cccccc" },
+		{ "name": "verygames", "color": "#cccccc" },
+		{ "name": "astanadragons", "color": "#cccccc" }
+	],
+	"children": [
+		{
+			"name": "Major Group Stage",
+			"size": [2, 1],
+			"color": "#999999",
+			"width": 200,
+			"teams": [
+				{ "name": "astanadragons", "color": "transparent" },
+				{ "name": "complexity-2016", "color": "transparent" },
+				{ "name": "verygames", "color": "transparent" },
+				{ "name": "clanmystik", "color": "transparent" },
+				{ "name": "fnatic-2015", "color": "transparent" },
+				{ "name": "ibuypower", "color": "transparent" },
+				
+				{ "name": "nip-2017", "color": "#d08082" },
+				
+				{ "name": "nfaculty", "color": "#8ca3c1" },
+				
+				{ "name": "skgaming-alt", "color": "#8da887" },
+				
+				{ "name": "copenhagenwolves", "color": "#e1b18d" },
+				{ "name": "universalsoldiers", "color": "#e1b18d" },
+				
+				{ "name": "navi", "color": "#cfbbd0" },
+				
+				{ "name": "lgb", "color": "#b9e38c" },
+				{ "name": "recursive", "color": "#b9e38c" },
+				
+				{ "name": "xapso", "color": "#ffe790" },
+				{ "name": "reason", "color": "#ffe790" }
+			],
+			"children": [
+				{
+					"name": "DreamHack Summer",
+					"size": [1, 2],
+					"color": "#a10106",
+					"teams": [
+						{ "name": "nip-2017", "color": "transparent" },
+						{ "name": "copenhagenwolves", "color": "transparent" },
+						{ "name": "curse", "color": "transparent" },
+						{ "name": "esc", "color": "transparent" },
+						{ "name": "fnatic-2015", "color": "transparent" },
+						{ "name": "virtuspro", "color": "transparent" },
+						{ "name": "ldlc-2016", "color": "transparent" },
+						
+						{ "name": "alternate", "color": "#f3a2a5" },
+						{ "name": "publiclia", "color": "#f3a2a5" },
+						{ "name": "epsilon", "color": "#f3a2a5" },
+						{ "name": "10", "color": "#f3a2a5" },
+						{ "name": "westernwolves", "color": "#f3a2a5" },
+						{ "name": "refuse", "color": "#f3a2a5" },
+						{ "name": "cursive", "color": "#f3a2a5" },
+						{ "name": "h2k", "color": "#f3a2a5" },
+						{ "name": "skgaming-alt", "color": "#f3a2a5" }
+					]
+				},
+				{
+					"name": "DreamHack Valencia",
+					"size": [1, 2],
+					"color": "#194784",
+					"teams": [
+						{ "name": "fmtoxic", "color": "transparent" },
+						{ "name": "panthers", "color": "transparent" },
+						{ "name": "tsg", "color": "transparent" },
+						{ "name": "clanmystik", "color": "transparent" },
+						{ "name": "wiards", "color": "transparent" },
+						{ "name": "dreamsquad", "color": "transparent" },
+						{ "name": "overgaming", "color": "transparent" },
+						{ "name": "nfaculty", "color": "transparent" },
+						{ "name": "k1ck", "color": "transparent" },
+						{ "name": "mistral", "color": "transparent" },
+						{ "name": "einheit", "color": "transparent" }
+					]
+				},
+				{
+					"name": "DreamHack Bucharest",
+					"size": [1, 2],
+					"color": "#1b5210",
+					"teams": [
+						{ "name": "fnatic-2015", "color": "transparent" },
+						{ "name": "nip-2017", "color": "transparent" },
+						{ "name": "eldergods", "color": "transparent" },
+						{ "name": "nxtplease", "color": "transparent" },
+						{ "name": "copenhagenwolves", "color": "transparent" },
+						{ "name": "nfaculty", "color": "transparent" },
+						{ "name": "headshotbg", "color": "transparent" },
+						{ "name": "igotgame", "color": "transparent" },
+						{ "name": "verygames", "color": "transparent" },
+						{ "name": "skgaming-alt", "color": "transparent" },
+						{ "name": "refuse", "color": "transparent" },
+						{ "name": "tessa", "color": "transparent" },
+						{ "name": "astanadragons", "color": "transparent" },
+						{ "name": "navi", "color": "transparent" },
+						{ "name": "fromanotherworld", "color": "transparent" },
+						{ "name": "beantownbandits", "color": "transparent" }
+					]
+				},
+				{
+					"name": "EMS One Fall",
+					"size": [1, 2],
+					"color": "#c4631c",
+					"teams": [
+						{ "name": "nip-2017", "color": "transparent" },
+						{ "name": "highgrade", "color": "transparent" },
+						{ "name": "ence", "color": "transparent" },
+						{ "name": "refuse", "color": "transparent" },
+						{ "name": "verygames", "color": "transparent" },
+						{ "name": "wegotgame", "color": "transparent" },
+						{ "name": "universalsoldiers", "color": "transparent" },
+						{ "name": "astanadragons", "color": "transparent" },
+						{ "name": "fnatic-2015", "color": "transparent" },
+						{ "name": "solemn", "color": "transparent" },
+						{ "name": "copenhagenwolves", "color": "transparent" },
+						{ "name": "westernwolves", "color": "transparent" },
+						{ "name": "navi", "color": "transparent" },
+						{ "name": "alternate", "color": "transparent" },
+						{ "name": "nfaculty", "color": "transparent" },
+						{ "name": "mousesports", "color": "transparent" }
+					]
+				},
+				{
+					"name": "TECHLABS Cup",
+					"size": [1, 1],
+					"color": "#9f78a2",
+					"teams": [
+						{ "name": "universalsoldiers", "color": "transparent" },
+						{ "name": "navi", "color": "transparent" },
+						{ "name": "3dmax", "color": "transparent" },
+						{ "name": "astanadragons", "color": "transparent" }
+					]
+				},
+				{
+					"name": "Online Qualifier",
+					"size": [1, 1],
+					"color": "#73c719",
+					"teamtext": "128 Teams",
+					"teamsAttended": "recursive,lgb"
+				},
+				{
+					"name": "BYOC Qualifier",
+					"size": [1, 1],
+					"color": "#ffd021",
+					"teamtext": "29 Teams",
+					"teamsAttended": "xapso,reason"
+				}
+			]
+		}
+	]
+}
