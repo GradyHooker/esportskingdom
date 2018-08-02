@@ -8,6 +8,27 @@
     <atom:link href="https://esportskingdom.gg/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Australia Esports Federation announce CS:GO Season 1 tournament</title>
+        <description>The Australia Esports Federation (AEF) announced they will be running their first ever Counter-Strike tournament. The AEF are known around Australia for their DOTA 2 tournaments, but are looking to the Oceanic region for CSGO players to compete.
+
+</description>
+        <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.gg/counter-strike/2018-08-aef-csgo-season1-announcement</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.gg/assets/banner/aef-csgo-season1-announcement-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.gg/counter-strike/2018-08-aef-csgo-season1-announcement</guid>
+      </item>
+    
+      <item>
         <title>CSGO Tier Rankings: FACEIT London Minors &amp; DreamHack Valencia</title>
         <description>After a long stretch we now know which eight teams will be heading to London for the FACEIT Major from the CIS, Europe, Americas and Asia minors. We also know that North took out DreamHack Valencia after a tight final battle against underdogs Luminosity Gaming.
 
