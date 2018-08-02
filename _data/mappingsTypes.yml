@@ -7,6 +7,12 @@
 - id: event-recaps
   title: Event Recaps
   parent: features
+- id: event-news
+  title: Event News
+  parent: features
+- id: player-news
+  title: Team/Player News
+  parent: features
 - id: from-the-event
   title: From The Event
   parent: features
