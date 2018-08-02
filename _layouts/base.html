@@ -25,7 +25,16 @@
 	{% else %}
 	
 	{% assign author = site.data.authors | where:"id",page.title | first %}
-	{% if author != null %}
+	{% if page.type == "index"  %}
+	  <title>{{ page.title }} | Esports Kingdom</title>
+	{% endif %}
+	{% if layout.type == "tcg"  %}
+	  <title>CSGO TCG - {{ page.title }} | Esports Kingdom</title>
+	{% elsif layout.type == "d3"  %}
+	  <title>Major Flowchart - {{ page.title }} | Esports Kingdom</title>
+	{% elsif layout.type == "stats"  %}
+	  <title>CSGO Stats - {{ page.title }} | Esports Kingdom</title>
+	{% elsif author != null %}
 	  <title>{{ author.firstname }} {% if author.nickname != null %}"{{ author.nickname }}" {% endif %}{{ author.lastname }} | Esports Kingdom</title>
 	{% else %}
 	  {% assign category = site.data.mappingsGames | where:"id",page.title | first %}
