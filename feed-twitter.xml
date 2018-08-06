@@ -8,6 +8,25 @@
     <atom:link href="https://esportskingdom.gg/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>CSGO Tier Rankings: ELEAGUE Premier &amp; IEM Shanghai</title>
+        <description>#ELEAGUEPremier saw 8 of the top teams in #CSGO go head-to-head and nothing out of the ordinary happened, then #IEMShanghai just ended and again nothing shocked us or shook up the rankings #Esports</description>
+        <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.gg/counter-strike/2018-08-csgo-tiers-premier-shanghai</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.gg/assets/banner/csgo-tiers-premier-shanghai-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.gg/counter-strike/2018-08-csgo-tiers-premier-shanghai</guid>
+      </item>
+    
+      <item>
         <title>Australia Esports Federation announce CS:GO Season 1 tournament</title>
         <description>Today the @ausesportsfed announced they will be running their first ever #CSGO tournament. The AEF are known around Australia for their DOTA 2 tournaments, but if you are a Counter-Strike player from AU or NZ, get in there! #esports</description>
         <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
