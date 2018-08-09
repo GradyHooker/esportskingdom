@@ -8,6 +8,25 @@
     <atom:link href="https://esportskingdom.gg/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>IEM Chicago announced - Invites, Dates and On-Air Talent</title>
+        <description>This morning ESL announced #IEMChicago along with the first 8 of 10 invites, all the on-air talent and the dates/arena #csgo #esports #IEM #ESL #Chicago</description>
+        <pubDate>Fri, 10 Aug 2018 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.gg/counter-strike/2018-08-iem-chicago-announced</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.gg/assets/banner/iem-chicago-announced-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.gg/counter-strike/2018-08-iem-chicago-announced</guid>
+      </item>
+    
+      <item>
         <title>CSGO Tier Rankings: ELEAGUE Premier &amp; IEM Shanghai</title>
         <description>#ELEAGUEPremier saw 8 of the top teams in #CSGO go head-to-head and nothing out of the ordinary happened, then #IEMShanghai just ended and again nothing shocked us or shook up the rankings #Esports</description>
         <pubDate>Mon, 06 Aug 2018 00:00:00 +0000</pubDate>
