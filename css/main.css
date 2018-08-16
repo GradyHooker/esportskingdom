@@ -1345,16 +1345,16 @@ header {
         .page-main-d3 .single-page-cont-d3 #d3-cont svg text {
           font-size: 1.2em; }
         .page-main-d3 .single-page-cont-d3 #d3-cont svg img.highlighted {
-          border: 5px solid red !important;
+          border: 5px solid black !important;
           margin: 0px; }
         .page-main-d3 .single-page-cont-d3 #d3-cont svg span.highlighted {
-          border: 5px solid red !important;
+          border: 5px solid black !important;
           border-radius: 20px;
           padding: 10px; }
         .page-main-d3 .single-page-cont-d3 #d3-cont svg rect.highlighted {
-          stroke: red !important; }
+          stroke: black !important; }
         .page-main-d3 .single-page-cont-d3 #d3-cont svg path.highlighted {
-          stroke: red !important; }
+          stroke: black !important; }
       .page-main-d3 .single-page-cont-d3 #d3-cont .teamlogo-cont {
         margin-top: 50px;
         height: calc(100% - 60px) !important;
