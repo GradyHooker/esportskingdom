@@ -34,3 +34,6 @@
 - id: tier-rankings
   title: Tier Rankings
   parent: features
+- id: roadtothemajor
+  title: Road to the Major
+  parent: features
