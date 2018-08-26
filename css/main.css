@@ -1391,6 +1391,180 @@ header {
     .d3-title {
       margin-top: 0.5em; } }
 
+.single-page-cont-timeline {
+  color: #7f8c97; }
+  .single-page-cont-timeline *, .single-page-cont-timeline *::after, .single-page-cont-timeline *::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .single-page-cont-timeline a {
+    color: #acb7c0;
+    text-decoration: none; }
+  .single-page-cont-timeline .cd-timeline__img img {
+    max-width: 100%; }
+  .single-page-cont-timeline .cd-timeline {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%; }
+  .single-page-cont-timeline .cd-timeline__container {
+    position: relative;
+    width: 90%;
+    max-width: 950px;
+    margin: 0 auto;
+    margin-top: 6px; }
+  .single-page-cont-timeline .cd-timeline__container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+    background: #d7e4ed; }
+  .single-page-cont-timeline .cd-timeline__block {
+    position: relative;
+    margin: 2em 0; }
+  .single-page-cont-timeline .cd-timeline__block:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .single-page-cont-timeline .cd-timeline__block:first-child {
+    margin-top: 0; }
+  .single-page-cont-timeline .cd-timeline__block:last-child {
+    margin-bottom: 0; }
+  .single-page-cont-timeline .cd-timeline__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); }
+    .single-page-cont-timeline .cd-timeline__img.cd-timeline__img--NZ {
+      background: #75ce66; }
+      .single-page-cont-timeline .cd-timeline__img.cd-timeline__img--NZ .img {
+        background-image: url("/assets/flags-big/nz.png"); }
+    .single-page-cont-timeline .cd-timeline__img.cd-timeline__img--US {
+      background: #c03b44; }
+      .single-page-cont-timeline .cd-timeline__img.cd-timeline__img--US .img {
+        background-image: url("/assets/flags-big/us.png"); }
+    .single-page-cont-timeline .cd-timeline__img.cd-timeline__img--AU {
+      background: #f0ca45; }
+      .single-page-cont-timeline .cd-timeline__img.cd-timeline__img--AU .img {
+        background-image: url("/assets/flags-big/au.png"); }
+    .single-page-cont-timeline .cd-timeline__img.cd-timeline__img--UK {
+      background: #45caf0; }
+      .single-page-cont-timeline .cd-timeline__img.cd-timeline__img--UK .img {
+        background-image: url("/assets/flags-big/uk.png"); }
+    .single-page-cont-timeline .cd-timeline__img div.img {
+      display: block;
+      width: 32px;
+      height: 32px;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      margin-left: -16px;
+      margin-top: -16px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat; }
+  .single-page-cont-timeline .cd-timeline__content {
+    position: relative;
+    margin-left: 60px;
+    background: white;
+    border-radius: 0.25em;
+    padding: 0.6em;
+    -webkit-box-shadow: 0 3px 0 #d7e4ed;
+    box-shadow: 0 3px 0 #d7e4ed; }
+  .single-page-cont-timeline .cd-timeline__content:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .single-page-cont-timeline .cd-timeline__content::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid white; }
+  .single-page-cont-timeline .cd-timeline__content h2 {
+    font-size: 1.2em;
+    color: #303e49; }
+  .single-page-cont-timeline .cd-timeline__date {
+    font-size: 1.6em; }
+  .single-page-cont-timeline .cd-timeline__date {
+    display: inline-block; }
+  .single-page-cont-timeline .cd-timeline__date {
+    float: left;
+    padding: 0;
+    opacity: .7;
+    font-size: 0.8em; }
+  @media only screen and (min-width: 768px) {
+    .single-page-cont-timeline .cd-timeline__content h2 {
+      font-size: 1.6em; }
+    .single-page-cont-timeline .cd-timeline__content {
+      padding: 1.2em; }
+    .single-page-cont-timeline .cd-timeline__date {
+      font-size: 1.1em;
+      padding: .3em 0; } }
+  @media only screen and (min-width: 950px) {
+    .single-page-cont-timeline .cd-timeline__date {
+      font-size: 1.2em;
+      padding: .8em 0; }
+    .single-page-cont-timeline .cd-timeline__content {
+      margin-left: 0;
+      width: 45%;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0); }
+    .single-page-cont-timeline .cd-timeline__content::before {
+      top: 24px;
+      left: 100%;
+      border-color: transparent;
+      border-left-color: white; }
+    .single-page-cont-timeline .cd-timeline__date {
+      position: absolute;
+      width: 100%;
+      left: 122%;
+      top: 6px;
+      font-size: 1.3em; }
+    .single-page-cont-timeline .cd-timeline__block:nth-child(even) .cd-timeline__content {
+      float: right; }
+    .single-page-cont-timeline .cd-timeline__block:nth-child(even) .cd-timeline__content::before {
+      top: 24px;
+      left: auto;
+      right: 100%;
+      border-color: transparent;
+      border-right-color: white; }
+    .single-page-cont-timeline .cd-timeline__block:nth-child(even) .cd-timeline__date {
+      left: auto;
+      right: 122%;
+      text-align: right; }
+    .single-page-cont-timeline .cd-timeline__img {
+      width: 60px;
+      height: 60px;
+      left: 50%;
+      margin-left: -30px;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0); }
+      .single-page-cont-timeline .cd-timeline__img.cd-timeline__img--bounce-in {
+        visibility: visible; }
+      .single-page-cont-timeline .cd-timeline__img div.img {
+        width: 42px;
+        height: 42px;
+        margin-left: -21px;
+        margin-top: -21px; }
+    .single-page-cont-timeline .cd-timeline {
+      margin-top: 3em;
+      margin-bottom: 3em; }
+    .single-page-cont-timeline .cd-timeline__container::before {
+      left: 50%;
+      margin-left: -2px; }
+    .single-page-cont-timeline .cd-is-hidden {
+      visibility: hidden; }
+    .single-page-cont-timeline .cd-timeline__block {
+      margin: 4em 0; } }
+
 .posts .post-link .post-fake {
   margin-bottom: 8px;
   display: flex;
