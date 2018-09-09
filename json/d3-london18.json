@@ -18,7 +18,16 @@
 				{ "name": "mousesports", "color": "transparent" },
 				{ "name": "winstrike", "color": "transparent" },
 				{ "name": "g2", "color": "transparent" },
-				{ "name": "fnatic", "color": "transparent" }
+				{ "name": "fnatic", "color": "transparent" },
+				
+				{ "name": "liquid", "color": "#ffe790" },
+				{ "name": "nip", "color": "#ffe790" },
+				{ "name": "astralis", "color": "#ffe790" },
+				{ "name": "complexity", "color": "#ffe790" },
+				{ "name": "hellraisers-2018", "color": "#ffe790" },
+				{ "name": "tyloo", "color": "#ffe790" },
+				{ "name": "big", "color": "#ffe790" },
+				{ "name": "vega", "color": "#ffe790" }
 			],
 			"children": [
 				{
@@ -34,7 +43,7 @@
 						{ "name": "astralis", "color": "transparent" },
 						{ "name": "liquid", "color": "transparent" },
 						{ "name": "north", "color": "transparent" },
-						{ "name": "virtuspro", "color": "transparent" },
+						{ "name": "virtuspro-2018", "color": "transparent" },
 						
 						{ "name": "nip", "color": "#d08082" },
 						{ "name": "optic", "color": "#d08082" },
