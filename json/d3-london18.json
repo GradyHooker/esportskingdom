@@ -3,6 +3,14 @@
 	"size": [1, 1],
 	"color": "#222222",
 	"teams": [
+		{ "name": "complexity", "color": "#cccccc" },
+		{ "name": "liquid", "color": "#cccccc" },
+		{ "name": "astralis", "color": "#cccccc" },
+		{ "name": "navi", "color": "#cccccc" },
+		{ "name": "big", "color": "#cccccc" },
+		{ "name": "faze", "color": "#cccccc" },
+		{ "name": "hellraisers-2018", "color": "#cccccc" },
+		{ "name": "mibr", "color": "#cccccc" }
 	],
 	"children": [
 		{
