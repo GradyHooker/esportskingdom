@@ -339,7 +339,11 @@ function generateTeamTable(ele) {
 	
 	if(ele.teams != null) {
 		ele.teams.forEach(function (team) {
-			html += "<img src='/assets/logos/medium/" + team.name + ".png' data-team='" + team.name + "' style='background: " + team.color + "' title='" + teams[team.name] + "' alt='Team Logo for " + teams[team.name] + "'/>";
+			if(team.name != "") {
+				html += "<img src='/assets/logos/medium/" + team.name + ".png' data-team='" + team.name + "' style='background: " + team.color + "' title='" + teams[team.name] + "' alt='Team Logo for " + teams[team.name] + "'/>";
+			} else {
+				html += "<div class='fakeimg' style='background: " + team.color + "'></div>";
+			}
 		});
 	} else if(ele.teamtext != null) {
 		if(ele.teamsAttended != null) {

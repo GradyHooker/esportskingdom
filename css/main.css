@@ -1366,7 +1366,8 @@ header {
         .page-main-d3 .single-page-cont-d3 #d3-cont .teamlogo-cont span {
           font: 50px Roboto;
           text-align: center; }
-        .page-main-d3 .single-page-cont-d3 #d3-cont .teamlogo-cont img {
+        .page-main-d3 .single-page-cont-d3 #d3-cont .teamlogo-cont img,
+        .page-main-d3 .single-page-cont-d3 #d3-cont .teamlogo-cont div.fakeimg {
           flex-shrink: 0;
           flex-grow: 0;
           height: 60px;
