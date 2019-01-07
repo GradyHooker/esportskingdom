@@ -72,14 +72,14 @@
 							"size": [1, 1],
 							"color": "#a10106",
 							"teams": [
-								{ "name": "", "color": "#f3a2a5" },
-								{ "name": "", "color": "#f3a2a5" },
-								{ "name": "", "color": "#f3a2a5" },
-								{ "name": "", "color": "#f3a2a5" },
-								{ "name": "", "color": "#f3a2a5" },
-								{ "name": "", "color": "#f3a2a5" },
-								{ "name": "", "color": "#f3a2a5" },
-								{ "name": "", "color": "#f3a2a5" }
+								{ "name": "mousesports", "color": "#f3a2a5" },
+								{ "name": "windigo", "color": "#f3a2a5" },
+								{ "name": "optic", "color": "#f3a2a5" },
+								{ "name": "north", "color": "#f3a2a5" },
+								{ "name": "spacesoldiers", "color": "#f3a2a5" },
+								{ "name": "ence", "color": "#f3a2a5" },
+								{ "name": "valiance-2018", "color": "#f3a2a5" },
+								{ "name": "vitality-2018", "color": "#f3a2a5" }
 							],
 							"children": [
 								{
@@ -125,10 +125,10 @@
 										},
 										{
 											"name": "Europe Open #3",
-											"size": [0.7, 1],
 											"color": "#e7454b",
+											"size": [0.7, 1],
+											"teamsAttended": "valiance-2018,xkom"
 											"teamtext": "205 Teams",
-											"teamsAttended": "valiance,xkom"
 										},
 										{
 											"name": "Europe Open #4",
@@ -146,11 +146,11 @@
 							"color": "#194784",
 							"size": [1, 1],
 							"teams": [
-								{ "name": "", "color": "#aee3fa" },
-								{ "name": "", "color": "#aee3fa" },
-								{ "name": "", "color": "#aee3fa" },
-								{ "name": "", "color": "#aee3fa" },
-								{ "name": "", "color": "#aee3fa" },
+								{ "name": "nrg-2018", "color": "#aee3fa" },
+								{ "name": "eunited", "color": "#aee3fa" },
+								{ "name": "envyus", "color": "#aee3fa" },
+								{ "name": "furia", "color": "#aee3fa" },
+								{ "name": "teamone", "color": "#aee3fa" },
 								{ "name": "", "color": "#aee3fa" },
 								
 								{ "name": "intz", "color": "#aee3fa" },
