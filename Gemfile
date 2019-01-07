@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
-gem "jekyll"
+gem "jekyll", "3.7.0"
+
 group :jekyll_plugins do
-  gem "jekyll-paginate-v2"
-  gem "jekyll-sitemap"
+  gem "jekyll-paginate-v2", "1.8.1"
+  gem "jekyll-sitemap", "1.1.1"
 
 end
