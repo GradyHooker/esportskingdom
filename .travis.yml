@@ -2,10 +2,8 @@ language: ruby
 rvm:
 - 2.3.3
 
-before_install:
- - tail /home/travis/.rvm/log/1546841670_ruby-2.3.3/gemset.wrappers.global.log
-
 before_script:
+ - cat /home/travis/.rvm/log/*_rbx-2.2.4/rubygems.install.log
  - chmod +x ./script/cibuild # or do this locally and commit
 
 # Assume bundler is being used, therefore
