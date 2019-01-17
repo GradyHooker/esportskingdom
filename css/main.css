@@ -401,6 +401,9 @@ body {
           width: 100%;
           margin-bottom: 8px; }
         .page-main .post-related a .post.plug-post, .page-main .post-related a .post.sponsor-post {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           padding: 0;
           overflow: hidden;
           margin-left: 0;
@@ -894,15 +897,22 @@ header {
   @media screen and (max-width: 400px) {
     .posts {
       font-size: 0.7em; } }
-  .posts .post-link-special .post {
-    padding: 0px !important;
-    /*Desktop: 728x90 leaderboard*/
-    height: 100px;
+  .posts .post-link-special {
     width: 100%; }
-    @media screen and (max-width: 768px) {
-      .posts .post-link-special .post {
-        /*Mobile: 320x100 large mobile banner*/
-        height: 110px; } }
+    .posts .post-link-special .post {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0px !important;
+      /*Desktop: 728x90 leaderboard*/
+      height: 100px;
+      width: 100%; }
+      .posts .post-link-special .post ins {
+        width: 100%; }
+      @media screen and (max-width: 768px) {
+        .posts .post-link-special .post {
+          /*Mobile: 320x100 large mobile banner*/
+          height: 110px; } }
   .posts .post-link {
     text-decoration: none;
     color: black;
