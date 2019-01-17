@@ -338,7 +338,7 @@ body {
             background: #d8d833;
             font-size: 0.7em; }
   .page-main .post-related {
-    width: 250px;
+    width: 300px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -404,7 +404,9 @@ body {
           padding: 0;
           overflow: hidden;
           margin-left: 0;
-          margin-right: 0; }
+          margin-right: 0;
+          /*Desktop: 300x250 medium rectangle*/
+          height: 250px; }
           .page-main .post-related a .post.plug-post .post-image, .page-main .post-related a .post.sponsor-post .post-image {
             margin: 0; }
           .page-main .post-related a .post.plug-post .plug-image,
@@ -428,9 +430,10 @@ body {
           @media screen and (max-width: 950px) {
             .page-main .post-related a .post.plug-post, .page-main .post-related a .post.sponsor-post {
               width: 100%;
-              max-width: 500px;
               margin: 0 auto;
-              margin-bottom: 10px; }
+              margin-bottom: 10px;
+              /*Mobile: 320x100 large mobile banner*/
+              height: 100px; }
               .page-main .post-related a .post.plug-post:hover, .page-main .post-related a .post.sponsor-post:hover {
                 margin-top: 2px;
                 margin-bottom: 8px; } }
@@ -893,11 +896,13 @@ header {
       font-size: 0.7em; } }
   .posts .post-link-special .post {
     padding: 0px !important;
-    max-height: 180px;
+    /*Desktop: 728x90 leaderboard*/
+    height: 90px;
     width: 100%; }
     @media screen and (max-width: 768px) {
       .posts .post-link-special .post {
-        max-height: 300px; } }
+        /*Mobile: 320x100 large mobile banner*/
+        height: 100px; } }
   .posts .post-link {
     text-decoration: none;
     color: black;
