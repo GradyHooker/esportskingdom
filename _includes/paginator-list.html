@@ -67,6 +67,14 @@
 		  {% endif %}
 		</div>
 	  </a>
+	  {% assign c = counter | modulo: 5 %}
+	  {% if c == 0 %}
+	  <div class="post-link post-link-special">
+	  <div class="post">
+		{% include advertisement.html %}
+	  </div>
+	  </div>
+	  {% endif %}
   {% endfor %}
 </div>
 {% include paginator-links.html %}

@@ -479,12 +479,12 @@
 					overflow: hidden;
 					margin-left: 0;
 					margin-right: 0;
-					/*Desktop: 300x250 medium rectangle*/
+					width: 350px;
 					height: 250px;
 					
 					ins {
-						height: 100%;
-						width: 100%;
+						width: 350px;
+						height: 250px;
 					}
 					
 					.post-image {
@@ -513,8 +513,13 @@
 						width: 100%;
 						margin: 0 auto;
 						margin-bottom: 10px;
-						/*Mobile: 320x100 large mobile banner*/
 						height: 120px;
+						width: 100%;
+						
+						ins {
+							height: 120px;
+							width: 100%;
+						}
 					
 						&:hover {
 							margin-top: 2px;

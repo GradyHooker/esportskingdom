@@ -81,6 +81,12 @@ type: post
 		<img class="post-image sponsor-image-wide" src="/assets/sponsors/{{ page.sponsor }}-wide.jpg" alt="Sponsor logo"/>
 	  </div>
 	</a>
+	{% else %}
+	<a class="post-link plug-link" href="" target="_blank">
+	  <div class="post plug-post">
+	    {% include advertisement.html %}
+	  </div>
+	</a>
 	{% endif %}
     <h1>Related Posts</h1>
     {% for post in site.categories[pageCategory] limit:6 %}

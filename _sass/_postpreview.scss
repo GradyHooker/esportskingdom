@@ -26,17 +26,22 @@
 			align-items: center;
 			justify-content: center;
 			padding: 0px !important;
-			/*Desktop: 728x90 leaderboard*/
-			height: 100px;
+			height: 90px;
 			width: 100%;
 			
 			ins {
+				height: 90px;
 				width: 100%;
+				
+				@media screen and (max-width: $break-small) {
+					height: 100px;
+					width: 100%;
+				}
 			}
 			
 			@media screen and (max-width: $break-small) {
-				/*Mobile: 320x100 large mobile banner*/
-				height: 110px;
+				height: 100px;
+				width: 100%;
 			}
 		}
 	}
