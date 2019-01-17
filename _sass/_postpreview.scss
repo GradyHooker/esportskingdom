@@ -22,12 +22,12 @@
 		.post {
 			padding: 0px !important;
 			/*Desktop: 728x90 leaderboard*/
-			height: 90px;
+			height: 100px;
 			width: 100%;
 			
 			@media screen and (max-width: $break-small) {
 				/*Mobile: 320x100 large mobile banner*/
-				height: 100px;
+				height: 110px;
 			}
 		}
 	}
