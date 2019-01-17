@@ -482,6 +482,11 @@
 					/*Desktop: 300x250 medium rectangle*/
 					height: 250px;
 					
+					ins {
+						height: 100%;
+						width: 100%;
+					}
+					
 					.post-image {
 						margin: 0;
 					}
@@ -489,8 +494,6 @@
 					.plug-image,
 					.sponsor-image {
 						display: block;
-						height: 100%;
-						width: 100%;
 						
 						@media screen and (max-width: $break-large) {
 							display: none;
