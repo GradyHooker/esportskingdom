@@ -892,13 +892,12 @@ header {
     .posts {
       font-size: 0.7em; } }
   .posts .post-link-special .post {
-    padding: 0px !important; }
-    .posts .post-link-special .post ins {
-      height: 90px;
-      width: 100%; }
-      @media screen and (max-width: 768px) {
-        .posts .post-link-special .post ins {
-          height: 60px; } }
+    padding: 0px !important;
+    max-height: 180px;
+    width: 100%; }
+    @media screen and (max-width: 768px) {
+      .posts .post-link-special .post {
+        max-height: 300px; } }
   .posts .post-link {
     text-decoration: none;
     color: black;
