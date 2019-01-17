@@ -20,27 +20,13 @@
 	
 	.post-link-special {
 		width: 100%;
+		margin-bottom: 20px;
 		
 		.post {
-			display: flex;
-			align-items: center;
-			justify-content: center;
 			padding: 0px !important;
-			height: 90px;
 			width: 100%;
 			
-			ins {
-				height: 90px;
-				width: 100%;
-				
-				@media screen and (max-width: $break-small) {
-					height: 100px;
-					width: 100%;
-				}
-			}
-			
 			@media screen and (max-width: $break-small) {
-				height: 100px;
 				width: 100%;
 			}
 		}

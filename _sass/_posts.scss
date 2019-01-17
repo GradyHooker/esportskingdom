@@ -469,62 +469,48 @@
 					width: 100%;
 					margin-bottom: 8px;
 				}
+			}
+			
+			.plug-post,
+			.sponsor-post {
+				margin-bottom: 20px;
+				padding: 0;
+				overflow: hidden;
+				margin-left: 0;
+				margin-right: 0;
+				width: 100%;
 				
-				&.plug-post,
-				&.sponsor-post {
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					padding: 0;
-					overflow: hidden;
-					margin-left: 0;
-					margin-right: 0;
-					width: 350px;
-					height: 250px;
-					
-					ins {
-						width: 350px;
-						height: 250px;
-					}
-					
-					.post-image {
-						margin: 0;
-					}
-					
-					.plug-image,
-					.sponsor-image {
-						display: block;
-						
-						@media screen and (max-width: $break-large) {
-							display: none;
-						}
-					}
-					
-					.plug-image-wide,
-					.sponsor-image-wide {
-						display: none;
-						
-						@media screen and (max-width: $break-large) {
-							display: block;
-						}
-					}
+				.post-image {
+					margin: 0;
+				}
+				
+				.plug-image,
+				.sponsor-image {
+					display: block;
 					
 					@media screen and (max-width: $break-large) {
-						width: 100%;
-						margin: 0 auto;
-						margin-bottom: 10px;
-						height: 120px;
-						width: 100%;
-						
-						ins {
-							height: 120px;
-							width: 100%;
-						}
+						display: none;
+					}
+				}
+				
+				.plug-image-wide,
+				.sponsor-image-wide {
+					display: none;
 					
-						&:hover {
-							margin-top: 2px;
-							margin-bottom: 8px;
-						}
+					@media screen and (max-width: $break-large) {
+						display: block;
+					}
+				}
+				
+				@media screen and (max-width: $break-large) {
+					width: 100%;
+					margin: 0 auto;
+					margin-bottom: 10px;
+					width: 100%;
+				
+					&:hover {
+						margin-top: 2px;
+						margin-bottom: 8px;
 					}
 				}
 			}
