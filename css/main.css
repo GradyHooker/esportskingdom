@@ -410,14 +410,15 @@ body {
           margin-right: 0;
           /*Desktop: 300x250 medium rectangle*/
           height: 250px; }
+          .page-main .post-related a .post.plug-post ins, .page-main .post-related a .post.sponsor-post ins {
+            height: 100%;
+            width: 100%; }
           .page-main .post-related a .post.plug-post .post-image, .page-main .post-related a .post.sponsor-post .post-image {
             margin: 0; }
           .page-main .post-related a .post.plug-post .plug-image,
           .page-main .post-related a .post.plug-post .sponsor-image, .page-main .post-related a .post.sponsor-post .plug-image,
           .page-main .post-related a .post.sponsor-post .sponsor-image {
-            display: block;
-            height: 100%;
-            width: 100%; }
+            display: block; }
             @media screen and (max-width: 950px) {
               .page-main .post-related a .post.plug-post .plug-image,
               .page-main .post-related a .post.plug-post .sponsor-image, .page-main .post-related a .post.sponsor-post .plug-image,
