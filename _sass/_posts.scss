@@ -489,6 +489,8 @@
 					.plug-image,
 					.sponsor-image {
 						display: block;
+						height: 100%;
+						width: 100%;
 						
 						@media screen and (max-width: $break-large) {
 							display: none;
