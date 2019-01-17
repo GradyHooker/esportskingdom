@@ -21,14 +21,11 @@
 	.post-link-special {
 		.post {
 			padding: 0px !important;
-		
-			ins {
-				height: 90px;
-				width: 100%;
-				
-				@media screen and (max-width: $break-small) {
-					height: 60px;
-				}
+			max-height: 180px;
+			width: 100%;
+			
+			@media screen and (max-width: $break-small) {
+				max-height: 300px;
 			}
 		}
 	}
