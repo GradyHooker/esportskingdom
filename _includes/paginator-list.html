@@ -1,5 +1,15 @@
 <div class="posts">
   {% assign counter = 0 %}
+  {% assign total = paginator.posts.size %}
+  {% assign currentblock = total | divided_by: 3.0 | ceil %}
+  {% assign nextblock = total | divided_by: 3.0 | floor %}
+  {% if nextblock <= 4 %}
+	{% assign currentblock = total | divided_by: 2.0 | ceil %}
+	{% assign nextblock = total | divided_by: 2.0 | floor %}
+	{% if nextblock <= 4 %}
+		{% assign currentblock = total | plus: 1 %}
+	  {% endif %}
+  {% endif %}
   {% for post in paginator.posts %}
     {% assign counter = counter | plus: 1 %}
 	{% if post.guest != null %}
@@ -13,7 +23,7 @@
 		  </div>
 		  <div class="post-summary-cont">
 			<h1 class="post-title">
-			  {{ post.title }}
+			  {{ post.title }} [{{ currentblock }} , {{ nextblock }} , {{ counter }} , {{ total }}]
 			</h1>
 			
 			<div class="post-details">
@@ -67,13 +77,20 @@
 		  {% endif %}
 		</div>
 	  </a>
-	  {% assign c = counter | modulo: 5 %}
-	  {% if c == 0 %}
+	  {% assign c = counter %}
+	  {% if c == currentblock %}
 	  <div class="post-link-special">
 	  <div class="post">
 		{% include advertisement.html %}
 	  </div>
 	  </div>
+		{% assign nextblock = total | minus: counter | divided_by: 2.0 | floor %}
+		{% assign currentblock = total | minus: counter | divided_by: 2.0 | ceil %}
+		{% if nextblock <= 4 %}
+		  {% assign currentblock = total | plus: 1 %}
+		{% else %}
+			{% assign currentblock = currentblock | plus: counter %}
+		{% endif %}
 	  {% endif %}
   {% endfor %}
 </div>
