@@ -445,7 +445,8 @@ body {
           justify-content: center;
           top: 0;
           left: 0;
-          color: black; }
+          color: black;
+          z-index: -1; }
         @media screen and (max-width: 950px) {
           .page-main .post-related a .plug-post,
           .page-main .post-related a .sponsor-post {
@@ -931,7 +932,8 @@ header {
         justify-content: center;
         top: 0;
         left: 0;
-        color: black; }
+        color: black;
+        z-index: -1; }
       @media screen and (max-width: 768px) {
         .posts .post-link-special .post {
           width: 100%; } }
