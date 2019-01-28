@@ -51,20 +51,20 @@
 						{ "name": "cloud9", "color": "transparent" },
 						{ "name": "tyloo", "color": "transparent" },
 						
-						{ "name": "", "color": "#d08082" },
-						{ "name": "", "color": "#d08082" },
+						{ "name": "ence", "color": "#d08082" },
+						{ "name": "vitality-2018", "color": "#d08082" },
 						
-						{ "name": "", "color": "#8ca3c1" },
-						{ "name": "", "color": "#8ca3c1" },
+						{ "name": "nrg-2018", "color": "#8ca3c1" },
+						{ "name": "furia", "color": "#8ca3c1" },
 						
-						{ "name": "", "color": "#8da887" },
-						{ "name": "", "color": "#8da887" },
+						{ "name": "avangar-2018", "color": "#8da887" },
+						{ "name": "spirit", "color": "#8da887" },
 						
-						{ "name": "", "color": "#e1b18d" },
-						{ "name": "", "color": "#e1b18d" },
+						{ "name": "renegades", "color": "#e1b18d" },
+						{ "name": "grayhound", "color": "#e1b18d" },
 						
-						{ "name": "", "color": "#cfbbd0" },
-						{ "name": "", "color": "#cfbbd0" }
+						{ "name": "winstrike-2018", "color": "#cfbbd0" },
+						{ "name": "vici", "color": "#cfbbd0" }
 					],
 					"children": [
 						{
@@ -151,7 +151,7 @@
 								{ "name": "envyus", "color": "#aee3fa" },
 								{ "name": "furia", "color": "#aee3fa" },
 								{ "name": "teamone", "color": "#aee3fa" },
-								{ "name": "", "color": "#aee3fa" },
+								{ "name": "bravado", "color": "#aee3fa" },
 								
 								{ "name": "intz", "color": "#aee3fa" },
 								{ "name": "imperial-br", "color": "#aee3fa" }
@@ -515,10 +515,10 @@
 							"size": [0.5, 1],
 							"color": "#463147",
 							"teams": [
-								{ "name": "", "color": "#cfbbd0" },
-								{ "name": "", "color": "#cfbbd0" },
-								{ "name": "", "color": "#cfbbd0" },
-								{ "name": "", "color": "#cfbbd0" }
+								{ "name": "north", "color": "#f3a2a5" },
+								{ "name": "envyus", "color": "#aee3fa" },
+								{ "name": "winstrike-2018", "color": "#b9e38c" },
+								{ "name": "vici", "color": "#eed0b9" }
 							]
 						}
 					]
