@@ -16,12 +16,18 @@
 {% for i in (0..num_rows)%}
 	<tr>
 		{% assign cols = rows[i] | split: "|" %}
+		{% assign newrank = cols[1] | plus: 0 %}
+		{% assign oldrank = cols[0] | plus: 0 %}
+		{% assign rankdiff = newrank | minus: oldrank %}
 		{% if cols[1] == "0" %}
 		<td class="middle">{{ cols[0] }}</td>
-		{% elsif cols[1] < cols[0] %}
-		<td class="middle">{{ cols[0] }} (<i class="fas fa-arrow-down"></i> {{ cols[1] }})</td>
-		{% elsif cols[1] > cols[0] %}
-		<td class="middle">{{ cols[0] }} (<i class="fas fa-arrow-up"></i> {{ cols[1] }})</td>
+		{% elsif newrank == oldrank %}
+		<td class="middle">{{ cols[0] }} (NC)</td>
+		{% elsif newrank < oldrank %}
+		{% assign rankdiff = rankdiff | times: -1 %}
+		<td class="middle">{{ cols[0] }} (<i class="fas fa-arrow-down"></i> {{ rankdiff }})</td>
+		{% elsif newrank > oldrank %}
+		<td class="middle">{{ cols[0] }} (<i class="fas fa-arrow-up"></i> {{ rankdiff }})</td>
 		{% else %}
 		<td class="middle">{{ cols[0] }} (NC)</td>
 		{% endif %}
