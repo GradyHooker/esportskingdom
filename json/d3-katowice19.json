@@ -3,8 +3,8 @@
 	"size": [1, 1],
 	"color": "#222222",
 	"teams": [
-		{ "name": "", "color": "#cccccc" },
-		{ "name": "", "color": "#cccccc" },
+		{ "name": "astralis", "color": "#cccccc" },
+		{ "name": "liquid", "color": "#cccccc" },
 		{ "name": "", "color": "#cccccc" },
 		{ "name": "", "color": "#cccccc" },
 		{ "name": "", "color": "#cccccc" },
@@ -28,14 +28,14 @@
 				{ "name": "hellraisers-2018", "color": "transparent" },
 				{ "name": "faze-solid", "color": "transparent" },
 				
-				{ "name": "", "color": "#ffe790" },
-				{ "name": "", "color": "#ffe790" },
-				{ "name": "", "color": "#ffe790" },
-				{ "name": "", "color": "#ffe790" },
-				{ "name": "", "color": "#ffe790" },
-				{ "name": "", "color": "#ffe790" },
-				{ "name": "", "color": "#ffe790" },
-				{ "name": "", "color": "#ffe790" }
+				{ "name": "renegades", "color": "#ffe790" },
+				{ "name": "nrg-2018", "color": "#ffe790" },
+				{ "name": "ence", "color": "#ffe790" },
+				{ "name": "vitality-2018", "color": "#ffe790" },
+				{ "name": "avangar-2018", "color": "#ffe790" },
+				{ "name": "nip", "color": "#ffe790" },
+				{ "name": "cloud9", "color": "#ffe790" },
+				{ "name": "g2", "color": "#ffe790" }
 			],
 			"children": [
 				{
