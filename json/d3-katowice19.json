@@ -5,12 +5,12 @@
 	"teams": [
 		{ "name": "astralis", "color": "#cccccc" },
 		{ "name": "liquid", "color": "#cccccc" },
-		{ "name": "", "color": "#cccccc" },
-		{ "name": "", "color": "#cccccc" },
-		{ "name": "", "color": "#cccccc" },
-		{ "name": "", "color": "#cccccc" },
-		{ "name": "", "color": "#cccccc" },
-		{ "name": "", "color": "#cccccc" }
+		{ "name": "navi", "color": "#cccccc" },
+		{ "name": "mibr", "color": "#cccccc" },
+		{ "name": "renegades", "color": "#cccccc" },
+		{ "name": "faze-solid", "color": "#cccccc" },
+		{ "name": "ence", "color": "#cccccc" },
+		{ "name": "nip", "color": "#cccccc" }
 	],
 	"children": [
 		{
