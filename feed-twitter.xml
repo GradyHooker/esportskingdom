@@ -8,6 +8,27 @@
     <atom:link href="https://esportskingdom.gg/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Apex Legends Season 1 Battle Pass: Wild Frontier Update</title>
+        <description>Apex Legends has released their first battle pass called Wild Frontier. If you are not up to date with how battle passes work, they allow you to play as normal, and while you rank up you can unlock exclusive rewards.
+
+</description>
+        <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.gg/apex-legends/2019-03-apex-legends-update-s1-battlepass</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.gg/assets/banner/apex-legends-update-s1-battlepass-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.gg/apex-legends/2019-03-apex-legends-update-s1-battlepass</guid>
+      </item>
+    
+      <item>
         <title>This Week In... LPL CS:GO ANZ Championship Season 1 - Week 5</title>
         <description>Never a dull week a in the LetsPlayLive CS:GO ANZ Championship, after the departure of Tainted Minds last week, we see a huge game-changing update this week that affect some of the guns as well as how the losing bonus is calculated.
 
