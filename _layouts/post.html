@@ -65,6 +65,7 @@ type: post
 			{% if author.twitch != null %}<a href="https://twitch.tv/{{ author.twitch }}" target="_blank"><i class="fab fa-twitch"></i></a>{% endif %}
 			{% if author.facebook != null %}<a href="https://facebook.com/{{ author.facebook }}" target="_blank"><i class="fab fa-facebook"></i></a>{% endif %}
 			{% if author.youtube != null %}<a href="https://www.youtube.com/{{ author.youtube }}" target="_blank"><i class="fab fa-youtube"></i></a>{% endif %}
+			{% if author.instagram != null %}<a href="https://www.instagram.com/{{ author.instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>{% endif %}
 			<a href="/{{ page.author }}">More from this author</a>
 		</div>
 		{% endif %}

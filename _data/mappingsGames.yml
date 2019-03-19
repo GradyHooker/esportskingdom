@@ -1,6 +1,9 @@
 - id: counter-strike
   title: Counter-Strike
   parent: fps-games
+- id: apex-legends
+  title: Apex Legends
+  parent: fps-games
 - id: call-of-duty
   title: Call of Duty
   parent: fps-games
