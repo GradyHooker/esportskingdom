@@ -100,6 +100,14 @@
 			}
 		}
 		
+		&.cd-timeline__img--PL {
+			background: #45caf0;
+			
+			.img {
+				background-image: url('/assets/flags-big/pl.png');
+			}
+		}
+		
 		div.img {
 			display: block;
 			width: 32px;
