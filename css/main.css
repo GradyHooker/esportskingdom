@@ -1497,6 +1497,10 @@ header {
       background: #45caf0; }
       .single-page-cont-timeline .cd-timeline__img.cd-timeline__img--UK .img {
         background-image: url("/assets/flags-big/uk.png"); }
+    .single-page-cont-timeline .cd-timeline__img.cd-timeline__img--PL {
+      background: #45caf0; }
+      .single-page-cont-timeline .cd-timeline__img.cd-timeline__img--PL .img {
+        background-image: url("/assets/flags-big/pl.png"); }
     .single-page-cont-timeline .cd-timeline__img div.img {
       display: block;
       width: 32px;
