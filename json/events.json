@@ -1,0 +1,359 @@
+{
+	"2019": [
+		{
+			"name": "LPL Pro Project CARS 2 ANZ Championship 2019 Season 1",
+			"shortname": "2019-lplprojectcars2",
+			"logo": "lplpro.png",
+			"logotext": "LetsPlay.Live Logo",
+			"attended": "Grady Hooker",
+			"links": {
+				"Project CARS 2": [
+					{
+						"link": "/project-cars2/2019-05-lpl-projectcars2-event",
+						"image": "article.png",
+						"text": "Written Article"
+					},
+					{
+						"link": "https://www.flickr.com/photos/kingofesports/albums/72157708756855587",
+						"target": "_blank",
+						"image": "photo.png",
+						"text": "Photo Album"
+					}
+				]
+			}
+		},
+		{
+			"name": "IEM Sydney 2019",
+			"shortname": "2019-iemsydney",
+			"logo": "iem.png",
+			"logotext": "IEM Logo",
+			"attended": "Grady Hooker",
+			"links": {
+				"Counter-Strike: Global Offensive": [
+					{
+						"link": "/counter-strike/2019-05-elige-interview-sydney19",
+						"image": "elige.png",
+						"text": "Interview with Team Liquid player EliGE"
+					},
+					{
+						"link": "/counter-strike/2019-05-fallen-interview-sydney19",
+						"image": "fallen.png",
+						"text": "Interview with MIBR player FalleN"
+					},
+					{
+						"link": "/counter-strike/2019-05-adren-interview-sydney19",
+						"image": "adren.png",
+						"text": "Interview with FaZe player AdreN"
+					},
+					{
+						"link": "/counter-strike/2019-05-benkai-interview-sydney19",
+						"image": "benkai.png",
+						"text": "Interview with BOOT player Benkai"
+					},
+					{
+						"link": "https://www.flickr.com/photos/kingofesports/albums/72157708746831378",
+						"target": "_blank",
+						"image": "photo.png",
+						"text": "Photo Album"
+					}
+				],
+				"Overwatch": [
+					{
+						"link": "/overwatch/2019-05-roro-interview-sydney19",
+						"image": "roro.png",
+						"text": "Interview with Blank Esports Overwatch player Roro"
+					}
+				]
+			}
+		},
+		{
+			"name": "IEM Katowice Major 2019",
+			"shortname": "2019-iemkatowice",
+			"logo": "iemkatowice19.png",
+			"logotext": "IEM Katowice Logo",
+			"attended": "Jamie Wert",
+			"links": {
+				"Counter-Strike: Global Offensive": [
+					{
+						"link": "/counter-strike/2019-03-rain-interview-katowice19",
+						"image": "rain.png",
+						"text": "Interview with FaZe Clan player rain"
+					},
+					{
+						"link": "/counter-strike/2019-03-gratisfaction-interview-katowice19",
+						"image": "gratisfaction.png",
+						"text": "Interview with Renegades player Gratisfaction"
+					},
+					{
+						"link": "/counter-strike/2019-03-milk-interview-katowice19",
+						"image": "milk.png",
+						"text": "Interview with Dignitas player milk"
+					},
+					{
+						"link": "https://www.flickr.com/photos/kingofesports/sets/72157704089804512",
+						"target": "_blank",
+						"image": "photo.png",
+						"text": "Photo Album"
+					}
+				],
+				"Fortnite": [
+					{
+						"link": "/fortnite/2019-03-zayt-saf-interview-katowice19",
+						"image": "zaytsaf.png",
+						"text": "Interview with NRG player Zayt and Ghost Gaming player Saf"
+					}
+				]
+			}
+		}
+	],
+	"2018": [
+		{
+			"name": "ESL One New York 2018",
+			"shortname": "2018-eslonenewyork",
+			"logo": "eslone.png",
+			"logotext": "ESL One Logo",
+			"attended": "Jamie Wert",
+			"links": {
+				"Counter-Strike: Global Offensive": [
+					{
+						"link": "/counter-strike/2019-02-jw-interview-newyork18",
+						"image": "jw.png",
+						"text": "Interview with Fnatic player JW"
+					},
+					{
+						"link": "/counter-strike/2018-09-oskar-esloneny2018-semis-interview",
+						"image": "oskar.png",
+						"text": "Interview with mousesports player oskar"
+					},
+					{
+						"link": "/counter-strike/2019-02-brehze-interview-newyork18",
+						"image": "brehze.png",
+						"text": "Interview with NRG Esports player Brehze"
+					}
+				]
+			}
+		},
+		{
+			"name": "FACEIT CSGO Major London 2018",
+			"shortname": "2018-faceitmajor",
+			"logo": "faceitlondon18.png",
+			"logotext": "FACEIT Major Logo",
+			"attended": "Grady Hooker",
+			"links": {
+				"Counter-Strike: Global Offensive": [
+					{
+						"link": "/counter-strike/2018-09-dupreeh-interview",
+						"image": "dupreeh.png",
+						"text": "Interview with Astralis player dupreeh"
+					},
+					{
+						"link": "/counter-strike/2018-09-zonic-interview",
+						"image": "zonic.png",
+						"text": "Interview with Astralis coach zonic"
+					},
+					{
+						"link": "https://www.flickr.com/photos/kingofesports/albums/72157700798733561",
+						"target": "_blank",
+						"image": "photo.png",
+						"text": "Photo Album"
+					}
+				]
+			}
+		},
+		{
+			"name": "PingZero 51",
+			"shortname": "2018-pingzero",
+			"logo": "pingzero.png",
+			"logotext": "PingZero Logo",
+			"attended": "Grady Hooker",
+			"links": {
+				"Multiple Games": [
+					{
+						"link": "https://www.flickr.com/photos/kingofesports/albums/72157699797496071",
+						"target": "_blank",
+						"image": "photo.png",
+						"text": "Photo Album"
+					}
+				]
+			}
+		},
+		{
+			"name": "LetsPlay.Live Tekken 7 NZ Championship 2018 (AKL Qual)",
+			"shortname": "2018-lpltekkenqual",
+			"logo": "letsplaylive.png",
+			"logotext": "LetsPlay.Live Logo",
+			"attended": "Grady Hooker",
+			"links": {
+				"Tekken 7": [
+					{
+						"link": "https://www.flickr.com/photos/kingofesports/albums/72157693014021220",
+						"target": "_blank",
+						"image": "photo.png",
+						"text": "Photo Album"
+					}
+				]
+			}
+		},
+		{
+			"name": "ESL Pro League Season 7 Finals Dallas",
+			"shortname": "2018-eslproleague7",
+			"logo": "eslproleague.png",
+			"logotext": "ESL Pro League Logo",
+			"attended": "Jamie Wert",
+			"links": {
+				"Counter-Strike: Global Offensive": [
+					{
+						"link": "/counter-strike/2018-05-magisk-interview-epl18",
+						"image": "magisk.png",
+						"text": "Interview with Astralis player Magisk"
+					},
+					{
+						"link": "https://www.flickr.com/photos/kingofesports/albums/72157669883065168",
+						"target": "_blank",
+						"image": "photo.png",
+						"text": "Photo Album"
+					}
+				]
+			}
+		},
+		{
+			"name": "IEM Sydney 2018",
+			"shortname": "2018-iemsydney",
+			"logo": "iem.png",
+			"logotext": "IEM Logo",
+			"attended": "Grady Hooker",
+			"links": {
+				"Counter-Strike: Global Offensive": [
+					{
+						"link": "/counter-strike/2018-05-karrigan-interview",
+						"image": "karrigan.png",
+						"text": "Interview with FaZe Clan player karrigan"
+					},
+					{
+						"link": "/counter-strike/2018-05-ropz-interview",
+						"image": "ropz.png",
+						"text": "Interview with mousesports player ropz"
+					},
+					{
+						"link": "/counter-strike/2018-05-magisk-interview",
+						"image": "magisk.png",
+						"text": "Interview with Astralis player Magisk"
+					},
+					{
+						"link": "/counter-strike/2018-05-boltz-interview",
+						"image": "boltz.png",
+						"text": "Interview with SK Gaming player boltz"
+					},
+					{
+						"link": "/counter-strike/2018-05-lekr0-interview",
+						"image": "lekr0.png",
+						"text": "Interview with Fnatic player lekr0"
+					},
+					{
+						"link": "/counter-strike/2018-05-bntet-interview",
+						"image": "bntet.png",
+						"text": "Interview with TyLoo player BnTeT"
+					},
+					{
+						"link": "/counter-strike/2018-05-gratisfaction-interview",
+						"image": "gratisfaction.png",
+						"text": "Interview with Grayhound Gaming player Gratisfaction"
+					},
+					{
+						"link": "/counter-strike/2018-05-xign-interview",
+						"image": "xign.png",
+						"text": "Interview with MVP PK player XigN"
+					},
+					{
+						"link": "/counter-strike/2018-05-alistair-interview",
+						"image": "alistair.png",
+						"text": "Interview with ORDER player aliStair"
+					},
+					{
+						"link": "/counter-strike/2018-05-sterling-interview",
+						"image": "sterling.png",
+						"text": "Interview with Chiefs player sterling"
+					},
+					{
+						"link": "/counter-strike/2018-05-lons-interview",
+						"image": "lons.png",
+						"text": "Interview with Legacy player LONS"
+					},
+					{
+						"link": "https://www.youtube.com/watch?v=xi8d6KjGntg",
+						"target": "_blank",
+						"image": "vlog.png",
+						"text": "Event Vlog"
+					},
+					{
+						"link": "https://www.flickr.com/photos/kingofesports/albums/72157690880345440",
+						"target": "_blank",
+						"image": "photo.png",
+						"text": "Photo Album"
+					}
+				]
+			}
+		}
+	],
+	"2017": [
+		{
+			"name": "LetsPlay.Live GT Sport NZ Championship 2017",
+			"shortname": "2017-lplgtsport",
+			"logo": "letsplaylive.png",
+			"logotext": "LetsPlay.Live Logo",
+			"attended": "Grady Hooker",
+			"links": {
+				"GT Sport": [
+					{
+						"link": "/gt-sport/2017-12-lpl-gtsport-event",
+						"image": "article.png",
+						"text": "Written Article"
+					},
+					{
+						"link": "https://www.flickr.com/photos/kingofesports/sets/72157668805121578",
+						"target": "_blank",
+						"image": "photo.png",
+						"text": "Photo Album"
+					}
+				]
+			}
+		},
+		{
+			"name": "LetsPlay.Live Tekken 7 NZ Championship 2017",
+			"shortname": "2017-lpltekken",
+			"logo": "letsplaylive.png",
+			"logotext": "LetsPlay.Live Logo",
+			"attended": "Grady Hooker",
+			"links": {
+				"Tekken 7": []
+			}
+		},
+		{
+			"name": "IEM Sydney 2017",
+			"shortname": "2017-iemsydney",
+			"logo": "iem.png",
+			"logotext": "IEM Logo",
+			"attended": "Grady Hooker",
+			"links": {
+				"Counter-Strike: Global Offensive": [
+					{
+						"link": "/counter-strike/2017-05-astralis-kjaerbye-interview",
+						"image": "kjaerbye.png",
+						"text": "Interview with Astralis player kjaerbye"
+					},
+					{
+						"link": "/counter-strike/2017-05-sk-fer-interview",
+						"image": "fer.png",
+						"text": "Interview with SK Gaming player fer"
+					},
+					{
+						"link": "https://www.youtube.com/watch?v=vgRj02Ou0Wc",
+						"target": "_blank",
+						"image": "vlog.png",
+						"text": "Event Vlog"
+					}
+				]
+			}
+		}
+	]
+}
