@@ -11,6 +11,7 @@ description: Esports Kingdom contains articles, news, and views across multiple 
 baseurl: ""
 url: "https://esportskingdom.gg"
 permalink: /:categories/:year-:month-:title.html
+future: false
 
 # Pagination #
 pagination:
