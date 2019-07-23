@@ -1,6 +1,50 @@
 {
 	"2019": [
 		{
+			"name": "IEM Chicago 2019",
+			"shortname": "2019-iemchicago",
+			"logo": "iem.png",
+			"logotext": "IEM Logo",
+			"attended": "Jamie Wert",
+			"links": {
+				"Counter-Strike: Global Offensive": [
+					{
+						"link": "/counter-strike/2019-07-iemchicago-2019-summary",
+						"image": "article.png",
+						"text": "Written Article"
+					},
+					{
+						"link": "https://www.flickr.com/photos/kingofesports/albums/72157709821692322",
+						"target": "_blank",
+						"image": "photo.png",
+						"text": "Photo Album"
+					}
+				]
+			}
+		},
+		{
+			"name": "LPL Pro Dota 2 ANZ Championship 2019 Season 2",
+			"shortname": "2019-lpldota2",
+			"logo": "lplpro.png",
+			"logotext": "LetsPlay.Live Logo",
+			"attended": "Grady Hooker",
+			"links": {
+				"Dota 2": [
+					{
+						"link": "/dota-2/2019-07-splicko-interview-lpldota",
+						"image": "splicko.png",
+						"text": "Interview with Athletico player Splicko"
+					},
+					{
+						"link": "https://www.flickr.com/photos/kingofesports/albums/72157709735808682",
+						"target": "_blank",
+						"image": "photo.png",
+						"text": "Photo Album"
+					}
+				]
+			}
+		},
+		{
 			"name": "LPL Pro Project CARS 2 ANZ Championship 2019 Season 1",
 			"shortname": "2019-lplprojectcars2",
 			"logo": "lplpro.png",
