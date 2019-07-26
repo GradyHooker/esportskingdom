@@ -1,0 +1,529 @@
+{
+	"name": "New Champions Stage",
+	"size": [1, 1],
+	"color": "#222222",
+	"teams": [
+		{ "name": "", "color": "#cccccc" },
+		{ "name": "", "color": "#cccccc" },
+		{ "name": "", "color": "#cccccc" },
+		{ "name": "", "color": "#cccccc" },
+		{ "name": "", "color": "#cccccc" },
+		{ "name": "", "color": "#cccccc" },
+		{ "name": "", "color": "#cccccc" },
+		{ "name": "", "color": "#cccccc" }
+	],
+	"children": [
+		{
+			"name": "New Legends Stage",
+			"size": [2, 1],
+			"color": "#999999",
+			"width": 200,
+			"teams": [
+				{ "name": "astralis", "color": "transparent" },
+				{ "name": "ence", "color": "transparent" },
+				{ "name": "navi", "color": "transparent" },
+				{ "name": "mibr", "color": "transparent" },
+				{ "name": "faze-solid", "color": "transparent" },
+				{ "name": "liquid", "color": "transparent" },
+				{ "name": "renegades", "color": "transparent" },
+				{ "name": "nip", "color": "transparent" },
+				
+				{ "name": "", "color": "#ffe790" },
+				{ "name": "", "color": "#ffe790" },
+				{ "name": "", "color": "#ffe790" },
+				{ "name": "", "color": "#ffe790" },
+				{ "name": "", "color": "#ffe790" },
+				{ "name": "", "color": "#ffe790" },
+				{ "name": "", "color": "#ffe790" },
+				{ "name": "", "color": "#ffe790" }
+			],
+			"children": [
+				{
+					"name": "New Challengers Stage",
+					"size": [2, 1],
+					"color": "#ffd021",
+					"width": 200,
+					"teams": [
+						{ "name": "vitality-2018", "color": "transparent" },
+						{ "name": "avangar-2018", "color": "transparent" },
+						{ "name": "hellraisers-2018", "color": "transparent" },
+						{ "name": "g2", "color": "transparent" },
+						{ "name": "complexity-2019", "color": "transparent" },
+						
+						{ "name": "", "color": "#cfbbd0" },
+						{ "name": "", "color": "#cfbbd0" },
+						{ "name": "", "color": "#cfbbd0" },
+						
+						{ "name": "", "color": "#d08082" },
+						{ "name": "", "color": "#d08082" },
+						
+						{ "name": "", "color": "#8ca3c1" },
+						{ "name": "", "color": "#8ca3c1" },
+						
+						{ "name": "", "color": "#8da887" },
+						{ "name": "", "color": "#8da887" },
+						
+						{ "name": "", "color": "#e1b18d" },
+						{ "name": "", "color": "#e1b18d" }
+					],
+					"children": [
+						{
+							"name": "Europe Minor",
+							"size": [1, 1],
+							"color": "#a10106",
+							"teams": [
+								{ "name": "cr4zy", "color": "#f3a2a5" },
+								{ "name": "fnatic", "color": "#f3a2a5" },
+								{ "name": "mousesports", "color": "#f3a2a5" },
+								{ "name": "north", "color": "#f3a2a5" },
+								{ "name": "ancient", "color": "#f3a2a5" },
+								{ "name": "sprout", "color": "#f3a2a5" },
+								{ "name": "big", "color": "#f3a2a5" },
+								{ "name": "nochance", "color": "#f3a2a5" }
+							],
+							"children": [
+								{
+									"name": "Europe Closed Qualifier",
+									"size": [1, 2],
+									"color": "#e7454b",
+									"teams": [
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										
+										{ "name": "", "color": "#f3a2a5" },
+										{ "name": "", "color": "#f3a2a5" },
+										
+										{ "name": "", "color": "#f3a2a5" },
+										{ "name": "", "color": "#f3a2a5" },
+										
+										{ "name": "", "color": "#f3a2a5" },
+										{ "name": "", "color": "#f3a2a5" },
+										
+										{ "name": "", "color": "#f3a2a5" },
+										{ "name": "", "color": "#f3a2a5" }
+									],
+									"children": [
+										{
+											"name": "Europe Open #1",
+											"size": [0.7, 1],
+											"color": "#e7454b",
+											"teamtext": " Teams",
+											"teamsAttended": "fragsters,sprout"
+										},
+										{
+											"name": "Europe Open #2",
+											"size": [0.7, 1],
+											"color": "#e7454b",
+											"teamtext": " Teams",
+											"teamsAttended": "windigo,mikstura"
+										},
+										{
+											"name": "Europe Open #3",
+											"color": "#e7454b",
+											"size": [0.7, 1],
+											"teamtext": " Teams",
+											"teamsAttended": "valiance-2018,xkom"
+										},
+										{
+											"name": "Europe Open #4",
+											"size": [0.7, 1],
+											"color": "#e7454b",
+											"teamtext": " Teams",
+											"teamsAttended": "ldlc,vitality-2018"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Americas Minor",
+							"color": "#194784",
+							"size": [1, 1],
+							"teams": [
+								{ "name": "eunited", "color": "#aee3fa" },
+								{ "name": "furia", "color": "#aee3fa" },
+								{ "name": "nrg-2018", "color": "#aee3fa" },
+								{ "name": "teamone", "color": "#aee3fa" },
+								{ "name": "singularity", "color": "#aee3fa" },
+								{ "name": "luminosity", "color": "#aee3fa" },
+								
+								{ "name": "sharks", "color": "#aee3fa" },
+								{ "name": "intz", "color": "#aee3fa" }
+							],
+							"children": [
+								{
+									"name": "North America Closed Qualifier",
+									"size": [1, 2],
+									"color": "#5ec8f6",
+									"teams": [
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										
+										{ "name": "", "color": "#aee3fa" },
+										{ "name": "", "color": "#aee3fa" },
+										
+										{ "name": "", "color": "#aee3fa" },
+										{ "name": "", "color": "#aee3fa" },
+										
+										{ "name": "", "color": "#aee3fa" },
+										{ "name": "", "color": "#aee3fa" },
+										
+										{ "name": "", "color": "#aee3fa" },
+										{ "name": "", "color": "#aee3fa" }
+									],
+									"children": [
+										{
+											"name": "North America Open #1",
+											"size": [0.7, 1],
+											"color": "#5ec8f6",
+											"teamtext": " Teams",
+											"teamsAttended": "singularity,furia"
+										},
+										{
+											"name": "North America Open #2",
+											"size": [0.7, 1],
+											"color": "#5ec8f6",
+											"teamtext": " Teams",
+											"teamsAttended": "mythic, teamone"
+										},
+										{
+											"name": "North America Open #3",
+											"size": [0.7, 1],
+											"color": "#5ec8f6",
+											"teamtext": " Teams",
+											"teamsAttended": "bravado,intact"
+										},
+										{
+											"name": "North America Open #4",
+											"size": [0.7, 1],
+											"color": "#5ec8f6",
+											"teamtext": " Teams",
+											"teamsAttended": "testtakers,oldguysclub"
+										}
+									]
+								},
+								{
+									"name": "South America Closed",
+									"size": [1, 1],
+									"color": "#5ec8f6",
+									"teams": [
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										
+										{ "name": "", "color": "#aee3fa" },
+										{ "name": "", "color": "#aee3fa" },
+										
+										{ "name": "", "color": "#aee3fa" },
+										{ "name": "", "color": "#aee3fa" }
+									],
+									"children": [
+										{
+											"name": "South America Open #1",
+											"size": [0.7, 1],
+											"color": "#5ec8f6",
+											"teamtext": " Teams",
+											"teamsAttended": "wild,w7m"
+										},
+										{
+											"name": "South America Open #2",
+											"size": [0.7, 1],
+											"color": "#5ec8f6",
+											"teamtext": " Teams",
+											"teamsAttended": "rejected,yeah"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "CIS Minor",
+							"size": [1, 1],
+							"color": "#1b5210",
+							"teams": [
+								{ "name": "spirit", "color": "#b9e38c" },
+								{ "name": "nemiga", "color": "#b9e38c" },
+								{ "name": "syman-2018", "color": "#b9e38c" },
+								{ "name": "forze-2018", "color": "#b9e38c" },
+								{ "name": "unique", "color": "#b9e38c" },
+								{ "name": "warthox", "color": "#b9e38c" },
+								{ "name": "gambit", "color": "#b9e38c" },
+								{ "name": "dreameaters", "color": "#b9e38c" }
+							],
+							"children": [
+								{
+									"name": "CIS Closed Qualifier",
+									"size": [1, 2],
+									"color": "#73c719",
+									"teams": [
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										
+										{ "name": "", "color": "#b9e38c" },
+										{ "name": "", "color": "#b9e38c" },
+										
+										{ "name": "", "color": "#b9e38c" },
+										{ "name": "", "color": "#b9e38c" },
+										
+										{ "name": "", "color": "#b9e38c" },
+										{ "name": "", "color": "#b9e38c" },
+										
+										{ "name": "", "color": "#b9e38c" },
+										{ "name": "", "color": "#b9e38c" }
+									],
+									"children": [
+										{
+											"name": "CIS Open #1",
+											"size": [0.7, 1],
+											"color": "#73c719",
+											"teamtext": " Teams",
+											"teamsAttended": "atlants,underpressure"
+										},
+										{
+											"name": "CIS Open #2",
+											"size": [0.7, 1],
+											"color": "#73c719",
+											"teamtext": " Teams",
+											"teamsAttended": "hollywood,rave"
+										},
+										{
+											"name": "CIS Open #3",
+											"size": [0.7, 1],
+											"color": "#73c719",
+											"teamtext": " Teams",
+											"teamsAttended": "syman-2018,mollihble"
+										},
+										{
+											"name": "CIS Open #4",
+											"size": [0.7, 1],
+											"color": "#73c719",
+											"teamtext": " Teams",
+											"teamsAttended": "pugstars,landodgers"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Asia Minor",
+							"size": [1, 1],
+							"color": "#c4631c",
+							"teams": [
+								{ "name": "grayhound", "color": "#eed0b9" },
+								{ "name": "avant", "color": "#eed0b9" },
+								
+								{ "name": "tyloo", "color": "#eed0b9" },
+								{ "name": "5power", "color": "#eed0b9" },
+								
+								{ "name": "mvp", "color": "#eed0b9" },
+								{ "name": "alphared", "color": "#eed0b9" },
+								
+								{ "name": "ffamix", "color": "#eed0b9" },
+								
+								{ "name": "energy", "color": "#eed0b9" }
+							],
+							"children": [
+								{
+									"name": "Oceania Closed",
+									"size": [1, 1],
+									"color": "#dfa375",
+									"teams": [
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										
+										{ "name": "", "color": "#eed0b9" },
+										{ "name": "", "color": "#eed0b9" },
+										
+										{ "name": "", "color": "#eed0b9" },
+										{ "name": "", "color": "#eed0b9" }
+									],
+									"children": [
+										{
+											"name": "Oceania Open #1",
+											"size": [0.7, 1],
+											"color": "#dfa375",
+											"teamtext": " Teams",
+											"teamsAttended": "legacy,madlikewizards"
+										},
+										{
+											"name": "Oceania Open #2",
+											"size": [0.7, 1],
+											"color": "#dfa375",
+											"teamtext": " Teams",
+											"teamsAttended": "breakaway,trident"
+										}
+									]
+								},
+								{
+									"name": "Greater China Closed",
+									"size": [1, 1.5],
+									"color": "#dfa375",
+									"teams": [
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										
+										{ "name": "", "color": "#eed0b9" },
+										{ "name": "", "color": "#eed0b9" },
+										
+										{ "name": "", "color": "#eed0b9" },
+										{ "name": "", "color": "#eed0b9" }
+									],
+									"children": [
+										{
+											"name": "China Open #1",
+											"size": [0.7, 1],
+											"color": "#dfa375",
+											"teamtext": " Teams",
+											"teamsAttended": "ehome,thirteenteam"
+										},
+										{
+											"name": "China Open #2",
+											"size": [0.7, 1],
+											"color": "#dfa375",
+											"teamtext": " Teams",
+											"teamsAttended": "sparta,btrg"
+										}
+									]
+								},
+								{
+									"name": "East Asia Closed",
+									"size": [1, 1],
+									"color": "#dfa375",
+									"teams": [
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										
+										{ "name": "", "color": "#eed0b9" },
+										{ "name": "", "color": "#eed0b9" },
+										
+										{ "name": "", "color": "#eed0b9" },
+										{ "name": "", "color": "#eed0b9" }
+									],
+									"children": [
+										{
+											"name": "East Asia Open #1",
+											"size": [0.7, 1],
+											"color": "#dfa375",
+											"teamtext": " Teams",
+											"teamsAttended": "ignis,2990"
+										},
+										{
+											"name": "East Asia Open #2",
+											"size": [0.7, 1],
+											"color": "#dfa375",
+											"teamtext": " Teams",
+											"teamsAttended": "reignin,youngpower"
+										}
+									]
+								},
+								{
+									"name": "Southeast Asia Closed",
+									"size": [1, 1],
+									"color": "#dfa375",
+									"teams": [
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										
+										{ "name": "", "color": "#eed0b9" },
+										{ "name": "", "color": "#eed0b9" },
+										
+										{ "name": "", "color": "#eed0b9" },
+										{ "name": "", "color": "#eed0b9" }
+									],
+									"children": [
+										{
+											"name": "Southeast Asia Open #1",
+											"size": [0.7, 1],
+											"color": "#dfa375",
+											"teamtext": " Teams",
+											"teamsAttended": "tncpro,recca"
+										},
+										{
+											"name": "Southeast Asia Open #2",
+											"size": [0.7, 1],
+											"color": "#dfa375",
+											"teamtext": " Teams",
+											"teamsAttended": "alphared,vindicta"
+										}
+									]
+								},
+								{
+									"name": "Middle East Closed",
+									"size": [1, 1],
+									"color": "#dfa375",
+									"teams": [
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										{ "name": "", "color": "transparent" },
+										
+										{ "name": "", "color": "#eed0b9" },
+										{ "name": "", "color": "#eed0b9" },
+										
+										{ "name": "", "color": "#eed0b9" },
+										{ "name": "", "color": "#eed0b9" }
+									],
+									"children": [
+										{
+											"name": "Middle East Asia Open #1",
+											"size": [0.7, 1],
+											"color": "#dfa375",
+											"teamtext": " Teams",
+											"teamsAttended": "exdt,firemix"
+										},
+										{
+											"name": "Middle East Asia Open #2",
+											"size": [0.7, 1],
+											"color": "#dfa375",
+											"teamtext": " Teams",
+											"teamsAttended": "nom,juicey"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "3rd Place Play-in",
+							"size": [0.5, 1],
+							"color": "#463147",
+							"teams": [
+								{ "name": "", "color": "#f3a2a5" },
+								{ "name": "", "color": "#aee3fa" },
+								{ "name": "", "color": "#b9e38c" },
+								{ "name": "", "color": "#eed0b9" }
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

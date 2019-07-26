@@ -1,6 +1,22 @@
 {
 	"2019": [
 		{
+			"name": "LPL Pro CSGO ANZ Championship 2019 Season 2",
+			"shortname": "2019-lplcsgo",
+			"logo": "lplpro.png",
+			"logotext": "LetsPlay.Live Logo",
+			"attended": "Grady Hooker",
+			"links": {
+				"Counter-Strike: Global Offensive": [
+					{
+						"link": "/counter-strike/2019-07-zeph-interview-lplcsgo",
+						"image": "zeph.png",
+						"text": "Interview with SYF Gaming player zeph"
+					}
+				]
+			}
+		},
+		{
 			"name": "IEM Chicago 2019",
 			"shortname": "2019-iemchicago",
 			"logo": "iem.png",
