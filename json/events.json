@@ -1,6 +1,68 @@
 {
 	"2019": [
 		{
+			"name": "LPL Pro Project Cars 2 ANZ Championship 2019 Season 3",
+			"shortname": "2019-lplprojectcars2s3",
+			"logo": "lplpro.png",
+			"logotext": "LetsPlay.Live Logo",
+			"attended": "Grady Hooker",
+			"links": {
+				"Project CARS 2": [
+					{
+						"link": "/project-cars2/2019-09-madzie-interview-lplprojectcars",
+						"image": "madzie.png",
+						"text": "Interview with Team Highlands Racing player MadzieAU"
+					}
+				]
+			}
+		},
+		{
+			"name": "StarLadder CSGO Mjaor Berlin 2019",
+			"shortname": "2019-berlinmajor",
+			"logo": "starladderberlin2019.png",
+			"logotext": "StarLadder Major Logo",
+			"attended": "Grady Hooker",
+			"links": {
+				"Counter-Strike: Global Offensive": [
+					{
+						"link": "/counter-strike/2019-09-device-interview-berlin19",
+						"image": "device.png",
+						"text": "Interview with Astralis player device"
+					},
+					{
+						"link": "/counter-strike/2019-08-boombl4-interview-berlin19",
+						"image": "boombl4.png",
+						"text": "Interview with NaVi player Boombl4"
+					},
+					{
+						"link": "/counter-strike/2019-08-tarik-interview-berlin19",
+						"image": "tarik.png",
+						"text": "Interview with NRG Esports player tarik"
+					},
+					{
+						"link": "/counter-strike/2019-09-nbk-interview-berlin19",
+						"image": "nbk.png",
+						"text": "Interview with Team Vitality player NBK-"
+					},
+					{
+						"link": "/counter-strike/2019-08-gratisfaction-interview-berlin19",
+						"image": "gratisfaction.png",
+						"text": "Interview with Renegades player Gratisfaction"
+					},
+					{
+						"link": "/counter-strike/2019-09-liazz-interview-berlin19",
+						"image": "liazz.png",
+						"text": "Interview with Renegades player Liazz"
+					},
+					{
+						"link": "/counter-strike/2019-08-sick-interview-berlin19",
+						"image": "sick.png",
+						"text": "Interview with compLexity Gaming player SicK"
+					}
+				]
+			}
+		},
+		{
 			"name": "LPL Pro CSGO ANZ Championship 2019 Season 2",
 			"shortname": "2019-lplcsgo",
 			"logo": "lplpro.png",
