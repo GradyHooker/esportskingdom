@@ -8,6 +8,27 @@
     <atom:link href="https://esportskingdom.gg/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Is 22 Racing Series a racing sim or a kart game? Neither, but also both!</title>
+        <description>Thanks to the guys at GOATi Entertainment we had a chance to play 22 Racing Series on a massive screen on the PAX Australia show-floor. So let's take a look at our experience playing the game and what we learned about the aim of the game, how it is feeding into esports, and where it is going to go from here.
+
+</description>
+        <pubDate>Sat, 19 Oct 2019 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.gg/22racing-series/2019-10-what-is-22-racing</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.gg/assets/banner/what-is-22-racing-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.gg/22racing-series/2019-10-what-is-22-racing</guid>
+      </item>
+    
+      <item>
         <title>New Case and New Cache in Counter-Strike update</title>
         <description>Valve just released a new update for Counter-Strike: Global Offensive that introduces the new version of Cache into the game as well as a new theme Weapon Case and Sticker Capsule. We take a look at what is inside the cases as the other miscellaneous changes in the update.
 
