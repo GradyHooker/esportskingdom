@@ -85,3 +85,6 @@
 - id: splatoon2
   title: Splatoon 2
   parent: other-games
+- id: 22racing-series
+  title: 22 Racing Series
+  parent: sports-games
