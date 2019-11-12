@@ -8,12 +8,33 @@
     <atom:link href="https://esportskingdom.gg/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>LoL Tier Rankings: 2019 World Championship</title>
+        <description>What better time to start up our Esports Tier Rankings for a second game, League of Legends, than right after one of the biggest esports tournaments of the year - Worlds 2019. Thanks to Ryan &quot;Hullitude&quot; Hull we attempt to take the top teams from all of the regions and sort them into tiers.
+
+</description>
+        <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.gg/league-of-legends/2019-11-lol-tiers-worlds2019</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.gg/assets/banner/lol-tiers-worlds2019-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.gg/league-of-legends/2019-11-lol-tiers-worlds2019</guid>
+      </item>
+    
+      <item>
         <title>CSGO Tier Rankings: StarSeries, DH Malmo, ESL NY, and Berlin Major</title>
         <description>It has been over 3 months since we published an Esports Tier Rankings for CSGO and there has been some major shake-ups in the competitive scene. Some teams get sold to new organizations, some rookies rise to the top, and some long time names have a fall from grace.
 
 </description>
         <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-        <link>https://esportskingdom.gg/counter-strike/2019-11-csgo-tiers-starseries-dhmalmo-eslny-berlinmajor</link>
+        <link>https://esportskingdom.gg/counter-strike/2019-11-csgo-tiers-starseries-dhmalmo-eslny-berlinmajor-Copy</link>
 		
 		<author></author>
 		
@@ -25,7 +46,7 @@
 			type="image/jpeg" 
 			width="200" 
 			height="100" />
-        <guid isPermaLink="true">https://esportskingdom.gg/counter-strike/2019-11-csgo-tiers-starseries-dhmalmo-eslny-berlinmajor</guid>
+        <guid isPermaLink="true">https://esportskingdom.gg/counter-strike/2019-11-csgo-tiers-starseries-dhmalmo-eslny-berlinmajor-Copy</guid>
       </item>
     
       <item>
