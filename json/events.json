@@ -9,14 +9,14 @@
 			"links": {
 				"Rocket League": [
 					{
-						"link": "/rocket-league/2019-11-walcott-interview-lplrlcs8",
-						"image": "walcott.png",
-						"text": "Interview with Canberra Havoc player Walcott"
-					},
-					{
 						"link": "/rocket-league/2019-11-torsos-interview-lplrlcs8",
 						"image": "torsos.png",
 						"text": "Interview with Renegades player Torsos"
+					},
+					{
+						"link": "/rocket-league/2019-11-walcott-interview-lplrlcs8",
+						"image": "walcott.png",
+						"text": "Interview with Canberra Havoc player Walcott"
 					},
 					{
 						"link": "https://www.flickr.com/photos/kingofesports/albums/72157711814014653",
