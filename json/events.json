@@ -1,6 +1,33 @@
 {
 	"2019": [
 		{
+			"name": "RLCS Season 8 Oceanic Championship Finals",
+			"shortname": "2019-lplrocketleague",
+			"logo": "lplpro.png",
+			"logotext": "LetsPlay.Live Logo",
+			"attended": "Grady Hooker",
+			"links": {
+				"Rocket League": [
+					{
+						"link": "/rocket-league/2019-11-walcott-interview-lplrlcs8",
+						"image": "walcott.png",
+						"text": "Interview with Canberra Havoc player Walcott"
+					},
+					{
+						"link": "/rocket-league/2019-11-torsos-interview-lplrlcs8",
+						"image": "torsos.png",
+						"text": "Interview with Renegades player Torsos"
+					},
+					{
+						"link": "https://www.flickr.com/photos/kingofesports/albums/72157711814014653",
+						"target": "_blank",
+						"image": "photo.png",
+						"text": "Photo Album"
+					}
+				]
+			}
+		},
+		{
 			"name": "LPL Pro Project Cars 2 ANZ Championship 2019 Season 3",
 			"shortname": "2019-lplprojectcars2s3",
 			"logo": "lplpro.png",
