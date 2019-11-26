@@ -8,6 +8,27 @@
     <atom:link href="https://esportskingdom.gg/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Halo is crossing over with Counter-Strike</title>
+        <description>Today Valve announced that Halo is coming to Counter-Strike: Global Offensive in the form of a in-games items, some of which is exclusive to owners of the Master Chief Collection. Outside of all the Halo goodness, we also got some updates for performance, visibility on Cache, and overhauls to the Studio map.
+
+</description>
+        <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.gg/counter-strike/2019-11-csgo-update-halo</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.gg/assets/banner/csgo-update-halo-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.gg/counter-strike/2019-11-csgo-update-halo</guid>
+      </item>
+    
+      <item>
         <title>CSGO introduces a new case, 3 new weapon collections, and new stickers and graffiti</title>
         <description>In the second part of today's Counter-Strike update, Valve added a bunch of new community content to the game. We have three brand new weapon collections (Norse Collection, St. Marc Collection, Canals Collection), some new stickers, and some new graffiti.
 
