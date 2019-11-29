@@ -1,5 +1,9 @@
 <div class="media">
+	{% if include.external != null %}
+	<img alt="{{ include.caption }}" src="{{ include.image }}"/>
+	{% else %}
 	<img alt="{{ include.caption }}" src="/assets/article/{{ include.image }}.jpg"/>
+	{% endif %}
 	<div class="image-caption">
 		{% if include.creditlink != null %}
 		{{ include.caption }} (Image by <a href="{{ include.creditlink }}">{{ include.credit }}</a>)
