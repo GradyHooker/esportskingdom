@@ -333,6 +333,20 @@ body {
             z-index: 2; }
             .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-change .fas {
               margin-left: 1px; }
+          .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-league {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            height: 20px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2; }
+            .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-league img {
+              height: 20px;
+              width: 20px;
+              cursor: help; }
           .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-change-up {
             background: #19c459; }
           .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-change-down {
