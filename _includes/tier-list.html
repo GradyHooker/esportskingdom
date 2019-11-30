@@ -10,10 +10,12 @@
 {% assign countries = include.country | split: '|' %}
 {% assign shortnames = include.shortnames | split: '|' %}
 {% assign changes = include.change | split: '|' %}
+{% assign leagues = include.leagues | split: '|' %}
 {% assign length = teams | size %}
 {% assign length = length | minus: 1 %}
 {% for index in (0..length)%}
 	{% assign t = teams[index] %}
+	{% assign l = leagues[index] %}
 	<div class="tier-team-wrapper">
 		<div class="tier-team-bg" style="background-image: url('/assets/flags-big/{{ countries[index] }}.png');">&nbsp;</div>
 		<img class="logo logo-medium" src="/assets/logos/medium/{{ t }}.png" alt="Logo for {{ site.data.teams[t] }}"/>
@@ -28,6 +30,9 @@
 		<div class="tier-change tier-change-up"><i class="fas fa-angle-double-up"></i></div>
 		{% elsif changes[index] == "debut" %}
 		<div class="tier-change tier-change-debut"><i class="fas fa-star"></i></div>
+		{% endif %}
+		{% if leagues != null and leagues[index] != null %}
+		<div class="tier-league"><img class="logo logo-tiny" src="/assets/logos/tiny/{{ l }}.png" alt="{{ site.data.teams[l] }}" title="{{ site.data.teams[l] }}"/></div>
 		{% endif %}
 	</div>
 {% endfor %}
