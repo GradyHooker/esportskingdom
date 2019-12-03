@@ -8,6 +8,27 @@
     <atom:link href="https://esportskingdom.gg/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Rumor Roundup: Dignitas, Gen.G, OG entering CS with new rosters</title>
+        <description>We are kicking off a new column with our CSGO Rumor Roundup. We will scour the internet looking for all the rumors around the CSGO scene and round them all up into one article for easy consumption (and yes, we will credit and link the original authors).
+
+</description>
+        <pubDate>Wed, 04 Dec 2019 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.gg/counter-strike/2019-12-rumor-roundup-dec19</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.gg/assets/banner/rumor-roundup-dec19-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.gg/counter-strike/2019-12-rumor-roundup-dec19</guid>
+      </item>
+    
+      <item>
         <title>22 Racing Series is now on Kickstarter</title>
         <description>Last month we talked about a new Real Time Strategy Racing game coming out of Australia called 22 Racing Series. This week 22RS launched on Kickstarter with the hopes of raising enough funds to add custom mod tools and some other awesome features.
 
