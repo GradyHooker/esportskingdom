@@ -8,6 +8,27 @@
     <atom:link href="https://esportskingdom.gg/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>LoL developer announces third party publishing group, Riot Forge</title>
+        <description>Today Riot Games have announced that they are starting a new publishing group to work with third party developers to create some awesome games in the world of League of Legends.
+
+</description>
+        <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.gg/multiple-games/2019-12-riot-launch-riot-forge</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.gg/assets/banner/riot-launch-riot-forge-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.gg/multiple-games/2019-12-riot-launch-riot-forge</guid>
+      </item>
+    
+      <item>
         <title>EPL Day 2: ATK send North home and 100T send FaZe home</title>
         <description>Day 2 sees the action continue in Odense with Astralis and Team Liquid fighting for their spots in the playoffs and all of Sharks, North, FaZe, and mibr failing in the Lower Bracket and heading home, which means ATK stays alive for another day.
 
