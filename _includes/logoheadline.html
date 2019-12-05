@@ -1,3 +1,10 @@
+{% if include.size == "tiny" %}
+	{% assign size = include.size %}
+{% elsif include.size == "original" %}
+	{% assign size = include.size %}
+{% else %}
+	{% assign size = "medium" %}
+{% endif %}
 <h1 class="logoheadline">
-	<img class="logo-medium" src="/assets/logos/medium/{{ include.logo }}.png"  alt="Logo for {{ site.data.teams[include.logo] }}"/> {{ include.headline }}
+	<img class="logo-{{ size }}" src="/assets/logos/{{ size }}/{{ include.logo }}.png"  alt="Logo for {{ site.data.teams[include.logo] }}"/> {{ include.headline }}
 </h1>
