@@ -11,16 +11,78 @@ function makePhotos(jsonFile) {
 		listElement = document.createElement('ul');
 		
 		for(var index in jsonData) {
-			console.log(jsonData);
-			console.log(index);
 			album = jsonData[index];
-			console.log(album);
 			albumCoverElement = document.createElement('li');
-			$(albumCoverElement).html('<figure><img src="https://live.staticflickr.com/65535/' + album.cover + '_w.jpg" alt="' + album.name + '"><figcaption><span class="count">' + album.photos.length +'</span><h3>' + album.name + '</h3></figcaption></figure>');
+			$(albumCoverElement).html('<a href="/photos/' + album.shortname + '"><figure><img src="https://live.staticflickr.com/65535/' + album.cover + '_w.jpg" alt="' + album.name + '"><figcaption><span class="count">' + album.photos.length +'</span><h3>' + album.name + '</h3></figcaption></figure></a>');
 			$(listElement).append(albumCoverElement);
 		}
 		
 		$(albumContainer).append(listElement);
 		$('.single-page-cont-photos').append(albumContainer);
+	});
+}
+
+function makePhotosFull(albumName) {
+	$.when(
+		$.getJSON("/json/photos.json", function(json) {
+			jsonData = json;
+		})
+	).then(function() {
+		var album, photoContainer, photoImage, photoRow, canFit;
+		
+		photoContainer = document.createElement('div');
+		$(photoContainer).addClass('photos');
+		$('.single-page-cont-photos').append(photoContainer);
+
+		for(var index in jsonData) {
+			album = jsonData[index];
+			if(album.shortname == albumName) {
+				for(var photo in album.photos) {
+					photoImage = document.createElement('img');
+					$(photoImage).addClass('photo-image');
+					$(photoImage).attr("src", "https://live.staticflickr.com/65535/" + album.photos[photo] + "_w.jpg");
+					$(photoImage).attr("alt", "Photo from " + albumName);
+					$(photoContainer).append(photoImage);
+				}
+			}
+		}
+
+		$('.photo-image').on('load', reorganisePhotos);
+		$(window).resize(reorganisePhotos);
+	});
+}
+
+function reorganisePhotos() {
+	var prefHeight = 200;
+	if($(window).width() < 1000) {
+		prefHeight = 150;
+	}
+	
+	var minPerRow = 2;
+	if($(window).width() < 420) {
+		minPerRow = 1;
+	}
+	
+	var totalWidth = $('.photos').width();
+	var rowWidth = 0;
+	var rowheight = 0;
+	var row = [];
+	
+	$('.photo-image').each(function () {
+		$(this).height(prefHeight);
+		var imgWidth = $(this).width() + 4;
+		rowWidth += imgWidth;
+		
+		if(rowWidth > totalWidth && row.length >= minPerRow) {
+			rowWidth -= imgWidth;
+			rowHeight = Math.max((totalWidth/rowWidth)*prefHeight,(rowWidth/totalWidth)*prefHeight);
+			$(row).each(function() {
+				$(this).height(rowHeight);
+			});
+			
+			row = [];
+			rowWidth = imgWidth;
+		}
+		row.push(this);
 	});
 }
