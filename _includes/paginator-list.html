@@ -34,11 +34,11 @@
 					{% assign category-metadata = site.data.mappingsGames | where:"id",post.category | first %}
 					<div class="post-game pretty-print">{{ category-metadata.title }}</div>
 					<div class="post-separator">|</div>
-					{% assign article-metadata = site.data.mappingsTypes | where:"id",post.tags[1] | first %}
+					{% assign article-metadata = site.data.mappingsTypes | where:"id",post.tags[0] | first %}
 					<div class="post-genre pretty-print">{{ article-metadata.title }}</div>
 					<div class="post-separator">|</div>
-					{% assign category-metadata = site.data.mappingsGenres | where:"id",category-metadata.parent | first %}
-					<div class="post-show pretty-print">{{ category-metadata.title }}</div>
+					{% assign author = site.data.authors | where:"id",post.author | first %}
+					<div class="post-show pretty-print">{{ author.firstname }} {% if author.nickname != null %}"{{ author.nickname }}" {% endif %}{{ author.lastname }}</div>
 					{% endif %}
 				</div>
 				{% assign displayTime = post.circa | date: "%Y.%m.%d" %}
