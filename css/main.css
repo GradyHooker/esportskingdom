@@ -354,6 +354,9 @@ body {
           .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-change-debut {
             background: #d8d833;
             font-size: 0.7em; }
+      .page-main .post-container .post-content .converted-time {
+        border-bottom: 1px dotted black;
+        cursor: help; }
   .page-main .post-related {
     width: 300px;
     flex-shrink: 0;
