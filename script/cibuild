@@ -1,36 +1,36 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
-date +"%T"
-
 # skip if build is triggered by pull request
 if [ $TRAVIS_PULL_REQUEST == "true" ]; then
   echo "this is PR, exiting"
   exit 0
 fi
 
-date +"%T"
-
 # enable error reporting to the console
 set -e
-
-date +"%T"
 
 # cleanup "_site"
 rm -rf _site
 mkdir _site
-
-date +"%T"
 
 # clone remote repo to "_site"
 git clone --depth 1 https://${GITHUB_TOKEN}@github.com/GradyHooker/esportskingdom.git --branch gh-pages _site
 
 date +"%T"
 
-# build with Jekyll into "_site"
-bundle exec jekyll build
+# back up the old medium and tiny images
+mkdir bak_files
+cp -r _site/assets/logos/medium bak_files
+cp -r _site/assets/logos/tiny bak_files
+cd bak_files
+ls
+cd ../
 
 date +"%T"
+
+# build with Jekyll into "_site"
+bundle exec jekyll build
 
 # copy cname file
 cp CNAME _site
@@ -55,5 +55,3 @@ git add --all
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push --force origin gh-pages
 echo "Site Pushed"
-
-date +"%T"
