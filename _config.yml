@@ -45,8 +45,18 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap
 
+# Keep files that don't need to be touched
+keep_files:
+  - assets
+  
 # Exclude these files from your production _site
 exclude:
+  - .git
+  - .sass-cache
+  - .editorconfig
+  - .eslintignore
+  - .eslintrc.js
+  - _site
   - Gemfile
   - Gemfile.lock
   - CNAME
