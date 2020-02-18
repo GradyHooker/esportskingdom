@@ -13,3 +13,6 @@ script: ./script/cibuild
 branches:
   only:
   - master
+  
+git:
+  depth: 1

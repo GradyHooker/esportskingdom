@@ -45,7 +45,8 @@ cd ../../../../
 date +"%T"
 
 # copy back in any old ones we had
-cp -r bak_files _site/assets/logos
+cp -r bak_files/medium _site/assets/logos
+cp -r bak_files/tiny _site/assets/logos
 
 date +"%T"
 
