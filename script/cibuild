@@ -23,9 +23,6 @@ date +"%T"
 mkdir bak_files
 cp -r _site/assets/logos/medium bak_files
 cp -r _site/assets/logos/tiny bak_files
-cd bak_files
-ls
-cd ../
 
 date +"%T"
 
@@ -44,6 +41,11 @@ cd _site/assets/logos/original
 mogrify -path ../medium -resize 80x80 -format png *.png
 mogrify -path ../tiny -resize 24x24 -format png *.png
 cd ../../../../
+
+date +"%T"
+
+# copy back in any old ones we had
+cp -r bak_files _site/assets/logos
 
 date +"%T"
 
