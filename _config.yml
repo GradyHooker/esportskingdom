@@ -53,6 +53,7 @@ exclude:
   - .eslintignore
   - .eslintrc.js
   - _site
+  - script
   - bak_files
   - Gemfile
   - Gemfile.lock
