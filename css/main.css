@@ -1295,6 +1295,71 @@ header {
     .single-page-cont .graph-cont .graph-maps {
       width: 300px;
       height: 300px; }
+  .single-page-cont.single-page-cont-tiers {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    .single-page-cont.single-page-cont-tiers a {
+      width: 40%;
+      max-width: 280px;
+      min-width: 120px;
+      height: 180px;
+      padding: 8px;
+      text-decoration: none;
+      color: black; }
+      @media screen and (max-width: 600px) {
+        .single-page-cont.single-page-cont-tiers a {
+          font-size: 0.9em; } }
+      .single-page-cont.single-page-cont-tiers a .tier-button {
+        height: calc(100% - 10px);
+        width: calc(100% - 10px);
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        background: transparent;
+        border-radius: 5px;
+        box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+        line-height: 1.6;
+        transition: 0.15s;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        margin-bottom: 3px;
+        text-align: center;
+        align-items: center;
+        justify-content: center; }
+        .single-page-cont.single-page-cont-tiers a .tier-button:not(.disable):hover {
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+          margin-top: 2px;
+          margin-bottom: 1px; }
+        .single-page-cont.single-page-cont-tiers a .tier-button.disable {
+          filter: grayscale(100%);
+          cursor: default; }
+          .single-page-cont.single-page-cont-tiers a .tier-button.disable span {
+            color: #555; }
+          .single-page-cont.single-page-cont-tiers a .tier-button.disable img {
+            opacity: 0.3; }
+        .single-page-cont.single-page-cont-tiers a .tier-button .button-background {
+          background-size: cover;
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          height: calc(100% + 20px);
+          width: calc(100% + 20px);
+          filter: blur(1.5px) saturate(60%) opacity(0.5);
+          -webkit-filter: blur(1.5px) saturate(60%) opacity(0.5);
+          z-index: -10; }
+        .single-page-cont.single-page-cont-tiers a .tier-button .game-title {
+          margin-top: 6px;
+          margin-bottom: 4px;
+          font-weight: bold;
+          font-size: 1.2em;
+          line-height: 1.2em; }
+        .single-page-cont.single-page-cont-tiers a .tier-button .latest-date {
+          font-style: italic;
+          font-size: 0.8em;
+          line-height: 1.2em; }
 
 .quiz {
   height: calc(100vh - 100px);
