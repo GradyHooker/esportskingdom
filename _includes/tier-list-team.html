@@ -1,0 +1,19 @@
+<div class="tier-team-wrapper">
+	<div class="tier-team-bg" style="background-image: url('/assets/flags-big/{{ include.country }}.png');">&nbsp;</div>
+	<img class="logo logo-medium" src="/assets/logos/medium/{{ include.team }}.png" alt="Logo for {{ site.data.teams[include.team] }}"/>
+	<div class="tier-team-name">{{ include.shortname }}</div>
+	{% if include.change == "up" %}
+	<div class="tier-change tier-change-up"><i class="fas fa-angle-up"></i></div>
+	{% elsif include.change == "down" %}
+	<div class="tier-change tier-change-down"><i class="fas fa-angle-down"></i></div>
+	{% elsif include.change == "down2" %}
+	<div class="tier-change tier-change-down"><i class="fas fa-angle-double-down"></i></div>
+	{% elsif include.change == "up2" %}
+	<div class="tier-change tier-change-up"><i class="fas fa-angle-double-up"></i></div>
+	{% elsif include.change == "debut" %}
+	<div class="tier-change tier-change-debut"><i class="fas fa-star"></i></div>
+	{% endif %}
+	{% if include.league != null %}
+	<div class="tier-league"><img class="logo logo-tiny" src="/assets/logos/tiny/{{ include.league }}.png" alt="{{ site.data.teams[include.league] }}" title="{{ site.data.teams[include.league] }}"/></div>
+	{% endif %}
+</div>

@@ -1,10 +1,5 @@
-<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+{% include tier-list-header.html tier=include.tier %}
 
-<div class="tier-title-cont">
-	<div class="tier-title">
-		{{ include.tier }}-Tier
-	</div>
-</div>
 <div class="tier-cont">
 {% assign teams = include.teams | split: '|' %}
 {% assign countries = include.country | split: '|' %}
@@ -16,24 +11,9 @@
 {% for index in (0..length)%}
 	{% assign t = teams[index] %}
 	{% assign l = leagues[index] %}
-	<div class="tier-team-wrapper">
-		<div class="tier-team-bg" style="background-image: url('/assets/flags-big/{{ countries[index] }}.png');">&nbsp;</div>
-		<img class="logo logo-medium" src="/assets/logos/medium/{{ t }}.png" alt="Logo for {{ site.data.teams[t] }}"/>
-		<div class="tier-team-name">{{ shortnames[index] }}</div>
-		{% if changes[index] == "up" %}
-		<div class="tier-change tier-change-up"><i class="fas fa-angle-up"></i></div>
-		{% elsif changes[index] == "down" %}
-		<div class="tier-change tier-change-down"><i class="fas fa-angle-down"></i></div>
-		{% elsif changes[index] == "down2" %}
-		<div class="tier-change tier-change-down"><i class="fas fa-angle-double-down"></i></div>
-		{% elsif changes[index] == "up2" %}
-		<div class="tier-change tier-change-up"><i class="fas fa-angle-double-up"></i></div>
-		{% elsif changes[index] == "debut" %}
-		<div class="tier-change tier-change-debut"><i class="fas fa-star"></i></div>
-		{% endif %}
-		{% if leagues != null and leagues[index] != null %}
-		<div class="tier-league"><img class="logo logo-tiny" src="/assets/logos/tiny/{{ l }}.png" alt="{{ site.data.teams[l] }}" title="{{ site.data.teams[l] }}"/></div>
-		{% endif %}
-	</div>
+	{% assign s = shortnames[index] %}
+	{% assign c = countries[index] %}
+	{% assign ch = changes[index] %}
+	{% include tier-list-team.html team=t shortname=s country=c change=ch league=l %}
 {% endfor %}
 </div>
