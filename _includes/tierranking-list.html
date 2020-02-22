@@ -1,0 +1,43 @@
+<div class="posts">
+  {% assign counter = -1 %}
+  {% assign total = site.tags[page.tag].size %}
+	<div class="post-link-special">
+		<div class="post">
+			{% include advertisement.html %}
+		</div>
+	</div>
+  {% for post in site.tags[page.tag] %}
+    {% assign counter = counter | plus: 1 %}
+	{% if counter == 0 %}
+      {% continue %}
+    {% endif %}
+    <a class="post-link" href="{{ site.baseurl }}{{ post.url | replace: '.html', ''}}">
+		<div class="post">
+		  <div class="post-boximage-cont">
+			<img class="post-boximage" src="/assets/banner/{{ post.image }}-small.jpg" alt="{{ post.title | escape }}"/>
+			<img class="post-boximage-square" src="/assets/banner/{{ post.image }}-square.jpg" alt="{{ post.title | escape }}"/>
+		  </div>
+		  <div class="post-summary-cont">
+			<h1 class="post-title">
+			  {% assign event = post.title | split: ": " %}
+			  {{ post.date | date: "%-d %B %Y" }} ({{ event[1] }})
+			</h1>
+			<div class="post-entry-cont empty">
+				<div class="post-entry">
+				  {{ post.excerpt | strip_html }}
+				</div>
+			</div>
+		  </div>
+		</div>
+	  </a>
+	  {% assign nextblock = counter | divided_by: 6.0 | floor %}
+	  {% assign currentblock = counter | divided_by: 6.0 | ceil %}
+	  {% if nextblock == currentblock %}
+	  <div class="post-link-special">
+		<div class="post">
+		  {% include advertisement.html %}
+		</div>
+	  </div>
+	  {% endif %}
+  {% endfor %}
+</div>

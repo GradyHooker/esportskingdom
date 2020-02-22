@@ -3,11 +3,7 @@
 {% endfor %}
 
 <a href="/{{ include.link }}">
-	{% if include.disabled == "true" %}
-	<div class="tier-button disable">
-	{% else %}
-	<div class="tier-button">
-	{% endif %}
+	<div class="tier-button {% if include.disabled == "true" %}disable{% endif %}">
 		<div class="button-background" style="background-image: url('/assets/gamebgs/{{ include.game }}.jpg')"></div>
 		{% include logo.html size="medium" logo=include.game %}
 		<span class="game-title">{{ site.data.teams[include.game] }}</span>

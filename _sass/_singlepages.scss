@@ -142,8 +142,28 @@
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: center;
+		
+		#accordion {
+			width: 100%;
+		}
+		
+		.post-container {
+			margin-right: 0px;
+		
+			.post-content {
+				border-radius: 5px;
+				
+				> h1 {
+					width: 100%;
+					font-size: 1.6em;
+					text-align: center;
+					font-weight: bold;
+					padding-top: 20px;
+				}
+			}
+		}
 
-		a {
+		> a {
 			width: 40%;
 			max-width: 280px;
 			min-width: 120px;
