@@ -268,92 +268,6 @@ body {
       .page-main .post-container .post-content .post-footer {
         padding-top: 10px;
         font-style: italic; }
-      .page-main .post-container .post-content .tier-title-cont {
-        background: url("/assets/tier/tier-line.png");
-        width: calc(100% - 40px);
-        padding-left: 20px;
-        adding-right: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-size: 100% 100%;
-        margin-bottom: 10px;
-        margin-top: 10px; }
-        .page-main .post-container .post-content .tier-title-cont .tier-title {
-          color: #222222;
-          background: white;
-          padding-left: 20px;
-          padding-right: 20px;
-          font-family: 'Bowlby One SC', cursive;
-          font-size: 26px;
-          height: 20px;
-          display: flex;
-          align-items: center; }
-      .page-main .post-container .post-content .tier-cont {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        flex-wrap: wrap; }
-        .page-main .post-container .post-content .tier-cont .tier-team-wrapper {
-          height: 120px;
-          width: 100px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 2px solid #222;
-          border-radius: 10px;
-          flex-direction: column;
-          margin: 10px;
-          position: relative;
-          overflow: hidden; }
-          .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-team-bg {
-            opacity: 0.25;
-            position: absolute;
-            top: -10px;
-            left: 0;
-            width: 100%;
-            height: calc(100% + 20px);
-            background-size: cover;
-            background-position: center; }
-          .page-main .post-container .post-content .tier-cont .tier-team-wrapper .logo {
-            z-index: 1; }
-          .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-team-name {
-            z-index: 1; }
-          .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-change {
-            position: absolute;
-            top: 2px;
-            right: 2px;
-            height: 20px;
-            width: 20px;
-            color: white;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 2; }
-            .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-change .fas {
-              margin-left: 1px; }
-          .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-league {
-            position: absolute;
-            top: 2px;
-            left: 2px;
-            height: 20px;
-            width: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 2; }
-            .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-league img {
-              height: 20px;
-              width: 20px;
-              cursor: help; }
-          .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-change-up {
-            background: #19c459; }
-          .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-change-down {
-            background: #ff492d; }
-          .page-main .post-container .post-content .tier-cont .tier-team-wrapper .tier-change-debut {
-            background: #d8d833;
-            font-size: 0.7em; }
       .page-main .post-container .post-content .converted-time {
         border-bottom: 1px dotted black;
         cursor: help; }
@@ -368,7 +282,9 @@ body {
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
-        width: 100%; } }
+        width: 100%; }
+        .page-main .post-related .post-image {
+          height: 125px !important; } }
     @media screen and (max-width: 600px) {
       .page-main .post-related {
         padding-left: 15px;
@@ -419,6 +335,7 @@ body {
         .page-main .post-related a .post .post-image {
           flex-shrink: 0;
           width: 100%;
+          height: 140px;
           margin-bottom: 8px; }
       .page-main .post-related a .plug-post,
       .page-main .post-related a .sponsor-post {
@@ -490,6 +407,94 @@ body {
   margin-top: 1.5em; }
   .logoheadline img {
     margin-right: 8px; }
+
+.tier-title-cont {
+  background: url("/assets/tier/tier-line.png");
+  width: calc(100% - 40px);
+  padding-left: 20px;
+  adding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 100% 100%;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+  .tier-title-cont .tier-title {
+    color: #222222;
+    background: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 26px;
+    height: 20px;
+    display: flex;
+    align-items: center; }
+
+.tier-cont {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .tier-cont .tier-team-wrapper {
+    height: 120px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #222;
+    border-radius: 10px;
+    flex-direction: column;
+    margin: 10px;
+    position: relative;
+    overflow: hidden; }
+    .tier-cont .tier-team-wrapper .tier-team-bg {
+      opacity: 0.25;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 100%;
+      height: calc(100% + 20px);
+      background-size: cover;
+      background-position: center; }
+    .tier-cont .tier-team-wrapper .logo {
+      z-index: 1; }
+    .tier-cont .tier-team-wrapper .tier-team-name {
+      z-index: 1; }
+    .tier-cont .tier-team-wrapper .tier-change {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      height: 20px;
+      width: 20px;
+      color: white;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2; }
+      .tier-cont .tier-team-wrapper .tier-change .fas {
+        margin-left: 1px; }
+    .tier-cont .tier-team-wrapper .tier-league {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      height: 20px;
+      width: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2; }
+      .tier-cont .tier-team-wrapper .tier-league img {
+        height: 20px;
+        width: 20px;
+        cursor: help; }
+    .tier-cont .tier-team-wrapper .tier-change-up {
+      background: #19c459; }
+    .tier-cont .tier-team-wrapper .tier-change-down {
+      background: #ff492d; }
+    .tier-cont .tier-team-wrapper .tier-change-debut {
+      background: #d8d833;
+      font-size: 0.7em; }
 
 .rankings {
   width: 100%;
@@ -1300,7 +1305,19 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center; }
-    .single-page-cont.single-page-cont-tiers a {
+    .single-page-cont.single-page-cont-tiers #accordion {
+      width: 100%; }
+    .single-page-cont.single-page-cont-tiers .post-container {
+      margin-right: 0px; }
+      .single-page-cont.single-page-cont-tiers .post-container .post-content {
+        border-radius: 5px; }
+        .single-page-cont.single-page-cont-tiers .post-container .post-content > h1 {
+          width: 100%;
+          font-size: 1.6em;
+          text-align: center;
+          font-weight: bold;
+          padding-top: 20px; }
+    .single-page-cont.single-page-cont-tiers > a {
       width: 40%;
       max-width: 280px;
       min-width: 120px;
@@ -1309,9 +1326,9 @@ header {
       text-decoration: none;
       color: black; }
       @media screen and (max-width: 600px) {
-        .single-page-cont.single-page-cont-tiers a {
+        .single-page-cont.single-page-cont-tiers > a {
           font-size: 0.9em; } }
-      .single-page-cont.single-page-cont-tiers a .tier-button {
+      .single-page-cont.single-page-cont-tiers > a .tier-button {
         height: calc(100% - 10px);
         width: calc(100% - 10px);
         display: flex;
@@ -1329,18 +1346,18 @@ header {
         text-align: center;
         align-items: center;
         justify-content: center; }
-        .single-page-cont.single-page-cont-tiers a .tier-button:not(.disable):hover {
+        .single-page-cont.single-page-cont-tiers > a .tier-button:not(.disable):hover {
           box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
           margin-top: 2px;
           margin-bottom: 1px; }
-        .single-page-cont.single-page-cont-tiers a .tier-button.disable {
+        .single-page-cont.single-page-cont-tiers > a .tier-button.disable {
           filter: grayscale(100%);
           cursor: default; }
-          .single-page-cont.single-page-cont-tiers a .tier-button.disable span {
+          .single-page-cont.single-page-cont-tiers > a .tier-button.disable span {
             color: #555; }
-          .single-page-cont.single-page-cont-tiers a .tier-button.disable img {
+          .single-page-cont.single-page-cont-tiers > a .tier-button.disable img {
             opacity: 0.3; }
-        .single-page-cont.single-page-cont-tiers a .tier-button .button-background {
+        .single-page-cont.single-page-cont-tiers > a .tier-button .button-background {
           background-size: cover;
           position: absolute;
           top: -10px;
@@ -1350,13 +1367,13 @@ header {
           filter: blur(1.5px) saturate(60%) opacity(0.5);
           -webkit-filter: blur(1.5px) saturate(60%) opacity(0.5);
           z-index: -10; }
-        .single-page-cont.single-page-cont-tiers a .tier-button .game-title {
+        .single-page-cont.single-page-cont-tiers > a .tier-button .game-title {
           margin-top: 6px;
           margin-bottom: 4px;
           font-weight: bold;
           font-size: 1.2em;
           line-height: 1.2em; }
-        .single-page-cont.single-page-cont-tiers a .tier-button .latest-date {
+        .single-page-cont.single-page-cont-tiers > a .tier-button .latest-date {
           font-style: italic;
           font-size: 0.8em;
           line-height: 1.2em; }
