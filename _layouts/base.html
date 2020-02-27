@@ -14,14 +14,22 @@
     <meta property="og:url" content="{{ site.url | append: page.url | remove: '.html'}}">
 	<meta property="og:title" content="{{ page.title | escape }}">
 	<meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 300 | strip }}">
-	<meta property="og:image" content="{{ site.url }}/assets/banner/{{ page.image }}.jpg" >
+	{% if page.socialimage != null %}
+	<meta property="og:image" content="{{ site.url }}/assets/banner/{{ page.socialimage }}.jpg">
+	{% else %}
+	<meta property="og:image" content="{{ site.url }}/assets/banner/{{ page.image }}.jpg">
+	{% endif %}
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@KingOfEsports" />
 	<meta name="twitter:title" content="{{ page.title | escape }}">
 	<meta name="twitter:description" content="{{ page.excerpt | strip_html | truncatewords: 200 | strip }}">
+	{% if page.socialimage != null %}
+	<meta name="twitter:image" content="{{ site.url }}/assets/banner/{{ page.socialimage }}.jpg">
+	{% else %}
 	<meta name="twitter:image" content="{{ site.url }}/assets/banner/{{ page.image }}.jpg">
+	{% endif %}
 	{% else %}
 	
 	{% assign author = site.data.authors | where:"id",page.title | first %}
