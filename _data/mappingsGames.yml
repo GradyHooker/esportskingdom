@@ -88,3 +88,5 @@
 - id: 22racing-series
   title: 22 Racing Series
   parent: sports-games
+- id: hardware
+  title: Hardware
