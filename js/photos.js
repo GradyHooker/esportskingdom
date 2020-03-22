@@ -23,33 +23,8 @@ function makePhotos(jsonFile) {
 }
 
 function makePhotosFull(albumName) {
-	$.when(
-		$.getJSON("/json/photos.json", function(json) {
-			jsonData = json;
-		})
-	).then(function() {
-		var album, photoContainer, photoImage, photoRow, canFit;
-		
-		photoContainer = document.createElement('div');
-		$(photoContainer).addClass('photos');
-		$('.single-page-cont-photos').append(photoContainer);
-
-		for(var index in jsonData) {
-			album = jsonData[index];
-			if(album.shortname == albumName) {
-				for(var photo in album.photos) {
-					photoImage = document.createElement('img');
-					$(photoImage).addClass('photo-image');
-					$(photoImage).attr("src", "https://live.staticflickr.com/65535/" + album.photos[photo] + "_w.jpg");
-					$(photoImage).attr("alt", "Photo from " + albumName);
-					$(photoContainer).append(photoImage);
-				}
-			}
-		}
-
-		$('.photo-image').on('load', reorganisePhotos);
-		$(window).resize(reorganisePhotos);
-	});
+	$('.photo-image').on('load', reorganisePhotos);
+	$(window).resize(reorganisePhotos);
 }
 
 function reorganisePhotos() {
