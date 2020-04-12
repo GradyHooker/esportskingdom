@@ -5,6 +5,8 @@ type: post
 {% assign tags = page.category %}
 {% assign author = site.data.authors | where:"id",page.author | first %}
 {% assign headercredit = page.headercredit | first %}
+{% assign postsize = content | size %}
+{% assign relatedLimit = postsize | divided_by: 750.0 | floor %}
 <div class="page-main">
   <div class="post-container">
 	<div class="post-banner"/>
@@ -90,7 +92,7 @@ type: post
 	</a>
 	{% endif %}
     <h1>Related Posts</h1>
-    {% for post in site.categories[pageCategory] limit:6 %}
+    {% for post in site.categories[pageCategory] limit:relatedLimit %}
     {% unless post.title == page.title %}
 	<a class="post-link" href="{{ site.baseurl }}{{ post.url | replace: '.html', ''}}">
 	  <div class="post">
