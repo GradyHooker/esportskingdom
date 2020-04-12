@@ -272,7 +272,7 @@ body {
         border-bottom: 1px dotted black;
         cursor: help; }
   .page-main .post-related {
-    width: 300px;
+    width: 250px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -335,7 +335,7 @@ body {
         .page-main .post-related a .post .post-image {
           flex-shrink: 0;
           width: 100%;
-          height: 140px;
+          height: 115px;
           margin-bottom: 8px; }
       .page-main .post-related a .plug-post,
       .page-main .post-related a .sponsor-post {
