@@ -110,7 +110,7 @@
 					<li><a href='/counter-strike'>Counter Strike<img src="/assets/characters/counter-strike.png" alt="Counter-Strike character"></a></li>
 					<li><a href='/rainbow-six'>Rainbow Six</a></li>
 					<li><a href='/overwatch'>Overwatch<img src="/assets/characters/overwatch.png" alt="Overwatch character"></a></li>
-					<!--<li><a href='/project-a'>Project A</a></li>-->
+					<!--<li><a href='/valorant'>Valorant</a></li>-->
 					<!--<li><a href='/call-of-duty'>Call of Duty</a></li>-->
 					<!--<li><a href='/halo'>Halo</a></li>-->
 				</ul>
@@ -305,12 +305,85 @@
 				</select>
 			</div>
 			<div class="makepage-cont">
+				<label for="tournament">Tournament: </label>
+				<select id="tournament">
+					<option value=""></option>
+					
+					<option value="esl-proleague-season10" data-parent=>ESL Pro League Season 10</option>
+					
+					<option value="esl-proleague-season9" data-parent=>ESL Pro League Season 9</option>
+					
+					<option value="esl-proleague-season8" data-parent=>ESL Pro League Season 8</option>
+					
+					<option value="esl-proleague-season7" data-parent=>ESL Pro League Season 7</option>
+					
+					<option value="flashpoint-season1" data-parent=>Flashpoint Season 1</option>
+					
+					<option value="owl-season1" data-parent=>Overwatch League Season 1</option>
+					
+					<option value="iem-melbourne-2020" data-parent=>Intel Extreme Masters Melbourne 2020</option>
+					
+					<option value="iem-katowice-2020" data-parent=>Intel Extreme Masters Katowice 2020</option>
+					
+					<option value="iem-sydney-2019" data-parent=>Intel Extreme Masters Sydney 2019</option>
+					
+					<option value="iem-chicago-2019" data-parent=>Intel Extreme Masters Chicago 2019</option>
+					
+					<option value="iem-katowice-2019" data-parent=>Intel Extreme Masters Katowice 2019</option>
+					
+					<option value="iem-chicago-2018" data-parent=>Intel Extreme Masters Chicago 2018</option>
+					
+					<option value="iem-sydney-2018" data-parent=>Intel Extreme Masters Sydney 2018</option>
+					
+					<option value="iem-katowice-2018" data-parent=>Intel Extreme Masters Katowice 2018</option>
+					
+					<option value="iem-sydney-2017" data-parent=>Intel Extreme Masters Sydney 2017</option>
+					
+					<option value="eslone-rio-2020" data-parent=>ESL One Rio Major 2020</option>
+					
+					<option value="eslone-cologne-2019" data-parent=>ESL One Cologne 2019</option>
+					
+					<option value="eslone-newyork-2018" data-parent=>ESL One New York 2018</option>
+					
+					<option value="dhmasters-jonkoping-2020" data-parent=>DreamHack Masters Jönköping 2020</option>
+					
+					<option value="dhmasters-marseille-2018" data-parent=>DreamHack Masters Marseille 2018</option>
+					
+					<option value="starladder-berlin-2019" data-parent=>StarLadder Berlin Major 2019</option>
+					
+					<option value="faceit-london-2018" data-parent=>FACEIT Major London 2018</option>
+					
+					<option value="eleague-boston-2018" data-parent=>ELEAGUE Major Boston 2018</option>
+					
+					<option value="dreamleague-leipzig-2020" data-parent=>DreamLeague Season 13</option>
+					
+					<option value="esl-anzchampionship-2018" data-parent=>ESL ANZ Championship Season 7</option>
+					
+					<option value="omen-challenger-2019" data-parent=>OMEN Challenger Series 2019</option>
+					
+					<option value="lpl-rlcs-season8" data-parent=>LetsPlay.Live RLCS Season 8 Oceanic Championship</option>
+					
+					<option value="lpl-projectcars2-season3" data-parent=>LetsPlay.Live Project CARS 2 Season 3 2019</option>
+					
+					<option value="lpl-projectcars2-season2" data-parent=>LetsPlay.Live Project CARS 2 Season 2 2019</option>
+					
+					<option value="lpl-projectcars2-season1" data-parent=>LetsPlay.Live Project CARS 2 Season 1 2019</option>
+					
+					<option value="lpl-csgo-season2" data-parent=>LetsPlay.Live Counter-Strike Season 2 2019</option>
+					
+					<option value="lpl-csgo-season1" data-parent=>LetsPlay.Live Counter-Strike Season 1 2019</option>
+					
+					<option value="lpl-dota2-season2" data-parent=>LetsPlay.Live DOTA 2 Season 2 2019</option>
+					
+				</select>
+			</div>
+			<div class="makepage-cont">
 				<label for="headerCredit">Header Credit: </label>
-				<input id="headerCredit" type="text" value="" placeholder="HLTV.org"/>
+				<input id="headerCredit" type="text" value="" placeholder="NAME on Twitter"/>
 			</div>
 			<div class="makepage-cont">
 				<label for="headerCreditLink">Header Credit Link: </label>
-				<input id="headerCreditLink" type="text" value="" placeholder="https://www.hltv.org/"/>
+				<input id="headerCreditLink" type="text" value="" placeholder="https://twitter.com/NAME"/>
 			</div>
 			<div class="makepage-cont">
 				<label for="author">Author: </label>
@@ -381,6 +454,16 @@
 		</div>
 		<div class="post post-fake">
 			<div>
+				<span class="shortName"></span>-social.jpg (Optional)
+			</div>
+			<div class="image-editor image-editor-4">
+				<input type="file" class="cropit-image-input">
+				<div class="cropit-preview cropit-preview-4"></div>
+				<input type="range" class="cropit-image-zoom-input">
+			</div>
+		</div>
+		<div class="post post-fake">
+			<div>
 				Additional Images
 			</div>
 			<div class="image-editor">
@@ -388,11 +471,6 @@
 				<button type="button" id="clear">Clear</button>
 				<output id="result" />
 			</div>
-		</div>
-		<div class="post post-fake">
-			<div>Tweet Text (Optional):</div>
-			<textarea id="tweetText" class="autoExpand" rows="5" maxlength="240"></textarea>
-			<div><span id="tweetText-left">240</span> characters left</div>
 		</div>
 		<div class="post post-fake">
 			<div>First Paragraph:</div>
@@ -467,9 +545,9 @@
 					<div class="post-detaillinks">
 						<div class="post-game pretty-print">&nbsp;</div>
 						<div class="post-separator">|</div>
-						<div class="post-genre pretty-print">&nbsp;</div>
-						<div class="post-separator">|</div>
 						<div class="post-show pretty-print">&nbsp;</div>
+						<div class="post-separator">|</div>
+						<div class="post-type pretty-print">&nbsp;</div>
 					</div>
 					<div class="post-date"><time datetime="2018-06-19 09:00:00 +1200" title="19 June 2018 at 09:00:00 AM" data-format="timeSince">right now</time></div>
 				</div>
@@ -493,9 +571,9 @@
 					<div class="post-detaillinks">
 						<div class="post-game pretty-print">&nbsp;</div>
 						<div class="post-separator">|</div>
-						<div class="post-genre pretty-print">&nbsp;</div>
-						<div class="post-separator">|</div>
 						<div class="post-show pretty-print">&nbsp;</div>
+						<div class="post-separator">|</div>
+						<div class="post-type pretty-print">&nbsp;</div>
 					</div>
 					<div class="post-date"><time datetime="2018-06-19 09:00:00 +1200" title="19 June 2018 at 09:00:00 AM" data-format="timeSince">right now</time></div>
 				</div>

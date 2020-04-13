@@ -68,12 +68,6 @@ $(function() {
 		}
 	});
 	
-	//Update the Tweet Length
-	$('#tweetText').keyup(function() {
-		$(this).val($(this).val().replace('"', "'"));
-		$("#tweetText-left").text($(this).attr("maxlength") - $(this).val().length);
-	});
-	
 	function insertInclude(name) {
 		var toAdd = "";
 		var cursorPos = $('#postContent').prop('selectionStart');
@@ -135,19 +129,24 @@ $(function() {
 	});
 	
 	function updateFinalFile() {
+		var tournament = "";
+		if($("#tournament").val() != "" && $("#tournament").val() != null) tournament = $("#tournament").val()
+			
 		var finalVal = "";
 		
 		finalVal += "---" + "\n";
 		finalVal += "layout: post" + "\n";
 		finalVal += 'title: "' + $("#displayName").val() + '"\n';
 		finalVal += 'fulltitle: "' + $("#displayName").val() + '"\n';
-		if($("#tweetText").val() != "" && $("#tweetText").val() != null) finalVal += 'tweettext: "' + $("#tweetText").val() + '"\n';
 		finalVal += 'category: ' + $("#category").val() + '\n';
-		finalVal += 'tags: ' + $("#articleType").find(":selected").data("parent") + " "
-							+ $("#articleType").val() + " "
+		finalVal += 'tags: ' + $("#articleType").val() + " "
 							+ $("#category").find(":selected").data("parent")+ " "
-							+ $("#author").val() + '\n';
+							+ $("#author").val() + ' '
+							+ tournament + ' '
+							+ '\n';
+		if(tournament != "") finalVal += 'tournament: ' + tournament + '\n';
 		finalVal += 'image: ' + $("#shortName").val() + '\n';
+		if($('.image-editor-4').cropit('export') != null) finalVal += 'socialimage: ' + $("#shortName").val() + '-social\n';
 		finalVal += $("#author").find(":selected").data("type") + ': ' + $("#author").val() + '\n';
 		if($("#headerCredit").val() != "" || $("#headerCreditLink").val() != "") {
 			finalVal += 'headercredit: ' + '\n';
@@ -324,8 +323,8 @@ function updateCirca() {
 function updatePreview() {
 	$('.post-preview .post-title').text($("#displayName").val());
 	$('.post-preview .post-game').text($("#category option:selected").text());
-	$('.post-preview .post-genre').text($("#articleType option:selected").data("parent"));
 	$('.post-preview .post-show').text($("#articleType option:selected").text());
+	$('.post-preview .post-type').text($("#author option:selected").text());
 	$('.post-preview .post-boximage').attr("src", $('.image-editor-2').cropit('export'));
 	$('.post-preview .post-boximage-square').attr("src", $('.image-editor-3').cropit('export'));
 	$('.post-preview .post-entry').text($("#postContentFirst").val());
@@ -415,6 +414,8 @@ function continueCommit() {
 	compressImg($('.image-editor-2').cropit('export'), 'assets/banner/' + $("#shortName").val() + '-small.jpg');
 	//Add Square
 	compressImg($('.image-editor-3').cropit('export'), 'assets/banner/' + $("#shortName").val() + '-square.jpg');
+	//Add Social
+	compressImg($('.image-editor-4').cropit('export'), 'assets/banner/' + $("#shortName").val() + '-social.jpg');
 }
 
 function compressImg(dataURL, fileName) {

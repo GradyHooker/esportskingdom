@@ -1864,13 +1864,16 @@ header {
     margin-top: 7px; }
     .image-editor .cropit-preview.cropit-preview-1 {
       width: 950px;
-      height: 633px; }
+      height: 400px; }
     .image-editor .cropit-preview.cropit-preview-2 {
       width: 200px;
       height: 100px; }
     .image-editor .cropit-preview.cropit-preview-3 {
       width: 100px;
       height: 100px; }
+    .image-editor .cropit-preview.cropit-preview-4 {
+      width: 900px;
+      height: 470px; }
   .image-editor .cropit-preview-image-container {
     cursor: move; }
   .image-editor .image-size-label {
