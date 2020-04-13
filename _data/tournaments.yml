@@ -1,0 +1,111 @@
+- id: esl-proleague-season10
+  title: ESL Pro League Season 10
+  series: ESL Pro League
+- id: esl-proleague-season9
+  title: ESL Pro League Season 9
+  series: ESL Pro League
+- id: esl-proleague-season8
+  title: ESL Pro League Season 8
+  series: ESL Pro League
+- id: esl-proleague-season7
+  title: ESL Pro League Season 7
+  series: ESL Pro League
+
+- id: flashpoint-season1
+  title: Flashpoint Season 1
+  series: Flashpoint
+  
+- id: owl-season1
+  title: Overwatch League Season 1
+  series: Overwatch League
+  
+- id: iem-melbourne-2020
+  title: Intel Extreme Masters Melbourne 2020
+  series: Intel Extreme Masters
+- id: iem-katowice-2020
+  title: Intel Extreme Masters Katowice 2020
+  series: Intel Extreme Masters
+- id: iem-sydney-2019
+  title: Intel Extreme Masters Sydney 2019
+  series: Intel Extreme Masters
+- id: iem-chicago-2019
+  title: Intel Extreme Masters Chicago 2019
+  series: Intel Extreme Masters
+- id: iem-katowice-2019
+  title: Intel Extreme Masters Katowice 2019
+  series: Intel Extreme Masters
+- id: iem-chicago-2018
+  title: Intel Extreme Masters Chicago 2018
+  series: Intel Extreme Masters
+- id: iem-sydney-2018
+  title: Intel Extreme Masters Sydney 2018
+  series: Intel Extreme Masters
+- id: iem-katowice-2018
+  title: Intel Extreme Masters Katowice 2018
+  series: Intel Extreme Masters
+- id: iem-sydney-2017
+  title: Intel Extreme Masters Sydney 2017
+  series: Intel Extreme Masters
+  
+- id: eslone-rio-2020
+  title: ESL One Rio Major 2020
+  series: ESL One
+- id: eslone-cologne-2019
+  title: ESL One Cologne 2019
+  series: ESL One
+- id: eslone-newyork-2018
+  title: ESL One New York 2018
+  series: ESL One
+  
+- id: dhmasters-jonkoping-2020
+  title: DreamHack Masters Jönköping 2020
+  series: DreamHack Masters
+- id: dhmasters-marseille-2018
+  title: DreamHack Masters Marseille 2018
+  series: DreamHack Masters
+
+- id: starladder-berlin-2019
+  title: StarLadder Berlin Major 2019
+  series: StarLadder
+  
+- id: faceit-london-2018
+  title: FACEIT Major London 2018
+  series: FACEIT
+
+- id: eleague-boston-2018
+  title: ELEAGUE Major Boston 2018
+  series: ELEAGUE
+  
+- id: dreamleague-leipzig-2020
+  title: DreamLeague Season 13
+  series: DreamLeague
+  
+- id: esl-anzchampionship-2018
+  title: ESL ANZ Championship Season 7
+  series: ESL ANZ Championship
+  
+- id: omen-challenger-2019
+  title: OMEN Challenger Series 2019
+  series: OMEN Challenger
+
+- id: lpl-rlcs-season8
+  title: LetsPlay.Live RLCS Season 8 Oceanic Championship
+  series: LetsPlay.Live Rocket League
+- id: lpl-projectcars2-season3
+  title: LetsPlay.Live Project CARS 2 Season 3 2019
+  series: LetsPlay.Live Project CARS 2
+- id: lpl-projectcars2-season2
+  title: LetsPlay.Live Project CARS 2 Season 2 2019
+  series: LetsPlay.Live Project CARS 2
+- id: lpl-projectcars2-season1
+  title: LetsPlay.Live Project CARS 2 Season 1 2019
+  series: LetsPlay.Live Project CARS 2
+- id: lpl-csgo-season2
+  title: LetsPlay.Live Counter-Strike Season 2 2019
+  series: LetsPlay.Live Counter-Strike
+- id: lpl-csgo-season1
+  title: LetsPlay.Live Counter-Strike Season 1 2019
+  series: LetsPlay.Live Counter-Strike
+- id: lpl-dota2-season2
+  title: LetsPlay.Live DOTA 2 Season 2 2019
+  series: LetsPlay.Live DOTA 2

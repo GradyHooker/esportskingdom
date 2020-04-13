@@ -4,6 +4,7 @@ type: post
 ---
 {% assign tags = page.category %}
 {% assign author = site.data.authors | where:"id",page.author | first %}
+{% assign tournament = site.data.tournaments | where:"id",page.tournament | first %}
 {% assign headercredit = page.headercredit | first %}
 {% assign postsize = content | size %}
 {% assign relatedLimit = postsize | divided_by: 750.0 | floor %}
@@ -36,6 +37,9 @@ type: post
 	<div class="post-content">
       {{ content }}
 	  <div class="post-footer">
+	    {% if tournament.title != null %}
+	      <a href="/{{ tournament.id }}">Click here for more {{ tournament.title }} content</a>
+	    {% endif %}
 		{% if headercredit.name != null %}
 		<div>
 		  Header image thanks to <a href="{{ headercredit.link }}">{{ headercredit.name }}</a>

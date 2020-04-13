@@ -13,6 +13,9 @@ pagination:
     {% assign category = site.data.mappingsGenres | where:"id",page.title | first %}
     {% if category == null %}
       {% assign category = site.data.mappingsTypes | where:"id",page.title | first %}
+      {% if category == null %}
+        {% assign category = site.data.tournaments | where:"id",page.title | first %}
+      {% endif %}
     {% endif %}
   {% endif %}
   <h2 class="autopage-title">{{ category.title }}</h2>
