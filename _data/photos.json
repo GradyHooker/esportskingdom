@@ -1,5 +1,6 @@
 [
 	{
+		"id": "72157711814014653",
 		"name": "RLCS Season 8 Oceanic Championship Finals",
 		"shortname": "2019-lplrocketleague",
 		"logo": "lplpro.png",
@@ -25,17 +26,7 @@
 		]
 	},
 	{
-		"name": "StarLadder CSGO Major Berlin 2019",
-		"shortname": "2019-berlinmajor",
-		"logo": "starladderberlin2019.png",
-		"logotext": "StarLadder Major Logo",
-		"attended": "Grady Hooker",
-		"cover": "",
-		"location": "Berlin, Germany",
-		"locationflag": "DE",
-		"photos": []
-	},
-	{
+		"id": "72157709821692322",
 		"name": "IEM Chicago 2019",
 		"shortname": "2019-iemchicago",
 		"logo": "iem.png",
@@ -146,6 +137,7 @@
 		]
 	},
 	{
+		"id": "72157709735808682",
 		"name": "LPL Pro Dota 2 ANZ Championship 2019 Season 2",
 		"shortname": "2019-lpldota2",
 		"logo": "lplpro.png",
@@ -183,6 +175,7 @@
 		]
 	},
 	{
+		"id": "72157708756855587",
 		"name": "LPL Pro Project CARS 2 ANZ Championship 2019 Season 1",
 		"shortname": "2019-lplprojectcars2",
 		"logo": "lplpro.png",
@@ -211,6 +204,7 @@
 		]
 	},
 	{
+		"id": "72157708746831378",
 		"name": "IEM Sydney 2019",
 		"shortname": "2019-iemsydney",
 		"logo": "iem.png",
@@ -307,6 +301,7 @@
 		]
 	},
 	{
+		"id": "72157704089804512",
 		"name": "IEM Katowice Major 2019",
 		"shortname": "2019-iemkatowice",
 		"logo": "iemkatowice19.png",
@@ -400,6 +395,7 @@
 		]
 	},
 	{
+		"id": "72157700798733561",
 		"name": "FACEIT CSGO Major London 2018",
 		"shortname": "2018-faceitmajor",
 		"logo": "faceitlondon18.png",
@@ -495,6 +491,7 @@
 		]
 	},
 	{
+		"id": "72157699797496071",
 		"name": "PingZero 51",
 		"shortname": "2018-pingzero",
 		"logo": "pingzero.png",
@@ -548,6 +545,7 @@
 		]
 	},
 	{
+		"id": "72157693014021220",
 		"name": "LetsPlay.Live Tekken 7 NZ Championship 2018 (AKL Qual)",
 		"shortname": "2018-lpltekkenqual",
 		"logo": "letsplaylive.png",
@@ -581,6 +579,7 @@
 		]
 	},
 	{
+		"id": "72157669883065168",
 		"name": "ESL Pro League Season 7 Finals Dallas",
 		"shortname": "2018-eslproleague7",
 		"logo": "eslproleague.png",
@@ -613,6 +612,7 @@
 		]
 	},
 	{
+		"id": "72157690880345440",
 		"name": "IEM Sydney 2018",
 		"shortname": "2018-iemsydney",
 		"logo": "iem.png",
@@ -655,6 +655,7 @@
 		]
 	},
 	{
+		"id": "72157668805121578",
 		"name": "LetsPlay.Live GT Sport NZ Championship 2017",
 		"shortname": "2017-lplgtsport",
 		"logo": "letsplaylive.png",

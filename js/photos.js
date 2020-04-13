@@ -25,6 +25,7 @@ function makePhotos(jsonFile) {
 function makePhotosFull(albumName) {
 	$('.photo-image').on('load', reorganisePhotos);
 	$(window).resize(reorganisePhotos);
+	reorganisePhotos();
 }
 
 function reorganisePhotos() {

@@ -1,0 +1,6 @@
+---
+layout: none
+---
+[
+	{% for album in site.data.photos %}{% if forloop.last %}{{ album | jsonify }}{% else %}{{ album | jsonify }},{% endif %}{% endfor %}
+]

@@ -1,7 +1,6 @@
 ---
 layout: base
 type: photos
-hasSlick: true
 ---
 <div class="single-page-cont single-page-cont-photos">
 	<div class="photos">
@@ -10,18 +9,10 @@ hasSlick: true
 		{% for album in json %}
 			{% if album.shortname == event %}
 				{% for image in album.photos %}
-					<img class="photo-image" src="https://live.staticflickr.com/65535/{{ image }}_w.jpg" alt="Photo from {{ page.event }}" />
-				{% endfor %}
-			{% endif %}
-		{% endfor %}
-	</div>
-	<div class="carousel">
-		{% assign event = page.event %}
-		{% assign json = site.data.photos %}
-		{% for album in json %}
-			{% if album.shortname == event %}
-				{% for image in album.photos %}
-					<div><img data-lazy="https://live.staticflickr.com/65535/{{ image }}_o.jpg" alt="Photo Loading..." /></div>
+					{% assign imageid = image | split: "_" %}
+					<a href="https://www.flickr.com/photos/kingofesports/{{ imageid[0] }}/in/album-{{ album.id }}" alt="Click to View/Download full size image" title="Click to View/Download full size image" target="_blank">
+						<img class="photo-image" src="https://live.staticflickr.com/65535/{{ image }}_w.jpg" alt="Photo from {{ page.event }}" />
+					</a>
 				{% endfor %}
 			{% endif %}
 		{% endfor %}

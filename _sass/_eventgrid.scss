@@ -176,10 +176,11 @@
 	}
 	
 	.photos {
+		a {
+			text-decoration: none;
+		}
 		
-		> img {
-			padding-left: 2px;
-			padding-right: 2px;
+		img {
 			height: 100%;
 		}
 	}
