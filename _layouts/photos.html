@@ -10,7 +10,7 @@ type: photos
 			{% if album.shortname == event %}
 				{% for image in album.photos %}
 					{% assign imageid = image | split: "_" %}
-					<a href="https://www.flickr.com/photos/kingofesports/{{ imageid[0] }}/in/album-{{ album.id }}" alt="Click to View/Download full size image" title="Click to View/Download full size image" target="_blank">
+					<a href="https://www.flickr.com/photos/kingofesports/{{ imageid[0] }}/in/album-{{ album.id }}" title="Click to View/Download full size image" target="_blank">
 						<img class="photo-image" src="https://live.staticflickr.com/65535/{{ image }}_w.jpg" alt="Photo from {{ page.event }}" />
 					</a>
 				{% endfor %}
