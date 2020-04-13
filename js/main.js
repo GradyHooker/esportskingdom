@@ -1,7 +1,13 @@
 window.onscroll = function (e) {  
 	var header = document.getElementById("header");
 	var main = document.getElementById("main");
-	if(window.scrollY != 0) {
+	var height = Math.max(document.body.scrollHeight,
+						document.body.offsetHeight,
+						document.documentElement.clientHeight,
+						document.documentElement.scrollHeight,
+						document.documentElement.offsetHeight );
+
+	if(window.scrollY != 0 && (height-window.innerHeight) > 45) {
 		header.classList ? header.classList.add('header-fixed') : header.className = 'header header-fixed';
 		main.style.paddingTop = "65px";
 	} else {

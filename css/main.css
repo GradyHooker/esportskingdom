@@ -1795,9 +1795,9 @@ header {
               display: flex;
               align-items: center;
               justify-content: center; }
-  .single-page-cont-photos .photos > img {
-    padding-left: 2px;
-    padding-right: 2px;
+  .single-page-cont-photos .photos a {
+    text-decoration: none; }
+  .single-page-cont-photos .photos img {
     height: 100%; }
 
 .posts .post-link .post-fake {
