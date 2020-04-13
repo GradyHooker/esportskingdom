@@ -35,12 +35,21 @@ sitemap: false
 				</select>
 			</div>
 			<div class="makepage-cont">
+				<label for="tournament">Tournament: </label>
+				<select id="tournament">
+					<option value=""></option>
+					{% for entry in site.data.tournaments %}
+					<option value="{{ entry.id }}" data-parent={{ entry.parent }}>{{ entry.title }}</option>
+					{% endfor %}
+				</select>
+			</div>
+			<div class="makepage-cont">
 				<label for="headerCredit">Header Credit: </label>
-				<input id="headerCredit" type="text" value="" placeholder="HLTV.org"/>
+				<input id="headerCredit" type="text" value="" placeholder="NAME on Twitter"/>
 			</div>
 			<div class="makepage-cont">
 				<label for="headerCreditLink">Header Credit Link: </label>
-				<input id="headerCreditLink" type="text" value="" placeholder="https://www.hltv.org/"/>
+				<input id="headerCreditLink" type="text" value="" placeholder="https://twitter.com/NAME"/>
 			</div>
 			<div class="makepage-cont">
 				<label for="author">Author: </label>
@@ -95,6 +104,16 @@ sitemap: false
 		</div>
 		<div class="post post-fake">
 			<div>
+				<span class="shortName"></span>-social.jpg (Optional)
+			</div>
+			<div class="image-editor image-editor-4">
+				<input type="file" class="cropit-image-input">
+				<div class="cropit-preview cropit-preview-4"></div>
+				<input type="range" class="cropit-image-zoom-input">
+			</div>
+		</div>
+		<div class="post post-fake">
+			<div>
 				Additional Images
 			</div>
 			<div class="image-editor">
@@ -102,11 +121,6 @@ sitemap: false
 				<button type="button" id="clear">Clear</button>
 				<output id="result" />
 			</div>
-		</div>
-		<div class="post post-fake">
-			<div>Tweet Text (Optional):</div>
-			<textarea id="tweetText" class="autoExpand" rows="5" maxlength="240"></textarea>
-			<div><span id="tweetText-left">240</span> characters left</div>
 		</div>
 		<div class="post post-fake">
 			<div>First Paragraph:</div>
@@ -181,9 +195,9 @@ sitemap: false
 					<div class="post-detaillinks">
 						<div class="post-game pretty-print">&nbsp;</div>
 						<div class="post-separator">|</div>
-						<div class="post-genre pretty-print">&nbsp;</div>
-						<div class="post-separator">|</div>
 						<div class="post-show pretty-print">&nbsp;</div>
+						<div class="post-separator">|</div>
+						<div class="post-type pretty-print">&nbsp;</div>
 					</div>
 					<div class="post-date"><time datetime="2018-06-19 09:00:00 +1200" title="19 June 2018 at 09:00:00 AM" data-format="timeSince">right now</time></div>
 				</div>
@@ -207,9 +221,9 @@ sitemap: false
 					<div class="post-detaillinks">
 						<div class="post-game pretty-print">&nbsp;</div>
 						<div class="post-separator">|</div>
-						<div class="post-genre pretty-print">&nbsp;</div>
-						<div class="post-separator">|</div>
 						<div class="post-show pretty-print">&nbsp;</div>
+						<div class="post-separator">|</div>
+						<div class="post-type pretty-print">&nbsp;</div>
 					</div>
 					<div class="post-date"><time datetime="2018-06-19 09:00:00 +1200" title="19 June 2018 at 09:00:00 AM" data-format="timeSince">right now</time></div>
 				</div>
