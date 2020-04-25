@@ -52,3 +52,11 @@ $(document).ready(function() {
 		if(displayTime != "") $(this).text(displayTime);
 	});
 });
+
+function showTierRanking(button, region) {
+	console.log(this);
+	$('.tier-list').hide();
+	$('.tier-list-' + region).show();
+	$('.tier-list-button-active').removeClass('tier-list-button-active');
+	$(button).addClass('tier-list-button-active');
+}

@@ -1,4 +1,8 @@
+{% if include.empty == "true" %}
+<div class="tier-team-wrapper empty">
+{% else %}
 <div class="tier-team-wrapper">
+{% endif %}
 	<div class="tier-team-bg" style="background-image: url('/assets/flags-big/{{ include.country }}.png');">&nbsp;</div>
 	<img class="logo logo-medium" src="/assets/logos/medium/{{ include.team }}.png" alt="Logo for {{ site.data.teams[include.team] }}"/>
 	<div class="tier-team-name">{{ include.shortname }}</div>

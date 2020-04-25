@@ -7,7 +7,11 @@ type: post
 {% assign tournament = site.data.tournaments | where:"id",page.tournament | first %}
 {% assign headercredit = page.headercredit | first %}
 {% assign postsize = content | size %}
-{% assign relatedLimit = postsize | divided_by: 750.0 | floor %}
+{% if page.tags contains 'tier-ranking' %}
+	{% assign relatedLimit = 5 %}
+{% else %}
+	{% assign relatedLimit = postsize | divided_by: 750.0 | floor %}
+{% endif %}
 <div class="page-main">
   <div class="post-container">
 	<div class="post-banner"/>

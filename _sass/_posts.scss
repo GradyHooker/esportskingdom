@@ -471,17 +471,89 @@
 	}
 }
 
+.tier-list-inactive {
+	display: none;
+}
+
+.tier-list-controller {
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+	
+	.tier-list-button {
+		height: 40px;
+		max-width: 200px;
+		color: #222222;
+		width: 100%;
+		margin: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		border-radius: 5px;
+		cursor: pointer;
+		opacity: 0.6;
+		transition: 0.4s;
+		box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+		
+		&:hover,
+		&.tier-list-button-active {
+			opacity: 1;
+			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+			margin-top: 12px;
+			margin-bottom: 8px;
+		}
+		
+		&.tier-list-button-blue {
+			background: #7f91d3;
+		}
+		&.tier-list-button-red {
+			background: #d37e7e;
+		}
+		&.tier-list-button-green {
+			background: #89d37f;
+		}
+		&.tier-list-button-orange {
+			background: #d3ae7f;
+		}
+		&.tier-list-button-purple {
+			background: #ae82d0;
+		}
+	}
+}
+
 .tier-title-cont {
 	background: url('/assets/tier/tier-line.png');
 	width: calc(100% - 40px);
 	padding-left: 20px;
-	adding-right: 20px;
+	padding-right: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-size: 100% 100%;
 	margin-bottom: 10px;
 	margin-top: 10px;
+	
+	.tier-list-red & {
+		background: url('/assets/tier/tier-line-red.png');
+	}
+	
+	.tier-list-blue & {
+		background: url('/assets/tier/tier-line-blue.png');
+	}
+	
+	.tier-list-orange & {
+		background: url('/assets/tier/tier-line-orange.png');
+	}
+	
+	.tier-list-green & {
+		background: url('/assets/tier/tier-line-green.png');
+	}
+	
+	.tier-list-purple & {
+		background: url('/assets/tier/tier-line-purple.png');
+	}
+	
+	background-size: 100% 100% !important;
 	
 	.tier-title {
 		color: #222222;
@@ -514,6 +586,10 @@
 		margin: 10px;
 		position: relative;
 		overflow: hidden;
+		
+		&.empty {
+			opacity: 0;
+		}
 		
 		.tier-team-bg {
 			opacity: 0.25;
