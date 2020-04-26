@@ -548,6 +548,71 @@ body {
       background: #d8d833;
       font-size: 0.7em; }
 
+.post-feature {
+  height: 300px;
+  color: white;
+  margin: 0 auto;
+  padding: 0px;
+  max-width: 1060px;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.15s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-align: center; }
+  .post-feature:hover {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 18px;
+    margin-top: 2px; }
+  @media screen and (max-width: 768px) {
+    .post-feature {
+      box-shadow: none;
+      border-radius: 0px;
+      margin: 0px;
+      height: 220px; }
+      .post-feature:hover {
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+        margin: 0px; }
+      .post-feature .post-title {
+        font-size: 1.8em !important; }
+      .post-feature .slick-dots {
+        bottom: 10px !important; } }
+  .post-feature .carousel {
+    height: 100%; }
+    .post-feature .carousel .feature-slides {
+      height: 100%; }
+      .post-feature .carousel .feature-slides .slick-list {
+        padding: 0px;
+        height: 100%; }
+        .post-feature .carousel .feature-slides .slick-list .slick-track {
+          height: 100%; }
+          .post-feature .carousel .feature-slides .slick-list .slick-track .slick-slide {
+            height: 100%;
+            background-size: cover;
+            background-position: center center; }
+            .post-feature .carousel .feature-slides .slick-list .slick-track .slick-slide .feature-link {
+              height: calc(100% - 40px);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 20px 50px;
+              line-height: 1.2;
+              flex-direction: column;
+              background: rgba(50, 50, 50, 0.5);
+              text-shadow: 2px 2px #323232;
+              color: white;
+              text-decoration: none; }
+              .post-feature .carousel .feature-slides .slick-list .slick-track .slick-slide .feature-link .post-title {
+                font-size: 2.5em; }
+      .post-feature .carousel .feature-slides .slick-dots {
+        bottom: 15px; }
+        .post-feature .carousel .feature-slides .slick-dots li button:before {
+          color: white; }
+        .post-feature .carousel .feature-slides .slick-dots li.slick-active button:before {
+          color: white; }
+
 .rankings {
   width: 100%;
   margin-top: 16px;
@@ -1185,11 +1250,10 @@ header {
   max-width: 1060px;
   font-weight: bold;
   margin: 0 auto;
-  margin-bottom: 0.5em; }
+  padding-bottom: 0.5em; }
   @media screen and (max-width: 768px) {
     .autopage-title {
-      margin-bottom: 0;
-      margin-top: 0.5em; } }
+      padding-top: 0.5em; } }
 
 .post-author {
   padding: 30px;

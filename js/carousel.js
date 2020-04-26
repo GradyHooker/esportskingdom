@@ -1,12 +1,8 @@
 $(".slides").each(function(index) {
-	console.log(index + " = " + $(this).data("builtin"));
 	$(this).addClass("slides-" + index);
-	console.log($(this));
 	$(this).parent().addClass("carousel-" + index);
-	console.log($(this).parent());
 	if($(this).data("builtin") == true) {
 		//No Captions
-		console.log("No Captions");
 		$(".slides-" + index).slick({
 		  infinite: false,
 		  speed: 200,
@@ -19,11 +15,8 @@ $(".slides").each(function(index) {
 		});
 	} else {
 		//With Captions
-		console.log("WITH Cpations");
 		$(this).parent().find(".captions").addClass("captions-" + index);
-		console.log($(this).parent().find(".captions"));
 		$(this).parent().find(".pagination").addClass("pagination-" + index);
-		console.log($(this).parent().find(".pagination"));
 		$(".slides-" + index).slick({
 		  asNavFor: '.captions-' + index,
 		  infinite: false,
@@ -47,5 +40,13 @@ $(".slides").each(function(index) {
 	}
 });
 
-
-
+$('.feature-slides').slick({
+	dots: true,
+	autoplay: true,
+	infinite: true,
+	speed: 200,
+	autoplaySpeed: 6000,
+	fade: true,
+	arrows: false,
+	cssEase: 'linear'
+});
