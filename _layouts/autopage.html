@@ -1,15 +1,18 @@
 ---
 layout: base
 type: autopage
+hasSlick: true
 pagination: 
   permalink: /:num/
 ---
+{% assign isGameCategory = true %}
 {% assign author = site.data.authors | where:"id",page.title | first %}
 {% if author != null %}
   <h2 class="autopage-title">{{ author.firstname }} {% if author.nickname != null %}"{{ author.nickname }}" {% endif %}{{ author.lastname }}</h2>
 {% else %}
   {% assign category = site.data.mappingsGames | where:"id",page.title | first %}
   {% if category == null %}
+	{% assign isGameCategory = false %}
     {% assign category = site.data.mappingsGenres | where:"id",page.title | first %}
     {% if category == null %}
       {% assign category = site.data.mappingsTypes | where:"id",page.title | first %}
@@ -19,6 +22,10 @@ pagination:
     {% endif %}
   {% endif %}
   <h2 class="autopage-title">{{ category.title }}</h2>
+{% endif %}
+
+{% if isGameCategory == true %}
+	{% include paginator-feature.html %}
 {% endif %}
 
 {% include paginator-list.html %}

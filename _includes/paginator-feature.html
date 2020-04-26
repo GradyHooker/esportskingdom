@@ -1,0 +1,23 @@
+<div class="post-feature">
+	<div class="carousel">
+		<div class="feature-slides" data-builtin="true">
+			{% assign i = 0 %}
+			{% for post in site.posts %}
+			{% if post.tags contains 'features' or post.tags contains 'interviews' %}
+			{% if i < 6 %}
+			{% if post.category == category.id or category == "all" %}
+			{% assign i = i | plus: 1 %}
+			<div style="background: url('/assets/banner/{{ post.image }}.jpg') center center / cover no-repeat rgb(255, 255, 255)">
+				<a class="feature-link" href="{{ site.baseurl }}{{ post.url | replace: '.html', ''}}">
+					<h1 class="post-title">
+					  {{ post.fulltitle }}
+					</h1>
+				</a>
+			</div>
+			{% endif %}
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</div>

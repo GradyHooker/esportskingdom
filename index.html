@@ -2,6 +2,10 @@
 layout: base
 pagination: 
   enabled: true
+hasSlick: true
 ---
+{% assign category = "all" %}
+
+{% include paginator-feature.html %}
 
 {% include paginator-list.html %}
