@@ -398,6 +398,8 @@ body {
       @media screen and (max-width: 950px) {
         .page-main .post-related a.plug-link, .page-main .post-related a.sponsor-link {
           width: 100%; } }
+      .page-main .post-related a.post-link-hidden {
+        display: none; }
 
 .logoheadline {
   display: flex;
