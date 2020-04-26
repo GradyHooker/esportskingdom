@@ -100,14 +100,20 @@ type: post
 	</a>
 	{% endif %}
     <h1>Related Posts</h1>
-    {% for post in site.categories[pageCategory] limit:relatedLimit %}
+	{% assign i = 1 %}
+    {% for post in site.categories[pageCategory] limit: 11 %}
     {% unless post.title == page.title %}
+	{% if i <= relatedLimit %}
 	<a class="post-link" href="{{ site.baseurl }}{{ post.url | replace: '.html', ''}}">
+	{% else %}
+	<a class="post-link post-link-hidden" href="{{ site.baseurl }}{{ post.url | replace: '.html', ''}}">
+	{% endif %}
 	  <div class="post">
 	    <img class="post-image" src="/assets/banner/{{ post.image }}-small.jpg" alt="{{ post.title | escape }}"/>
 	    <p>{{ post.title }}</p>
 	  </div>
 	</a>
+	{% assign i = i | plus: 1 %}
 	{% endunless %}
     {% endfor %}
   </div>

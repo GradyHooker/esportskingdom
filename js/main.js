@@ -1,11 +1,6 @@
 window.onscroll = function (e) {  
 	var header = document.getElementById("header");
 	var main = document.getElementById("main");
-	var height = Math.max(document.body.scrollHeight,
-						document.body.offsetHeight,
-						document.documentElement.clientHeight,
-						document.documentElement.scrollHeight,
-						document.documentElement.offsetHeight );
 
 	if(window.scrollY != 0 && (height-window.innerHeight) > 45) {
 		header.classList ? header.classList.add('header-fixed') : header.className = 'header header-fixed';
@@ -16,13 +11,44 @@ window.onscroll = function (e) {
 	}
 } 
 
+window.onresize = function (e) {
+	calcHeightWidth();
+	
+	//Recalculate Related Posts
+	recalcRelated();
+}
+
+var height;
+var width;
+function calcHeightWidth() {
+	width = Math.max(document.body.scrollWidth,
+		document.body.offsetWidth,
+		document.documentElement.clientWidth,
+		document.documentElement.scrollWidth,
+		document.documentElement.offsetWidth );
+		
+	height = Math.max(document.body.scrollHeight,
+		document.body.offsetHeight,
+		document.documentElement.clientHeight,
+		document.documentElement.scrollHeight,
+		document.documentElement.offsetHeight );
+}
+
 $(document).ready(function() {
+	calcHeightWidth();
+	
 	var num = window.location.pathname.split('/')[2];
 	if(num == "" || num == undefined) { num = "1"; }
 	var pg = document.getElementById("page-" + num);
 	if(pg != null) {
 		pg.classList.add("active");
 	}
+	
+	//Recalculate Related Posts
+	recalcRelated();
+	setTimeout(function () {
+		recalcRelated();
+	}, 1000);
 
 	//Rewrite times
 	var times = $('time');
@@ -54,9 +80,34 @@ $(document).ready(function() {
 });
 
 function showTierRanking(button, region) {
-	console.log(this);
 	$('.tier-list').hide();
 	$('.tier-list-' + region).show();
 	$('.tier-list-button-active').removeClass('tier-list-button-active');
 	$(button).addClass('tier-list-button-active');
+}
+
+function recalcRelated() {		
+	if($(".post-related").length && $(".post-content").length) {
+		//At the bottom
+		var numToShow = 6;
+		console.log(width);
+		//On the right
+		if(width > 950) {
+			//300px of adspace, 250px of author block, 220px each link
+			numToShow = ($(".post-content").height() - 300 + 250) / 220;
+		}
+		
+		//One is the adspace
+		var numCurrentShow = $(".post-related .post-link").length - $("post-link-hidden").length - 1;
+		
+		$(".post-related .post-link").each(function(i) {
+			if(i != 0){
+				if(i <= numToShow) {
+					$(this).removeClass("post-link-hidden");
+				} else {
+					$(this).addClass("post-link-hidden");
+				}
+			}
+		});
+	}
 }

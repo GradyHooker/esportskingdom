@@ -455,6 +455,10 @@
 					width: 100%;
 				}
 			}
+			
+			&.post-link-hidden {
+				display: none;
+			}
 		}
 	}
 }
