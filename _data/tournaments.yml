@@ -63,6 +63,10 @@
 - id: dhmasters-marseille-2018
   title: DreamHack Masters Marseille 2018
   series: DreamHack Masters
+  
+- id: rocketleague-springseries-2020
+  title: Rocket League Spring Series 2020
+  series: Rocket League Spring Series
 
 - id: starladder-berlin-2019
   title: StarLadder Berlin Major 2019
