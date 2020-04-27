@@ -18,6 +18,12 @@
 - id: owl-season1
   title: Overwatch League Season 1
   series: Overwatch League
+- id: owl-season2
+  title: Overwatch League Season 2
+  series: Overwatch League
+- id: owl-season3
+  title: Overwatch League Season 3
+  series: Overwatch League
   
 - id: iem-melbourne-2020
   title: Intel Extreme Masters Melbourne 2020
