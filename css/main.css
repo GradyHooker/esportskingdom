@@ -172,6 +172,11 @@ body {
           font-size: 0.95em; } }
       .page-main .post-container .post-content p {
         padding-top: 10px; }
+      .page-main .post-container .post-content ul {
+        list-style: unset;
+        padding-left: 20px; }
+        .page-main .post-container .post-content ul > li {
+          list-style-position: outside; }
       .page-main .post-container .post-content li ul {
         list-style-type: square;
         padding-left: 60px; }
