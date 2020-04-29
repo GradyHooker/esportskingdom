@@ -5,6 +5,11 @@
 {% else %}
 	{% assign size = "medium" %}
 {% endif %}
+
+{% if include.notBold == "true" %}
+<h1 class="logoheadline notbold">
+{% else %}
 <h1 class="logoheadline">
+{% endif %}
 	<img class="logo-{{ size }}" src="/assets/logos/{{ size }}/{{ include.logo }}.png"  alt="Logo for {{ site.data.teams[include.logo] }}"/> {{ include.headline }}
 </h1>

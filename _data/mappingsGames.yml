@@ -1,6 +1,9 @@
 - id: counter-strike
   title: Counter-Strike
   parent: fps-games
+- id: valorant
+  title: VALORANT
+  parent: fps-games
 - id: apex-legends
   title: Apex Legends
   parent: fps-games

@@ -1,3 +1,13 @@
+{% assign count = 0 %}
+{% for post in site.posts %}
+	{% if post.tags contains 'features' or post.tags contains 'interviews' %}
+		{% if post.category == category.id or category == "all" %}
+			{% assign count = count | plus: 1 %}
+		{% endif %}
+	{% endif %}
+{% endfor %}
+
+{% if count > 1 %}
 <div class="post-feature">
 	<div class="carousel">
 		<div class="feature-slides" data-builtin="true">
@@ -21,3 +31,4 @@
 		</div>
 	</div>
 </div>
+{% endif %}
