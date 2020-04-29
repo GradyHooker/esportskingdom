@@ -409,6 +409,9 @@ body {
   margin-top: 1.5em; }
   .logoheadline img {
     margin-right: 8px; }
+  .logoheadline.notbold {
+    font-weight: normal;
+    font-size: 1em; }
 
 .tier-list-inactive {
   display: none; }
