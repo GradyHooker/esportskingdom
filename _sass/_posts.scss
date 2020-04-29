@@ -152,6 +152,15 @@
 				padding-top: 10px;
 			}
 			
+			ul {
+				list-style: unset;
+				padding-left: 20px;
+				
+				> li {
+					list-style-position: outside;
+				}
+			}
+			
 			li ul {
 				list-style-type: square;
 				padding-left: 60px;
