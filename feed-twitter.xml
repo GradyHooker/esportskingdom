@@ -8,6 +8,27 @@
     <atom:link href="https://esportskingdom.gg/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Twitch introduce an Esports Directory</title>
+        <description>Twitch has always been a destination for both video game streamers and esports events, both categories of stream were competing for views. Today Twitch announced the Esports Directory that will make it easier to find esports content.
+
+</description>
+        <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.gg/multiple-games/2020-04-twitch-esports-directory</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.gg/assets/banner/twitch-esports-directory-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.gg/multiple-games/2020-04-twitch-esports-directory</guid>
+      </item>
+    
+      <item>
         <title>ESL and DreamHack enter streaming deal with Twitch</title>
         <description>ESL and DreamHack today announced a three-year deal with Twitch. The agreement will see some of the biggest esports tournaments organized by ESL and DreamHack live streamed to the service exclusively on Twitch in 2021 and 2022.
 
