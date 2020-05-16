@@ -537,6 +537,9 @@
 		&.tier-list-button-purple {
 			background: #ae82d0;
 		}
+		&.tier-list-button-yellow {
+			background: #d3cc7f;
+		}
 	}
 }
 
@@ -569,6 +572,10 @@
 	
 	.tier-list-purple & {
 		background: url('/assets/tier/tier-line-purple.png');
+	}
+	
+	.tier-list-yellow & {
+		background: url('/assets/tier/tier-line-yellow.png');
 	}
 	
 	background-size: 100% 100% !important;
