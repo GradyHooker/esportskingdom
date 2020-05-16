@@ -455,6 +455,8 @@ body {
       background: #d3ae7f; }
     .tier-list-controller .tier-list-button.tier-list-button-purple {
       background: #ae82d0; }
+    .tier-list-controller .tier-list-button.tier-list-button-yellow {
+      background: #d3cc7f; }
 
 .tier-title-cont {
   background: url("/assets/tier/tier-line.png");
@@ -477,6 +479,8 @@ body {
     background: url("/assets/tier/tier-line-green.png"); }
   .tier-list-purple .tier-title-cont {
     background: url("/assets/tier/tier-line-purple.png"); }
+  .tier-list-yellow .tier-title-cont {
+    background: url("/assets/tier/tier-line-yellow.png"); }
   .tier-title-cont .tier-title {
     color: #222222;
     background: white;
