@@ -103,7 +103,11 @@
   
 - id: omen-challenger-2019
   title: OMEN Challenger Series 2019
-  series: OMEN Challenger
+  series: OMEN Challenger Series
+  
+- id: razer-seainvinational-2020
+  title: Razer Southeast Asian Invitational 2020
+  series: Razer Southeast Asian Invitational
 
 - id: lpl-rlcs-season8
   title: LetsPlay.Live RLCS Season 8 Oceanic Championship
