@@ -183,6 +183,9 @@ body {
       .page-main .post-container .post-content .interview-question,
       .page-main .post-container .post-content .subheading {
         font-weight: bold; }
+      .page-main .post-container .post-content .subheading {
+        font-family: 'Alegreya Sans SC';
+        font-size: 1.4em; }
       .page-main .post-container .post-content .quote {
         font-style: italic;
         margin-left: 35px;
