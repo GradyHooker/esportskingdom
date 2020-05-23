@@ -152,6 +152,8 @@ evilgeniuses-2019:
   Evil Geniuses
 evilgeniuses-2020:
   Evil Geniuses
+evilgeniuses-2020-2:
+  Evil Geniuses
 execration:
   Execration
 extatus:
@@ -234,8 +236,6 @@ imperial:
   Imperial Esports
 infamous:
   Infamous Gaming
-inferno:
-  Inferno
 infused:
   Team Infused
 intz:
@@ -1212,16 +1212,6 @@ skyfire:
   Team Skyfire
 skade:
   SKADE
-csgo:
-  Counter-Strike
-leagueoflegends:
-  League of Legends
-overwatch:
-  Overwatch
-rainbowsix:
-  Rainbow Six
-dota2:
-  Dota 2
 avez:
   AVEZ
 detona:
@@ -1278,27 +1268,7 @@ salamander:
   Salamander Gaming
 saw:
   sAw
-valorant-omen:
-  Omen (VALORANT Agent)
-valorant-breach:
-  Breach (VALORANT Agent)
-valorant-brimstone:
-  Brimstone (VALORANT Agent)
-valorant-cypher:
-  Cypher (VALORANT Agent)
-valorant-jett:
-  Jett (VALORANT Agent)
-valorant-viper:
-  Viper (VALORANT Agent)
-valorant-phoenix:
-  Phoenix (VALORANT Agent)
-valorant-raze:
-  Raze (VALORANT Agent)
-valorant-sage:
-  Sage (VALORANT Agent)
-valorant-sova:
-  Sova (VALORANT Agent)
-unqiue:
+unique:
   Team Unique
 canberrahavoc:
   Canberra Havoc
@@ -1336,7 +1306,209 @@ newyorksubliners:
   New York Subliners
 seattlesurge:
   Seattle Surge
+  
+  
+  
+  
 callofduty:
   Call of Duty
 callofduty-mw:
   Call of Duty Modern Warfare
+csgo:
+  Counter-Strike
+leagueoflegends:
+  League of Legends
+overwatch:
+  Overwatch
+rainbowsix:
+  Rainbow Six
+dota2:
+  Dota 2
+
+  
+  
+  
+  
+valorant-omen:
+  Omen (VALORANT Agent)
+valorant-breach:
+  Breach (VALORANT Agent)
+valorant-brimstone:
+  Brimstone (VALORANT Agent)
+valorant-cypher:
+  Cypher (VALORANT Agent)
+valorant-jett:
+  Jett (VALORANT Agent)
+valorant-viper:
+  Viper (VALORANT Agent)
+valorant-phoenix:
+  Phoenix (VALORANT Agent)
+valorant-raze:
+  Raze (VALORANT Agent)
+valorant-sage:
+  Sage (VALORANT Agent)
+valorant-sova:
+  Sova (VALORANT Agent)
+
+  
+  
+  
+  
+csgo-mirage:
+  Mirage (CSGO Map)
+csgo-inferno:
+  Inferno (CSGO Map)
+csgo-overpass:
+  Overpass (CSGO Map)
+csgo-nuke:
+  Nuke (CSGO Map)
+csgo-train:
+  Train (CSGO Map)
+csgo-cache:
+  Cache (CSGO Map)
+csgo-dust2:
+  Dust2 (CSGO Map)
+csgo-cobble:
+  Cobblestone (CSGO Map)
+csgo-vertigo:
+  Vertigo (CSGO Map)
+csgo-canals:
+  Canals (CSGO Map)
+csgo-anubis:
+  Anubis (CSGO Map)
+csgo-chlorine:
+  Chlorine (CSGO Map)
+csgo-agency:
+  Agency (CSGO Map)
+csgo-militia:
+  Militia (CSGO Map)
+csgo-office:
+  Office (CSGO Map)
+csgo-italy:
+  Italy (CSGO Map)
+csgo-assault:
+  Assault (CSGO Map)
+csgo-lake:
+  Lake (CSGO Map)
+csgo-baggage:
+  Baggage (CSGO Map)
+csgo-bank:
+  Bank (CSGO Map)
+csgo-safehouse:
+  Safehouse (CSGO Map)
+csgo-shoots:
+  Shoots (CSGO Map)
+csgo-lunacy:
+  Lunacy (CSGO Map)
+csgo-monastery:
+  Monastery (CSGO Map)
+csgo-stmarc:
+  St. Marc (CSGO Map)
+csgo-dust:
+  Dust (CSGO Map)
+csgo-dizzy:
+  Dizzy (CSGO Map)
+csgo-sugarcane:
+  Sugarcane (CSGO Map)
+csgo-aztec:
+  Aztec (CSGO Map)
+csgo-abbey:
+  Abbey (CSGO Map)
+csgo-austria:
+  Austria (CSGO Map)
+csgo-biome:
+  Biome (CSGO Map)
+csgo-blacksite:
+  Blacksite (CSGO Map)
+csgo-breach:
+  Breach (CSGO Map)
+csgo-insertion:
+  Insertion (CSGO Map)
+csgo-jungle:
+  Jungle (CSGO Map)
+csgo-ruby:
+  Ruby (CSGO Map)
+csgo-seaside:
+  Seaside (CSGO Map)
+csgo-shipped:
+  Shipped (CSGO Map)
+csgo-studio:
+  Studio (CSGO Map)
+csgo-subzero:
+  SubZero (CSGO Map)
+csgo-shipped:
+  Shipped (CSGO Map)
+csgo-workout:
+  WorkOut (CSGO Map)
+csgo-zoo:
+  Zoo (CSGO Map)
+csgo-sirocco:
+  Sirocco (CSGO Map)
+  
+  
+  
+  
+overwatch-dva:
+  D.Va (Overwatch Hero)
+overwatch-orisa:
+  Orisa (Overwatch Hero)
+overwatch-reinhardt:
+  Reinhardt (Overwatch Hero)
+overwatch-roadhog:
+  Roadhog (Overwatch Hero)
+overwatch-sigma:
+  Sigma (Overwatch Hero)
+overwatch-winston:
+  Winston (Overwatch Hero)
+overwatch-wreckingball:
+  Wrecking Ball (Overwatch Hero)
+overwatch-zarya:
+  Zarya (Overwatch Hero)
+overwatch-ashe:
+  Ashe (Overwatch Hero)
+overwatch-bastion:
+  Bastion (Overwatch Hero)
+overwatch-doomfist:
+  Doomfist (Overwatch Hero)
+overwatch-echo:
+  Echo (Overwatch Hero)
+overwatch-genji:
+  Genji (Overwatch Hero)
+overwatch-hanzo:
+  Hanzo (Overwatch Hero)
+overwatch-junkrat:
+  Junkrat (Overwatch Hero)
+overwatch-mccree:
+  McCree (Overwatch Hero)
+overwatch-mei:
+  Mei (Overwatch Hero)
+overwatch-pharah:
+  Pharah (Overwatch Hero)
+overwatch-reaper:
+  Reaper (Overwatch Hero)
+overwatch-soldier76:
+  Soldier 76 (Overwatch Hero)
+overwatch-sombra:
+  Sombra (Overwatch Hero)
+overwatch-symmetra:
+  Symmetra (Overwatch Hero)
+overwatch-torbjorn:
+  Torbjörn (Overwatch Hero)
+overwatch-tracer:
+  Tracer (Overwatch Hero)
+overwatch-widowmaker:
+  Widowmaker (Overwatch Hero)
+overwatch-ana:
+  Ana (Overwatch Hero)
+overwatch-baptiste:
+  Baptiste (Overwatch Hero)
+overwatch-brigitte:
+  Brigitte (Overwatch Hero)
+overwatch-lucio:
+  Lúcio (Overwatch Hero)
+overwatch-mercy:
+  Mercy (Overwatch Hero)
+overwatch-moira:
+  Moira (Overwatch Hero)
+overwatch-zenyatta:
+  Zenyatta (Overwatch Hero)
