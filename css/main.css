@@ -185,7 +185,11 @@ body {
         font-weight: bold; }
       .page-main .post-container .post-content .subheading {
         font-family: 'Alegreya Sans SC';
-        font-size: 1.4em; }
+        font-size: 1.4em;
+        display: flex;
+        align-items: center; }
+        .page-main .post-container .post-content .subheading .logo {
+          padding-right: 8px; }
       .page-main .post-container .post-content .quote {
         font-style: italic;
         margin-left: 35px;
