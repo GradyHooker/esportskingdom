@@ -174,6 +174,12 @@
 			.subheading {
 				font-family: 'Alegreya Sans SC';
 				font-size: 1.4em;
+				display: flex;
+				align-items: center;
+				
+				.logo {
+					padding-right: 8px;
+				}
 			}
 			
 			.quote {
