@@ -217,7 +217,9 @@ body {
           top: 0px;
           left: 0px; }
         .page-main .post-container .post-content .media .tweet {
-          max-width: 100%; }
+          width: 100%; }
+          .page-main .post-container .post-content .media .tweet .twitter-tweet {
+            margin: 10px auto; }
         .page-main .post-container .post-content .media .carousel {
           width: 100%; }
           .page-main .post-container .post-content .media .carousel .slides .slick-slide {
