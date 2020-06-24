@@ -8,6 +8,27 @@
     <atom:link href="https://esportskingdom.gg/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>VALORANT Patch Notes 1.02, Competitive Mode!</title>
+        <description>Major changes to VALORANT coming forward this patch, with Competitive Mode going live, changes to tagging and much, much more.
+
+</description>
+        <pubDate>Wed, 24 Jun 2020 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.gg/valorant/2020-06-valorant-patch-1.02</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.gg/assets/banner/valorant-patch-1-02-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.gg/valorant/2020-06-valorant-patch-1.02</guid>
+      </item>
+    
+      <item>
         <title>Overwatch League Week 21 - Hero Bans and Match-ups</title>
         <description>Overwatch League has changed it's format a little with the lack of a hero pool this week. They will also be missing a hero pool during the Summer Showdown next week. Other than the hero pools, we do have all of the details around what games to expect this week!
 
