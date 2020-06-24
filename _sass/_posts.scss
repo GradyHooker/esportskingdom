@@ -218,7 +218,11 @@
 				}
 				
 				.tweet {
-					max-width: 100%;
+					width: 100%;
+					
+					.twitter-tweet {
+						margin: 10px auto;
+					}
 				}
 				
 				.carousel {
