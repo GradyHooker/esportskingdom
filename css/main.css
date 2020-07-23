@@ -181,7 +181,8 @@ body {
         list-style-type: square;
         padding-left: 60px; }
       .page-main .post-container .post-content .interview-question,
-      .page-main .post-container .post-content .subheading {
+      .page-main .post-container .post-content .subheading,
+      .page-main .post-container .post-content .bold {
         font-weight: bold; }
       .page-main .post-container .post-content .subheading {
         font-family: 'Alegreya Sans SC';
