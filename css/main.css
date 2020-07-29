@@ -217,6 +217,10 @@ body {
           position: absolute;
           top: 0px;
           left: 0px; }
+        @media screen and (min-width: 768px) {
+          .page-main .post-container .post-content .media .iframe-cont.youtube {
+            height: 360px;
+            width: 640px; } }
         .page-main .post-container .post-content .media .tweet {
           width: 100%; }
           .page-main .post-container .post-content .media .tweet .twitter-tweet {
