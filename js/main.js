@@ -90,7 +90,6 @@ function recalcRelated() {
 	if($(".post-related").length && $(".post-content").length) {
 		//At the bottom
 		var numToShow = 6;
-		console.log(width);
 		//On the right
 		if(width > 950) {
 			//300px of adspace, 250px of author block, 220px each link

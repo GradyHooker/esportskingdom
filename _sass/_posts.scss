@@ -218,6 +218,13 @@
 					left: 0px;
 				}
 				
+				@media screen and (min-width: $break-small) {
+					.iframe-cont.youtube {
+						height: 360px;
+						width: 640px;
+					}
+				}
+				
 				.tweet {
 					width: 100%;
 					
