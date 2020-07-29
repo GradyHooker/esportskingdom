@@ -8,6 +8,27 @@
     <atom:link href="https://esportskingdom.gg/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>VictorEsports: What are Esports? (Tauranga Armageddon 2020)</title>
+        <description>Hard-hitting investigative journalist VictorEsports hits the streets of Armageddon Expo Tauranga 2020. He brings with himself a camera crew and one question - Esports, what are they?
+
+</description>
+        <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.gg/victoresports/2020-07-victoresports-whatareesports</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.gg/assets/banner/victoresports-whatareesports-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.gg/victoresports/2020-07-victoresports-whatareesports</guid>
+      </item>
+    
+      <item>
         <title>ESL and Psyonix announce ESL Rocket League Oceanic Championship</title>
         <description>Today, in partnership, ESL Australia and Psyonix announce the ESL Rocket League Oceanic Championship. An online tournament series with a prize-pool of a combined $225,000 across three splits running from Aug 2020 to Apr 2021.
 
