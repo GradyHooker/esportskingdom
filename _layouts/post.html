@@ -63,6 +63,7 @@ type: post
 			{% if showName.twitch != null %}<a href="https://twitch.tv/{{ showName.twitch }}" target="_blank"><i class="fab fa-twitch"></i></a>{% endif %}
 			{% if showName.facebook != null %}<a href="https://facebook.com/{{ showName.facebook }}" target="_blank"><i class="fab fa-facebook"></i></a>{% endif %}
 			{% if showName.youtube != null %}<a href="https://www.youtube.com/{{ showName.youtube }}" target="_blank"><i class="fab fa-youtube"></i></a>{% endif %}
+			<a href="/{{ showName.id }}">More from this guest</a>
 		</div>
 		{% else %}
 		<img class="author-image author-image-human" src="/assets/authors/{{ page.author }}.jpg"/>
@@ -83,7 +84,6 @@ type: post
   </div>
   {% unless page.category == null %}
   {% capture pageCategory %}{{ page.category }}{% endcapture %}
-  {% unless site.categories[pageCategory].size == 1 %}
   <div class="post-related">
     {% if page.sponsor != null %}
 	<a class="post-link sponsor-link" href="" target="_blank">
@@ -99,6 +99,7 @@ type: post
 	  </div>
 	</a>
 	{% endif %}
+	{% unless site.categories[pageCategory].size == 1 %}
     <h1>Related Posts</h1>
 	{% assign i = 1 %}
     {% for post in site.categories[pageCategory] limit: 11 %}
@@ -116,8 +117,8 @@ type: post
 	{% assign i = i | plus: 1 %}
 	{% endunless %}
     {% endfor %}
+	{% endunless %}
   </div>
-  {% endunless %}
   {% endunless %}
   </div>
 </div>

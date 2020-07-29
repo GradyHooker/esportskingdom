@@ -16,7 +16,7 @@
 	{% assign guest = site.data.mappingsShows | where:"id",post.guest | first %}
 	{% endif %}
     <a class="post-link" href="{{ site.baseurl }}{{ post.url | replace: '.html', ''}}">
-		<div class="post"{% if post.guest != null %} style="background: #{{ guest.color }}"{% endif %}>
+		<div class="post">
 		  <div class="post-boximage-cont">
 			<img class="post-boximage" src="/assets/banner/{{ post.image }}-small.jpg" alt="{{ post.title | escape }}"/>
 			<img class="post-boximage-square" src="/assets/banner/{{ post.image }}-square.jpg" alt="{{ post.title | escape }}"/>
