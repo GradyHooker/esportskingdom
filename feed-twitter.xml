@@ -8,6 +8,27 @@
     <atom:link href="https://esportskingdom.gg/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>CSGO introduces the Fracture Case with 17 brand new weapon skins</title>
+        <description>Alongside the brand new weapon case, called the Fracture Case, we also have some other stuff. There is networking improvements and updates to all three of Swamp, Mutiny, and Anubis.
+
+</description>
+        <pubDate>Fri, 07 Aug 2020 00:00:00 +0000</pubDate>
+        <link>https://esportskingdom.gg/counter-strike/2020-08-csgo-update-fracture</link>
+		
+		<author></author>
+		
+		<category></category>
+		<media:content 
+			xmlns:media="http://search.yahoo.com/mrss/" 
+			url="https://esportskingdom.gg/assets/banner/csgo-update-fracture-small.jpg" 
+			medium="image" 
+			type="image/jpeg" 
+			width="200" 
+			height="100" />
+        <guid isPermaLink="true">https://esportskingdom.gg/counter-strike/2020-08-csgo-update-fracture</guid>
+      </item>
+    
+      <item>
         <title>VALORANT Patch 1.05, New Agent! New Battlepass! New Ranked System! New Gamemode!</title>
         <description>Today a massive patch for VALORANT dropped that included a brand new agent called Killjoy as well as Act 2 bringing with it a rank-reset, new battlepass, and more ranking indicators.
 
