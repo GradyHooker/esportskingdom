@@ -93,3 +93,6 @@
   parent: sports-games
 - id: hardware
   title: Hardware
+- id: clash-royale
+  title: Clash Royale
+  parent: mobile-games
