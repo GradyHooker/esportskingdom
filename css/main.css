@@ -431,6 +431,10 @@ body {
   .logoheadline.notbold {
     font-weight: normal;
     font-size: 1em; }
+  .logoheadline .logo-opinion {
+    border-radius: 40px;
+    height: 80px;
+    width: 80px; }
 
 .tier-list-inactive {
   display: none; }
