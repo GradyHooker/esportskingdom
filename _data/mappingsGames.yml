@@ -96,3 +96,6 @@
 - id: clash-royale
   title: Clash Royale
   parent: mobile-games
+- id: world-of-tanks
+  title: World of Tanks
+  parent: other-games
