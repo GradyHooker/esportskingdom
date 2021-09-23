@@ -1,8 +1,13 @@
+{% if include.type == null %}
+	{% assign type = "jpg" %}
+{% else %}
+	{% assign type = include.type %}
+{% endif %}
 <div class="media">
 	{% if include.external != null %}
 	<img alt="{{ include.caption }}" src="{{ include.image }}"/>
 	{% else %}
-	<img alt="{{ include.caption }}" src="/assets/article/{{ include.image }}.jpg"/>
+	<img alt="{{ include.caption }}" src="/assets/article/{{ include.image }}.{{ type }}"/>
 	{% endif %}
 	<div class="image-caption">
 		{% if include.creditlink != null %}
