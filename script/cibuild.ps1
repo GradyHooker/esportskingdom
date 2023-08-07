@@ -1,5 +1,5 @@
 cd ..
-rm -Force _site
+rm -force _site
 mkdir _site
 
 # clone remote repo to "_site"
@@ -8,9 +8,9 @@ git clone --depth 1 https://github.com/GradyHooker/esportskingdom.git --branch g
 # back up the old medium and tiny images
 mkdir bak_files
 cp -r _site/assets/logos/medium bak_files
-rm -Force _site/assets/logos/medium
+rm -force _site/assets/logos/medium
 cp -r _site/assets/logos/tiny bak_files
-rm -Force _site/assets/logos/tiny
+rm -force _site/assets/logos/tiny
 
 # build with Jekyll into "_site"
 bundle exec jekyll build
@@ -29,7 +29,7 @@ cd ../../../../
 # copy back in any old ones we had
 cp -r bak_files/medium _site/assets/logos
 cp -r bak_files/tiny _site/assets/logos
-rm -Force bak_files
+rm -force bak_files
 
 # push
 cd _site
