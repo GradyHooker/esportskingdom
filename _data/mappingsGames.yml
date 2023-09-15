@@ -91,6 +91,9 @@
 - id: 22racing-series
   title: 22 Racing Series
   parent: sports-games
+- id: mario-kart
+  title: Mario Kart
+  parent: sports-games
 - id: hardware
   title: Hardware
 - id: clash-royale
